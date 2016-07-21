@@ -1,0 +1,164 @@
+<tool id="ms_convert_mzXML2Search" name="mzXML to mgf">
+	<!-- convert your mzXML files of interest to mgf (Mascot generic format) files-->
+	<description>Converts a MZXML formatted file to MGF format</description>
+	<stdio>
+		<exit_code range="1:" err_level="fatal" />
+	</stdio>
+	<!-- "MzXML2Search -mgf file.mzXML"-->
+	<command interpreter="python">
+	##if $precursor.use_precursor=='yes'
+	#import random, re
+	#set $job_track = $random.randint(1000000000,9999999999)
+	#set $label = $input.display_name
+	mzXML2Search.py -o $output -i '$input' -m $ms_level1 -x $ms_level2 
+	-v $minimum_peak_count 
+	-Z $maximum_reported_charge 
+	-s $peak_intensity 
+	-N $intensity_precision
+ 	-F $first_scan -L $last_scan 
+	-B $minimum_mh -T $maximum_mh 
+	--pm $output_precision_mass --pi $output_precision_intensity 
+	##--dbop_type $dbop_type
+	##-A 'yes' --c1 $precursor.precursor_charge_minimum --c2 $precursor.precursor_charge_maximum 
+	##else #mzXML2Search.py -o $output -i '$input' -m $ms_level1 -x $ms_level2 -v $minimum_peak_count 
+	-Z $maximum_reported_charge -s $peak_intensity -N $intensity_precision -F $first_scan -L $last_scan 
+	-B $minimum_mh -T $maximum_mh --pm $output_precision_mass --pi $output_precision_intensity 
+	##-A 'no'
+	##end if
+	--store_to_db $store_to_db
+	-a '$label'
+	-u $__user_id__
+	#if $job_track!="0"
+	    -j $job_track
+	#end if
+		
+	<!--  -F$first_scan_num -L$second_scan_num -C$force_charge -$force_charge_ 
+ 	-$suggest_charge -$suggest_charge_ 
+	-B$minimum_MH+_mass -T$maximum_MH+_mass -P$minimum_peak_count 
+	-N$max_peak_count -pm$mass_precision -pi$intensity_precision 
+	-I$minimum_threshold -M$ms_level -$ms_level_ 
+	-A$activation_method -Z$maximum_reported_charge_state 
+ 	-->
+	</command>
+	<inputs>
+		<param name="store_to_db" type="select" label="Store data to Firmiana?" >
+			<option value="yes">yes</option>
+			<option value="no" selected="true">no</option>
+		</param>
+		<param format="mzxml,mzml" name="input" type="data" label="mzxml,mzml file"/>	
+		<!--	
+		<param name="first_scan_num" type="integer" label="where num is an int specifying the first scan" value="0"/>
+		<param name="second_scan_num" type="integer" label="where num is an int specifying the last scan" value="0"/>    
+		<param name="force_charge" type="integer" value="0" label="force charge(s): where n1 is an integer specifying the precursor charge state (or possible charge range from n1 to n2 inclusive) to use; this option forces input scans to be output with the user-specified charge (or charge range)" />
+		<repeat name="force_charges" title="Additional force charges">
+			<param name="additional_force_charge" type="integer" value="0" label="Additional force charges" />
+		</repeat>
+		<param name="suggest_charge" type="integer" label="suggest charge(s): for scans which do not have a precursor charge (or charge range) already determined in the input file, use the user-specified charge (or charge range) for those scans.  Input scans which already have defined charge (or charge range) are output with their original, unchanged values." value="0"/>
+		<repeat name="suggest_charges" title="Additional suggest charges">
+			<param name="additional_force_charge" type="integer" value="0" label="Additional force charges" />
+		</repeat>
+		<param name="minimum_MH+_mass" type="float" label="where num is a float specifying minimum MH+ mass" value="600.0"/>
+		<param name="maximum_MH+_mass" type="float" label="where num is a float specifying maximum MH+ mass" value="5000.0"/>
+		<param name="minimum_peak_count" type="integer" label="where num is an int specifying minimum peak count" value="5"/>
+		<param name="max_peak_count" type="integer" label="where num is an int specifying max peak count using most intense peaks" value="0"/>
+		<param name="mass_precision" type="integer" label="where num is an int specifying mass precision in peaklist" value="4"/>
+		<param name="intensity_precision" type="integer" label="where num is an int specifying intensity precision in peaklist" value="0"/>
+		<param name="minimum_threshold" type="float" label="where num is a float specifying minimum threshold for peak intensity" value="0.01"/>
+		<param name="ms_level" type="integer" label="where n1 is an int specifying MS level to export" value="2"/>
+		<repeat name="ms_levels" title="Additional MS levels">
+			<param name="additional_ms_level" type="integer" value="0" label="Additional MS levels" />
+		</repeat>
+		<param name="activation_method" type="text" label="where str is the activation method" value="CID"/>
+		<param name="maximum_reported_charge_state" type="integer" label="maximum reported charge state for scans that do have a precursor charge;useful when scan has a high charge that search engines can't handle.No charge is reported if charge is larger than max value(default=7)" value="7"/>
+	-->
+		
+		
+		<param name="ms_level1" type="select" label="MS Level(or range)to export:">
+            <option value="1">1</option>
+            <option value="2" selected="true">2</option>
+            <option value="3">3</option>
+        </param>
+        <param name="ms_level2" type="select" label="MS Level to range" >
+            <option value="1" selected="true"></option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </param>
+        <param name="minimum_peak_count" type="integer" value="5" label="Minimum peak count"/>
+
+        <param name="maximum_reported_charge" type="select" label="Maximum reported charge state for scans that have a precursor charge:(useful when scan has a high charge that search engines can't handle)">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7" selected="true">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+        </param>
+        <param name="peak_intensity" type="float" value="0.01" label="Minimum threshold for peak intensity"/>
+        <param name="intensity_precision" type="integer" value="0" label="specify intensity precision in peaklist (set to zero to output all peaks)"/>
+        <param name="first_scan" type="integer" value="0" label="Scan Range(default is all) the first scan"/>
+        <param name="last_scan" type="integer" value="0" label="last scan of scan range"/>
+        <param name="minimum_mh" type="float" value="600.00" label="MH+ Mass Range:  Minimum"/>
+        <param name="maximum_mh" type="float" value="4200.00" label="MH+ Mass Range:  Maximum"/>
+        <param name="output_precision_mass" type="integer" value="4" label="Output precision -- Mass"/>
+        <param name="output_precision_intensity" type="integer" value="0" label="Output precision -- Intensity"/>
+        <!--<conditional name="precursor" >
+            <param name="use_precursor" type="select" label="have precursor charge?">
+                <option value="yes">yes</option>
+                <option value="no" selected="true">no</option>
+            </param>
+             <when value="yes">
+                 <param name="precursor_charge_minimum" type="select" label="Minimum precursor charge to analyze:">
+                    <option value="1" selected="true">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                 </param>            
+                 <param name="precursor_charge_maximum" type="select" label="Maximum precursor range to analyze:">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6" selected="true">6</option>
+                 </param>
+             </when>
+        </conditional>	-->
+		<!--param name="dbop_type" type="select"  format="text"  label="Change the information of the result for this analysis in the database">
+			<option value="insert" selected="true">insert</option>		
+			<option value="update">update</option>
+			<option value="delete">delete</option>
+		</param-->
+	</inputs>
+	<outputs>
+		<data format="mgf" name="output" label="${tool.name} on ${on_string}(${input.display_name})"/>
+	</outputs>
+
+	<tests>
+		<test>
+
+		</test>
+	</tests>
+
+	<help>
+.. class:: infomark
+	
+**What it does**
+
+This tool converts a **mzxml|mxml** formatted file to **mgf** format
+	</help>
+
+</tool>

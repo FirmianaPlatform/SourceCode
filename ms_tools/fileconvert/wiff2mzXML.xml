@@ -1,0 +1,56 @@
+<tool id="ms_convert_wiff2mzXML" name="Wiff to mzXML">
+	<description>Converts a WIFF formatted file to MZXML format</description>
+	<stdio>
+		<exit_code range="1:" err_level="fatal" />
+	</stdio>
+	<command interpreter="python">
+   	#import random, re
+	#set $job_track = $random.randint(1000000000,9999999999)
+	#set $label = $input.display_name
+   	wiff2mzXML.py -i $input
+   	##${os.path.join( $input.extra_files_path, '%s.scan' % $input.metadata.base_name )} 
+   	--input_scan $input_scan   
+	--outformat $outformat 
+	-o $output
+	-a '$label'
+	-u $__user_id__
+	#if $job_track!="0"
+		-j $job_track
+	#end if
+	--store_to_db $store_to_db
+	</command>
+ 	<inputs>
+		<param name="store_to_db" type="select" label="Store data to Firmiana?" >
+			<option value="yes">yes</option>
+			<option value="no" selected="true">no</option>
+		</param>
+  	
+		<param format="wiff" name="input" type="data" label="Wiff file"/>
+		<param format="wiff" name="input_scan" type="data" label="Scan file"/>
+ 		<param name="outformat" type="select" label="Output file format" > 
+			<option value="mzXML" selected="true">mzXML</option>
+			<option value="mzML">mzML</option>
+		</param>
+	</inputs>
+	<outputs>
+		<data format="mzxml" name="output" label="${tool.name} on ${on_string}(${input.display_name})"/>
+		<change_format>
+			<when input="outformat" value="mzML" format="mzml"/>
+		</change_format>
+	</outputs>
+
+	<tests>
+		<test>
+
+		</test>
+	</tests>
+
+	<help>
+.. class:: infomark
+	
+**What it does**
+
+This tool converts a **WIFF** formatted file to **MZXML** format
+	</help>
+
+</tool>

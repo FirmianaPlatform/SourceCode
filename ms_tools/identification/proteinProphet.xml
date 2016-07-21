@@ -1,0 +1,82 @@
+<tool id="ms_qualification_proteinProphet" name="ProteinProphet" version="1.0.0">
+	<description>Protein identification and validation, using PeptideProphet results</description>
+	<stdio>
+		<exit_code range="1:" err_level="fatal" />
+	</stdio>
+	<command interpreter="python">
+  	proteinProphet.py --output $output 
+  	-d "$output.files_path"
+	--input '${first_input}'
+	 #for $input_file in $input_files:
+     	'${input_file.additional_input}'
+     #end for 	
+     --iproph $is_iproph.iproph 
+     --nooccam $nooccam 
+     --groupwts $groupwts 
+     --normprotlen $normprotlen 
+     --logprobs $logprobs 
+     --confem $confem 
+     --allpeps $allpeps 
+     --unmapped $unmapped 
+     --instances $is_iproph.instances 
+     --delude $delude 
+     --minprob $minprob 
+     --minindep $minindep 
+     --dbop_type $dbop_type
+	</command>
+
+	<inputs>
+		<param name="first_input" type="data" format="peptideprophet_pepxml,interprophet_pepxml" label="PeptideProphet or InterProphet Results" help="These files will typically be outputs from search tools that have subsequently been run through PeptideProphet or InterProphet"/> 	
+		
+		<repeat name="input_files" title="Additional PepXML Input Files">
+			<param format="peptideprophet_pepxml,interprophet_pepxml" name="additional_input" type="data" label="PepXML produced by PeptideProphet or InterProphet" help=""/>
+		</repeat>
+		<conditional name="is_iproph">
+			<param name="iproph" type="boolean" checked="false" label="Inputs are from iProphet" help=""/>
+			<when value="false">
+				<param name="instances" type="boolean" label="Use Expected Number of Ion Instances to adjust the peptide probabilities prior to NSP adjustment" />
+			</when>			
+			<when value="true">
+			</when>				
+		</conditional>
+		<param name="nooccam" type="boolean" label="Don't apply Occam's razor" help="When selected no attempt will be made to derive the simplest protein list explaining observed peptides" truevalue="--no-occam" falsevalue=""/>
+		<param name="groupwts" type="boolean" label="Use group weights" help="Check peptide's total weight (rather than actual weight) in the Protein Group against the threshold" truevalue="--group-wts" falsevalue=""/>
+		<param name="normprotlen" type="boolean" label="Normalize NSP using Protein Length" />
+		<param name="logprobs" type="boolean" label="Use the log of probability in the confidence calculations" />
+		<param name="confem" type="boolean" label="Use the EM to compute probability given the confidenct"/>
+		<param name="allpeps" type="boolean" label="Consider all possible peptides in the database in the confidence model"/>
+		<param name="unmapped" type="boolean" label="Report results for unmapped proteins" />
+	
+	
+		<param name="delude" type="boolean" label="Do NOT use peptide degeneracy information when assessing proteins" />
+	
+		<param name="minprob" type="float" label="Minimum peptide prophet probability for peptides to be considered" value="0.05"/>
+		<param name="minindep" type="float" label="Minimum percentage of independent peptides required for a protein" value="0"/>
+		<param name="dbop_type" type="select"  format="text"  label="Change the information of the result for this analysis in the database">
+			<option value="insert" selected="true">insert</option>		
+			<option value="update">update</option>
+			<option value="delete">delete</option>
+		</param>
+	</inputs>
+	<outputs>
+		<data format="protxml" name="output"  label="ProteinProphet.${first_input.display_name}.prot.xml"/>
+	</outputs>
+
+	<help>
+		.. class:: infomark
+
+**What it does**
+
+Given a set of peptide assignments from MS/MS spectra in the form of a pepXML file, this tool estimates probabilities at the protein level.  As output, the tool produces a protXML file, which contains proteins along with the estimated probabilities that those proteins were present.  Probabilities are estimated using a statistical model based on the number of peptides corresponding to that protein and the confidence that each of those peptides were assigned correctly.  It takes account of the fact that peptides may correspond to more than one protein. 
+
+----
+
+**Citation**
+
+If you use this tool please read and cite the paper describing the statistical model implemented by Protein Prophet
+
+Nesvizhskii A., et al. “A Statistical Model for Identifying Proteins by Tandem Mass Spectrometry” *Anal. Chem.* 75, 4646-4658 (2003).
+
+	</help>
+
+</tool>

@@ -1,0 +1,156 @@
+<tool id="ms_identification_mascot" name="Mascot MSMS Search" version="1.0.0">
+	<description>Runs a Mascot  MS/MS Ions Search on a MGF File</description>
+	<stdio>
+		<exit_code range="1:" err_level="fatal" />
+	</stdio>
+	<command interpreter="python">
+	#import random, re
+	#set $job_track = $random.randint(1000000000,9999999999)
+	#set $label = $input.display_name
+	mascot.py -d $database -S $server -i '$input' -o $output 
+	## Variable Mods
+	--var-mods='$variable_mods'		
+	--fix-mods='$fixed_mods'		
+	--allowed-charges=$allowed_charges
+	--enzyme=$enzyme --instrument=$instrument 
+	--precursor-search-type $precursor_search_type
+	--precursor-ion-tol-units=$precursor_tolu
+	--fragment-ion-tol-units=$fragment_tolu  
+	-f $fragment_ion_tol -p $precursor_ion_tol
+	--email=$email --username=$username 
+	-v $missed_cleavages
+	-a '$label'
+	-u $__user_id__
+	#if $job_track!="0"
+		-j $job_track
+	#end if
+	--store_to_db $store_to_db
+	##--dbop_type $dbop_type
+	</command>
+
+	<inputs>
+		<param name="store_to_db" type="select" label="Store data to Firmiana?" >
+			<option value="yes">yes</option>
+			<option value="no" selected="true">no</option>
+		</param>	
+		<param name="input" type="data" format="mgf" multiple="false" label="MSMS File" help="A Mascot Generic Format file containing MSMS Spectra"/>
+		<param name="database" type="select" format="text" label="Database">
+			<options from_data_table="mascot_db" />
+		</param>
+	
+		<param name="variable_mods" format="text" type="select" multiple="true" label="Variable Modifications" help="Hold the appropriate key while
+			clicking to select multiple items">
+			<options from_file="mascot_mods.loc">
+				<column name="name" index="0" />
+				<column name="value" index="2" />
+			</options>
+		</param>		
+
+		<param name="fixed_mods" format="text" type="select" multiple="true" label="Fixed Modifications" help="Hold the appropriate key while
+			clicking to select multiple items">
+			<options from_file="mascot_mods.loc">
+				<column name="name" index="0" />
+				<column name="value" index="2" />
+			</options>
+		</param>
+	
+		<param name="missed_cleavages" type="select" format="text">
+			<label>Missed Cleavages Allowed</label>
+			<option value="0">0</option>		
+			<option value="1">1</option>
+			<option value="2">2</option>
+		</param>
+	
+		<param name="enzyme" type="select" format="text">
+			<label>Enzyme</label>
+			<option value="Trypsin">Trypsin</option>		
+		</param>
+	
+		<param name="allowed_charges" type="select" format="text">
+			<label>Peptide Charge</label>
+			<option value="8-">8-</option>
+			<option value="7-">7-</option>
+			<option value="6-">6-</option>
+			<option value="5-">5-</option>
+			<option value="4-">4-</option>
+			<option value="3-">3-</option>
+			<option value="2-,3- and 4-">2-,3- and 4-</option>
+			<option value="2- and 3-">2- and 3-</option>
+			<option value="2-">2-</option>
+			<option value="1-,2- and 3-">1-,2- and 3-</option>
+			<option value="1-">1-</option>
+			<option value="Mr">Mr</option>
+			<option value="1+">1+</option>
+			<option value="1+, 2+ and 3+">1+,2+ and 3+</option>		
+			<option value="2+">2+</option>
+			<option value="2+ and 3+">2+ and 3+</option>
+			<option value="2+,3+ and 4+">2+,3+ and 4+</option>
+			<option value="3+">3+</option>
+			<option value="4+">4+</option>
+			<option value="5+">5+</option>
+			<option value="6+">6+</option>
+			<option value="7+">7+</option>
+			<option value="8+">8+</option>
+		</param>
+	
+		<param name="instrument" type="select" format="text">
+			<label>Instrument</label>
+			<option value="ESI-QUAD-TOF">ESI-QUAD-TOF</option>
+			<option value="MALDI-TOF-PSD">MALDI-TOF-PSD</option>
+			<option value="ESI-TRAP">ESI-TRAP</option>
+			<option value="ESI-QUAD">ESI-QUAD</option>
+			<option value="ESI-FTICR">ESI-FTICR</option>
+			<option value="MALDI-TOF-TOF">MALDI-TOF-TOF</option>
+			<option value="ESI-4SECTOR">ESI-4SECTOR</option>
+			<option value="FTMS-ECD">FTMS-ECD</option>
+			<option value="ETD-TRAP">ETD-TRAP</option>
+			<option value="MALDI-QUAD-TOF">MALDI-QUAD-TOF</option>
+			<option value="MALDI-QIT-TOF">MALDI-QIT-TOF</option>
+			<option value="MALDI-ISD">MALDI-ISD</option>
+			<option value="CID+ETD">CID+ETD</option>
+		</param>
+		
+		<param name="precursor_search_type" type="select" format="text" label="Precursor Search Type">
+			<option value="Monoisotopic" selected="true">Monoisotopic</option>
+			<option value="Average">Average</option>
+		</param>
+		
+		<param name="fragment_ion_tol" label="Fragment Ion Tolerance (Da or mmu)" type="float" value="0.5" min="0" max="10000" help="Fragment ion tolerance"/>
+		<param name="fragment_tolu" type="select" format="text">
+			<label>Fragment Ion Tolerance Units</label>
+			<option value="mmu">mmu</option>		
+			<option value="Da" selected="true">Da</option>
+		</param>
+		
+		<param name="precursor_ion_tol" label="Precursor Ion Tolerance (Da or ppm)" type="float" value="10" min="0" max="10000" help="Precursor ion tolerance"/>
+		<param name="precursor_tolu" type="select" format="text">
+			<label>Precursor Ion Tolerance Units</label>
+			<option value="ppm">ppm</option>		
+			<option value="Da">Da</option>
+		</param>
+
+		<param name="server" type="text" label="URL to Mascot Server cgi " size="60" value="http://61.50.134.137/mascot/cgi"/>
+	
+		<param name="email" type="text" label="Email " size="60" value="" help="Not Supported Yet."/>
+	
+		<param name="username" type="text" label="Username" size="60" value="" help="Not Supported Yet."/>	
+		<!--param name="dbop_type" type="select"  format="text"  label="Change the information of the result for this analysis in the database">
+			<option value="insert" selected="true">insert</option>		
+			<option value="update">update</option>
+			<option value="delete">delete</option>
+		</param-->
+	</inputs>
+	<outputs>
+		<data format="mascotdat" name="output" metadata_source="input" label="mascot_vs_${database} on ${on_string}(${input.display_name})"/>
+	</outputs>
+	
+	
+	<help>
+.. class:: infomark
+
+**What it does**
+
+Run a Mascot MS/MS Ion Search: Identification based on raw MS/MS data from one or more peptides. Mascot is a powerful search engine which uses mass spectrometry data to identify proteins from primary sequence databases. 
+	</help>
+
+</tool>

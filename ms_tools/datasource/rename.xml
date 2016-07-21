@@ -1,0 +1,80 @@
+<tool id="rename" name="Rename and Run">
+	<description>without any other operation</description>
+	<stdio>
+		<exit_code range="1:" err_level="fatal" />
+	</stdio>
+	<!--for wine on localhost(.22)-->	
+	<command interpreter="python">
+	##import random, re
+	##set $job_track = $random.randint(1000000000,9999999999)
+	##set $label = $input.display_name
+	rename.py
+	    -u $__user_id__
+	    ##if $job_track!="0"
+	    ##	-j $job_track
+	    ##end if 
+		
+	    -o $output
+		
+		--hp $handwrite_path
+	</command>
+	<inputs>
+		<param name="handwrite_path" type="text" value="Default" label="Specify your own path." help="When your files are not in standard path."/>
+		<!--
+		<param name="instru_select" type="select" label="Instrument" >
+			<option value="Velos" selected="true">Velos</option>
+			<option value="QExactive">QExactive</option>
+			<option value="QTOF5600">QTOF5600</option>
+			<option value="none">None</option>
+		</param>
+		<param name="experimentNum" type="integer" value="8" label="Experiment Number" help="Like 80574,80575......"/>
+		
+		<conditional name="if_Raw">
+			<param name="file_type" type="select" label="File type">
+				<option value="raw" selected="true">Raw</option>
+				<option value="wiff">Wiff</option>
+			</param>
+			<when value="raw">
+				<param name="workflow" type="select" label="Workflow" help="Choose Workflow to run">
+					<option value="e46ebed6f2d8f086">Velos Human Cancer phos 80465</option>
+					<option value="c6ef01d8a6d43836">Velos Mouse Liver 80047-80052</option>
+					<option value="c3048691c868e0d4">Human 80574-80575</option>
+				</param>
+			</when>
+		</conditional>
+		-->	
+		
+        <!--  
+		<param name="file_type" type="select" label="File type" >
+			<option value="raw" selected="true">Raw</option>
+			<option value="wiff">Wiff</option>
+		</param>
+		
+		<param name="workflow" type="select" label="Workflow" >
+			<option value="e46ebed6f2d8f086">Velos Human Cancer phos 80465</option>
+			<option value="c6ef01d8a6d43836">Velos Mouse Liver 80047-80052</option>
+			<option value="c3048691c868e0d4">Human 80574-80575</option>
+		</param>
+		-->
+	</inputs>
+	<outputs>
+		<data format="txt" name="output" type="data" label="One-key_Run.txt"/>
+	</outputs>
+
+	<tests>
+		<test>
+			
+		</test>
+	</tests>
+
+	<help>
+	
+.. class:: infomark
+	
+**What it does**
+
+Run workflows automatically.
+
+	</help>
+
+</tool>

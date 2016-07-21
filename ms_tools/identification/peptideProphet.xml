@@ -1,0 +1,148 @@
+<tool id="ms_qualification_peptideProphet" name="PeptideProphet">
+	<description>Generates statistical validation of MS/MS search engines' spectra-to-peptide sequence assignments</description>
+	<stdio>
+		<exit_code range="1:" err_level="fatal" />
+	</stdio>
+	<command interpreter="python">
+	#import random, re
+	#set $job_track = $random.randint(1000000000,9999999999)
+	
+	peptideProphet.py
+	--source_select	$inputfiles.source_select
+	#if $inputfiles.source_select=="infile":
+		--input $inputfiles.input_file
+		#set $label = $inputfiles.input_file.display_name
+	#else 
+		--input $inputfiles.inputID
+		#set $label = $inputfiles.inputID
+		--dbsearch_type	$inputfiles.dbsearch_type
+	#end if
+	#if $inputfiles.source_select=="infile":
+		#for $input_file in $inputfiles.input_files:
+			${input_file.additional_input}
+		#end for
+	#end if 
+	-o ${output} -d "$output.files_path"
+	-p $prob_cutoff --min-peptide-len $min_peptide_len --glyco $glyco --useicat $useicat 
+	--phospho $phospho --usepi $usepi --usert $usert --accurate-mass $accurate_mass --no-ntt $no_ntt --no-nmc $no_nmc 
+	--use-gamma $use_gamma --use-only-expect $use_only_expect --force-fit $force_fit --allow-alt-instruments $allow_alt_instruments --maldi $maldi 
+	##--output-index ${output_index} --output-xsl ${output_xsl} --output-shtml ${output_shtml}
+	--store_to_db $store_to_db
+	-a '$label'
+	-u $__user_id__
+	#if $job_track!="0"
+	    -j $job_track
+	#end if
+	##--dbop_type $dbop_type
+	</command>
+	<requirements>
+		<requirement type="binary">gnuplot</requirement>
+	</requirements>
+	<inputs>
+		<param name="store_to_db" type="select" label="Store data to Firmiana?" >
+			<option value="yes">yes</option>
+			<option value="no" selected="true">no</option>
+		</param>
+		<conditional name="inputfiles">
+			<param name="source_select" type="select" label="Input file source">
+				<option value="infile">PepXML Files</option>
+				<option value="experimentID">Experiment ID</option>
+			</param>
+			<when value="infile">
+				<param name="input_file" type="data" format="pepxml,raw_pepxml" multiple="false" label="Database Search Results" help="These files will typically be outputs from database search tools"/>
+				<repeat name="input_files" title="Additional PepXML Input Files">
+					<param format="pepxml,raw_pepxml" name="additional_input" type="data" label="PepXML produced by database search tools" help=""/>
+				</repeat>
+			</when>
+			<when value="experimentID">
+				<param name="inputID" type="text" value="E" label="Experiment ID" help="This ID is from the Experiment ID in Experiment Display list of Firmiana Experiment Management Section"/>/>
+				<param name="dbsearch_type" type="select"  format="text"  label="Database Search Type">
+					<option value="mascot" selected="true">mascot</option>		
+					<option value="tandem">tandem</option>
+				</param>
+			</when>
+		</conditional>
+		
+		<!--param name="input_file" type="data" format="pepxml,raw_pepxml" multiple="false" label="Raw Search Results" help="These files will typically be outputs from xtandem search tools"/>
+			<repeat name="input_files" title="Additional PepXML Input Files">
+				<param format="pepxml,raw_pepxml" name="additional_input" type="data" label="PepXML produced by Peptide Prophet" help=""/>
+			</repeat-->
+		<param name="prob_cutoff" type="float" value="0.05" label="Don't discard search results with PeptideProphet probabilities below this value" />
+		<param name="min_peptide_len" type="integer" value="7" label="minimum peptide length considered in the analysis (default 7)"/>
+		<param name="glyco" checked="false" type="boolean" label="Expect true positives to have a glycocapture motif"/>
+		<param name="useicat" checked="false" type="boolean" label="Use icat information"/>
+		<param name="phospho" checked="false" type="boolean" label="Use phospho information"/>
+		<param name="usepi" checked="false" type="boolean" label="Use pI information"/>
+		<param name="usert" checked="false" type="boolean" label="Use hydrophobicity / RT information" />
+		<param name="accurate_mass" checked="false" type="boolean" label="Use accurate mass binning" />
+		<param name="no_ntt" checked="false" type="boolean" label="Don't use NTT model" />
+		<param name="no_nmc" checked="false" type="boolean" label="Don't use NMC model"/>
+		<param name="use_gamma" checked="false" type="boolean" label="Use Gamma distribution to model the negatives" help="Applies only to X!Tandem results" />
+		<param name="use_only_expect" checked="false" type="boolean" label="Only use Expect Score as the discriminant" help="Applies only to X!Tandem results. 
+			Helpful for data with homologous top hits e.g. phospho or glyco"/>
+		<param name="force_fit" checked="false" type="boolean" label="Force fitting" help="Bypasses automatic mixture model checks and forces fitting of a mixture model"/>
+		<param name="allow_alt_instruments" checked="false" type="boolean" label="Allow multiple instrument types" help="Warning instead of exit with error if instrument types between runs is different"/>
+		<param name="maldi" checked="false" type="boolean" label="Maldi data" />	
+		<!--param name="dbop_type" type="select"  format="text"  label="Change the information of the result for this analysis in the database">
+			<option value="insert" selected="true">insert</option>		
+			<option value="update">update</option>
+			<option value="delete">delete</option>
+		</param-->
+	</inputs>
+  
+	<outputs>
+		<data format="peptideprophet_pepxml" name="output"  label="${tool.name} on ${on_string}(${inputfiles.input_file.display_name if $inputfiles.has_key('input_file') else $inputfiles.inputID})" />
+		<!--<data format="txt" name="output_index" label="peptide_prophet.${input_file.display_name}.pep.xml.index" hidden="true"/>
+			<data format="xml" name="output_xsl" label="peptide_prophet.${input_file.display_name}.pep.xsl" hidden="true"/>
+			<data format="txt" name="output_shtml" label="peptide_prophet.${input_file.display_name}.pep.shtml" hidden="true"/>
+			-->
+	</outputs>
+	
+	<help>
+		.. class:: infomark
+
+**What it does**
+
+Given raw search engine scores as inputs this tool estimates the accuracy of peptide assignments.  From a practical perspective it estimates the probability that each peptide assignment is correct (providing probabilities as outputs), given raw scores (possibly on some arbitrary scale) as inputs. 
+
+----
+
+**Citation**
+
+If you use this tool please read and cite the paper describing the statistical model implemented by Peptide Prophet
+
+Keller A., et al. “Empirical Statistical Model to Estimate the Accuracy of Peptide Identifications Made by MS/MS and Database Search” *Anal. Chem.* 74, 5383-5392 (2002).
+
+
+	</help>
+
+
+	<!--PeptideProphet options [following the 'O']:
+		 i [use icat information in PeptideProphet]
+		 f [do not use icat information in PeptideProphet]
+		 g [use N-glyc motif information in PeptideProphet]
+		 H [use Phospho information in PeptideProphet]
+		 m [maldi data]
+		 I [use pI information in PeptideProphet]
+		 R [use Hydrophobicity / RT information in PeptideProphet]
+		 F [force the fitting of the mixture model, bypass automatic mixture model checks]
+		 A [use accurate mass binning in PeptideProphet]
+		 w [warning instead of exit with error if instrument types between runs is different]
+		 x [exclude all entries with asterisked score values in PeptideProphet]
+		 l [leave alone all entries with asterisked score values in PeptideProphet]
+		 n [use hardcoded default initialization parameters of the distributions]
+		 P [use Non-parametric model, can only be used with decoy option]
+		 N [do not use the NTT model]
+		 M [do not use the NMC model]
+		 G [use Gamma Distribution to model the Negatives (applies only to X!Tandem data)]
+		 E [only use Expect Score as the Discriminant(applies only to X!Tandem data, 
+			helpful for data with homologous top hits e.g. phospho or glyco)]
+		 d [report decoy hits with a computed probability based on the model learned]
+		 p [run ProteinProphet afterwards]
+		 t [do not create png data plot]
+		 u [do not assemble protein groups in ProteinProphet analysis]
+		 s [do not use Occam's Razor in ProteinProphet analysis to 
+			derive the simplest protein list to explain observed peptides]
+-->
+
+</tool>

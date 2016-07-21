@@ -1,0 +1,97 @@
+<tool id="ms_convert_mascot2XML" name="Mascot to pepXML">
+	<!-- Convert MASCOT search results to pepXML-->
+	<description>Converts a DAT formatted file to PEPXML format</description>
+	<stdio><exit_code range="1:" err_level="fatal" /></stdio>
+	<!-- "Mascot2XML <file.dat> -D<full/path/to/database>"-->
+	<!-- Note .. the input file is assumed to be the first argument -->
+	<command interpreter="python">
+	#import random, re
+	#set $job_track = $random.randint(1000000000,9999999999)
+	#set $label = $input.display_name
+	mascot2XML.py -i '$input' -o $output -d $database --dbtype $database.name 
+	-e $enzyme --semi $semi --pI $pI --nc $no_compressed --po $pepXML_output --us $use_short_pro_id
+	##--dbop_type $dbop_type
+	--store_to_db $store_to_db
+	-a '$label'
+	-u $__user_id__
+	#if $job_track!="0"
+	    -j $job_track
+	#end if
+
+	</command>
+	<inputs>
+		<param name="store_to_db" type="select" label="Store data to Firmiana?" >
+			<option value="yes">yes</option>
+			<option value="no" selected="true">no</option>
+		</param>
+		<param name="input" type="data" format="mascotdat" multiple="false" label="Input File" help="Mascot results file"/>
+		<!--<param name="database" type="select" format="text" >
+			<label>Database</label>
+			<options from_file="pepxml_databases.loc">
+				<column name="name" index="0" />
+				<column name="value" index="2" />
+			</options>
+		</param> -->
+		<param name="database" type="select" format="text" label="Database">
+			<options from_data_table="pepxml_db" />
+		</param>
+		<param name="enzyme" type="select" label="Enzyme">
+			<option value="default"	selected="true"></option>
+ 			<option value="trypsin">trypsin</option>
+ 			<option value="stricttrypsin">stricttrypsin</option>
+			<option value="argc">argc</option>
+			<option value="aspn">aspn</option>
+			<option value="chymotrypsin">chymotrysin</option>
+			<option value="clostripain">clostripain</option>
+			<option value="cnbr">cnbr</option>
+			<option value="elastase">elastase</option>
+			<option value="formicacid">formicacid</option>
+			<option value="gluc">gluc</option>
+			<option value="gluc_bicarb">gluc_bicarb</option>
+			<option value="iodosobenzoate">iodosobenzoate</option>
+ 			<option value="lysc">lysc</option>
+ 			<option value="lysc-p">lysc-p</option>
+			<option value="lysn">lysn</option>
+ 			<option value="lysn_promisc">lysn_promisc</option>
+ 			<option value="ralphtrypsin">ralphtrypsin</option>
+			<option value="nonspecific">nonspecific</option>
+			<option value="pepsina">pepsina</option>
+			<option value="protein_endopeptidase">protein_endopeptidase</option>
+			<option value="staph_protease">staph_protease</option>
+			<option value="tca">tca</option>
+			<option value="trypsin/cnbr">trypsin/cnbr</option>
+			<option value="trypsin_gluc">trypsin_gluc</option>
+			<option value="trypsin_k">trypsin_k</option>
+			<option value="trypsin_r">trypsin_r</option>
+			<option value="thermolysin">thermolysin</option>
+		</param>
+    	<param name="semi" type="boolean" truevalue="true" falsevalue="false" checked="False" label="Semi"/>
+    	<param name="pI" type="boolean" truevalue="true" falsevalue="false" checked="False" label="Compute peptide pI values"/>
+    	<param name="no_compressed" type="boolean" truevalue="true" falsevalue="false" checked="False" label="Do not generate (compressed) archive of .dta and .out"/>
+    	<param name="pepXML_output" type="boolean" truevalue="true" falsevalue="false" checked="False" label="Generate protein description in pepXML output"/>
+    	<param name="use_short_pro_id" type="boolean" truevalue="true" falsevalue="false" checked="False" label="Use short protein id as per Mascot result (instead of full protein ids in fasta file)"/>
+		<!--param name="dbop_type" type="select"  format="text"  label="Change the information of the result for this analysis in the database">
+			<option value="insert" selected="true">insert</option>		
+			<option value="update">update</option>
+			<option value="delete">delete</option>
+		</param-->
+	</inputs>
+	<outputs>
+		<data format="raw_pepxml" metadata_source="input" name="output" label="${tool.name} on ${on_string}(${input.display_name})" />
+	</outputs>
+
+	<tests>
+		<test>
+
+		</test>
+	</tests>
+
+	<help>
+.. class:: infomark
+	
+**What it does**
+
+This tool converts the output of mascot from **.dat** to **.pep.xml**.
+	</help>
+
+</tool>

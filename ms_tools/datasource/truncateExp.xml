@@ -1,0 +1,44 @@
+<tool id="truncateExp" name="Delete Searched Data of Experiment">
+	<description>which you want to rerun as newly added.</description>
+	<stdio>
+		<exit_code range="1:" err_level="fatal" />
+	</stdio>
+	<!--for wine on localhost(.22)-->	
+	<command interpreter="python">
+	##import random, re
+	##set $job_track = $random.randint(1000000000,9999999999)
+	##set $label = $input.display_name
+	truncateExp.py
+	    -u $__user_id__
+		
+		-e $expNumber
+		
+	    -o $output
+		
+	</command>
+	<inputs>
+	
+		<param name="expNumber" type="text" value="8" label="Exp Number" help="Be carefully!"/>
+		
+	</inputs>
+	<outputs>
+		<data format="txt" name="output" type="data" label="DeleteSearchedExp.txt"/>
+	</outputs>
+
+	<tests>
+		<test>
+			
+		</test>
+	</tests>
+
+	<help>
+	
+.. class:: infomark
+	
+**What it does**
+
+Delete untidy experiment data permanently !!!
+
+	</help>
+
+</tool>
