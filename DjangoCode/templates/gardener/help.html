@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+			<title>Manual of Firmiana v0.7</title>
+			<meta name="description" content="firmiana" />
+			<link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+			<link rel="stylesheet" type="text/css" href="/static/css/help_page/style.css" /> 
+			
+			<link rel="stylesheet" type="text/css" media="screen, projection, print" href="/static/css/help_page/default.css" />
+			<link rel="stylesheet" type="text/css" href="/static/css/help_page/phenom_index.css" title="style" />
+			<script type="text/javascript" src="/static/javascript/goto_top.js"></script>
+			<link href="/static/video-js/video-js.css" rel="stylesheet">  
+			<script src="/static/video-js/video.js"></script>  
+			<script>  
+  					_V_.options.flash.swf = "/static/video-js/video-js.swf"  
+			</script>  
+			<link rel="alternate" type="application/rss+xml" title="Gardener" href="http://61.50.134.132/gardener" />
+			<script type="text/javascript" src="/static/javascript/GoogleAnalytics.js"></script>
+
+	</head>
+	<body>
+
+		
+		<style>
+
+		#stay{ 
+			z-index:1000;
+			position: absolute; 
+			padding-top:10px;
+			height:40px;
+			width:100%;
+			background: white; 
+		} 
+		#stay2{
+			top:0;
+			position: fixed;
+			right: 0;
+			left: 0;
+			z-index:1000;
+			padding:15px 0px 0px 0px;
+			height:40px;
+			//width:3000px;
+			background: #4c4c4c; 
+			}
+		</style>
+		 
+		<div id="stay2" class="header" align="center">
+			<h3><font color="white">Welcome to </font><font color="orange">Firmiana</font> </h3>
+		</div>
+		
+		<!--div style="background:#cccccc;height:100px;" >
+		</div-->
+					
+		<a name="#top" ></a>
+		<div id="outer">
+
+			<div id="inner">
+   
+				<div id="primarycontent">			
+					<br/><br/><br/><br/>
+
+					<div class="content">
+						<img src="/static/images/help_page/pic1.jpg" class="picA floatleft" alt="" />
+						<p>&nbsp;Firmiana is a "one-stop" data analysis platform for proteomics data, composed of a series of analysis tools for Mass Spectra data from experimental design to statistical analysis and further bioinformatics data-mining technique, such as peptide identification, peptide quantification, protein quantification. Meanwhile, this platform can also be used to create flexible proteome analysis workflow. </p>
+						<!--p class="button-group"><a href="http://61.50.134.132/gardener" class="button-link inline">View the Gardener</a> <a href="http://61.50.134.132/galaxy" class="more-icon">View the Galaxy</a></p-->
+					</div>
+        
+			{% include "/gardener/base_help.html" %}
+			
+					<div class="header">
+						<h3>Links :</h3>
+					</div>
+					<div class="content">	
+				
+						<div class="foot">
+							<ul>
+								<li class="foot2">
+									<h3>Useful Links</h3>
+								</li>
+								<li>
+									<a href="http://www.ncbi.nlm.nih.gov/">NCBI</a>
+								</li>
+								<li>
+									<a href="http://www.uniprot.org/">Uniprot</a>
+								</li>
+								<li>
+									<a href="http://asia.ensembl.org/biomart/martview/1d83fef71ef7da2a4516822835ca99b3">Ensemble</a>
+								</li>
+							</ul>
+						</div>
+			
+						<div class="foot">
+							<ul>
+								<li class="foot2">
+									<h3>About us</h3>
+								</li>
+								<li>
+									<a href="#top">building...</a>
+								</li>
+								<li>
+									<a href="#download">building...</a>
+								</li>
+								<li>
+									<a href="#contact">building...</a>
+								</li>
+							</ul>
+		</div>
+   
+						<div class="foot">
+							<ul>
+								<li class="foot2">
+									<h3>Future</h3>
+								</li>
+								<li>
+									<a href="#home">building...</a>
+								</li>
+								<li>
+									<a href="#download">building...</a>
+								</li>
+								<li>
+									<a href="#contact">building...</a>
+								</li>
+							</ul>
+		</div>
+   
+						<div class="foot">
+							<ul>
+								<li class="foot2">
+									<h3>FAQ</h3>
+								</li>
+								<li>
+									<a href="#home">building...</a>
+								</li>
+								<li>
+									<a href="#download">building...</a>
+								</li>
+								<li>
+									<a href="#contact">building...</a>
+								</li>
+							</ul>
+		</div>
+			
+						<div style="width:100%;height:100px; display:table; overflow:hidden; margin:0 auto; *position:relative;">
+				
+							<div style="display:table-cell; vertical-align: bottom; *position:absolute; top:50%;">
+								<div style="*position:relative; *top:-50%; text-align:center; width:90px; margin:0 auto;">
+									<input style="width:80px;height:30px;" id="uptop" type="button" value="TOP" onclick="scroTop()"/>
+								</div>
+							</div>
+						</div>
+					</div>	
+			
+				</div> <!-- inner end -->
+	
+			</div> <!-- outer end -->
+			</div>
+			
+
+		
+			<div id="footer">
+				&copy;ECNU Firmiana. All rights reserved. Design by <a href="mailto:proteome.firmiana@foxmail.com">Firmiana Team</a>.
+			</div>
+	
+			<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+			<script type="text/javascript" src="/static/javascript/show.js"></script>
+			<div class="infiniteCarousel">
+				<div class="wrapper">
+					<ul>
+						<li><a href="#" title="Novel Gene List"><img src="/static/images/help_page/1/novel_gene_s.jpg" height="75" width="75" alt="snp infomation" /></a></li>
+						<li><a href="#" title="Novel Isoform List"><img src="/static/images/help_page/1/protein_novel_s.jpg" height="75" width="75" alt="Protein List" /></a></li>
+						<li><a href="#" title="Novel Peptide List"><img src="/static/images/help_page/1/peptide_novel_s.jpg" height="75" width="75" alt="Peptide List" /></a></li>
+						<li><a href="#" title="Biological Condition Statistics (tissue)"><img src="/static/images/help_page/1/tissue_novel_s.jpg" height="75" width="75" alt="Biological Condition Statistics" /></a></li>
+						<li><a href="#" title="Spectrum Database: Online searching"><img src="/static/images/help_page/1/spectrum_s.jpg" height="75" width="75" alt="Spectrum Database: Online searching" /></a></li>
+						<li><a href="#" title="Experiment Annotation"><img src="/static/images/help_page/1/experiment.jpg" height="75" width="75" alt="Experiment Annotation" /></a></li>
+						<li><a href="#" title="Download"><img src="/static/images/help_page/1/download_2.jpg" height="75" width="75" alt="Download" /></a></li>
+						<li><a href="#" title="FAQ"><img src="/static/images/help_page/1/faq.jpg" height="75" width="75" alt="FAQ" /></a></li>
+					</ul>        
+				</div>
+			</div>
+	</body>
+</html>
+

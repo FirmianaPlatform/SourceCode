@@ -1,0 +1,918 @@
+TF	len(totalGenes)	len(deGenes)	B1	B1Gene	B2	B2Gene	Ratio	Pval
+Hnf1a	718	74	47	Pdgfc,Lect2,Lpl,Nqo1,Fabp4,Stmn1,Afp,Psat1,Lgals1,Anxa2,Ang,Cfi,C1ra,Pla1a,Serpine1,Igf1,Hc,Igfals,Apcs,C6,Galk1,Afm,Cdh1,C8b,Dpp4,C8a,Ddc,Lcp1,C9,Itih1,Ctsc,Mmp12,Pigr,Plg,Igfbp4,Serping1,Cpb2,Pygb,Thbs1,Nit2,Cbr3,Ftcd,Cbr1,Pah,Aldh1l1,Saa1,Fabp1	3	Anxa2,Lcp1,Thbs1	0.593366093366093	0.61418270759393
+Abt1	718	74	7	Pdcd2,Impdh2,Snrpb,Ncl,Cct3,Cct2,Cct5	1	Ncl	1.45045045045045	0.535947923017841
+Adnp2	718	74	5	Snrpe,Rbmxl1,Cct2,Cct5,Pcbp1	0		0	1
+Aire	718	74	2	Sh3bgrl,Gart	0		0	1
+Apex1	718	74	15	Impdh2,Pfas,Anp32b,Snrpe,Rbmxl1,Tcp1,Cct3,Cacybp,C1qbp,Cct7,Cct2,Hdgf,Cct6a,Cct5,Tubb5	3	Tcp1,Hdgf,Tubb5	2.17567567567568	0.202368167117061
+Ascl2	718	74	8	Gna11,Arl3,Atxn10,Dsg2,Nt5c,Cdh1,Bbox1,Rdx	2	Dsg2,Nt5c	2.9009009009009	0.200373073960496
+Ash2l	718	74	2	Itm2b,Gart	0		0	1
+Atxn1	718	74	0		0		100	1
+Bbx	718	74	0		0		100	1
+Bcl6	718	74	2	Cct7,Cct5	0		0	1
+Bclaf1	718	74	4	Ncl,Cct2,Srsf1,Hnrnpa1	1	Ncl	2.9009009009009	0.355758745811962
+Bhlhe40	718	74	3	Acp5,Gss,Pigr	0		0	1
+Blm	718	74	12	Impdh2,Anp32b,Snrpe,Rbmxl1,Ruvbl2,Tcp1,Cct2,Hmgb2,Cct5,Tubb5,Prdx5,H2afx	2	Tcp1,Tubb5	1.74054054054054	0.360318444125048
+Brca1	718	74	6	Cdk1,Ruvbl2,Cct2,Srsf1,Hmgb2,H2afx	0		0	1
+Brca2	718	74	7	Impdh2,Cdk1,Snrpe,Tcp1,Cct2,Cct5,H2afx	1	Tcp1	1.45045045045045	0.535947923017841
+Brip1	718	74	3	Cdk1,Hmgb2,H2afx	0		0	1
+Camta2	718	74	2	Nudcd2,Srsf1	0		0	1
+Cbx2	718	74	9	Ppil1,Cdk1,Snrpb,Ruvbl2,Kpnb1,Hmgb2,Cad,Tubb5,H2afx	1	Tubb5	1.08783783783784	1
+Cdc5l	718	74	3	Snrpb,Ncl,Cacybp	1	Ncl	4.35135135135135	0.281078538603148
+Cdk5rap2	718	74	1	Ruvbl2	0		0	1
+Cdk9	718	74	0		0		100	1
+Cdkn2a	718	74	1	Arf6	0		0	1
+Cdx4	718	74	14	Gmppb,Ufm1,Lman1,Cel,D17Wsu104e,Sdc1,Txnrd1,Chid1,Ddc,Ufc1,Hyou1,Acly,Pdia6,Ldha	1	Txnrd1	0.669438669438669	1
+Cggbp1	718	74	2	Anp32b,Rpl7	0		0	1
+Creb3	718	74	6	Impdh2,Ppil1,Srsf1,Hmgb2,Rpl26,Tubb2a	1	Tubb2a	1.74054054054054	0.482403452596823
+Crebl2	718	74	3	Cdk1,Tcp1,Scp2	1	Tcp1	4.35135135135135	0.281078538603148
+Cry1	718	74	1	Rbmxl1	0		0	1
+Dbp	718	74	12	Nras,Cdk1,C1ra,Rbmxl1,Cct3,Igfbp6,Cct2,Hmgb2,Serping1,Tubb5,Hagh,H2afx	1	Tubb5	0.791154791154791	1
+Ddx20	718	74	4	Ruvbl2,Tcp1,Cct2,Scp2	1	Tcp1	2.9009009009009	0.355758745811962
+Ddx41	718	74	7	Pgm1,Wars,Psmc5,Galk1,Aars,Gss,Got1	2	Wars,Psmc5	3.48108108108108	0.161136630070714
+Dhx33	718	74	6	Cct3,Cct2,Kpnb1,Cct6a,Cad,Cct5	0		0	1
+Dnajc2	718	74	1	Cct2	0		0	1
+Dnmt1	718	74	10	Impdh2,Cdk1,Snrpe,Rbmxl1,Cct2,Hnrnpa1,Hmgb2,Cct5,Rpl14,Tubb5	1	Tubb5	0.966966966966967	1
+Dnmt3b	718	74	4	Impdh2,Pfas,Rbmxl1,Prdx5	0		0	1
+E2f1	718	74	8	Cdk1,Anp32b,Rars,Cct2,Kpnb1,Cad,Cct5,Tubb5	1	Tubb5	1.24324324324324	0.583887187168891
+E2f3	718	74	5	Rars,Rbmxl1,C1qbp,Ola1,Cct6a	0		0	1
+E2f7	718	74	15	Impdh2,Pfas,Cdk1,Anp32b,Snrpe,Rbmxl1,Tcp1,Cct2,Kpnb1,Hmgb2,Cct6a,Cad,Cct5,Tubb5,H2afx	2	Tcp1,Tubb5	1.33887733887734	0.662466903968198
+E2f8	718	74	7	Cdk1,Anp32b,Srsf1,Kpnb1,Hmgb2,Gstk1,H2afx	0		0	1
+Elk1	718	74	0		0		100	1
+En1	718	74	30	Ltbp1,Aebp1,Col5a2,Ddb1,Vcan,Pcolce,Axl,Bgn,Wisp1,Col12a1,Fscn1,Vasn,Plod3,Bmp1,Csf1,Fbln2,Mmp14,Ngf,Serpine1,11-Sep,Col2a1,Actn1,Vcl,Cyr61,Mmp2,Lox,Thbs1,Serpinf1,Col1a2,Col1a1	6	Fscn1,Fbln2,11-Sep,Actn1,Lox,Thbs1	2.17567567567568	0.121528917914778
+En2	718	74	0		0		100	1
+Eomes	718	74	6	Glipr2,Marcks,Nt5e,Nt5c,Idh2,Gpx1	1	Nt5c	1.74054054054054	0.482403452596823
+Esrrb	718	74	2	Sh3bgrl,Gart	0		0	1
+Etv2	718	74	0		0		100	1
+Etv4	718	74	4	Icam2,Itm2b,Gart,Crip2	0		0	1
+Etv5	718	74	13	Ckb,Myo1c,Sema3e,Bcam,Ralb,Lpl,Pdgfb,Gusb,Rnh1,Spp1,Igf1,Gamt,Msn	1	Msn	0.725225225225225	1
+Ezh2	718	74	11	Impdh2,Cdk1,Anp32b,Snrpe,Rbmxl1,Cct2,Hnrnpa1,Hmgb2,Cct5,Prdx5,H2afx	0		0	0.61454257271501
+Foxd3	718	74	3	Serpinb6c,Itm2b,Gart	0		0	1
+Foxh1	718	74	2	Sh3bgrl,Gart	0		0	1
+Foxm1	718	74	9	Cdk1,Aprt,Ruvbl2,Kpnb1,Hmgb2,Gstk1,Cad,Scp2,H2afx	0		0	0.609279586393359
+Fubp3	718	74	1	Nudcd2	0		0	1
+Gabpb1	718	74	4	Cct2,Srsf1,Hmgb2,Rpl7	0		0	1
+Gbx2	718	74	7	Serpinb6c,Itm2b,Dsg2,Gart,Krt18,Vnn1,Fbp1	1	Dsg2	1.45045045045045	0.535947923017841
+Gli1	718	74	3	Pacsin3,Arsb,Cfl2	0		0	1
+Grhl3	718	74	9	Dsp,Tgm1,Krt14,Krt15,Krt10,Cdh1,Krt79,Krt1,Krt5	0		0	0.609279586393359
+Gtf2e1	718	74	3	Rbmxl1,Cct2,Cct5	0		0	1
+Gtf2e2	718	74	6	Cdk1,Rbmxl1,Tcp1,Cct7,Cct2,Cct5	1	Tcp1	1.74054054054054	0.482403452596823
+Gtf2f1	718	74	2	Cct7,Cct2	0		0	1
+Gtf2f2	718	74	2	Kpnb1,Hmgb2	0		0	1
+Gtf3a	718	74	21	Pdcd2,Pck2,Impdh2,Pfas,Snrpb,Anp32b,Ncl,Snrpe,Rbmxl1,C1qbp,Cct2,Psma2,Eif3i,Rpl4,Cad,Cct5,Rpl14,Aimp1,Rps5,Rpl7,Rpl10a	1	Ncl	0.435135135135135	0.71302437753792
+Hdac1	718	74	17	C1qb,Fam20c,Anxa3,Lpl,Cdk1,Fabp4,Anp32b,Asah1,Grn,Igf1,Cd14,Srsf1,Hmgb2,Trf,Ctsb,Rpl7,Ctsl	0		0	0.401323145104133
+Hdgf	718	74	4	Impdh2,Cct3,Eif3b,Cad	0		0	1
+Hells	718	74	12	Impdh2,Pfas,Cdk1,Anp32b,Snrpe,Rbmxl1,Ruvbl2,Cct2,Hmgb2,Cct5,Prdx5,H2afx	0		0	0.622126915618002
+Hesx1	718	74	4	Nudcd2,Ncl,Kpnb1,Cad	1	Ncl	2.9009009009009	0.355758745811962
+Hic2	718	74	7	Cryab,Serpinb9,Slc9a3r2,Itm2b,Lyz2,Gart,Igfbp6	0		0	1
+Hivep2	718	74	6	Nrg3,Cdk1,Efemp1,Lgmn,Galk1,Cp	0		0	1
+Hmga2	718	74	13	Cdk1,Nudcd2,Rars,Aprt,Snrpe,Rbmxl1,Galk1,Cct2,Kpnb1,Cct6a,Tubb5,Hagh,H2afx	1	Tubb5	0.725225225225225	1
+Hmgb1	718	74	15	Anp32b,Ncl,Snrpe,Rbmxl1,Srsf1,Hnrnpa1,Hmgb2,Cct6a,Rpl4,Rpl14,Rps5,Rpl7,Tubb5,Rpl10a,Hagh	2	Ncl,Tubb5	1.33887733887734	0.662466903968198
+Hmgb2	718	74	7	Cdk1,Anp32b,Snrpe,Rbmxl1,Srsf1,Rpl7,H2afx	0		0	1
+Hnrnpab	718	74	19	Impdh2,Snrpb,Nudcd2,Anp32b,Ncl,Snrpe,Rbmxl1,Cct2,Srsf1,Kpnb1,Hnrnpa1,Hmgb2,Cct6a,Cad,Cct5,Rpl14,Gnb2l1,Rpl7,H2afx	1	Ncl	0.483483483483483	0.710505035040356
+Ilf2	718	74	8	Rbmxl1,Cct7,Cct2,Srsf1,Cct6a,Cct5,Tubb5,H2afx	1	Tubb5	1.24324324324324	0.583887187168891
+Ilf3	718	74	12	Impdh2,Xdh,Ruvbl2,Gars,Tcp1,Cct3,Cct7,Cct2,Gstk1,Cct5,Scp2,Prdx5	2	Gars,Tcp1	1.74054054054054	0.360318444125048
+Jarid2	718	74	3	Cnn2,Csf1,Arsb	1	Cnn2	4.35135135135135	0.281078538603148
+Junb	718	74	17	Pfn2,Csk,Vasp,Bgn,Iqgap1,Sh3bgrl3,Rhoc,Csf1,Cd44,Ngf,Tagln2,Serpine1,Cyr61,Ostf1,Thbs1,Pebp1,Lgals9	3	Iqgap1,Tagln2,Thbs1	1.86486486486486	0.408641338072181
+Kdm1a	718	74	8	Arpc1a,Pck2,Rbmxl1,Tcp1,Cct7,Cct2,Cct6a,Cct5	1	Tcp1	1.24324324324324	0.583887187168891
+Kdm3a	718	74	1	Hmgb2	0		0	1
+Kdm5b	718	74	0		0		100	1
+Khsrp	718	74	7	Anp32b,Eif3b,Hnrnpa1,Hmgb2,Cad,Tubb5,H2afx	1	Tubb5	1.45045045045045	0.535947923017841
+Klf16	718	74	1	Tubb5	1	Tubb5	100	0.104311543810848
+Lcorl	718	74	0		0		100	1
+Lin28a	718	74	2	Itm2b,Gart	0		0	1
+Lin28b	718	74	1	Itm2b	0		0	1
+Lmx1a	718	74	1	Plaur	0		0	1
+Maf	718	74	18	Kitl,C1qb,Ckb,Ahnak,Nrp1,Lpl,Fabp4,Serpinb6a,Xdh,Lipa,Cfh,Qpct,Igf1,Cd14,Cndp2,Mmp12,Rnase4,Ctsb	1	Cndp2	0.511923688394277	1
+Max	718	74	2	Pfkp,Arf6	0		0	1
+Mcm8	718	74	7	Cdk1,Snrpe,Rbmxl1,Tcp1,Cct2,Hmgb2,Cct5	1	Tcp1	1.45045045045045	0.535947923017841
+Med26	718	74	1	Scp2	0		0	1
+Med6	718	74	5	Snrpe,Rbmxl1,Cct2,Psma2,Hmgb2	0		0	1
+Mnx1	718	74	13	Ufm1,Lman1,Cel,Fkbp2,Sdc1,Chid1,Ddc,Cntn1,Ufc1,Pdia6,Ttr,Cat,Ldha	0		0	0.382619623009251
+Msc	718	74	0		0		100	1
+Msl3	718	74	1	Dsc2	0		0	1
+Mxd3	718	74	12	Cdk1,Snrpb,Anp32b,Snrpe,Rbmxl1,Cct2,Srsf1,Hmgb2,Cad,Rpl14,Tubb5,H2afx	1	Tubb5	0.791154791154791	1
+Mxd4	718	74	10	Serpinb9,Sema3e,Icam2,Slc9a3r2,Itm2b,C1ra,Angptl4,Gart,Orm2,Blvrb	0		0	0.609995191546485
+Mybbp1a	718	74	9	Ppil1,Snrpb,Anp32b,Ncl,Ruvbl2,Eif3b,Srsf1,Kpnb1,Cad	1	Ncl	1.08783783783784	1
+Mybl1	718	74	0		0		100	1
+Mybl2	718	74	11	Impdh2,Ppil1,Cdk1,Ruvbl2,Cct2,Hdgf,Kpnb1,Hmgb2,Gstk1,Cad,H2afx	1	Hdgf	0.87027027027027	1
+Myc	718	74	3	Hnrnpa1,Gnb2l1,Rpl10a	0		0	1
+Mycn	718	74	9	Ehd4,Impdh2,Rbmxl1,Cct3,Cacybp,Cct7,Cct6a,Cct5,H2afx	0		0	0.609279586393359
+Myst4	718	74	0		0		100	1
+Naca	718	74	20	Ppil1,Cdk1,Snrpb,Anp32b,Ncl,Ruvbl2,Cct2,Psma2,Srsf1,Kpnb1,Hmgb2,Rpl4,Cad,Rpl14,Gnb2l1,Rpl26,Rps5,Rpl7,Rpl10a,Hagh	1	Ncl	0.458036984352774	0.711028061173977
+Nanog	718	74	3	Serpinb6c,Itm2b,Gart	0		0	1
+Ncoa1	718	74	5	Cdk1,Aprt,Galk1,Eif3b,Kpnb1	0		0	1
+Nfx1	718	74	5	Pdcd2,Igf1,Cct2,Hnrnpa1,Ctsb	0		0	1
+Nfyb	718	74	10	C1qb,Pdcd2,Plbd2,Mapk1,Cd14,Rbmxl1,Tars,Ola1,Hnrnpa1,Ezr	1	Ezr	0.966966966966967	1
+Nkrf	718	74	5	Rbmxl1,Cand1,Ola1,Cct2,Cct5	0		0	1
+Nkx1-2	718	74	0		0		100	1
+Nkx6-3	718	74	12	Gnpda1,Sh3bgrl,Anpep,AU040320,Pepd,Aprt,Gart,Bpnt1,P4hb,Treh,Glul,Ppa1	0		0	0.622126915618002
+Nolc1	718	74	11	Ppil1,Anp32b,Ncl,Ruvbl2,Tars,Eif3b,Cct2,Srsf1,Kpnb1,Cct6a,Cad	1	Ncl	0.87027027027027	1
+Npm1	718	74	17	Impdh2,Anp32b,Ncl,Snrpe,Rbmxl1,Ruvbl2,Cct2,Srsf1,Hnrnpa1,Hmgb2,Cct6a,Rpl4,Cct5,Rpl14,Rpl7,Tubb5,Rpl10a	2	Ncl,Tubb5	1.16036036036036	0.692530575809556
+Nr0b1	718	74	2	Itm2b,Rnh1	0		0	1
+Nr1d1	718	74	3	Snrpe,Rbmxl1,Cct5	0		0	1
+Nr1d2	718	74	1	Tubb5	1	Tubb5	100	0.104311543810848
+Nr6a1	718	74	1	Itm2b	0		0	1
+Nrf1	718	74	2	Hnrnpa1,Gnb2l1	0		0	1
+Olig1	718	74	46	F12,F9,B4galt1,Apoh,C8g,Masp1,1300017J02Rik,Apoa5,C8a,Hrg,Angptl3,Cntn1,C9,Itih1,Mup10,Lipc,Proc,Serpind1,Plg,A2m,Pzp,Cpb2,Glyat,Apon,Serpinf2,Dpys,F2,Aldh8a1,Mug1,Lcat,Apoc4,Apof,Fgb,Ftcd,Tubb4a,Hgd,Ces1c,Azgp1,Mup3,Akr1d1,Haao,Kng1,Serpinc1,Aldoc,Bhmt2,Serpina3k	1	Tubb4a	0.193393393393393	0.075422651902884
+Olig2	718	74	7	Ckb,Man2a1,B4galt1,Cntn1,A2m,Tubb4a,Aldoc	1	Tubb4a	1.45045045045045	0.535947923017841
+Otx2	718	74	3	Serpinb6c,Itm2b,Gart	0		0	1
+Pa2g4	718	74	21	Impdh2,Pfas,Cdk1,Anp32b,Ncl,Snrpe,Rbmxl1,Cct3,Cacybp,C1qbp,Eif3b,Ola1,Cct2,Hdgf,Kpnb1,Cct6a,Gstk1,Cad,Cct5,Tubb5,H2afx	3	Ncl,Hdgf,Tubb5	1.45045045045045	0.472934737594868
+Pcgf6	718	74	0		0		100	1
+Pcna	718	74	9	Cdk1,Anp32b,Snrpe,Ruvbl2,Cct2,Srsf1,Hmgb2,Rpl7,H2afx	0		0	0.609279586393359
+Phf5a	718	74	13	Impdh2,Pfas,Anp32b,Snrpe,Rbmxl1,Cct7,Cct2,Hnrnpa1,Cct6a,Cct5,Pcbp1,Aimp1,H2afx	0		0	0.382619623009251
+Phox2a	718	74	3	Serpinb6c,Itm2b,Gart	0		0	1
+Pitx3	718	74	3	Kera,Ywhaq,Pgam1	0		0	1
+Pou2f1	718	74	1	Galm	0		0	1
+Pou3f1	718	74	5	Krt14,Krt15,Krt10,Krt1,Krt5	0		0	1
+Pou4f2	718	74	2	Serpinb6c,Itm2b	0		0	1
+Pou5f1	718	74	3	Serpinb6c,Itm2b,Gart	0		0	1
+Ppp1r8	718	74	10	Snrpb,Ncl,Rbmxl1,Ruvbl2,Srsf1,Kpnb1,Hmgb2,Cad,Rpl7,H2afx	1	Ncl	0.966966966966967	1
+Prdm14	718	74	10	Nans,Map2k1,Serpinb6c,Itm2b,Fam3c,Ifnar2,Golm1,Ggh,Angptl4,Thbs4	0		0	0.609995191546485
+Prdm4	718	74	7	Impdh2,Tcp1,Cct7,Cct2,Cct6a,Cct5,Scp2	1	Tcp1	1.45045045045045	0.535947923017841
+Prdx5	718	74	10	Impdh2,Anp32b,Tcn2,Cstb,Gss,Hnrnpa1,Cct5,Acy3,Pbld1,Aldob	1	Cstb	0.966966966966967	1
+Psip1	718	74	14	Plbd2,Anpep,Dpp7,Snrpe,Cd14,Rbmxl1,Tcp1,Cand1,Cct7,Cct2,Hnrnpa1,Cct5,Ctsb,Prdx5	1	Tcp1	0.669438669438669	1
+Psmc3ip	718	74	5	Impdh2,Tcp1,Cct7,Cct2,Cct5	1	Tcp1	2.17567567567568	0.422588751433128
+Pura	718	74	1	Cdk1	0		0	1
+Pus1	718	74	4	Nudt5,Tars,C1qbp,Cad	0		0	1
+Rbbp8	718	74	2	Cdk1,Hmgb2	0		0	1
+Rbmxl1	718	74	12	Impdh2,Anp32b,Snrpe,Cct2,Hnrnpa1,Hmgb2,Cct6a,Eif3i,Cct5,Rpl14,Rpl7,Tubb5	1	Tubb5	0.791154791154791	1
+Rbpj	718	74	21	Nras,Icam2,Blvra,Anxa3,Ralb,Glipr2,Serpinb6a,Adam15,Rars,Ncl,Rhoc,Cd44,Spp1,Ccl2,Cd14,Clic4,Psma2,Kpnb1,Grhpr,Hagh,Acat1	2	Ncl,Clic4	0.916073968705548	1
+Rcor2	718	74	1	Gart	0		0	1
+Relb	718	74	20	Pfn2,S100a6,Csk,Ltbp2,Vasp,Shisa5,Sri,Lgals1,Iqgap1,Sh3bgrl3,Vat1,Clic1,Cd44,Tagln2,Ccl2,Myh9,Arpc1b,Ostf1,Pebp1,B2m	5	Iqgap1,Vat1,Clic1,Tagln2,Myh9	2.9009009009009	0.0528460382003038
+Rest	718	74	6	Nudcd2,Ncl,Cntn1,Kpnb1,Lgals9,Cat	1	Ncl	1.74054054054054	0.482403452596823
+Rfc1	718	74	3	Rbmxl1,Cct2,Cct5	0		0	1
+Rhox5	718	74	2	Itm2b,Gart	0		0	1
+Rnf4	718	74	7	Cdk1,Lypla1,Tfrc,Pafah1b2,Srsf1,Kpnb1,Hmgb2	1	Pafah1b2	1.45045045045045	0.535947923017841
+Rora	718	74	8	Cdk1,Aprt,Ggh,Iqgap2,Hmgb2,Galm,Haao,H2afx	0		0	1
+Ruvbl2	718	74	10	Impdh2,Cdk1,Snrpb,Cct7,Eif3b,Cct2,Kpnb1,Cad,Scp2,H2afx	0		0	0.609995191546485
+Rybp	718	74	1	Cand1	0		0	1
+Sall4	718	74	3	Itm2b,Gart,Sdc1	0		0	1
+Sap30	718	74	11	Ppil1,Nudcd2,Hmgb2,Proc,Pigr,Glyat,Mthfd1,Aldh8a1,Treh,Akr1d1,Bhmt2	0		0	0.61454257271501
+Sarnp	718	74	11	Anp32b,Ncl,Snrpe,Rbmxl1,Cacybp,Cct2,Psma2,Srsf1,Hnrnpa1,Hmgb2,Cct5	1	Ncl	0.87027027027027	1
+Satb2	718	74	15	Chmp2b,Gna11,Nans,Sri,Mgam,Cant1,Ifnar2,Golm1,Spp1,Pmm2,Tsta3,Pigr,Rdx,Thbs4,Saa1	0		0	0.385529471898131
+Set	718	74	28	Impdh2,Pfas,Cdk1,Snrpb,Anp32b,Ncl,Snrpe,Rbmxl1,Ruvbl2,Cacybp,Cct2,Psma2,Srsf1,Hdgf,Kpnb1,Hnrnpa1,Hmgb2,Cct6a,Rpl4,Cad,Cct5,Gnb2l1,Rps5,Rpl7,Tubb5,Rpl10a,Hagh,H2afx	3	Ncl,Hdgf,Tubb5	1.04432432432432	1
+Sfpq	718	74	11	C1qb,Plbd2,Snrpe,Igf1,Rbmxl1,Cct2,Srsf1,Hnrnpa1,Hmgb2,Cct5,Ctsb	0		0	0.61454257271501
+Sin3a	718	74	0		0		100	1
+Six4	718	74	3	Ezr,Aimp1,Galm	1	Ezr	4.35135135135135	0.281078538603148
+Smarca2	718	74	5	Itm2b,Gart,Eif6,Tsta3,Rdx	1	Eif6	2.17567567567568	0.422588751433128
+Smarca5	718	74	7	Ncl,Snrpe,Tcp1,Cct2,Srsf1,Hnrnpa1,Hmgb2	2	Ncl,Tcp1	3.48108108108108	0.161136630070714
+Smarcc1	718	74	18	Impdh2,Pfas,Cdk1,Nudcd2,Lyz2,Ncl,Rbmxl1,Cct2,Srsf1,Hdgf,Kpnb1,Hmgb2,Cct6a,Cad,Cct5,Krt79,Tubb5,H2afx	3	Ncl,Hdgf,Tubb5	1.74054054054054	0.422332739869584
+Smarcc2	718	74	2	Nudcd2,Ncl	1	Ncl	8.7027027027027	0.197612424663885
+Smarce1	718	74	17	C1qb,Ckb,Ralb,Lpl,Anp32b,Lyz2,Lipa,Snrpe,Lgals3,Cd14,Rbmxl1,Tcp1,Cct2,Hnrnpa1,Cct5,Ctsb,Tubb5	3	Lgals3,Tcp1,Tubb5	1.86486486486486	0.408641338072181
+Snapc4	718	74	4	Ncl,Ruvbl2,Atic,Cad	1	Ncl	2.9009009009009	0.355758745811962
+Sox15	718	74	0		0		100	1
+Sox2	718	74	12	Prss35,Sema3e,Icam2,Ltbp2,Slc9a3r2,Wisp1,Itm2b,Col12a1,Ccl20,Krt79,Igfbp2,Actc1	2	Ccl20,Actc1	1.74054054054054	0.360318444125048
+Sp110	718	74	7	Ppic,Cttn,Rac2,Plaur,Iqgap2,Pigr,Haao	0		0	1
+Srrt	718	74	6	Impdh2,Marcksl1,Anp32b,Eif3b,Hnrnpa1,Tubb5	1	Tubb5	1.74054054054054	0.482403452596823
+Ssrp1	718	74	17	Impdh2,Snrpb,Anp32b,Basp1,Snrpe,Rbmxl1,Ruvbl2,Cct7,Cct2,Hmgb2,Cad,Cct5,Rpl14,Pcbp1,Tubb5,Prdx5,H2afx	1	Tubb5	0.543918918918919	1
+Suz12	718	74	5	Nudcd2,Ncl,Srsf1,Hnrnpa1,Hmgb2	1	Ncl	2.17567567567568	0.422588751433128
+T	718	74	0		0		100	1
+Tada2a	718	74	9	Impdh2,Pfas,Cacybp,C1qbp,Cct7,Cct2,Hdgf,Cct6a,Cct5	1	Hdgf	1.08783783783784	1
+Taf1	718	74	7	Mapk1,Ncl,Ctsh,Atp6ap2,Cntn1,Hnrnpa1,Gpx1	1	Ncl	1.45045045045045	0.535947923017841
+Taf1b	718	74	0		0		100	1
+Taf1c	718	74	0		0		100	1
+Taf1d	718	74	6	Ncl,Snrpe,Rbmxl1,Cct2,Hnrnpa1,Hmgb2	1	Ncl	1.74054054054054	0.482403452596823
+Taf2	718	74	3	Cct2,Srsf1,Kpnb1	0		0	1
+Taf4b	718	74	5	Impdh2,Fam20c,Tpp1,Cct2,Akr1a1	1	Tpp1	2.17567567567568	0.422588751433128
+Taf5	718	74	4	Impdh2,Snrpe,Cct2,Prdx5	0		0	1
+Taf6l	718	74	4	Ruvbl2,Cct7,Eif3b,H2afx	0		0	1
+Taf7	718	74	3	Lmcd1,Itm2b,Cfl2	0		0	1
+Taf9	718	74	6	Tcp1,Cct3,Cacybp,Hdgf,Cct5,Aimp1	2	Tcp1,Hdgf	4.35135135135135	0.123515245614651
+Tardbp	718	74	6	Pfas,Snrpe,Rbmxl1,Cct2,Srsf1,Hnrnpa1	0		0	1
+Tbp	718	74	1	Cct2	0		0	1
+Tcea1	718	74	4	Tfrc,Pafah1b2,Atic,Cct6a	1	Pafah1b2	2.9009009009009	0.355758745811962
+Tef	718	74	3	Snrpe,Rbmxl1,Hmgb2	0		0	1
+Tet1	718	74	1	Prdx5	0		0	1
+Tfap4	718	74	14	Gna11,Ppil1,Nudt5,Cdk1,Anp32b,Srsf1,Kpnb1,Hnrnpa1,Hmgb2,Cad,Gnb2l1,Rps5,Rpl7,H2afx	0		0	0.382218503736196
+Tfcp2l1	718	74	41	Sri,Mgam,Eps8l2,Hpn,Dsg2,Golm1,Afm,Scrn2,Xylb,Cdh1,Pdzk1,Slc27a2,Coro1b,Cryl1,Gc,Flrt1,Pm20d1,Proc,Pigr,Glyat,Cryz,Serpinf2,Aldh8a1,Acsm1,Krt19,Krt8,Treh,Hgd,Krt18,Hoga1,Pbld1,Bmp7,Akr1d1,Haao,Kng1,Igfbp1,Pcbd1,Khk,Fbp1,Bhmt2,Aldob	3	Eps8l2,Dsg2,Krt8	0.687055476529161	0.789583390535089
+Tfdp1	718	74	20	Impdh2,Pfas,Cdk1,Anp32b,Ncl,Snrpe,Rbmxl1,Tcp1,Cacybp,Cct2,Srsf1,Hdgf,Kpnb1,Hmgb2,Cct6a,Cad,Cct5,Aimp1,Tubb5,H2afx	4	Ncl,Tcp1,Hdgf,Tubb5	2.17567567567568	0.151449399925683
+Tfip11	718	74	2	Fscn1,Cad	1	Fscn1	8.7027027027027	0.197612424663885
+Tgif1	718	74	1	Sdc1	0		0	1
+Tgif2	718	74	20	Impdh2,Blvra,Fam20c,Lpl,Cdk1,Snrpb,Marcksl1,Serpinb6a,Dpp7,Asah1,Ctbs,Igf1,Ruvbl2,Gamt,Cct2,Creg1,Mmp12,Esd,Akr1a1,H2afx	0		0	0.24856195055277
+Thap1	718	74	1	Tcp1	1	Tcp1	100	0.104311543810848
+Tmpo	718	74	12	Cdk1,Anp32b,Ncl,Srsf1,Kpnb1,Hnrnpa1,Hmgb2,Gstk1,Gnb2l1,Decr1,Rpl7,H2afx	1	Ncl	0.791154791154791	1
+Top2a	718	74	10	Impdh2,Cdk1,Anp32b,Snrpe,Ruvbl2,Cct2,Srsf1,Hmgb2,Cct5,H2afx	0		0	0.609995191546485
+Topors	718	74	4	Nudcd2,Ncl,Kpnb1,Hmgb2	1	Ncl	2.9009009009009	0.355758745811962
+Trim27	718	74	13	Impdh2,Xdh,Adam17,Lipa,Snrpe,Igf1,Rbmxl1,Cct3,Cct2,Mmp12,Cct5,Ctsb,Prdx5	0		0	0.382619623009251
+Trim28	718	74	12	Impdh2,Snrpb,Rbmxl1,Ruvbl2,Tcp1,Cct7,Cct2,Hdgf,Cct5,Tubb5,Prdx5,H2afx	3	Tcp1,Hdgf,Tubb5	2.9009009009009	0.123685897127441
+Trp53	718	74	3	Ncl,Kpnb1,Cad	1	Ncl	4.35135135135135	0.281078538603148
+Tshz1	718	74	10	Serpinb6c,Sh3bgrl,Itm2b,Atp6ap2,Gart,Cacna2d1,Tgm2,Cntn1,Lgals9,Cat	0		0	0.609995191546485
+Ttf2	718	74	13	Impdh2,Cdk1,Snrpb,Anp32b,Ncl,Ruvbl2,Cct2,Hdgf,Kpnb1,Hmgb2,Creg1,Cad,H2afx	2	Ncl,Hdgf	1.58230958230958	0.635821499800814
+Uhrf1	718	74	10	Impdh2,Cdk1,Anp32b,Snrpe,Ruvbl2,Cct2,Srsf1,Kpnb1,Hmgb2,H2afx	0		0	0.609995191546485
+Xrcc6	718	74	4	Pdcd2,Tars,Cct2,Aimp1	0		0	1
+Zbtb20	718	74	4	Cdk1,Aprt,Hmgb2,H2afx	0		0	1
+Zbtb8a	718	74	1	Serpina1c	0		0	1
+Zfat	718	74	2	Tfrc,Atic	0		0	1
+Zfp184	718	74	5	Tcp1,Cct7,Cct2,Cct5,Vnn1	1	Tcp1	2.17567567567568	0.422588751433128
+Zfp219	718	74	0		0		100	1
+Zfp280c	718	74	7	C1qb,Plbd2,Pfas,Cd14,Rbmxl1,Srsf1,Hnrnpa1	0		0	1
+Zfp36	718	74	10	Pfn2,Lama5,Shisa5,Lyn,Ostf1,Lcp1,Ctsc,Pebp1,Lgals9,B2m	1	Lcp1	0.966966966966967	1
+Zfp410	718	74	19	C1qb,Anxa3,Lpl,Nudt5,S100a13,Anpep,Adam15,Cfh,Lgals3,Cstb,Igf1,Cd14,Cdh13,Hnrnpa1,Pcbp1,Cmbl,Ctsb,Sec13,C3	2	Lgals3,Cstb	1.02384737678855	1
+Zfp42	718	74	3	Serpinb6c,Itm2b,Gart	0		0	1
+Zfp473	718	74	0		0		100	1
+Zfp553	718	74	7	Pdcd2,Ncl,Snrpe,Rbmxl1,Cct2,Hnrnpa1,Cct5	1	Ncl	1.45045045045045	0.535947923017841
+Zfp57	718	74	0		0		100	1
+Zfp593	718	74	1	Ola1	0		0	1
+Zfp668	718	74	1	Tubb5	1	Tubb5	100	0.104311543810848
+Zfp672	718	74	0		0		100	1
+Zfpm2	718	74	22	Ltbp1,Kitl,Ccdc80,Col5a2,Fstl1,Vcan,Col4a1,Tgfb2,Col6a1,Pcolce,Axl,Wisp1,Cxcl12,Fscn1,Ptprg,Pxdn,Serpinh1,Vasn,Adamts1,Sparc,Col4a5,Mmp2	3	Fscn1,Pxdn,Serpinh1	1.37411095305832	0.491892157225468
+Zhx2	718	74	3	Cand1,Cct7,Cct5	0		0	1
+Zic3	718	74	9	Prss35,Serpinb6c,Wisp1,Itm2b,Col12a1,Gart,11-Sep,Col2a1,Igfbp2	1	11-Sep	1.08783783783784	1
+Zik1	718	74	4	Rbmxl1,Cand1,Cct6a,Cct5	0		0	1
+Zkscan17	718	74	7	Impdh2,Adam17,Lgals3,Tcp1,Cct2,Cct5,Txndc17	2	Lgals3,Tcp1	3.48108108108108	0.161136630070714
+Zscan10	718	74	2	Itm2b,Gart	0		0	1
+Elf5	718	74	39	Gprc5a,Sema3e,Icam2,Slc9a3r2,Dsp,Dsc2,Tgm1,Mgam,Hpn,Hc,Cpn1,Afm,Xylb,Cdh1,Pdzk1,Slc27a2,Gc,Flrt1,Proc,Glyat,Cryz,Mthfd1,Aldh8a1,Acsm1,Krt8,Hgd,Hoga1,Pbld1,Bmp7,Fga,Kng1,Pah,Igfbp1,Pcbd1,Khk,Fbp1,Bhmt2,Aldob,Hrsp12	1	Krt8	0.229018492176387	0.165301300175088
+Irf6	718	74	46	Fam49b,Ldhb,Dsp,Dsc2,Mgam,Eps8l2,Hpn,Dsg2,Lsr,Hgfac,Krt14,Krt15,Krt10,Afm,Xylb,Pcsk9,Cdh1,Pdzk1,Dpp4,Slc27a2,C8a,Flrt1,Proc,Pigr,Glyat,Cryz,Aldh8a1,Krt5,Acsm1,Krt8,Treh,Ttr,Hgd,Krt18,Pbld1,Bmp7,Akr1d1,Fga,Kng1,Pah,Igfbp1,Pcbd1,Khk,Fbp1,Bhmt2,Aldob	4	Eps8l2,Dsg2,Lsr,Krt8	0.828828828828829	1
+Arx	718	74	8	Prss35,Rarres2,Lbp,Chid1,Krt79,Erp44,Orm1,Hp	0		0	1
+Cited1	718	74	3	Prss35,Qpct,Cp	0		0	1
+Dmrt1	718	74	1	Prss35	0		0	1
+Dmrta1	718	74	4	Prss35,Nt5e,Nt5c,Cdh1	1	Nt5c	2.9009009009009	0.355758745811962
+Dnajb6	718	74	0		0		100	1
+Egr4	718	74	0		0		100	1
+Figla	718	74	3	Prss35,Vps26a,Greb1	0		0	1
+Irx3	718	74	47	Ltbp1,Aebp1,Cryab,Col3a1,Col5a2,Serpinb9,Sema3e,Icam2,Fstl1,Col4a1,Tgfb2,Ltbp2,Col6a1,Slc9a3r2,Pdgfb,Pcolce,Bgn,Nenf,Procr,Ppic,Cxcl12,Efemp1,Olfml3,Ptprg,Pxdn,Serpinh1,Vasn,Htra1,Adamts1,Sparc,Fst,Col4a2,Ctgf,Col4a5,Postn,Ppa2,Cyr61,Igfbp6,Mmp2,Atp1a1,Pon1,Igfbp3,Fasn,Krt79,Col1a2,Col1a1,Actc1	5	Pxdn,Serpinh1,Col4a2,Ctgf,Actc1	1.03603603603604	1
+Lbx2	718	74	4	Prss35,Greb1,Tuba4a,Krt79	0		0	1
+Lhx8	718	74	11	Prss35,Rab2a,Vcam1,S100a6,Vps26a,Ltbp2,Greb1,Lgals1,Ccl2,Adm,Saa3	0		0	0.61454257271501
+Lhx9	718	74	4	Prss35,Greb1,Col12a1,Tuba4a	0		0	1
+Mael	718	74	1	Prss35	0		0	1
+Nobox	718	74	2	Greb1,Pcsk6	0		0	1
+Npas3	718	74	7	Dsg2,Mmp14,Cntn1,A2m,Krt18,Clu,Vnn1	1	Dsg2	1.45045045045045	0.535947923017841
+Nr4a1	718	74	7	Pcnt,Coasy,Iah1,Glod4,Pgrmc1,Aldh9a1,Akr1a1	0		0	1
+Nr5a1	718	74	2	Prss35,Greb1	0		0	1
+Runx1	718	74	14	Csk,Ahnak,Shisa5,Iqgap1,Rac2,Ifnar2,Fst,Clic1,Cd44,Myh9,Arpc1b,Lcp1,Il16,Abat	4	Iqgap1,Clic1,Myh9,Lcp1	3.48108108108108	0.0521095621014069
+Sohlh1	718	74	1	Prss35	0		0	1
+Sohlh2	718	74	0		0		100	1
+Tcfl5	718	74	2	Col12a1,Igfbp2	0		0	1
+Wt1	718	74	2	Prss35,Greb1	0		0	1
+Zbtb8b	718	74	6	Prss35,Eps8l2,Hgfac,Bmp7,Pcbd1,Dak	1	Eps8l2	1.74054054054054	0.482403452596823
+Zfp105	718	74	1	Prss35	0		0	1
+Ets1	718	74	20	Dpysl3,Serpinb9,Icam2,Csk,Nrp1,Anxa3,Slc9a3r2,Shisa5,Anxa6,Rac2,Cnn2,Ifnar2,St6gal1,Ngf,Myh9,Psme1,Lcp1,Il16,Ywhah,B2m	4	Cnn2,Myh9,Lcp1,Ywhah	2.17567567567568	0.151449399925683
+Lcor	718	74	0		0		100	1
+Prop1	718	74	0		0		100	1
+Zbtb6	718	74	0		0		100	1
+Zfp148	718	74	0		0		100	1
+Zfp451	718	74	0		0		100	1
+Zkscan1	718	74	0		0		100	1
+Alx1	718	74	0		0		100	1
+Atoh8	718	74	0		0		100	1
+Cebpa	718	74	50	C1qb,Fam20c,4930486L24Rik,Anxa3,Lpl,Pon3,Lyz2,Anpep,Xdh,Lipa,Adam15,Fth1,Smoc1,App,Lgmn,Tpp1,C1ra,Gm6484,Angptl4,Gm2a,Grn,Hbegf,Rarres2,Atp6ap2,Igf1,Myh11,Cd14,Gda,Lrg1,Gamt,Cp,Snrpd3,Igfbp6,C4b,Mmp12,Trf,Fasn,Rnase4,Orm1,Ctsb,Taldo1,C3,Lgals9,Rbp4,Hp,Clu,Ctsl,Akr1a1,Apoc1,Dbi	1	Tpp1	0.177606177606178	0.0786628626074305
+Creb3l4	718	74	18	C1qb,Ckb,Fam20c,Pgm1,Lpl,Fabp4,Anpep,Xdh,Lipa,Qpct,Igf1,Nt5c,Gamt,Mmp12,Thbs1,Ctsb,Esd,Ctsl	2	Nt5c,Thbs1	1.08783783783784	0.708061320381836
+Dlx1	718	74	6	Nrg3,Dpysl3,4930486L24Rik,Ube2n,Qpct,Flrt1	0		0	1
+Dlx6	718	74	0		0		100	1
+Dmrtb1	718	74	0		0		100	1
+Dmrtc2	718	74	0		0		100	1
+Ebf1	718	74	24	Aebp1,Ccdc80,Cryab,Col5a2,Col6a1,Acot7,Ppic,Man1a,Fbln2,Arpc5l,Ggh,Ctla2a,Igf1,Iqgap2,Lamc1,Nid1,Gpd1l,Lox,Lipc,Pigr,Galm,Gsn,Haao,Col1a1	3	Fbln2,Ctla2a,Lox	1.24324324324324	0.730002636998632
+Egr2	718	74	6	Abi1,Gltp,Rap1b,Shisa5,Sh3bgrl3,Cd44	0		0	1
+Esx1	718	74	59	F12,F9,Apoh,C8g,Fgl1,Hpx,Masp1,Fetub,F5,Apcs,Pkm,1300017J02Rik,Apoa5,C8a,Hrg,Angptl3,C9,Itih1,Mup10,Lipc,Proc,Serpind1,Plg,Pzp,Cpb2,F10,Glyat,Orm1,Fgg,Apon,Serpinf2,Dpys,Orm2,F2,Aldh8a1,Mug1,Sod2,Itih3,Acsm1,Lcat,Apoc4,Apof,Fgb,Ftcd,Hgd,Ces1c,Hoga1,Azgp1,Mup3,Akr1d1,Fga,Haao,Kng1,Serpinc1,Igfbp1,Itih2,Bhmt2,Serpina3k,Apoa2	1	Pkm	0.15004659832246	0.0350856579117196
+Foxq1	718	74	48	Fam49b,Tgm1,Mgam,Eps8l2,Hpn,Ndrg1,Dsg2,Lsr,Tcn2,Qpct,Afm,Xylb,Cdh1,Pdzk1,Gss,Slc27a2,C8a,Cryl1,Gc,Flrt1,Pm20d1,Pck1,Proc,Pigr,Glyat,Krt79,Cryz,Mthfd1,Aldh8a1,Acsm1,Treh,Hgd,Pbld1,Gpd1,Akr1d1,Fga,Haao,Kng1,Pah,Igfbp1,Pcbd1,Khk,Aldh1l1,Abhd14b,Fbp1,Bhmt2,Aldob,Hrsp12	3	Eps8l2,Dsg2,Lsr	0.58018018018018	0.464809508114365
+Gata1	718	74	1	Itih5	0		0	1
+Gsc2	718	74	0		0		100	1
+Gtf2a1l	718	74	0		0		100	1
+Hils1	718	74	0		0		100	1
+Hmx1	718	74	0		0		100	1
+Hoxa4	718	74	1	Actc1	1	Actc1	100	0.104311543810848
+Hsf5	718	74	0		0		100	1
+Irf8	718	74	10	Pfn2,Lyn,Rac2,Cdh2,Gm2a,Gamt,Cp,Ostf1,Lcp1,Ctsc	2	Cdh2,Lcp1	2.17567567567568	0.280798531874681
+Klf12	718	74	21	Gltp,Vasp,Iqgap1,Phgdh,Sh3bgrl3,Cdh2,Clic1,Arpc1b,C8a,Serpind1,Fasn,Cpb2,Dpys,Apof,Rbp4,Tkt,Ywhab,Got1,Itih2,Apoc1,Hrsp12	4	Iqgap1,Phgdh,Cdh2,Clic1	2.04769475357711	0.265033005435859
+Klf17	718	74	0		0		100	1
+Mesp1	718	74	0		0		100	1
+Mlxipl	718	74	11	Lrrc16a,4930486L24Rik,Lgmn,C1ra,Gm2a,Qpct,Myh11,Cp,Igfbp6,Des,Clu	1	Des	0.87027027027027	1
+Mxi1	718	74	4	Vcam1,Atxn10,Qpct,Gpd1	0		0	1
+Ncoa2	718	74	1	Ppt1	0		0	1
+Nkx3-1	718	74	7	4930486L24Rik,Edn1,Fgl1,Qpct,Cp,Flrt1,Galm	0		0	1
+Onecut3	718	74	0		0		100	1
+Osr2	718	74	13	Gna11,Pcsk5,Anpep,Mgam,Atxn10,C1ra,Myh11,Gamt,Cp,Igfbp6,Flrt1,Rdx,Paics	0		0	0.382619623009251
+Pbx2	718	74	0		0		100	1
+Pbx4	718	74	0		0		100	1
+Pou6f1	718	74	0		0		100	1
+Prox2	718	74	0		0		100	1
+Rfx2	718	74	0		0		100	1
+Rfx4	718	74	17	F12,Apoa5,Angptl3,C9,Mup10,Glyat,Dpys,Aldh8a1,Mug1,Nqo2,Apoc4,Hgd,Ces1c,Mup3,Akr1d1,Haao,Bhmt2	0		0	0.401323145104133
+Rfx8	718	74	0		0		100	1
+Sap30l	718	74	0		0		100	1
+Smad4	718	74	29	Lipa,F12,F9,Apoh,C8g,Hpx,1300017J02Rik,C8a,Angptl3,C9,Itih1,Serpind1,Plg,Pzp,Cpb2,Fgg,Serpinf2,Dpys,F2,Aldh8a1,Itih3,Lcat,Apof,Ftcd,Hgd,Aldh7a1,Fga,Kng1,Apoa2	0		0	0.103292055211515
+Sox30	718	74	0		0		100	1
+Sox8	718	74	7	Anxa7,4930486L24Rik,Gm2a,Qpct,Cp,A2m,Aldoc	0		0	1
+Sox9	718	74	20	Pdgfc,Ccdc80,Col3a1,Col5a2,Fstl1,Vcan,Oaf,Prss23,Col12a1,Fat1,Serpinh1,Vasn,Bmp1,Fbln2,Mmp14,Gamt,Flrt1,Tsta3,Col1a2,Col1a1	2	Serpinh1,Fbln2	0.966966966966967	1
+Spata24	718	74	2	Cops8,Eps8l2	1	Eps8l2	8.7027027027027	0.197612424663885
+Spz1	718	74	0		0		100	1
+Stat1	718	74	25	Shisa5,Xdh,Rac2,Lgmn,C1ra,Angptl4,Gm2a,Rarres2,Gda,Cp,Psme1,Ostf1,Igfbp6,Lcp1,Ctsc,Il16,Orm1,Orm2,Taldo1,4931406C07Rik,C3,Hp,B2m,Serpina3n,Dbi	1	Lcp1	0.362612612612613	0.50054400919787
+Stat5b	718	74	6	Ehd4,Stx7,Prcp,Ywhaq,Gpx1,Ppia	0		0	1
+Tal2	718	74	15	Blvra,Gnpda1,Ralb,Pitpna,Olfml3,Adam15,Kera,Igf1,Cd14,Chid1,Gamt,Rnase4,Ctsb,Thbs4,C3	0		0	0.385529471898131
+Tbx1	718	74	10	Glb1,Serpinb9,Sema3e,Icam2,Lmcd1,Slc25a5,Slc9a3r2,Kera,Fmod,Hspa1l	0		0	0.609995191546485
+Tbx22	718	74	5	Vcam1,Ppt1,Qpct,Cp,Gpd1	0		0	1
+Tcea2	718	74	0		0		100	1
+Tnp1	718	74	0		0		100	1
+Txk	718	74	5	Lyn,Nt5e,Rac2,Il16,Gpx1	0		0	1
+Vdr	718	74	39	Chmp2b,Fstl1,Pgm1,Mgam,Atxn10,Itih5,Eps8l2,Cttn,Dsg2,Col4a2,Lbp,Afm,Xylb,Cdh1,Pdzk1,Gamt,Gss,Flrt1,Proc,Pigr,Pgrmc1,Glyat,Cryz,Mthfd1,Aldh8a1,Acy3,Acsm1,Treh,Hgd,Krt18,Pbld1,Kng1,Pcbd1,Dak,Clu,Abhd14b,Vnn1,Fbp1,Bhmt2	3	Eps8l2,Dsg2,Col4a2	0.725225225225225	0.788300471824199
+Ybx2	718	74	0		0		100	1
+Zbtb16	718	74	13	Vcam1,Col4a1,Ppt1,Col4a2,Qpct,Cdh13,Cp,Flrt1,Pgrmc1,Krt18,Gpd1,Khk,Vnn1	1	Col4a2	0.725225225225225	1
+Zbtb3	718	74	0		0		100	1
+Zbtb32	718	74	3	Acot7,Sdc1,Chid1	0		0	1
+Zfp260	718	74	0		0		100	1
+Zfp35	718	74	27	Mgam,Afm,Xylb,Pdzk1,Gss,Slc27a2,C8a,Apob,Cndp2,Flrt1,Proc,Pigr,Glyat,Cryz,Mthfd1,Serpinf2,Aldh8a1,Acsm1,Treh,Hgd,Pbld1,Akr1d1,Haao,Kng1,Khk,Bhmt2,Hrsp12	1	Cndp2	0.334719334719335	0.508367584417908
+Zfp39	718	74	0		0		100	1
+Zfp541	718	74	0		0		100	1
+Zfp574	718	74	0		0		100	1
+Zfp687	718	74	0		0		100	1
+Zfpm1	718	74	11	Lect2,F12,Agmat,Serpina11,Aldh16a1,Apoa4,Apoc4,Ces1c,Apoa1,Apoc3,Fabp1	0		0	0.61454257271501
+Zfy2	718	74	0		0		100	1
+Zscan2	718	74	0		0		100	1
+Carm1	718	74	0		0		100	1
+Ahr	718	74	5	Pros1,Ctsh,Tgm2,Krt5,Cat	0		0	1
+Ahrr	718	74	27	C1qb,Icam2,Blvra,Fam20c,Pgm1,Lpl,Chmp4b,Fabp4,Serpinb6a,Dsp,Dsc2,Adam17,Lipa,Atxn10,Dsg2,Ctbs,Igf1,Ccl2,Cd14,Gamt,Dera,Mmp12,Thbs1,Crip2,Ctsb,Capza2,Esd	2	Dsg2,Thbs1	0.696216216216216	1
+Ankrd1	718	74	17	Cryab,Myo1c,Serpinb9,Sema3e,Icam2,Pacsin3,Lmcd1,Ltbp2,Slc9a3r2,Dsc2,Cdh13,Lrg1,Des,Msn,Cfl2,Tkt,Actc1	3	Des,Msn,Actc1	1.86486486486486	0.408641338072181
+Ar	718	74	8	Myo1c,Marcks,Lyn,Pla1a,C2,Gpld1,Krt79,Gpx1	0		0	1
+Arntl2	718	74	4	Tgm1,Krt14,Krt15,Krt10	0		0	1
+Barx2	718	74	5	Krt14,Krt15,Krt10,Krt1,Krt5	0		0	1
+Bhlha9	718	74	0		0		100	1
+Casz1	718	74	4	Plec,Des,Krt5,Ywhaq	2	Plec,Des	8.7027027027027	0.0570379169767052
+Ciita	718	74	19	Csk,Grb2,Acot7,Lyn,Ppic,Cttn,Rac2,Man1a,Ctla2a,Iqgap2,Nid1,Actr2,Lcp1,Lipc,Pigr,Il16,Igfbp4,Haao,Ywhae	2	Ctla2a,Lcp1	1.02384737678855	1
+Dlx3	718	74	8	Tgm1,Il1f9,Krt14,Krt15,Krt79,Krt73,Krt1,Krt5	0		0	1
+Dlx5	718	74	32	Serpinb9b,F12,F9,Cfi,Apoh,Krt14,Krt15,Krt10,Apcs,Mbl2,1300017J02Rik,C8a,Hrg,Itih1,Lipc,Proc,Plg,Glyat,Serpinf2,Krt1,F2,Krt5,Fgb,Ftcd,Hgd,Hoga1,Fga,Kng1,Serpinc1,Igfbp1,Bhmt2,Apoa2	0		0	0.0638644537686665
+Ehf	718	74	42	Dsc2,Mgam,Atxn10,Eps8l2,Hpn,Dsg2,Hgfac,Krt14,Myh11,Cpn1,Afm,Xylb,Cdh1,Pdzk1,Slc27a2,Cryl1,Gc,Flrt1,Proc,Pigr,Glyat,Krt79,Aldh8a1,Acsm1,Krt19,Krt8,Treh,Ttr,Hgd,Hoga1,Pbld1,Bmp7,Fga,Kng1,Pah,Igfbp1,Pcbd1,Khk,Apoc1,Fbp1,Bhmt2,Aldob	3	Eps8l2,Dsg2,Krt8	0.669438669438669	0.790996853908918
+Esr1	718	74	79	Pfkp,Itih5,Wars,F12,F9,Amy1,Serpina11,Pla1a,Apoh,C8g,Fgl1,Hpx,C2,Iigp1,Masp1,Fetub,Lbp,F5,Apcs,Pkm,1300017J02Rik,Apoa5,C8a,Prg4,Hrg,Angptl3,C9,Itih1,Mup10,Lipc,Proc,Serpind1,Plg,Pzp,Igfbp4,Cpb2,F10,Glyat,Agt,Orm1,Nit2,Fgg,Apon,Serpinf2,Dpys,Orm2,F2,Aldh8a1,Mug1,Pygl,Nqo2,Itih3,Acsm1,Lcat,Apoc4,Apof,Fgb,Ftcd,Hgd,Ces1c,Hoga1,Azgp1,Aldh7a1,Mup3,Akr1d1,Fga,Haao,Kng1,Serpinc1,Igfbp1,Itih2,Vnn1,Alb,Fbp1,Bhmt2,Serpina3k,Arg1,Apoa2,Hrsp12	2	Wars,Pkm	0.226044226044226	0.0244558922520362
+Ets2	718	74	0		0		100	1
+Foxn1	718	74	10	Tgm1,Il1f9,Krt14,Krt15,Krt10,Krt79,Krt2,Krt73,Krt1,Krt5	0		0	0.609995191546485
+Gata3	718	74	16	Stx7,Myo1c,Sema3e,Icam2,Marcks,Lyn,Tgm1,Krt14,Krt15,Krt10,Cdh1,Krt79,Krt1,Krt5,Krt8,Actc1	2	Krt8,Actc1	1.24324324324324	0.677243557218636
+Gata6	718	74	8	Ehd4,Dsp,Dsc2,Dpp7,Dsg2,Dera,Crip2,Acaa2	1	Dsg2	1.24324324324324	0.583887187168891
+Grhl1	718	74	13	Tgm1,Angptl4,Krt14,Krt15,Krt10,Krt79,Orm1,Krt1,Orm2,Taldo1,Krt5,Hp,Apoc1	0		0	0.382619623009251
+Grhl2	718	74	9	Arl3,Eps8l2,Dsg2,Lsr,Golm1,Krt14,Ccl20,Cdh1,Krt5	4	Eps8l2,Dsg2,Lsr,Ccl20	6.96216216216216	0.0101815632760504
+Hopx	718	74	15	Ehd4,Serpinb9,Sema3e,Icam2,Bcam,Slc9a3r2,Dsp,Dsc2,Dsg2,Krt14,Krt10,Krt79,Idh2,Crip2,Acaa2	1	Dsg2	0.621621621621622	1
+Hoxa7	718	74	28	Nans,Tgm1,Itih5,Fam3c,Hpn,Lsr,Krt15,Pdzk1,C8a,Bbox1,Proc,Cryz,Serpinf2,Aldh8a1,Thbs4,Krt5,Acsm1,Shmt1,Comp,Treh,Hgd,Pbld1,Aldh7a1,Haao,Khk,Abhd14b,Bhmt2,Saa1	1	Lsr	0.322322322322322	0.34747765575771
+Hoxa9	718	74	16	Nans,Map2k1,Sri,Itih5,Fam3c,Ndrg1,Ifnar2,Golm1,C1qtnf3,Cryz,Cox5a,Thbs4,Krt18,Vnn1,Fbp1,Saa1	0		0	0.392051598016263
+Hoxb3	718	74	10	Col4a1,Dsg2,Krt14,Krt10,Lbp,Krt5,Krt18,Pcbd1,Vnn1,Fbp1	1	Dsg2	0.966966966966967	1
+Hoxb6	718	74	16	Bmp4,Dsp,Eps8l2,Ndrg1,Dsg2,Krt14,Tcn2,Krt15,Tinagl1,Lbp,C1qtnf3,Krt79,Krt5,Pcbd1,Clu,Vnn1	2	Eps8l2,Dsg2	1.24324324324324	0.677243557218636
+Hoxc10	718	74	11	Pacsin3,Lmcd1,Tax1bp3,Kera,Il1f9,Myh11,Clic4,Des,Fmod,Thbs4,Cfl2	2	Clic4,Des	1.93393393393393	0.320879686292114
+Hoxc13	718	74	9	Il1f9,Krt14,Krt15,Krt10,Krt79,Krt2,Krt73,Krt1,Krt5	0		0	0.609279586393359
+Hoxc4	718	74	37	Ltbp1,Pdgfc,Aebp1,Ccdc80,Col3a1,Dcn,Col5a2,Fstl1,Nid2,Col6a1,Nenf,Procr,Ppic,Efemp1,Olfml3,Pxdn,Serpinh1,Dsg2,Smoc1,Fst,Krt14,Krt15,Krt10,Nid1,C6,Postn,Ppa2,Igfbp6,Mmp2,Atp1a1,Krt79,Krt5,Rbp4,Lum,Got1,Col1a2,Col1a1	3	Pxdn,Serpinh1,Dsg2	0.767885532591415	1
+Hoxc6	718	74	32	Aebp1,Ccdc80,Col3a1,Dcn,Col5a2,Fstl1,Col4a1,Col6a1,Pcolce,Bgn,Cxcl12,Dsp,Dsc2,Hspg2,Pxdn,Serpinh1,Htra1,Dsg2,Lsr,Sparc,Fst,Krt14,Krt15,Krt10,Nid1,Ghr,Mmp2,Krt5,Lum,Serpinf1,Col1a2,Col1a1	5	Hspg2,Pxdn,Serpinh1,Dsg2,Lsr	1.61161161161161	0.370070140868564
+Hoxc8	718	74	53	Ltbp1,Pdgfc,Aebp1,Ccdc80,Glb1,Col3a1,Dcn,Col5a2,Fstl1,Nid2,Pcsk5,Col4a1,Vps26a,Snx9,Gnpda1,Col6a1,Pcolce,Pdcd6,Bgn,Prss23,Ppic,Efemp1,Dsp,Anpep,Olfml3,Pxdn,Serpinh1,Vasn,Htra1,Pepd,Aprt,Smoc1,Sparc,Fst,Col4a2,Krt14,Krt15,Igf1,Nid1,Postn,Cdh1,Lta4h,Mmp2,Gnb1,Cndp2,Krt5,Glul,Rbp4,Bmp7,Lum,Got1,Col1a2,Col1a1	5	Pxdn,Serpinh1,Col4a2,Gnb1,Cndp2	0.906531531531532	1
+Hoxd8	718	74	50	Ehd4,Pdgfc,Kitl,Aebp1,Ccdc80,Col3a1,C1qb,Dcn,Col5a2,Ckb,Fstl1,Col4a1,Fam20c,Col6a1,Lpl,Pcolce,Bgn,Prss23,Fabp4,Serpinb6a,Ppic,Cxcl12,Dsp,Dsc2,Olfml3,Lipa,Adam15,Cfh,Serpinh1,Vasn,Htra1,Adamts1,Gpc4,Sparc,Fst,Col4a2,Igf1,Col4a5,Nid1,Cd14,Gamt,Ghr,Mmp2,Mmp12,Rnase4,Crip2,Ctsb,Lum,Col1a2,Col1a1	2	Serpinh1,Col4a2	0.362612612612613	0.217585279908522
+Irf4	718	74	22	Pon3,Shisa5,Cttn,Rac2,Amy1,Smoc1,Gm6484,C6,Lrg1,Lcp1,Atp1a1,C4b,Pon1,Trf,Il16,Fasn,Shmt2,Orm1,Rbp4,Hp,Apoc1,Serpina3n	1	Lcp1	0.414414414414414	0.716320719147282
+Irx2	718	74	13	Sema3e,Icam2,Pon3,Amy1,Krt14,Krt15,Krt10,Lrg1,Shmt2,Krt79,Krt1,Krt5,Rbp4	0		0	0.382619623009251
+Irx4	718	74	11	Ehd4,Dsp,Dsc2,Dpp7,Dsg2,Krt14,Tg,Dera,Crip2,Krt5,Actc1	2	Dsg2,Actc1	1.93393393393393	0.320879686292114
+Klf5	718	74	15	Chmp2b,Gna11,Pgm1,Dsp,Eps8l2,Dsg2,Golm1,Krt14,Krt15,Krt10,Flnb,Cdh1,Krt5,Krt19,Krt8	4	Eps8l2,Dsg2,Flnb,Krt8	3.16461916461917	0.0651791703436383
+Mbd1	718	74	11	Shisa5,Ifnar2,Angptl4,Myh11,Lcp1,Des,Il16,Orm1,Rab11b,Hp,Serpina3n	2	Lcp1,Des	1.93393393393393	0.320879686292114
+Meox2	718	74	5	Bcam,Slc9a3r2,Hspb1,Igfbp6,Crip2	1	Hspb1	2.17567567567568	0.422588751433128
+Mesp2	718	74	2	Myh10,Bbox1	1	Myh10	8.7027027027027	0.197612424663885
+Msx2	718	74	4	Krt14,Krt15,Krt10,Krt73	0		0	1
+Myf6	718	74	24	Pacsin3,Lmcd1,Slc25a5,Pdcd6,Fabp4,Kera,Rarres2,Cacna2d1,Myh11,Cdh13,Lrg1,Chid1,Des,Pck1,Fmod,Myh3,Aldh9a1,Thbs4,Cfl2,Hspa1l,Ywhaq,Pgam1,Tpi1,Ppia	1	Des	0.378378378378378	0.499225034399409
+Nfe2l3	718	74	12	Dsp,Dsc2,Tgm1,Il1f9,Krt14,Krt15,Krt10,Krt79,Krt73,Krt1,Krt5,Bmp7	0		0	0.622126915618002
+Nr2e3	718	74	13	Glb1,Gnpda1,Hexb,Fuca1,Aprt,Cotl1,St6gal1,Rarres2,Myh11,Lrg1,Lta4h,Bmp7,Actg2	1	Actg2	0.725225225225225	1
+Ovol1	718	74	43	Chmp2b,Gna11,Pgm1,Dsp,Dsc2,Tgm1,Mgam,Atxn10,Eps8l2,Hpn,Krt14,Afm,Scrn2,Xylb,Cdh1,Pdzk1,Slc27a2,C8a,Flrt1,Proc,Rdx,Paics,Glyat,Cryz,Mthfd1,Serpinf2,Aldh8a1,Krt5,Acsm1,Shmt1,Treh,Hgd,Pbld1,Bmp7,Akr1d1,Fga,Haao,Pah,Igfbp1,Khk,Fbp1,Bhmt2,Aldob	1	Eps8l2	0.207207207207207	0.111852532157568
+Ovol2	718	74	8	Gna11,Dsg2,Lsr,Krt14,Krt15,Bbox1,Paics,Krt5	2	Dsg2,Lsr	2.9009009009009	0.200373073960496
+Pitx2	718	74	18	Pcsk5,Snx9,Pdcd6,Anpep,AU040320,Pepd,Kera,Clic4,Chid1,Lta4h,Cndp2,Myh3,Treh,Glul,Krt18,Tkt,Mdh2,Vnn1	2	Clic4,Cndp2	1.08783783783784	0.708061320381836
+Prdm1	718	74	6	Gltp,Vasp,Iqgap1,Tagln2,Ctsc,Pebp1	2	Iqgap1,Tagln2	4.35135135135135	0.123515245614651
+Rorc	718	74	0		0		100	1
+Smyd1	718	74	10	Pacsin3,Rarres2,Pcnt,Myh11,Cdh13,Des,Pck1,Tkt,Ywhaq,Ppia	1	Des	0.966966966966967	1
+Sox21	718	74	3	Krt14,Krt1,Krt5	0		0	1
+Sp6	718	74	0		0		100	1
+Tfap2a	718	74	10	Tgm1,Il1f9,Krt14,Krt15,Krt10,Krt79,Krt2,Krt73,Krt1,Krt5	0		0	0.609995191546485
+Tfap2b	718	74	48	Dsp,Tgm1,Mgam,Eps8l2,Hpn,Dsg2,Hgfac,Krt14,Krt15,Krt10,Cpn1,Afm,Xylb,Cdh1,Pdzk1,Gss,Slc27a2,C8a,Cryl1,Gc,Flrt1,Proc,Pigr,Glyat,Krt79,Cryz,Krt1,Aldh8a1,Krt5,Acsm1,Krt8,Treh,Ttr,Hgd,Hoga1,Pbld1,Bmp7,Akr1d1,Fga,Haao,Kng1,Pah,Igfbp1,Pcbd1,Khk,Fbp1,Bhmt2,Aldob	3	Eps8l2,Dsg2,Krt8	0.58018018018018	0.464809508114365
+Tfap2c	718	74	7	Dsp,Tgm1,Krt14,Krt15,Krt10,Krt1,Krt5	0		0	1
+Tfap2e	718	74	12	Tgm1,Dsg2,Il1f9,Krt14,Krt15,Krt10,Cdh1,Bbox1,Krt79,Krt1,Krt5,Apoc1	1	Dsg2	0.791154791154791	1
+Trp63	718	74	11	Dsp,Tgm1,Il1f9,Krt14,Krt15,Krt10,Ezr,Krt79,Krt73,Krt1,Krt5	1	Ezr	0.87027027027027	1
+Trp73	718	74	3	Tgm1,Krt15,Apoc1	0		0	1
+Zfp28	718	74	0		0		100	1
+Zfp639	718	74	13	Fam49b,Slc25a5,Mgam,Eps8l2,Dsg2,Hgfac,Gyk,Pm20d1,Ezr,Pigr,Galm,Abhd14b,Aldob	3	Eps8l2,Dsg2,Ezr	2.61081081081081	0.148611623692169
+Zfp750	718	74	10	Dsp,Tgm1,Il1f9,Krt14,Krt15,Krt10,Krt79,Krt1,Krt5,Apoc1	0		0	0.609995191546485
+Hoxd10	718	74	24	Nans,Map2k1,Sri,Mgam,Itih5,Hpn,Golm1,Afm,Xylb,Cdh1,Pdzk1,Slc27a2,C1qtnf3,Des,Flrt1,Glyat,Cryz,Thbs4,Krt8,Kng1,Pcbd1,Fbp1,Bhmt2,Saa1	2	Des,Krt8	0.791154791154791	1
+Hoxd9	718	74	37	Ltbp1,Pdgfc,Aebp1,Ccdc80,Col3a1,1190002N15Rik,Dcn,Col5a2,Fstl1,Chmp1a,Col4a1,Nans,Col6a1,Map2k1,Pcolce,Bgn,Wisp1,Ppic,Cxcl12,Olfml3,Pxdn,Serpinh1,Vasn,Cant1,Gpc4,Golm1,Sparc,Fst,Col4a2,Col4a5,Nid1,Mmp2,C1qtnf3,Des,Thbs4,Col1a2,Col1a1	4	Pxdn,Serpinh1,Col4a2,Des	1.05487305487305	0.786569629721384
+Lass4	718	74	2	Spp1,Plod1	0		0	1
+App	718	74	15	C1qb,Fam20c,Anxa3,Lpl,Lyz2,Cfh,Igf1,Cd14,Gamt,Mmp12,Trf,Thbs1,Ctsb,Ctsl,Akr1a1	1	Thbs1	0.621621621621622	1
+Arnt2	718	74	5	Sdc1,Gpld1,Cntn1,Dcxr,Idh2	0		0	1
+Ascl1	718	74	7	Anxa7,Nrg3,Dpysl3,Ube2n,B4galt1,Cntn1,Tubb4a	1	Tubb4a	1.45045045045045	0.535947923017841
+Atf2	718	74	0		0		100	1
+C1d	718	74	1	Cmpk1	0		0	1
+Csdc2	718	74	2	Dsc2,Tg	0		0	1
+Csrnp3	718	74	30	Nrg3,Tgm1,Mgam,Hpn,B4galt1,Afm,Scrn2,Xylb,Gss,C8a,Flrt1,Proc,Glyat,Cryz,Mthfd1,Nit2,Aldh8a1,Acsm1,Shmt1,Treh,Hgd,Pbld1,Akr1d1,Kng1,Pah,Igfbp1,Khk,Fbp1,Bhmt2,Aldob	0		0	0.0630935957532561
+Cux2	718	74	0		0		100	1
+Dach2	718	74	9	Anxa7,Slc25a5,Man2a1,Dsg2,Cntn1,Ezr,Comt,Aimp1,Galm	2	Dsg2,Ezr	2.48648648648649	0.240465333388058
+Deaf1	718	74	0		0		100	1
+Dlx2	718	74	2	Dpysl3,Vcp	0		0	1
+Dmrta2	718	74	0		0		100	1
+Emx1	718	74	34	Cdh6,Tgm1,Mgam,Eps8l2,Hpn,Ndrg1,Afm,Xylb,Pdzk1,Gss,Slc27a2,C8a,Flrt1,Proc,Pigr,Glyat,Cryz,Serpinf2,Aldh8a1,Acsm1,Shmt1,Treh,Hgd,Hoga1,Pbld1,Aldh7a1,Akr1d1,Haao,Kng1,Khk,Dak,Fbp1,Bhmt2,Aldob	1	Eps8l2	0.263718263718264	0.240428397194242
+Fezf2	718	74	2	Nrg3,B4galt1	0		0	1
+Foxg1	718	74	4	Nrg3,Dpysl3,Ube2n,Cntn1	0		0	1
+Foxp2	718	74	0		0		100	1
+Gpbp1l1	718	74	0		0		100	1
+Gtf2h5	718	74	5	Lama5,Atp1a1,Krt79,Orm1,Hp	0		0	1
+Hbp1	718	74	4	Snap23,Nrg3,Acot7,Cntn1	0		0	1
+Hes5	718	74	7	Icam2,Ahnak,Nrp1,Adam15,Rhoc,Rnase4,Aldoc	0		0	1
+Hmg20b	718	74	0		0		100	1
+Hnrnpd	718	74	0		0		100	1
+Ift57	718	74	1	App	0		0	1
+Kcnip3	718	74	1	Tubb4a	1	Tubb4a	100	0.104311543810848
+Klf7	718	74	0		0		100	1
+Lhx2	718	74	3	Nrg3,Dpysl3,Aldoc	0		0	1
+Lhx5	718	74	0		0		100	1
+Lhx6	718	74	26	Nrg3,Anxa3,F12,F9,Fgl1,Hpx,Serpine1,Fetub,1300017J02Rik,C8a,Hrg,Angptl3,C9,Lipc,Comt,Glyat,Apon,Mug1,Ywhah,Apof,Ftcd,Hoga1,Azgp1,Kng1,Serpina3k,Serpina1c	1	Ywhah	0.348108108108108	0.503647318352596
+Mef2c	718	74	13	Stx7,Myo1c,Pck2,Lmcd1,Glipr2,Lyn,Prcp,Kera,Ctsh,Cdh13,Aldh9a1,Cfl2,Gpx1	0		0	0.382619623009251
+Myt1	718	74	3	Anxa7,Cntn1,Lgals9	0		0	1
+Myt1l	718	74	4	Snap23,Nrg3,B4galt1,Cntn1	0		0	1
+Nat14	718	74	3	Nrg3,B4galt1,Cntn1	0		0	1
+Neurod1	718	74	3	Cel,Sdc1,Dcxr	0		0	1
+Neurod2	718	74	0		0		100	1
+Neurod6	718	74	4	Nrg3,Dpysl3,Msra,Tubb4a	1	Tubb4a	2.9009009009009	0.355758745811962
+Neurog2	718	74	5	Anxa7,Dpysl3,Man2a1,B4galt1,Tubb4a	1	Tubb4a	2.17567567567568	0.422588751433128
+Nfe2l2	718	74	10	Snap23,Anxa3,Lpl,Pitpna,Fabp4,Fth1,Tpp1,Igf1,Thbs1,Ctsl	2	Tpp1,Thbs1	2.17567567567568	0.280798531874681
+Npas1	718	74	1	Clstn1	0		0	1
+Npas4	718	74	10	Nrg3,Glipr2,Nt5e,Cnn2,Csf1,Cd44,Cacna2d1,Sdc1,Prg4,Cntn1	1	Cnn2	0.966966966966967	1
+Nr1h2	718	74	1	Cmpk1	0		0	1
+Nr2e1	718	74	5	Man2a1,Cntn1,A2m,Tubb4a,Aldoc	1	Tubb4a	2.17567567567568	0.422588751433128
+Nr2f1	718	74	1	Dpysl3	0		0	1
+Nr3c1	718	74	0		0		100	1
+Nr4a2	718	74	0		0		100	1
+Nr4a3	718	74	0		0		100	1
+Otx1	718	74	3	Cntn1,A2m,Aldoc	0		0	1
+Pgr	718	74	17	Snap23,Nrg3,Bmp4,Itih5,Eps8l2,Dsg2,Tinagl1,Lbp,Afm,Cryl1,Krt18,Hoga1,Pcbd1,Dak,Clu,Vnn1,Fbp1	2	Eps8l2,Dsg2	1.16036036036036	0.692530575809556
+Plagl2	718	74	0		0		100	1
+Pml	718	74	8	Acot7,Cobll1,Man1a,Rnh1,Cpe,Actr2,Pigr,Haao	0		0	1
+Pou3f2	718	74	1	Vta1	0		0	1
+Pou3f3	718	74	38	Ckb,Mgam,Eps8l2,Hpn,B4galt1,Cpn1,Afm,Xylb,Cdh1,Pdzk1,Gss,Slc27a2,C8a,Gc,Cntn1,Flrt1,Proc,Pigr,Glyat,Cryz,Aldh8a1,Acsm1,Krt8,Treh,Hgd,Pbld1,Bmp7,Akr1d1,Fga,Kng1,Pah,Igfbp1,Pcbd1,Khk,Aldoc,Fbp1,Bhmt2,Aldob	2	Eps8l2,Krt8	0.483483483483483	0.415753038760157
+Pou3f4	718	74	3	A2m,Tubb4a,Aldoc	1	Tubb4a	4.35135135135135	0.281078538603148
+Prdm8	718	74	10	Nrg3,Dpysl3,Sema3e,Icam2,Bcam,Ltbp2,Rnh1,Igf1,Cntn1,Actc1	1	Actc1	0.966966966966967	1
+Purb	718	74	1	Pfkp	0		0	1
+Rfxap	718	74	0		0		100	1
+Rnf6	718	74	2	Mapk1,Atp6ap2	0		0	1
+Rorb	718	74	5	Nrg3,Man2a1,Cntn1,Tubb4a,Aldoc	1	Tubb4a	2.17567567567568	0.422588751433128
+Rreb1	718	74	4	Dpysl3,Vasn,Plaur,Cntn1	0		0	1
+Sall3	718	74	22	Tgm1,Mgam,Hpn,Cpn1,Afm,Scrn2,Xylb,Pdzk1,Gss,Flrt1,A2m,Cryz,Mthfd1,Nit2,Aldh8a1,Acsm1,Pbld1,Aldh7a1,Kng1,Khk,Aldoc,Bhmt2	0		0	0.15432617206498
+Scrt1	718	74	0		0		100	1
+Sox3	718	74	0		0		100	1
+Sox5	718	74	40	Dpysl3,Chmp4b,Pafah1b3,F12,F9,Masp1,F5,Nid1,Pkm,Apoa5,C8a,Angptl3,Itih1,Mup10,Lipc,Serpind1,Plg,F10,Glyat,Fgg,Dpys,F2,Aldh8a1,Mug1,Itih3,Acsm1,Lcat,Apoc4,Apof,Fgb,Hgd,Azgp1,Aldh7a1,Mup3,Akr1d1,Fga,Haao,Kng1,Bhmt2,Serpina3k	1	Pkm	0.223146223146223	0.167538247958392
+Sp8	718	74	2	Nrg3,Dpysl3	0		0	1
+Ss18l1	718	74	1	Sri	0		0	1
+Stat6	718	74	2	Anxa7,B4galt1	0		0	1
+Sub1	718	74	1	Rps15a	0		0	1
+Tbr1	718	74	2	Nrg3,Dpysl3	0		0	1
+Terf2ip	718	74	0		0		100	1
+Tfap2d	718	74	1	Nrg3	0		0	1
+Tshz3	718	74	1	Pfn2	0		0	1
+Zbtb7b	718	74	0		0		100	1
+Zfp238	718	74	0		0		100	1
+Zfp316	718	74	0		0		100	1
+Zfp516	718	74	0		0		100	1
+Zfp536	718	74	9	Ehd4,Nrg3,Dpysl3,Dsc2,Dpp7,B4galt1,Cntn1,Dera,Actc1	1	Actc1	1.08783783783784	1
+Zfp583	718	74	1	Tuba1a	1	Tuba1a	100	0.104311543810848
+Zfp711	718	74	5	Dsg2,Lbp,Hnrnpd,Krt18,Vnn1	1	Dsg2	2.17567567567568	0.422588751433128
+Zfp821	718	74	3	Pafah1b3,Actn1,Igfbp4	1	Actn1	4.35135135135135	0.281078538603148
+Zic1	718	74	13	Prss35,Dpysl3,Tgfb2,Psmd8,Col12a1,2-Sep,Rtn4,Ccl20,11-Sep,Col2a1,Cntn1,A2m,Igfbp2	4	2-Sep,Rtn4,Ccl20,11-Sep	3.86786786786787	0.0406001419116829
+Lrrfip1	718	74	7	Shisa5,Sri,Clic1,Cd44,Tagln2,Myh9,Ostf1	3	Clic1,Tagln2,Myh9	6.52702702702703	0.0294617844744961
+Ndn	718	74	26	Col3a1,Fstl1,Col4a1,Cttn,Ndrg1,Dsg2,Col4a2,Lbp,Scrn2,Gss,Proc,Pigr,Glyat,Akr7a5,Acy3,Acsm1,Treh,Hgd,Krt18,Pbld1,Haao,Akr1e1,Abhd14b,Prdx5,Col1a2,Vnn1	2	Dsg2,Col4a2	0.725225225225225	1
+Smarca1	718	74	3	Dsg2,Krt18,Vnn1	1	Dsg2	4.35135135135135	0.281078538603148
+Zfp524	718	74	0		0		100	1
+Sox10	718	74	0		0		100	1
+0610031J06Rik	718	74	2	Naglu,Plod1	0		0	1
+Camta1	718	74	10	Ckb,Pdgfb,Dsc2,Xdh,Adam15,Itgb1,Rhoc,Plod1,Idh2,Actc1	2	Itgb1,Actc1	2.17567567567568	0.280798531874681
+Creb3l2	718	74	27	Col3a1,Lama5,Col4a1,Col6a1,Oaf,Bgn,Ppic,Cxcl12,Olfml3,Anxa5,Pxdn,Serpinh1,Vasn,Adamts1,Gpc4,Bmp1,Rhoc,Col4a2,Col4a5,Fam162a,Ghr,Mmp2,Cox5a,Thbs4,P4hb,Col1a2,Saa1	3	Pxdn,Serpinh1,Col4a2	1.08783783783784	0.752590677262504
+Lass2	718	74	16	Plbd2,Lpl,Naglu,Adam15,Dpp7,Itgb1,Dusp3,Tpp1,Rhoc,Grn,Plod1,Cacna2d1,Cd14,Gss,Ctsb,Ppia	3	Itgb1,Dusp3,Tpp1	2.00831600831601	0.230662858549685
+Rax	718	74	73	Lect2,Naglu,Itgb1,F12,F9,Serpina11,Serpina7,Serpina10,Rhoc,Apoh,C8g,Fgl1,Ambp,Hpx,Fetub,Igfals,F5,Apcs,Cpn1,Galk1,Afm,C8b,Gss,1300017J02Rik,Apoa5,C8a,Hrg,Gc,Angptl3,Qsox1,C9,Itih1,Gdf15,Mup10,Lipc,Proc,Serpind1,Plg,Pzp,Cpb2,F10,Glyat,Fgg,Apon,Serpinf2,Dpys,Orm2,F2,Hamp,Aldh8a1,Mug1,Itih3,Lcat,Apoc4,Apof,Fgb,Ftcd,Hgd,Ces1c,Azgp1,Mup3,Akr1d1,Fga,Haao,Kng1,Serpinc1,Igfbp1,Itih2,Alb,Bhmt2,Serpina3k,Serpina1c,Apoa2	2	Itgb1,Gdf15	0.24514655500571	0.0356344809077126
+Rela	718	74	19	Gnai2,Myo1c,Csk,Bcam,Slc9a3r2,Shisa5,Iqgap1,St3gal1,Rac2,Cnn2,Ifnar2,Clic1,Cd44,Myh9,Arpc1b,Lcp1,Msn,Crip2,B2m	6	Iqgap1,Cnn2,Clic1,Myh9,Lcp1,Msn	4.01663201663202	0.0115715280783119
+Etv6	718	74	7	Cttn,Col4a2,Lbp,Krt18,Pcbd1,Vnn1,Fbp1	1	Col4a2	1.45045045045045	0.535947923017841
+Gfi1b	718	74	6	Tpm4,Acy3,Krt18,Pcbd1,Vnn1,Fbp1	1	Tpm4	1.74054054054054	0.482403452596823
+Klf1	718	74	6	Col4a1,Tubb1,Krt18,Pcbd1,Khk,Fbp1	1	Tubb1	1.74054054054054	0.482403452596823
+Nfe2	718	74	7	Icam2,Lbp,Tubb1,Krt18,Pcbd1,Vnn1,Fbp1	1	Tubb1	1.45045045045045	0.535947923017841
+Tal1	718	74	8	Icam2,Col4a1,Slc9a3r2,Procr,Cttn,Col4a2,Krt18,Vnn1	1	Col4a2	1.24324324324324	0.583887187168891
+Crx	718	74	3	Ldhb,Acy3,Krt18	0		0	1
+Dach1	718	74	4	Tpm4,Krt18,Vnn1,Fbp1	1	Tpm4	2.9009009009009	0.355758745811962
+Erg	718	74	12	Serpinb9,Icam2,Nrp1,Slc9a3r2,Ctla2a,Tgm2,Acy3,Krt18,Pcbd1,Tpi1,Vnn1,Fbp1	1	Ctla2a	0.791154791154791	1
+Esrra	718	74	8	Bmp4,Col4a1,Atxn10,Col4a2,Krt18,Pcbd1,Vnn1,Fbp1	1	Col4a2	1.24324324324324	0.583887187168891
+Foxa3	718	74	22	Bmp4,Dsc2,Mgam,Eps8l2,Ang,Dsg2,Lsr,Hgfac,Tinagl1,Pcsk9,Pm20d1,Pigr,Pklr,Pnpo,Krt8,Krt18,Pcbd1,Khk,Vnn1,Saa2,Saa1,Aldob	4	Eps8l2,Dsg2,Lsr,Krt8	1.93393393393393	0.276838032543136
+Gata2	718	74	8	Sema3e,Icam2,Slc9a3r2,Ctla2a,Krt18,Pcbd1,Vnn1,Fbp1	1	Ctla2a	1.24324324324324	0.583887187168891
+Gatad1	718	74	5	Abi1,St6gal1,Lcp1,Pgrmc1,Pebp1	1	Lcp1	2.17567567567568	0.422588751433128
+Glis2	718	74	15	Fstl1,Nedd4,Col4a1,Pcolce,Ppic,Pxdn,Serpinh1,Eps8l2,Vasn,Adamts1,Col4a2,Col4a5,Krt18,Pcbd1,Fbp1	4	Pxdn,Serpinh1,Eps8l2,Col4a2	3.16461916461917	0.0651791703436383
+Gtf2ird1	718	74	9	Icam2,Ptpn23,Ldhb,Cttn,Rac2,Tpm4,Mmp14,Lcp1,Il16	2	Tpm4,Lcp1	2.48648648648649	0.240465333388058
+Hif3a	718	74	3	Dsg2,Tubb1,Krt18	2	Dsg2,Tubb1	17.4054054054054	0.030680196785359
+Hlf	718	74	26	Itih5,F9,Hpx,Fetub,F5,Apoa5,C8a,Prg4,Angptl3,Itih1,Serpind1,Orm1,Apon,Dpys,Aldh8a1,Mug1,Acsm1,Hgd,Krt18,Hoga1,Akr1d1,Haao,Pcbd1,Vnn1,Fbp1,Serpina3k	0		0	0.0986029775019849
+Hnf4a	718	74	54	Tgm1,Mgam,Eps8l2,Hpn,Ndrg1,Dsg2,Hgfac,Cpn1,Afm,Xylb,Pcsk9,Cdh1,Pdzk1,Gss,Slc27a2,C8a,Cryl1,Gc,Flrt1,Pm20d1,Pck1,Proc,Pigr,Glyat,Bpnt1,Cryz,Serpinf2,Pklr,Aldh8a1,Galm,Acy3,Acsm1,Pnpo,Krt8,Treh,Ttr,Hgd,Pbld1,Bmp7,Akr1d1,Fga,Haao,Kng1,Pah,Igfbp1,Pcbd1,Khk,Aldh1l1,Abhd14b,Fbp1,Bhmt2,Saa1,Aldob,Hrsp12	3	Eps8l2,Dsg2,Krt8	0.511923688394277	0.348776537552635
+Hoxa10	718	74	14	Nans,Map2k1,Sri,Itih5,Fam3c,Ndrg1,Golm1,Ggh,C1qtnf3,Cryz,Thbs4,Krt18,Vnn1,Saa1	0		0	0.382218503736196
+Hoxa2	718	74	13	Col5a2,Fstl1,Bgn,Ppic,Dsg2,Adamts1,Postn,Mmp2,Calu,Krt18,Col1a2,Vnn1,Fbp1	1	Dsg2	0.725225225225225	1
+Hoxa3	718	74	20	Aebp1,Col3a1,Col4a1,Ltbp2,Col6a1,Pcolce,Bgn,Prss23,Tax1bp3,Anxa2,Rhoc,Col4a2,Col4a5,Postn,Vcl,Lox,Gsn,Col1a2,Col1a1,Vnn1	3	Anxa2,Col4a2,Lox	1.53577106518283	0.454824257048867
+Hoxa5	718	74	7	Slc9a3r2,Itih5,Ctla2a,Tinagl1,Krt18,Pcbd1,Vnn1	1	Ctla2a	1.45045045045045	0.535947923017841
+Hoxb2	718	74	11	Bmp4,Itih5,Dsg2,Tcn2,C1qtnf3,Acy3,Krt18,Pcbd1,Khk,Vnn1,Fbp1	1	Dsg2	0.87027027027027	1
+Hoxb4	718	74	1	Acy3	0		0	1
+Hoxb5	718	74	8	Bmp4,Dsg2,Lbp,Krt18,Pcbd1,Khk,Clu,Vnn1	1	Dsg2	1.24324324324324	0.583887187168891
+Klf11	718	74	1	Krt18	0		0	1
+Klf9	718	74	5	Fstl1,Marcksl1,Cttn,Pgrmc1,Tubb5	1	Tubb5	2.17567567567568	0.422588751433128
+Mecom	718	74	8	Bmp4,Col4a1,Dsg2,Tinagl1,Krt18,Pcbd1,Vnn1,Fbp1	1	Dsg2	1.24324324324324	0.583887187168891
+Meis1	718	74	3	Krt18,Vnn1,Fbp1	0		0	1
+Nfia	718	74	0		0		100	1
+Nfix	718	74	14	Aebp1,Ccdc80,Cryab,Col4a1,Bgn,Cxcl12,Cttn,Bmp1,Col4a2,Lbp,Acy3,Krt18,Serpinf1,Vnn1	1	Col4a2	0.669438669438669	1
+Nkx2-3	718	74	5	Pmm2,Tsta3,Acy3,Krt18,Vnn1	0		0	1
+Nr0b2	718	74	70	Lect2,Dsc2,F12,Dsg2,F9,Agmat,Serpina11,Serpina10,Cfi,Vtn,Apoh,C8g,Fgl1,Ambp,Hpx,Igfals,Apcs,Afm,Mbl2,C8b,1300017J02Rik,Apoa5,C8a,Apob,Hrg,Angptl3,C9,Itih1,Mup10,Lipc,Proc,Serpind1,Plg,Rps27a,Pzp,Cpb2,Apoa4,Fgg,Apon,Serpinf2,Dpys,F2,Hamp,Mug1,Gpt,Lcat,Apoc4,Apof,Fgb,Ftcd,Hgd,Ces1c,Pbld1,Azgp1,Rps14,Mup3,Akr1d1,Fga,Kng1,Serpinc1,Pcbd1,Khk,Alb,Fbp1,Serpina3k,Serpina1c,Apoa1,Apoc3,Apoa2,Fabp1	1	Dsg2	0.126126126126126	0.00966711004302309
+Pbx1	718	74	6	Col4a1,Cttn,Lbp,Krt18,Khk,Vnn1	0		0	1
+Plag1	718	74	4	Acot7,Dsg2,Lman1,Sdc1	1	Dsg2	2.9009009009009	0.355758745811962
+Prdm16	718	74	13	Ckb,Ldhb,Dsg2,C8a,Comt,Agt,Apon,Apof,Ftcd,Krt18,Itih2,Vnn1,Bhmt2	1	Dsg2	0.725225225225225	1
+Prdm5	718	74	10	Fstl1,Nid2,Ddb1,Nedd4,Ppic,Itih5,Mmp2,Calu,Krt18,Vnn1	0		0	0.609995191546485
+Sall2	718	74	4	Ldhb,Itih5,Krt18,Vnn1	0		0	1
+Sox12	718	74	1	Krt18	0		0	1
+Sox13	718	74	4	Bmp4,Slc9a3r2,Eps8l2,Tinagl1	1	Eps8l2	2.9009009009009	0.355758745811962
+Sox18	718	74	22	Serpinb9,Sema3e,Bmp4,Icam2,Fstl1,Col4a1,Bcam,Slc9a3r2,Pdgfb,Cttn,Dsg2,Tinagl1,Lbp,Tgm2,Igfbp6,Clec11a,Serping1,Crip2,Acy3,Krt18,Khk,Clu	1	Dsg2	0.414414414414414	0.716320719147282
+Sox6	718	74	9	Tax1bp3,Itih5,Dsg2,Tpm4,Krt18,Pgam1,Pcbd1,Vnn1,Fbp1	2	Dsg2,Tpm4	2.48648648648649	0.240465333388058
+Ssbp2	718	74	0		0		100	1
+Tcf15	718	74	13	Bmp4,Itih5,Dsg2,Tpm4,Tinagl1,Pcnt,Nt5c,Acy3,Krt18,Pcbd1,Khk,Vnn1,Fbp1	3	Dsg2,Tpm4,Nt5c	2.61081081081081	0.148611623692169
+Tcf7l1	718	74	36	Ltbp1,Pdgfc,Ccdc80,Col3a1,Col5a2,Bmp4,Fstl1,Nid2,Vcan,Nedd4,Col4a1,Col6a1,Pcolce,Bgn,Ppic,Fat1,Ptprg,Pxdn,Serpinh1,Eps8l2,Vasn,Adamts1,Sparc,Rhoc,Col4a2,Mmp14,Col4a5,Nid1,Postn,Cyr61,Mmp2,Igfbp3,Krt18,Pcbd1,Col1a2,Col1a1	4	Pxdn,Serpinh1,Eps8l2,Col4a2	1.08783783783784	0.781278390153217
+Tead2	718	74	18	Ltbp1,Pdgfc,Col5a2,Fstl1,Nid2,Ddb1,Vcan,Nedd4,Pcolce,Wisp1,Ppic,Fscn1,Pxdn,Serpinh1,Vasn,Mmp2,Krt18,Khk	3	Fscn1,Pxdn,Serpinh1	1.74054054054054	0.422332739869584
+Zfp2	718	74	1	Vnn1	0		0	1
+Zfp30	718	74	4	Arl3,Ldhb,Pitpna,Acot13	0		0	1
+Zfp354a	718	74	9	Lyplal1,Iqgap1,Dsg2,Rac2,Sh3bgrl3,Clic1,Arpc1b,Lcp1,Vnn1	4	Iqgap1,Dsg2,Clic1,Lcp1	6.96216216216216	0.0101815632760504
+Zfp354b	718	74	2	Dsg2,Vnn1	1	Dsg2	8.7027027027027	0.197612424663885
+Zfp37	718	74	9	Col4a1,Dsg2,Rac2,Col4a2,Lcp1,Il16,Krt18,Pcbd1,Vnn1	3	Dsg2,Col4a2,Lcp1	4.35135135135135	0.0600501659640263
+Zfp422	718	74	0		0		100	1
+Zfp467	718	74	2	Ldhb,Cttn	0		0	1
+Zfp521	718	74	4	Itih5,Krt18,Vnn1,Fbp1	0		0	1
+Zfp523	718	74	1	Tpm4	1	Tpm4	100	0.104311543810848
+Zfp526	718	74	2	Cttn,Krt18	0		0	1
+Zfp532	718	74	29	Col4a1,Mgam,Ndrg1,Tpm4,Gss,Slc27a2,C8a,Proc,Pigr,Glyat,Cryz,Aldh8a1,Acy3,Acsm1,Treh,Hgd,Krt18,Pbld1,Akr1d1,Haao,Kng1,Pcbd1,Khk,Abhd14b,Prdx5,Vnn1,Fbp1,Bhmt2,Hrsp12	1	Tpm4	0.310810810810811	0.347669646434418
+Zfp618	718	74	3	Krt18,Vnn1,Fbp1	0		0	1
+Zfp697	718	74	1	Pgrmc1	0		0	1
+Zfp879	718	74	5	Dsg2,Tpm4,Krt18,Vnn1,Fbp1	2	Dsg2,Tpm4	5.8018018018018	0.0884387233272993
+Zfp93	718	74	1	Vnn1	0		0	1
+Atf3	718	74	32	Ehd4,Anxa1,Lpl,Gyg,Fabp4,Lyz2,Anpep,Adam17,Adam15,Eps8l2,Rnh1,Rhoc,Grn,Lgals3,Cstb,Ccl2,Cd14,Afm,Xylb,Pdzk1,Proc,Mmp12,Akr7a5,Mthfd1,Ctsb,Aldh8a1,Acsm1,Shmt1,Aldh7a1,Khk,Dak,Cxcl10	3	Eps8l2,Lgals3,Cstb	0.900279589934762	1
+Batf3	718	74	2	Bst2,Mmp12	0		0	1
+Creb5	718	74	20	Ehd4,C1qb,Anxa1,Ralb,Lpl,Lyz2,Anpep,Adam17,Adam15,Gusb,Rtn4,Grn,Cstb,Spp1,Ccl2,Plod1,Cd14,Clic4,Mmp12,Ctsb	3	Rtn4,Cstb,Clic4	1.53577106518283	0.454824257048867
+Hlx	718	74	31	Ehd4,Cryab,C1qb,Fam20c,Nrp1,Anxa3,Slc9a3r2,Lpl,Gyg,Lyz2,Adam15,Adam9,Hgfac,Grn,Cst3,Igf1,Cd14,Clic4,Xylb,Pdzk1,Igfbp6,Msn,Creg1,Proc,Crip2,Mthfd1,Ctsb,Aldh8a1,Acsm1,Hoga1,Dak	2	Clic4,Msn	0.600186393289842	0.76046981546978
+Ifi204	718	74	23	C1qb,Anxa1,S100a6,Blvra,Lpl,Lgals1,Anpep,Adam17,Anxa2,Gns,Cfh,Fth1,Rnh1,Bst2,Grn,Cstb,Ccl2,Cd14,Mmp12,Ctsb,Saa3,Blvrb,Cxcl10	3	Anxa2,Gns,Cstb	1.30540540540541	0.723844802403863
+Jdp2	718	74	14	Anxa1,S100a6,Sema3e,Snx18,Bcam,Gyg,Lgals1,Adam9,Vat1,Grn,Cst3,Ccl2,Clic4,Msn	3	Vat1,Clic4,Msn	2.37346437346437	0.174930367762376
+Mafb	718	74	17	C1qb,Ckb,Fam20c,Anxa3,Lpl,Serpinb6a,Anpep,Lipa,Adam15,Cfh,App,Igf1,Plod1,Cd14,Gamt,Mmp12,Ctsb	0		0	0.401323145104133
+Mitf	718	74	29	Ehd4,C1qb,Fam20c,Anxa3,Lpl,Gyg,Fabp4,Serpinb6a,Lyz2,Anpep,Adam15,Fth1,App,Rhoc,Qpct,Cst3,Igf1,Plod1,Cd14,Gamt,Creg1,Mmp12,Trf,Rdx,Thbs1,Ctsb,Esd,Ctsl,Akr1a1	1	Thbs1	0.310810810810811	0.347669646434418
+Sfpi1	718	74	10	Anxa3,Lpl,Lyz2,Adam17,Prcp,Rnh1,Grn,Cd14,Mmp12,Blvrb	0		0	0.609995191546485
+Spic	718	74	79	C1qb,Lyz2,Adam17,Prcp,F12,F9,Serpina11,Cfi,Vtn,Pla1a,Apoh,C8g,Fgl1,Lcn2,Hpx,Masp1,Fetub,F5,Apcs,Afm,Mbl2,Gpld1,1300017J02Rik,Apoa5,C8a,Hrg,Angptl3,C9,Itih1,Lipc,Proc,Serpind1,Trf,Plg,Pzp,Cpb2,F10,Glyat,Cmbl,Agt,Orm1,Nit2,Fgg,Apon,Serpinf2,Dpys,F2,Aldh8a1,Mug1,Itih3,Acsm1,Lcat,Apoc4,C3,Apof,Fgb,Ftcd,Hgd,Ces1c,Hoga1,Pbld1,Azgp1,Aldh7a1,Mup3,Akr1d1,Fga,Haao,Kng1,Pah,Blvrb,Serpinc1,Igfbp1,Itih2,Alb,Bhmt2,Serpina3k,Arg1,Apoa2,Hrsp12	0		0	0.000676818609043484
+Tfe3	718	74	15	Gnpda1,Anpep,Lipa,Adam15,Lgmn,Cstb,Spp1,Ccl2,Plod1,Cd14,Arpc1b,Mmp12,Ctsb,Saa3,Blvrb	1	Cstb	0.621621621621622	1
+Tfec	718	74	43	C1qb,Blvra,Lyz2,Mgam,Gns,Prcp,Fth1,Lgmn,Grn,Tcn2,Spp1,Cd14,Afm,Xylb,Cdh1,Pdzk1,Gss,Slc27a2,Cndp2,Flrt1,Creg1,Proc,Mmp12,Pigr,Glyat,Cryz,Ctsb,Aldh8a1,Acsm1,Esd,Krt8,Hgd,Hoga1,Pbld1,Akr1d1,Fga,Kng1,Igfbp1,Pcbd1,Fbp1,Bhmt2,Aldob,Hrsp12	3	Gns,Cndp2,Krt8	0.652702702702703	0.610313975241864
+Zeb2	718	74	19	Blvra,Nrp1,Anxa3,Lpl,Gyg,Lyz2,Gns,Adam9,Asah1,Tpp1,Grn,Cst3,Igf1,Mmp12,Trf,Orm1,Ctsb,Capza2,Akr1a1	2	Gns,Tpp1	1.02384737678855	1
+Zfp507	718	74	24	C1qb,Ckb,Blvra,Fam20c,Ralb,Lpl,Serpinb6a,Lyz2,Anpep,Xdh,Lipa,Adam15,Lgmn,Rhoc,Grn,Qpct,Cstb,Spp1,Igf1,Plod1,Cd14,Gamt,Mmp12,Ctsb	1	Cstb	0.378378378378378	0.499225034399409
+Atf5	718	74	6	Smpd1,Pgm1,Anpep,Adam15,Cstb,Mmp12	1	Cstb	1.74054054054054	0.482403452596823
+Bcor	718	74	5	Ralb,Lgals3,Cstb,Spp1,Plod1	2	Lgals3,Cstb	5.8018018018018	0.0884387233272993
+Cebpb	718	74	20	C1qb,Ckb,Fam20c,Ahnak,Lpl,Pdgfb,Anpep,Xdh,Adam15,C1ra,Lgals3,Plod1,Cd14,Lrg1,Gamt,Mmp12,Rnase4,Ctsb,C3,Hp	1	Lgals3	0.458036984352774	0.711028061173977
+Chd1	718	74	5	Gusb,Asah1,Dusp3,Rnh1,Grn	1	Dusp3	2.17567567567568	0.422588751433128
+Etv1	718	74	22	Kitl,Arpc1a,Blvra,Anxa3,Ralb,Lpl,Serpinb6a,Gusb,Cfh,App,Ctbs,Spp1,Igf1,Ccl2,Plod1,Cacna2d1,Cd14,Gamt,Cntn1,Rnase4,Ctsb,Lgals9	0		0	0.15432617206498
+Gfi1	718	74	7	Pgm1,Adam15,Rac2,Tsta3,Il16,Ctsb,Blvrb	0		0	1
+Gmeb1	718	74	2	Gusb,Ctbs	0		0	1
+Lass6	718	74	21	Pacsin3,Fam20c,Anxa3,Pgm1,Lpl,Pdcd6,Xdh,Lipa,Rhoc,Lgals3,Qpct,Spp1,Ccl2,Pcnt,Cd14,Cndp2,Mmp12,Rdx,Txndc17,Ctsl,Akr1a1	2	Lgals3,Cndp2	0.916073968705548	1
+Mafg	718	74	10	Plbd2,Icam2,Anxa3,Lpl,Dusp3,Rhoc,Cstb,Spp1,Cd14,Dpp4	2	Dusp3,Cstb	2.17567567567568	0.280798531874681
+Mterfd3	718	74	24	C1qb,Cyfip1,Fam20c,Anxa3,Lpl,Fabp4,Anpep,Adam15,App,Rhoc,Plod1,Cd14,Gamt,Dpp4,Mmp12,Sdhb,Thbs1,Ctsb,Suclg1,Cox5a,Atp5a1,Ctsl,Atp5b,Mdh2	1	Thbs1	0.378378378378378	0.499225034399409
+Nostrin	718	74	23	C1qb,Ckb,Fam20c,Anxa3,Ralb,Lpl,Anpep,Adam15,Gusb,Eps8l2,Ang,Dsg2,Ctbs,Cstb,Igf1,Plod1,Cd14,Gamt,Mmp12,Pigr,Ctsb,Krt19,Krt8	4	Eps8l2,Dsg2,Cstb,Krt8	1.8321479374111	0.290430468439051
+Nr1h3	718	74	4	Anpep,Xdh,Lrg1,C3	0		0	1
+Phtf1	718	74	4	Plbd2,Dusp3,Grn,Cd14	1	Dusp3	2.9009009009009	0.355758745811962
+Pparg	718	74	36	Ap1m1,C1qb,Ckb,Fam20c,Ahnak,Lpl,Pon3,Fabp4,Serpinb6a,Sri,Anpep,Xdh,Lipa,Gm6484,Angptl4,Hbegf,Lgals3,Cstb,Rarres2,Igf1,Gda,Mmp12,Trf,Fasn,Cmbl,Rnase4,Orm1,Ctsb,Orm2,Taldo1,C3,Ppa1,Hp,Apoc1,Serpina3n,Dbi	2	Lgals3,Cstb	0.511923688394277	0.568439998134679
+Rfx3	718	74	5	Plbd2,Anpep,Adam15,Dusp3,Cd14	1	Dusp3	2.17567567567568	0.422588751433128
+Rtf1	718	74	8	Glb1,Ralb,Anpep,Adam17,Lipa,Cstb,Aimp1,Galm	1	Cstb	1.24324324324324	0.583887187168891
+Rxra	718	74	4	C1qb,Anpep,Xdh,Adam15	0		0	1
+St18	718	74	21	Ckb,Fam20c,Ralb,Lpl,Ufm1,Anpep,Lipa,Adam15,Gusb,Cel,Cstb,Spp1,Igf1,Plod1,Sdc1,Gamt,Cntn1,Ufc1,Mmp12,Ctsb,Pdia6	1	Cstb	0.435135135135135	0.71302437753792
+Stat4	718	74	10	Icam2,Ralb,Lpl,Gusb,Dusp3,Spp1,Cd14,Gamt,Dpp4,Il16	1	Dusp3	0.966966966966967	1
+Tfam	718	74	8	Lpl,Xdh,Lipa,Adam15,Cd14,Mmp12,Ctsb,Ctsl	0		0	1
+Xrcc5	718	74	12	C1qb,Fam20c,Lpl,Anpep,Xdh,Lipa,Adam15,Qpct,Igf1,Cd14,Mmp12,Ctsb	0		0	0.622126915618002
+Zfp239	718	74	11	Nrp1,Pon3,Xdh,Lipa,C1ra,Rarres2,Lrg1,Rnase4,Ctsb,C3,Hp	0		0	0.61454257271501
+Zfp354c	718	74	7	Pfn2,Plbd2,Basp1,Adam15,Lgals3,Spp1,Tuba1a	2	Lgals3,Tuba1a	3.48108108108108	0.161136630070714
+Zfp512	718	74	4	Adam17,Cstb,Acp5,Prdx5	1	Cstb	2.9009009009009	0.355758745811962
+Zfp827	718	74	74	C1qb,Lpl,Myh10,Adam15,Cfh,F12,F9,Vtn,Pla1a,Gm6484,Apoh,Fgl1,Hpx,Igf1,Ccl2,Masp1,Fetub,F5,Cd14,1300017J02Rik,Apoa5,C8a,Prg4,Hrg,Angptl3,C9,C4b,Itih1,Lipc,Mmp12,Serpind1,Plg,Pzp,Fasn,F10,Glyat,Rnase4,Thbs1,Orm1,Fgg,Apon,Serpinf2,Dpys,Ctsb,Orm2,F2,Taldo1,Aldh8a1,Mug1,Itih3,Acsm1,Lcat,Apoc4,Apof,Fgb,Ftcd,Rbp4,Hgd,Hoga1,Azgp1,Mup3,Akr1d1,Fga,Haao,Kng1,Serpinc1,Igfbp1,Hp,Itih2,Apoc1,Alb,Bhmt2,Serpina3k,Dbi	2	Myh10,Thbs1	0.241741741741742	0.035897268059541
+Adar	718	74	9	Abi1,Pfn2,Serpinb9,Csk,Shisa5,Sri,Gns,Rac2,Actr2	1	Gns	1.08783783783784	1
+Akna	718	74	5	Csk,Cttn,Rac2,Lcp1,Il16	1	Lcp1	2.17567567567568	0.422588751433128
+Arid5a	718	74	6	Csk,Lyplal1,Cttn,Rac2,Il16,Abat	0		0	1
+Bach2	718	74	1	Il16	0		0	1
+Batf	718	74	6	Csk,Shisa5,Cttn,Rac2,Lcp1,Il16	1	Lcp1	1.74054054054054	0.482403452596823
+Bcl11b	718	74	7	Smpd1,Gna11,Lyn,Nt5e,Dusp3,Rdx,Gpx1	1	Dusp3	1.45045045045045	0.535947923017841
+Bcl3	718	74	19	Vcam1,Pfn2,S100a6,Ltbp2,Vasp,Shisa5,Cpe,Cstb,Ccl2,Acp5,Gss,Ostf1,Pigr,Adm,Pebp1,Lgals9,Saa3,Cxcl10,Prdx5	1	Cstb	0.483483483483483	0.710505035040356
+Csrnp1	718	74	4	Cttn,Rac2,Il16,Abat	0		0	1
+Ddx58	718	74	16	Pfn2,Serpinb9,Shisa5,Lyn,St3gal1,Rac2,Ifnar2,Cpe,Psme1,Ostf1,Actr2,Lcp1,Ctsc,Il16,Lgals9,B2m	1	Lcp1	0.58018018018018	1
+E2f2	718	74	1	Cdh2	1	Cdh2	100	0.104311543810848
+Egr3	718	74	10	Csk,Lyplal1,Shisa5,Sh3bgrl3,Csf1,Cd44,Ngf,Serpine1,Il16,Abat	0		0	0.609995191546485
+Elf1	718	74	5	Shisa5,Rac2,Clic1,Lcp1,Il16	2	Clic1,Lcp1	5.8018018018018	0.0884387233272993
+Elk3	718	74	25	Ltbp1,Gnai2,Dpysl3,Icam2,Rap1b,Nrp1,Anxa3,Glipr2,Shisa5,Iqgap1,Anxa6,Flna,Rac2,Cnn2,Ifnar2,Ctla2a,Clic1,Cd44,Tagln2,Myh9,Arpc1b,Abat,Ywhah,Tst,Hagh	8	Iqgap1,Flna,Cnn2,Ctla2a,Clic1,Tagln2,Myh9,Ywhah	4.09538950715421	0.00353784655025088
+Etv3	718	74	30	Abi1,Gltp,Xdh,Atxn10,Rac2,Amy1,Smoc1,Cdh2,Gm6484,Angptl4,Hbegf,Rarres2,Igf1,Gda,Lrg1,Mvp,Actr2,Lcp1,C4b,Ctsc,Trf,Shmt2,Orm1,Taldo1,C3,Rbp4,Hp,Apoc1,Serpina3n,Dbi	3	Cdh2,Mvp,Lcp1	0.966966966966967	1
+Fli1	718	74	14	Serpinb9,Sema3e,Icam2,Pdgfb,Shisa5,Lyn,Lyz2,Cttn,Rac2,Ifnar2,Lcp1,Ctsc,Msn,Il16	2	Lcp1,Msn	1.45045045045045	0.648527180976321
+Foxo1	718	74	4	Icam2,St6gal1,Acp5,Il16	0		0	1
+Foxp1	718	74	17	Dpysl3,Csk,Rap1b,Anxa3,Vasp,Shisa5,Iqgap1,Flna,Rac2,Cnn2,Sh3bgrl3,Clic1,Cd44,Myh9,Actr2,Il16,Ywhah	6	Iqgap1,Flna,Cnn2,Clic1,Myh9,Ywhah	4.74692874692875	0.00640036425456878
+Foxp3	718	74	5	Nt5e,Cttn,Rac2,Prg4,Il16	0		0	1
+Grlf1	718	74	11	Pdcd6,AU040320,Cttn,Aprt,Rac2,Cdh2,Lta4h,Lcp1,Il16,Glul,Mdh2	2	Cdh2,Lcp1	1.93393393393393	0.320879686292114
+Hdac3	718	74	7	Serpinb9,Nrp1,Slc9a3r2,Lcp1,Ctsc,Tubb1,Tpi1	2	Lcp1,Tubb1	3.48108108108108	0.161136630070714
+Hhex	718	74	12	Pfkp,Gna11,Pfn2,Pck2,Icam2,Lyn,Ifnar2,Cpe,Lcp1,Ctsc,Il16,Gpx1	1	Lcp1	0.791154791154791	1
+Ikzf1	718	74	6	Csk,Cttn,Rac2,Cpe,Lcp1,Il16	1	Lcp1	1.74054054054054	0.482403452596823
+Ikzf3	718	74	4	Cttn,Rac2,Il16,Ctsl	0		0	1
+Irf1	718	74	11	Pfn2,Shisa5,Iqgap1,Rac2,Clic1,Tagln2,Arpc1b,Psme1,Lcp1,Il16,B2m	4	Iqgap1,Clic1,Tagln2,Lcp1	4.97297297297297	0.0223304126291323
+Irf2	718	74	11	Lyn,Sri,Gda,Ostf1,Lcp1,Ctsc,Pigr,Orm1,Lgals9,Hp,B2m	1	Lcp1	0.87027027027027	1
+Irf3	718	74	4	Pfn2,Rac2,Cpe,Il16	0		0	1
+Irf5	718	74	10	Csk,Lyn,Cttn,Rac2,Ifnar2,Cpe,Ostf1,Lcp1,Ctsc,Il16	1	Lcp1	0.966966966966967	1
+Irf7	718	74	14	Pfn2,Lyn,Sri,Acp5,Gss,Psme1,Ostf1,Lcp1,Ctsc,Pigr,Pebp1,Lgals9,Prdx5,B2m	1	Lcp1	0.669438669438669	1
+Irf9	718	74	16	Pfn2,Csk,Shisa5,Lyn,Sri,St3gal1,Rac2,Ifnar2,Cpe,Psme1,Ostf1,Lcp1,Ctsc,Il16,Lgals9,B2m	1	Lcp1	0.58018018018018	1
+Klf13	718	74	1	Csk	0		0	1
+Klf2	718	74	9	Icam2,Slc9a3r2,Pdgfb,Lyz2,Anxa6,Cnn2,Myh9,Igfbp6,Abat	2	Cnn2,Myh9	2.48648648648649	0.240465333388058
+Klf6	718	74	23	Abi1,Anxa1,Gltp,Rap1b,Vasp,Axl,Shisa5,Sri,Iqgap1,Flna,Sh3bgrl3,Clic1,Cd44,Tagln2,Serpine1,Myh9,Arpc1b,Cyr61,Ostf1,Actr2,Vim,Ctsc,Pebp1	6	Iqgap1,Flna,Clic1,Tagln2,Myh9,Vim	3.07154213036566	0.029418243818007
+Lef1	718	74	7	Ehd4,Sema3e,Ltbp2,Slc9a3r2,Dusp3,Krt79,Actc1	2	Dusp3,Actc1	3.48108108108108	0.161136630070714
+Lmo2	718	74	12	Icam2,Nrp1,Slc9a3r2,Lyn,Prcp,Rac2,Ifnar2,Lcp1,Ctsc,Il16,Crip2,Gpx1	1	Lcp1	0.791154791154791	1
+Lyl1	718	74	11	Pck2,Icam2,Lyn,Cttn,Rac2,Ifnar2,Cdh2,Lcp1,Ctsc,Il16,Gpx1	2	Cdh2,Lcp1	1.93393393393393	0.320879686292114
+Mafk	718	74	1	B2m	0		0	1
+Mkx	718	74	8	Icam2,Nans,Cttn,Rac2,Ifnar2,Ggh,Lcp1,Thbs4	1	Lcp1	1.24324324324324	0.583887187168891
+Mll1	718	74	2	Csk,Il16	0		0	1
+Myb	718	74	2	Cdh2,Nt5c	2	Cdh2,Nt5c	100	0.0110106629578118
+Ncoa3	718	74	1	Cttn	0		0	1
+Nfatc1	718	74	5	Shisa5,Cttn,Rac2,Lcp1,Il16	1	Lcp1	2.17567567567568	0.422588751433128
+Nfkb1	718	74	21	Ehd4,Pfn2,Csk,Rap1b,Anxa3,Vasp,Glipr2,Shisa5,Iqgap1,Rac2,Cnn2,Csf1,Clic1,Cd44,Plaur,Tagln2,Myh9,Arpc1b,Lcp1,Il16,Abat	6	Iqgap1,Cnn2,Clic1,Tagln2,Myh9,Lcp1	3.48108108108108	0.0191154159483742
+Nfkb2	718	74	5	Vasp,Iqgap1,Myh9,Arpc1b,Ostf1	2	Iqgap1,Myh9	5.8018018018018	0.0884387233272993
+Nlrc5	718	74	24	Shisa5,Xdh,Cttn,Rac2,C1ra,Gm6484,Angptl4,Cpe,Rarres2,Gda,Lcp1,C4b,Ctsc,Trf,Il16,Fasn,Orm1,Taldo1,C3,Rbp4,Hp,Apoc1,Serpina3n,Dbi	1	Lcp1	0.378378378378378	0.499225034399409
+Notch1	718	74	14	Gnai2,Stx7,Myo1c,Icam2,Gltp,Slc9a3r2,Glipr2,Lyn,Iqgap1,F9,Ctsh,Cd44,Prg4,Ctsc	1	Iqgap1	0.669438669438669	1
+Nr2f6	718	74	5	Cttn,Amy1,Smoc1,Lrg1,Trf	0		0	1
+Pax5	718	74	9	Acot7,Ppic,Cttn,Iqgap2,Gpd1l,Lipc,Pigr,Galm,Haao	0		0	0.609279586393359
+Pias2	718	74	2	Lgals9,B2m	0		0	1
+Pou2af1	718	74	13	Csk,Shisa5,Ppic,Rac2,St6gal1,Arpc5l,Ggh,Iqgap2,Lcp1,Lipc,Il16,Galm,Ctsl	1	Lcp1	0.725225225225225	1
+Pou2f2	718	74	8	Csk,Grb2,Cttn,Rac2,Iqgap2,Lcp1,Lipc,Il16	1	Lcp1	1.24324324324324	0.583887187168891
+Rbck1	718	74	9	Gnai2,Pfn2,Csk,Vasp,Cpe,Myh9,Psme1,Il16,Lgals9	1	Myh9	1.08783783783784	1
+Rel	718	74	8	Cttn,Pepd,Rac2,Csf1,Ngf,Serpine1,Il16,Tst	0		0	1
+Runx2	718	74	14	Gltp,Acot7,Shisa5,Ppic,Cnn2,Ifnar2,Ctla2a,Clic1,Cd44,Tagln2,Iqgap2,Myh9,Arpc1b,Abat	5	Cnn2,Ctla2a,Clic1,Tagln2,Myh9	4.83483483483483	0.0118265914373733
+Runx3	718	74	4	Serpinb9b,Cttn,Rac2,Il16	0		0	1
+Scml4	718	74	5	Gna11,Csk,Rac2,Nt5c,Il16	1	Nt5c	2.17567567567568	0.422588751433128
+Sp100	718	74	9	Icam2,Shisa5,Lyn,Rac2,Psme1,Lcp1,Ctsc,Il16,B2m	1	Lcp1	1.08783783783784	1
+Spib	718	74	15	Csk,Lyn,Ppic,Iqgap1,Rac2,Arpc5l,Ctla2a,Iqgap2,Gpd1l,Lipc,Pigr,Il16,Galm,Haao,Ctsl	2	Iqgap1,Ctla2a	1.33887733887734	0.662466903968198
+Stat3	718	74	5	Shisa5,Myh9,Pebp1,Lgals9,B2m	1	Myh9	2.17567567567568	0.422588751433128
+Tbx21	718	74	10	Cttn,Rac2,Lbp,C4b,Il16,Krt79,Orm1,Rbp4,Hp,Apoc1	0		0	0.609995191546485
+Tbx6	718	74	4	Csk,Cttn,Rac2,Il16	0		0	1
+Tcf7	718	74	4	Ehd4,Nt5e,Dusp3,Cnn2	2	Dusp3,Cnn2	8.7027027027027	0.0570379169767052
+Tfcp2	718	74	9	Pfn2,Lyplal1,Pgm1,Iqgap1,Cdh2,Mvp,Ostf1,Ctsc,Pebp1	3	Iqgap1,Cdh2,Mvp	4.35135135135135	0.0600501659640263
+Tnf	718	74	3	Cttn,Rac2,Lcp1	1	Lcp1	4.35135135135135	0.281078538603148
+Tnfaip3	718	74	19	Abi1,Pfn2,S100a6,Ltbp2,Rap1b,Vasp,Shisa5,Sri,Lgals1,Iqgap1,Rac2,Sh3bgrl3,Vat1,Clic1,Cd44,Ccl2,Ostf1,Actr2,Lcp1	4	Iqgap1,Vat1,Clic1,Lcp1	2.32072072072072	0.131728727580607
+Trim30a	718	74	8	Shisa5,Lyn,Rac2,Ifnar2,Lcp1,Ctsc,Il16,B2m	1	Lcp1	1.24324324324324	0.583887187168891
+Zfp13	718	74	2	Shisa5,Lcp1	1	Lcp1	8.7027027027027	0.197612424663885
+Zfp276	718	74	1	Csk	0		0	1
+Zfp592	718	74	2	Rac2,Il16	0		0	1
+Banp	718	74	3	Ggh,Galm,Prdx1	0		0	1
+Hes1	718	74	44	Col3a1,Lama5,Nedd4,Col4a1,Pon3,Chmp4b,Pcolce,Bgn,Prss23,Tax1bp3,Efemp1,Cobll1,Xdh,Fat1,Ptprg,Pxdn,Serpinh1,Man1a,Amy1,Gpc4,Sparc,Col4a2,C1ra,Arpc5l,Angptl4,Ctgf,Lbp,Nid1,Actn1,Postn,Cyr61,Mmp2,C4b,Lipc,Fbln1,Igfbp3,Igfbp4,Krt79,Orm1,Galm,C3,Rbp4,Haao,Hp	5	Pxdn,Serpinh1,Col4a2,Ctgf,Actn1	1.11573111573112	0.798403019974038
+Mlxip	718	74	44	Glb1,Acot7,F12,F9,Cfi,Apoh,C8g,Fgl1,Hpx,Fetub,1300017J02Rik,C8a,Gc,Angptl3,Itih1,Lipc,Proc,Serpind1,Plg,Pzp,Cpb2,Glyat,Fgg,Serpinf2,Dpys,F2,Aldh8a1,Mug1,Sod2,Itih3,Lcat,Apof,Fgb,Ftcd,Hoga1,Aldh7a1,Akr1d1,Fga,Kng1,Igfbp1,Bhmt2,Prdx1,Serpina1c,Apoa2	0		0	0.0163243523844751
+Tfeb	718	74	1	Grb2	0		0	1
+Aebp2	718	74	3	Myo1c,Cst3,Gpx1	0		0	1
+Churc1	718	74	5	Myo1c,Bcam,Slc9a3r2,Pdgfb,Msn	1	Msn	2.17567567567568	0.422588751433128
+Cux1	718	74	1	Cst3	0		0	1
+Hdac4	718	74	10	Kera,Cacna2d1,Cdh13,Nt5c,Coasy,Des,Iah1,Glod4,Pgrmc1,Aldh9a1	2	Nt5c,Des	2.17567567567568	0.280798531874681
+Hic1	718	74	34	Ltbp1,Kitl,Aebp1,Ccdc80,Col3a1,Dcn,Col5a2,Fstl1,Col4a1,Col6a1,Pcolce,Axl,Bgn,Wisp1,Cxcl12,Efemp1,Olfml3,Hspg2,Pxdn,Serpinh1,Adamts1,Sparc,Rhoc,Fbln2,Col4a2,Col4a5,Nid1,Postn,Ghr,Mmp2,Fbln1,Lum,Col1a2,Col1a1	5	Hspg2,Pxdn,Serpinh1,Fbln2,Col4a2	1.5004659832246	0.389824109896374
+Hmgn3	718	74	3	Pck2,Marcks,S100a10	1	S100a10	4.35135135135135	0.281078538603148
+Ikzf2	718	74	0		0		100	1
+Ikzf4	718	74	6	Myo1c,Marcks,Lyn,Prcp,Cst3,Gpld1	0		0	1
+Nfatc2	718	74	1	Pck2	0		0	1
+Snai3	718	74	5	Pcnt,Nt5c,Pgrmc1,Gpx1,Akr1a1	1	Nt5c	2.17567567567568	0.422588751433128
+Tcf4	718	74	35	Stx7,Myo1c,Marcks,Lyn,Nt5e,Mgam,Prcp,Hpn,Ctsh,Cst3,Afm,Xylb,Pdzk1,Gss,Slc27a2,C8a,Cndp2,Proc,Pigr,Glyat,Cryz,Dcxr,Mthfd1,Aldh8a1,Acsm1,Treh,Hgd,Pbld1,Aldh7a1,Haao,Khk,Dak,Abhd14b,Gpx1,Bhmt2	1	Cndp2	0.255961844197138	0.242674737375346
+Zfp281	718	74	4	Gna11,Rdx,Dcxr,Gpx1	0		0	1
+Zfp287	718	74	1	Myo1c	0		0	1
+Zfp629	718	74	2	Nt5e,Idh2	0		0	1
+A930001N09Rik	718	74	3	Creg1,Gstk1,Decr1	0		0	1
+Aebp1	718	74	61	Ltbp1,Ccdc80,Cryab,Col3a1,Dcn,Col5a2,Fstl1,Col4a1,Tgfb2,Ltbp2,Ldhb,Col6a1,Pcolce,Pitpna,Axl,Bgn,Nenf,Prss23,Wisp1,Ppic,Cxcl12,Efemp1,Lgals1,Col12a1,Olfml3,Hspg2,Pxdn,Serpinh1,Vasn,Htra1,Adamts1,Plod3,Bmp1,Sparc,Csf1,Fbln2,Fst,Col4a2,Mmp14,Ngf,Ecm1,Ctgf,Col4a5,Lamc1,Nid1,Cox4i1,Postn,Ghr,Vcl,Mmp2,Lox,Sdhb,Adm,Thbs1,Suclg1,Gsn,Lum,Fh1,Serpinf1,Col1a2,Col1a1	8	Hspg2,Pxdn,Serpinh1,Fbln2,Col4a2,Ctgf,Lox,Thbs1	1.31361550229475	0.512484070506336
+Arid5b	718	74	2	Glipr2,Thbs1	1	Thbs1	8.7027027027027	0.197612424663885
+Basp1	718	74	2	Pigr,Tuba1a	1	Tuba1a	8.7027027027027	0.197612424663885
+Bnc2	718	74	29	Ltbp1,Pdgfc,Col3a1,Col5a2,Fstl1,Nid2,Nedd4,Col4a1,Col6a1,Pcolce,Bgn,Wisp1,Ppic,Efemp1,Fat1,Pxdn,Serpinh1,Vasn,Htra1,Gpc4,Sparc,Fst,Col4a2,Ctgf,Col4a5,Nid1,Mmp2,Col1a2,Col1a1	4	Pxdn,Serpinh1,Col4a2,Ctgf	1.39243243243243	0.532099403010285
+Cebpd	718	74	26	Ehd4,Cryab,Anxa1,Ahnak,Anxa3,Axl,Bgn,Prss23,Anxa5,Anxa2,Adamts1,Plod3,Pros1,Rhoc,Csf1,Mmp14,Cd44,Ecm1,Ctgf,Plaur,Serpine1,Cd14,Vcl,Cyr61,Thbs1,Gsn	3	Anxa2,Ctgf,Thbs1	1.13513513513514	0.744511053671221
+Creb3l1	718	74	25	Kitl,Col3a1,Col5a2,Col4a1,Col6a1,Anxa3,Pcolce,Bgn,Tax1bp3,Hspg2,Serpinh1,Golm1,Sparc,Rhoc,Mmp14,Actn1,Postn,Vcl,Mmp2,Lox,Pgrmc1,Thbs1,Thbs4,Col1a2,Col1a1	5	Hspg2,Serpinh1,Actn1,Lox,Thbs1	2.17567567567568	0.173274780579544
+Dedd2	718	74	22	Ltbp1,Col5a2,Fstl1,Vcan,Col4a1,Tgfb2,Col6a1,Pcolce,Axl,Wisp1,Basp1,Fscn1,Pxdn,Serpinh1,Vasn,Plod3,Sparc,11-Sep,Col4a5,Lox,Col1a2,Col1a1	5	Fscn1,Pxdn,Serpinh1,11-Sep,Lox	2.55961844197138	0.0750001929186321
+Ebf3	718	74	46	Aebp1,Ccdc80,Col5a2,Col6a1,Nenf,Mgam,Pxdn,Eps8l2,Hpn,Adamts1,Fbln2,Hgfac,Nid1,Afm,Xylb,Pdzk1,Gss,Slc27a2,C8a,Cryl1,Gc,Lox,Proc,Pigr,Nit1,Glyat,Mthfd1,Serpinf2,Aldh8a1,Acsm1,Treh,Hgd,Hoga1,Pbld1,Lum,Akr1d1,Haao,Kng1,Pah,Khk,Dak,Col1a2,Col1a1,Fbp1,Bhmt2,Aldob	4	Pxdn,Eps8l2,Fbln2,Lox	0.828828828828829	1
+Egr1	718	74	6	Anxa1,Adamts1,Cd44,Cyr61,Vim,Grhpr	1	Vim	1.74054054054054	0.482403452596823
+Esrrg	718	74	7	Lgals1,Acot13,Sdhb,Suclg1,Sod2,Atp5a1,Mdh1	0		0	1
+Fos	718	74	24	Anxa1,Cfi,Apoh,Apcs,Pkm,Gamt,Cyr61,1300017J02Rik,Lipc,Plg,F10,Nit2,Fgg,Serpinf2,Dpys,Itih3,Fgb,Hoga1,Aldh7a1,Fga,Kng1,Grhpr,Alb,Serpina1c	1	Pkm	0.378378378378378	0.499225034399409
+Fosb	718	74	4	Gprc5a,Vasn,Plaur,Sdc1	0		0	1
+Fosl1	718	74	14	Wisp1,Col12a1,Fscn1,Plod3,Csf1,Fbln2,Ngf,Serpine1,Col2a1,Actn1,Inhba,Lox,Thbs1,Tubb6	7	Fscn1,Fbln2,Actn1,Inhba,Lox,Thbs1,Tubb6	8.7027027027027	0.000285813081422602
+Fosl2	718	74	3	Glipr2,Csf1,Acat1	0		0	1
+Foxc1	718	74	48	Ltbp1,Pdgfc,Aebp1,Ccdc80,Cryab,Col3a1,Col5a2,Fstl1,Vcan,Col4a1,Tgfb2,Ltbp2,Col6a1,Pcolce,Axl,Bgn,Prss23,Wisp1,Ppic,Cxcl12,Efemp1,Col12a1,Olfml3,Pxdn,Serpinh1,Vasn,Adamts1,Gpc4,Sparc,Csf1,Fbln2,Fst,Col4a2,Mmp14,Ngf,Ecm1,Ctgf,Col4a5,Nid1,Postn,Ghr,Cyr61,Mmp2,Lox,Adm,Thbs1,Col1a2,Col1a1	7	Pxdn,Serpinh1,Fbln2,Col4a2,Ctgf,Lox,Thbs1	1.48582729070534	0.33328574852555
+Foxc2	718	74	58	Ltbp1,Pdgfc,Aebp1,Ccdc80,Col3a1,Col5a2,Fstl1,Nid2,Vcan,Nedd4,Col4a1,Tgfb2,Ltbp2,Col6a1,Oaf,Pcolce,Axl,Bgn,Prss23,Wisp1,Ppic,Cxcl12,Efemp1,Lgals1,Col12a1,Olfml3,Fat1,Anxa5,Fscn1,Pxdn,Serpinh1,Vasn,Adamts1,Plod3,Gpc4,Sparc,Csf1,Fbln2,Fst,Col4a2,Mmp14,Ngf,Ecm1,Ctgf,Serpine1,Col4a5,Nid1,Postn,Vcl,Cyr61,Mmp2,Lox,Calu,Adm,Thbs1,Serpinf1,Col1a2,Col1a1	8	Fscn1,Pxdn,Serpinh1,Fbln2,Col4a2,Ctgf,Lox,Thbs1	1.39243243243243	0.377324547930497
+Foxd1	718	74	29	Ltbp1,Pdgfc,Aebp1,Col5a2,Fstl1,Ddb1,Vcan,Tgfb2,Pcolce,Wisp1,Ppic,Col12a1,Fscn1,Serpinh1,Vasn,Adamts1,Plod3,Csf1,Fbln2,Fst,Ngf,11-Sep,Col4a5,Col2a1,Cyr61,Mmp2,Lox,Calu,Adm	5	Fscn1,Serpinh1,Fbln2,11-Sep,Lox	1.81306306306306	0.219670368087031
+Foxs1	718	74	44	Ltbp1,Aebp1,Ccdc80,Col3a1,Col5a2,Fstl1,Col4a1,Ltbp2,Col6a1,Glipr2,Pcolce,Axl,Capns1,Bgn,Nenf,Wisp1,Ppic,Cxcl12,Lgals1,Olfml3,Hspg2,Pxdn,Serpinh1,Vasn,Adamts1,Plod3,Sparc,Rhoc,Csf1,Fbln2,Col4a2,Mmp14,Cd44,Serpine1,Col4a5,Lamc1,Nid1,Vcl,Mmp2,Lox,Thbs1,Serpinf1,Col1a2,Col1a1	7	Hspg2,Pxdn,Serpinh1,Fbln2,Col4a2,Lox,Thbs1	1.64645726807889	0.307903510024236
+Gli2	718	74	15	Pdgfc,Col5a2,Fstl1,Nid2,Vcan,Nedd4,Pcolce,Fat1,Pxdn,Serpinh1,Sparc,Mmp14,Mmp2,Fbln1,Col1a2	2	Pxdn,Serpinh1	1.33887733887734	0.662466903968198
+Gli3	718	74	28	Ltbp1,Pdgfc,Col5a2,Fstl1,Nid2,Ddb1,Vcan,Nedd4,Tgfb2,Pcolce,Wisp1,Ppic,Col12a1,Fat1,Fscn1,Pxdn,Serpinh1,Vasn,Sparc,Fbln2,Fst,Mmp14,11-Sep,Mmp2,Lox,Calu,Col1a2,Col1a1	6	Fscn1,Pxdn,Serpinh1,Fbln2,11-Sep,Lox	2.37346437346437	0.108043483126179
+Gsc	718	74	1	Pnpo	0		0	1
+Hdac2	718	74	5	Snrpe,Tcp1,Cct2,Hnrnpa1,Cct5	1	Tcp1	2.17567567567568	0.422588751433128
+Hoxc5	718	74	44	Ltbp1,Pdgfc,Aebp1,Ccdc80,Col3a1,Dcn,Col5a2,Fstl1,Nid2,Col4a1,Col6a1,Pcolce,Nenf,Procr,Ppic,Cxcl12,Efemp1,Lgals1,Olfml3,Pxdn,Serpinh1,Vasn,Smoc1,Sparc,Fbln2,Fst,Lbp,Nid1,C6,Postn,Ppa2,Igfbp6,Mmp2,Atp1a1,Lox,Fasn,Krt79,Rbp4,Lum,Got1,Hp,Serpinf1,Col1a2,Col1a1	4	Pxdn,Serpinh1,Fbln2,Lox	0.87027027027027	1
+Hoxd13	718	74	23	Nans,Arl3,Pgm1,Map2k1,Wisp1,Col12a1,Itih5,Fam3c,Cant1,Ifnar2,Golm1,Hgfac,Ggh,11-Sep,Flnb,Pcsk9,Pmm2,Tsta3,Pigr,Thbs4,Krt19,Saa2,Saa1	2	11-Sep,Flnb	0.828828828828829	1
+Hoxd3	718	74	2	Pdgfc,11-Sep	1	11-Sep	8.7027027027027	0.197612424663885
+Hoxd4	718	74	32	Ltbp1,Pdgfc,Aebp1,Ccdc80,Col3a1,Dcn,Col5a2,Fstl1,Chmp1a,Col4a1,Col6a1,Pcolce,Axl,Bgn,Nenf,Cxcl12,Olfml3,Pxdn,Serpinh1,Sparc,Col4a2,Spp1,Col4a5,Nid1,Ghr,Mmp2,C1qtnf3,Des,Ugdh,Lum,Col1a2,Col1a1	4	Pxdn,Serpinh1,Col4a2,Des	1.24324324324324	0.565471859213823
+Irx1	718	74	13	Cryab,Slc9a3r2,Bgn,Cxcl12,Adamts1,Amy1,Ctgf,Col4a5,Ghr,Cyr61,Shmt2,Krt79,Rbp4	1	Ctgf	0.725225225225225	1
+Irx5	718	74	36	Ltbp1,Cryab,Col5a2,Sema3e,Icam2,Fstl1,Tgfb2,Ltbp2,Col6a1,Slc9a3r2,Pdgfb,Pcolce,Axl,Bgn,Wisp1,Ppic,Col12a1,Olfml3,Pxdn,Serpinh1,Vasn,Adamts1,Sparc,Fst,Ctgf,Col4a5,Iqgap2,Postn,Cyr61,Mmp2,Lox,Krt79,Thbs1,Col1a2,Col1a1,Actc1	6	Pxdn,Serpinh1,Ctgf,Lox,Thbs1,Actc1	1.74054054054054	0.259943290117151
+Maff	718	74	5	Glipr2,Csf1,Cd44,Ngf,Serpine1	0		0	1
+Meis3	718	74	0		0		100	1
+Mtf1	718	74	11	Col5a2,Fstl1,Nedd4,Col4a1,Ppic,Efemp1,Pxdn,Serpinh1,Col4a2,Col4a5,Igfbp3	3	Pxdn,Serpinh1,Col4a2	3.26351351351351	0.100433336996232
+Mtor	718	74	1	Fstl1	0		0	1
+Nfatc4	718	74	54	Ltbp1,Pdgfc,Aebp1,Ccdc80,Col3a1,Col5a2,Fstl1,Nid2,Ddb1,Vcan,Nedd4,Col4a1,Ltbp2,Col6a1,Pcolce,Axl,Bgn,Wisp1,Ppic,Lgals1,Col12a1,Hspg2,Fscn1,Pxdn,Serpinh1,Vasn,Flna,Plod3,Bmp1,Sparc,Rhoc,Csf1,Fbln2,Fst,Col4a2,Mmp14,Serpine1,11-Sep,Lamc1,Col2a1,Nid1,Actn1,Postn,Vcl,Cyr61,Mmp2,Vim,Lox,Calu,Thbs1,Tubb6,Serpinf1,Col1a2,Col1a1	13	Hspg2,Fscn1,Pxdn,Serpinh1,Flna,Fbln2,Col4a2,11-Sep,Actn1,Vim,Lox,Thbs1,Tubb6	2.75939353988134	0.00562102629006877
+Nfib	718	74	20	Ccdc80,Cryab,Col3a1,Dcn,Col5a2,Col4a1,Cxcl12,Ptprg,Pxdn,Serpinh1,Adamts1,Sparc,Pros1,Ctsh,Col4a2,Postn,Tgm2,Ghr,Igfbp3,Lum	3	Pxdn,Serpinh1,Col4a2	1.53577106518283	0.454824257048867
+Nono	718	74	2	Marcksl1,Gstk1	0		0	1
+Nr2f2	718	74	27	Ltbp1,Kitl,Col3a1,Col5a2,Fstl1,Col4a1,Col6a1,Oaf,Pcolce,Bgn,Cxcl12,Efemp1,Olfml3,Fat1,Ptprg,Pxdn,Serpinh1,Vasn,Adamts1,Gpc4,Sparc,Col4a2,Col4a5,Nid1,Ghr,Igfbp3,Col1a2	3	Pxdn,Serpinh1,Col4a2	1.08783783783784	0.752590677262504
+Pax9	718	74	0		0		100	1
+Pitx1	718	74	19	Prss35,Gna11,Tgfb2,Nans,Arl3,Pgm1,Col12a1,Cant1,Golm1,Col2a1,Flnb,Nt5c,Apol8,Pmm2,Tsta3,Fmod,Rdx,Igfbp2,Actg2	3	Flnb,Nt5c,Actg2	1.63175675675676	0.437848591423481
+Plagl1	718	74	20	Col3a1,Col5a2,Fstl1,Col4a1,Col6a1,Basp1,Fat1,Ptprg,Pxdn,Serpinh1,Vasn,Sparc,Col4a2,Col4a5,Mmp2,Pigr,Igfbp3,Tuba1a,Col1a2,Col1a1	4	Pxdn,Serpinh1,Col4a2,Tuba1a	2.17567567567568	0.151449399925683
+Prrx1	718	74	53	Ltbp1,Aebp1,Ccdc80,Cryab,Col3a1,Dcn,Col5a2,Fstl1,Vcan,Col4a1,Tgfb2,Ltbp2,Col6a1,Pcolce,Axl,Bgn,Prss23,Wisp1,Ppic,Cxcl12,Lgals1,Col12a1,Olfml3,Hspg2,Pxdn,Serpinh1,Vasn,Adamts1,Plod3,Bmp1,Sparc,Csf1,Fbln2,Fst,Col4a2,Mmp14,Ngf,Serpine1,Col4a5,Lamc1,Nid1,Postn,Vcl,Cyr61,Mmp2,Lox,Calu,Thbs1,Gsn,Lum,Serpinf1,Col1a2,Col1a1	7	Hspg2,Pxdn,Serpinh1,Fbln2,Col4a2,Lox,Thbs1	1.32432432432432	0.4863264528729
+Prrx2	718	74	47	Ltbp1,Pdgfc,Aebp1,Ccdc80,Col3a1,Col5a2,Fstl1,Nid2,Ddb1,Vcan,Nedd4,Tgfb2,Ltbp2,Col6a1,Pcolce,Axl,Bgn,Wisp1,Ppic,Lgals1,Col12a1,Fscn1,Pxdn,Serpinh1,Vasn,Flna,Adamts1,Bmp1,Sparc,Csf1,Fbln2,Fst,Mmp14,Serpine1,11-Sep,Col2a1,Nid1,Vcl,Cyr61,Mmp2,Vim,Lox,Calu,Thbs1,Serpinf1,Col1a2,Col1a1	9	Fscn1,Pxdn,Serpinh1,Flna,Fbln2,11-Sep,Vim,Lox,Thbs1	2.06116642958748	0.0842693153110833
+Rarg	718	74	24	Aebp1,Lama5,Ltbp2,Slc9a3r2,Pcolce,Axl,Hspg2,Fscn1,Serpinh1,Plod3,Sparc,Csf1,Fbln2,Ngf,Ecm1,Ctgf,Serpine1,Lamc1,Actn1,Vcl,Cyr61,Lox,Thbs1,Crip2	8	Hspg2,Fscn1,Serpinh1,Fbln2,Ctgf,Actn1,Lox,Thbs1	4.35135135135135	0.00266431748722669
+Scx	718	74	16	Ltbp1,Col5a2,Fstl1,Tgfb2,Col6a1,Wisp1,Pxdn,Vasn,Ctgf,11-Sep,Iqgap2,Mmp2,Lox,Taldo1,Col1a2,Col1a1	4	Pxdn,Ctgf,11-Sep,Lox	2.9009009009009	0.0797578375756914
+Shox2	718	74	27	Ltbp1,Aebp1,Ccdc80,Col5a2,Vcan,Ltbp2,Pcolce,Axl,Wisp1,Col12a1,Fscn1,Vasn,Adamts1,Plod3,Bmp1,Csf1,Fbln2,Fst,Mmp14,Ngf,Lamc1,Col2a1,Lox,Tubb6,Serpinf1,Col1a2,Col1a1	4	Fscn1,Fbln2,Lox,Tubb6	1.51351351351351	0.514840298695858
+Six5	718	74	28	Ccdc80,Col3a1,Dcn,Col5a2,Fstl1,Col4a1,Col6a1,Pcolce,Axl,Bgn,Wisp1,Ppic,Cxcl12,Olfml3,Hspg2,Pxdn,Serpinh1,Sparc,Col4a2,Col4a5,Nid1,Postn,Mmp2,Fbln1,Calu,Lum,Col1a2,Col1a1	4	Hspg2,Pxdn,Serpinh1,Col4a2	1.45045045045045	0.52286342337876
+Snai1	718	74	49	Ltbp1,Aebp1,Ccdc80,Vcam1,Col5a2,Myo1c,Fstl1,Ddb1,Col4a1,Ltbp2,Col6a1,Anxa3,Pcolce,Axl,Bgn,Wisp1,Cxcl12,Col12a1,Hspg2,Fscn1,Serpinh1,Vasn,Plod3,Bmp1,Sparc,Rhoc,Csf1,Fbln2,Col4a2,Mmp14,Ngf,Ecm1,Ctgf,Serpine1,Col4a5,Lamc1,Col2a1,Nid1,Actn1,Postn,Vcl,Cyr61,Mmp2,Lox,Msn,Thbs1,Serpinf1,Col1a2,Col1a1	10	Hspg2,Fscn1,Serpinh1,Fbln2,Col4a2,Ctgf,Actn1,Lox,Msn,Thbs1	2.23146223146223	0.053355723570144
+Snai2	718	74	46	Ltbp1,Pdgfc,Aebp1,Ccdc80,Col3a1,Dcn,Col5a2,Fstl1,Nedd4,Col4a1,Tgfb2,Ltbp2,Col6a1,Oaf,Pcolce,Axl,Bgn,Prss23,Wisp1,Tax1bp3,Ppic,Cxcl12,Efemp1,Col12a1,Olfml3,Fat1,Pxdn,Serpinh1,Vasn,Adamts1,Sparc,Fbln2,Fst,Col4a2,Mmp14,Ctgf,Col4a5,Nid1,Postn,Mmp2,Lox,Igfbp3,Lum,Serpinf1,Col1a2,Col1a1	6	Pxdn,Serpinh1,Fbln2,Col4a2,Ctgf,Lox	1.30540540540541	0.616451278107082
+Snapc3	718	74	0		0		100	1
+Sox11	718	74	1	H2afx	0		0	1
+Sphk1	718	74	23	Col5a2,Ltbp2,Col6a1,Anxa3,Bgn,Prss23,Wisp1,Tax1bp3,Efemp1,Col12a1,Olfml3,Anxa5,Anxa2,Vasn,Adamts1,Mmp14,Col4a5,Postn,Cyr61,Mmp2,Lox,Thbs1,Col1a2	3	Anxa2,Lox,Thbs1	1.30540540540541	0.723844802403863
+Taf10	718	74	1	Mmp14	0		0	1
+Tbx18	718	74	54	Ltbp1,Aebp1,Ccdc80,Cryab,Col3a1,Vcam1,Col5a2,Fstl1,Nid2,Vcan,Col4a1,Tgfb2,Ltbp2,Col6a1,Pcolce,Axl,Bgn,Prss23,Wisp1,Ppic,Cxcl12,Lgals1,Col12a1,Fscn1,Pxdn,Serpinh1,Vasn,Adamts1,Plod3,Bmp1,Sparc,Csf1,Fbln2,Fst,Col4a2,Mmp14,Ngf,Serpine1,Col4a5,Lamc1,Col2a1,Nid1,Postn,Vcl,Cyr61,Mmp2,Vim,Lox,Calu,Adm,Thbs1,Serpinf1,Col1a2,Col1a1	8	Fscn1,Pxdn,Serpinh1,Fbln2,Col4a2,Vim,Lox,Thbs1	1.51351351351351	0.355457803872432
+Tbx3	718	74	14	Ltbp1,Gna11,Dpysl3,Pcsk5,Anpep,Dsg2,Tcn2,Serpine1,Cdh1,Cndp2,Krt19,Krt8,Krt18,Hagh	3	Dsg2,Cndp2,Krt8	2.37346437346437	0.174930367762376
+Tbx4	718	74	20	Prss35,Gprc5a,Serpinb9,Sema3e,Icam2,Tgfb2,Ltbp2,Slc9a3r2,Pdgfb,Msln,Csrp1,Col12a1,Edn1,Hc,Col2a1,Apol8,Fmod,Igfbp2,Tubb1,Actc1	2	Tubb1,Actc1	0.966966966966967	1
+Tead1	718	74	26	Ltbp1,Aebp1,Cryab,Col5a2,Lama5,Fstl1,Nedd4,Col4a1,Pcolce,Prss23,Fat1,Hspg2,Ptprg,Pxdn,Serpinh1,Adamts1,Gpc4,Sparc,Fbln2,Col4a2,Ctgf,Lamc1,Nid1,Vcl,Cyr61,Col1a1	6	Hspg2,Pxdn,Serpinh1,Fbln2,Col4a2,Ctgf	2.61081081081081	0.0506377839068009
+Tead3	718	74	37	Ltbp1,Col3a1,Col5a2,Fstl1,Col4a1,Col6a1,Oaf,Pcolce,Axl,Bgn,Prss23,Wisp1,Tax1bp3,Cxcl12,Efemp1,Col12a1,Fat1,Anxa2,Pxdn,Serpinh1,Vasn,Gpc4,Sparc,Rhoc,Fbln2,Fst,Mmp14,Col4a5,Actn1,Postn,Vcl,Mmp2,Lox,Fbln1,Thbs1,Col1a2,Col1a1	7	Anxa2,Pxdn,Serpinh1,Fbln2,Actn1,Lox,Thbs1	2.03063063063063	0.103648550818989
+Tead4	718	74	8	Myo1c,Ddb1,Fscn1,Csf1,Fbln2,Serpine1,Actn1,Lox	4	Fscn1,Fbln2,Actn1,Lox	8.7027027027027	0.00618592792971021
+Thrb	718	74	43	Fstl1,Lect2,Basp1,F12,F9,Agmat,Apoh,Fgl1,Igfals,Apcs,1300017J02Rik,Apoa5,C8a,Apob,Hrg,Angptl3,C9,Itih1,Mup10,Proc,Serpind1,Rps27a,Pzp,Glyat,Apon,Serpinf2,Dpys,Hamp,Mug1,Gpt,Ftcd,Hgd,Ces1c,Azgp1,Rps11,Mup3,Akr1d1,Fga,Kng1,Serpinc1,Serpina3k,Serpina1c,Apoa2	0		0	0.0163529477984827
+Tshz2	718	74	9	Col3a1,Dcn,Col4a1,Col6a1,Nenf,Ptprg,Pxdn,Igfbp3,Lum	1	Pxdn	1.08783783783784	1
+Twist1	718	74	50	Ltbp1,Pdgfc,Aebp1,Ccdc80,Col3a1,Col5a2,Fstl1,Nid2,Ddb1,Vcan,Nedd4,Col4a1,Tgfb2,Ltbp2,Col6a1,Pcolce,Axl,Bgn,Prss23,Wisp1,Ppic,Cxcl12,Lgals1,Col12a1,Fscn1,Pxdn,Serpinh1,Vasn,Flna,Adamts1,Bmp1,Sparc,Csf1,Fbln2,Fst,Col4a2,Mmp14,Col4a5,Lamc1,Nid1,Postn,Mmp2,Vim,Lox,Calu,Adm,Thbs1,Serpinf1,Col1a2,Col1a1	9	Fscn1,Pxdn,Serpinh1,Flna,Fbln2,Col4a2,Vim,Lox,Thbs1	1.91034937376401	0.0987002382016701
+Twist2	718	74	51	Ltbp1,Pdgfc,Aebp1,Ccdc80,Col3a1,Dcn,Col5a2,Fstl1,Vcan,Col4a1,Tgfb2,Ltbp2,Col6a1,Pcolce,Axl,Bgn,Prss23,Wisp1,Ppic,Cxcl12,Efemp1,Lgals1,Col12a1,Olfml3,Hspg2,Fscn1,Pxdn,Serpinh1,Vasn,Flna,Adamts1,Sparc,Csf1,Fbln2,Fst,Col4a2,Mmp14,11-Sep,Col4a5,Lamc1,Nid1,Postn,Mmp2,Vim,Lox,Calu,Thbs1,Lum,Serpinf1,Col1a2,Col1a1	11	Hspg2,Fscn1,Pxdn,Serpinh1,Flna,Fbln2,Col4a2,11-Sep,Vim,Lox,Thbs1	2.39324324324324	0.0199943425318619
+Vax2	718	74	0		0		100	1
+Whsc1	718	74	1	Cdk1	0		0	1
+Wnt5a	718	74	45	Ltbp1,Pdgfc,Kitl,Aebp1,Ccdc80,Col3a1,Dcn,Col5a2,Fstl1,Nedd4,Col4a1,Tgfb2,Col6a1,Pcolce,Axl,Bgn,Prss23,Wisp1,Tax1bp3,Ppic,Cxcl12,Efemp1,Olfml3,Fat1,Ptprg,Pxdn,Serpinh1,Vasn,Htra1,Adamts1,Sparc,Fbln2,Fst,Col4a2,Mmp14,Col4a5,Nid1,Postn,Mmp2,Lox,Fbln1,Igfbp3,Lum,Col1a2,Col1a1	5	Pxdn,Serpinh1,Fbln2,Col4a2,Lox	1.08783783783784	0.801644501959559
+Yap1	718	74	33	Ltbp1,Aebp1,Ccdc80,Col3a1,Col5a2,Fstl1,Nedd4,Col4a1,Col6a1,Pcolce,Bgn,Prss23,Cxcl12,Efemp1,Fat1,Ptprg,Pxdn,Serpinh1,Htra1,Adamts1,Gpc4,Sparc,Col4a2,Ctgf,Col4a5,Nid1,Tgm2,Vcl,Mmp2,Fbln1,Igfbp3,Col1a2,Col1a1	4	Pxdn,Serpinh1,Col4a2,Ctgf	1.20037278657968	0.767971335160395
+Zfhx3	718	74	29	Ltbp1,Col3a1,Col5a2,Fstl1,Col4a1,Anxa3,Pcolce,Bgn,Ppic,Olfml3,Anxa5,Pxdn,Serpinh1,Vasn,Adamts1,Sparc,Rhoc,Col4a2,Mmp14,Ctgf,Nid1,Postn,Vcl,Mmp2,Lox,Thbs1,Serpinf1,Col1a2,Col1a1	6	Pxdn,Serpinh1,Col4a2,Ctgf,Lox,Thbs1	2.27027027027027	0.114159170015118
+Zfp41	718	74	2	Cdk1,H2afx	0		0	1
+Zfp423	718	74	17	Fstl1,Nid2,Nedd4,Pxdn,Serpinh1,Sparc,Rarres2,Igf1,Nid1,Atp1a1,Fasn,Shmt2,Krt79,Orm1,Rbp4,Hp,Apoc1	2	Pxdn,Serpinh1	1.16036036036036	0.692530575809556
+Zfp518b	718	74	0		0		100	1
+Zkscan14	718	74	19	Ccdc80,Col3a1,Col5a2,Fstl1,Col4a1,Col6a1,Pcolce,Fat1,Ptprg,Pxdn,Serpinh1,Vasn,Htra1,Sparc,Col4a2,Col4a5,Postn,Col1a2,Col1a1	3	Pxdn,Serpinh1,Col4a2	1.63175675675676	0.437848591423481
+Tbl1x	718	74	1	Pafah1b2	1	Pafah1b2	100	0.104311543810848
+Gzf1	718	74	20	Apoh,C8g,Eif6,F5,Gamt,Angptl3,Serpind1,Cpb2,Agt,Hibch,Fgg,Dpys,Aldh8a1,Apof,Fgb,Aldh7a1,Akr1d1,Pah,Apoa2,Hrsp12	1	Eif6	0.458036984352774	0.711028061173977
+Lmo4	718	74	2	Psap,Dbi	1	Psap	8.7027027027027	0.197612424663885
+Srebf1	718	74	21	Pon3,Amy1,Smoc1,Gm6484,Angptl4,Igf1,Lbp,C6,Gpld1,Atp1a1,C4b,Trf,Fasn,Shmt2,Krt79,Orm1,Rbp4,Got1,Hp,Apoc1,Serpina3n	0		0	0.255355442628068
+Ebf2	718	74	11	Pacsin3,Lmcd1,Igf1,Gda,Cdh13,Lrg1,Fmod,Shmt2,Slc9a3r1,Cfl2,Rbp4	0		0	0.61454257271501
+Isl1	718	74	11	Smoc1,Cel,C6,Ddc,Ufc1,Fasn,Pdia6,Lgals9,Ttr,Ywhab,Got1	0		0	0.61454257271501
+Patz1	718	74	17	Xdh,C1ra,Gm6484,Angptl4,Rarres2,Gda,Fasn,Orm1,Orm2,Taldo1,C3,Ppa1,Blvrb,Hp,Apoc1,Serpina3n,Dbi	0		0	0.401323145104133
+Rb1	718	74	1	Fkbp4	0		0	1
+Stat5a	718	74	5	Xdh,Gm6484,Gda,Orm1,C3	0		0	1
+Zfp161	718	74	0		0		100	1
+Arnt	718	74	1	Ywhag	0		0	1
+Calcoco1	718	74	6	Pacsin3,Lmcd1,Slc9a3r2,Cdh13,Nars,Ppia	0		0	1
+Csda	718	74	6	Gyk,Iah1,Galm,Hspa1l,Tubb4b,Akr1a1	1	Tubb4b	1.74054054054054	0.482403452596823
+Csde1	718	74	10	Lmcd1,Slc25a5,Kera,Cacna2d1,Cdh13,Nt5c,Fmod,Slc9a3r1,Capza2,Cfl2	1	Nt5c	0.966966966966967	1
+Dbx1	718	74	1	Clic4	1	Clic4	100	0.104311543810848
+Ddx1	718	74	2	Ezr,Aimp1	1	Ezr	8.7027027027027	0.197612424663885
+Dedd	718	74	2	Clic4,Tpi1	1	Clic4	8.7027027027027	0.197612424663885
+E2f6	718	74	1	Des	1	Des	100	0.104311543810848
+Foxj2	718	74	2	Plec,Des	2	Plec,Des	100	0.0110106629578118
+Foxj3	718	74	0		0		100	1
+Foxn3	718	74	2	Hspa1l,Ppia	0		0	1
+Foxo4	718	74	2	Des,Ywhaq	1	Des	8.7027027027027	0.197612424663885
+Hoxc9	718	74	4	Pacsin3,Kera,Des,Pgam1	1	Des	2.9009009009009	0.355758745811962
+Hr	718	74	6	Pacsin3,Atxn10,Cdh13,Mvp,Des,Rdx	2	Mvp,Des	4.35135135135135	0.123515245614651
+Lbx1	718	74	6	Slc25a5,Pdcd6,Sri,Gns,Kera,Chid1	1	Gns	1.74054054054054	0.482403452596823
+Mef2a	718	74	3	Epb4.1l2,Sema3e,Msn	1	Msn	4.35135135135135	0.281078538603148
+Meis2	718	74	2	Pfn2,Kera	0		0	1
+Myf5	718	74	13	Serpinb9,Pacsin3,Lmcd1,Kera,Cacna2d1,Des,Iah1,Fmod,Comt,Myh3,Slc9a3r1,Thbs4,Cfl2	1	Des	0.725225225225225	1
+Myod1	718	74	16	Pacsin3,Slc25a5,Sri,Cobll1,Kera,Plec,Des,Iah1,Fmod,Myh3,Galm,Thbs4,Ywhaq,Ldha,Tpi1,Ppia	2	Plec,Des	1.24324324324324	0.677243557218636
+Myog	718	74	14	Serpinb9,Pacsin3,Cobll1,Kera,Plec,Cacna2d1,Des,Iah1,Fmod,Myh3,Galm,Aldh9a1,Thbs4,Ldha	2	Plec,Des	1.45045045045045	0.648527180976321
+Nfe2l1	718	74	5	Lmcd1,Cacna2d1,Cdh13,Gaa,Des	1	Des	2.17567567567568	0.422588751433128
+Pax7	718	74	8	Serpinb9,Cobll1,Gns,Kera,Chid1,Comt,Myh3,Rps15a	1	Gns	1.24324324324324	0.583887187168891
+Phtf2	718	74	3	Cacna2d1,Hspa1l,Ppia	0		0	1
+Pknox2	718	74	16	Sema3e,Icam2,Pacsin3,Lmcd1,Bcam,Slc25a5,Ltbp2,Slc9a3r2,Pdcd6,Cacna2d1,Msn,Aldh9a1,Cfl2,Hspa1l,Actc1,Ppia	2	Msn,Actc1	1.24324324324324	0.677243557218636
+Pou4f1	718	74	7	Glb1,Slc25a5,Sri,Kera,Comt,Galm,Thbs4	0		0	1
+Rcor3	718	74	5	Pros1,Ctsh,Tgm2,Hspa1l,Gpx1	0		0	1
+Rxrg	718	74	49	Pacsin3,F12,F9,Apoh,Fgl1,Hpx,Fetub,Cdh13,1300017J02Rik,Apoa5,C8a,Hrg,Angptl3,C9,Des,Lipc,Serpind1,Plg,Pzp,Cpb2,Glyat,Orm1,Fgg,Apon,Dpys,Aldh8a1,Mug1,Itih3,Acsm1,Lcat,Apoc4,Cfl2,Apof,Fgb,Ftcd,Hgd,Ces1c,Azgp1,Mup3,Akr1d1,Fga,Haao,Kng1,Serpinc1,Bhmt2,Serpina3k,Serpina1c,Ppia,Apoa2	1	Des	0.181306306306306	0.0769453553763201
+Satb1	718	74	0		0		100	1
+Sim2	718	74	4	Pacsin3,Lmcd1,Kera,Fmod	0		0	1
+Six1	718	74	16	Icam2,Pacsin3,Slc25a5,Cobll1,Kera,Cacna2d1,Gyk,Igfbp6,Ezr,Fmod,Krt79,Slc9a3r1,Galm,Aldh9a1,Cfl2,Ldha	1	Ezr	0.58018018018018	1
+Smad3	718	74	7	Dlg1,Slc25a5,Cobll1,Gns,Kera,Plec,Fmod	2	Gns,Plec	3.48108108108108	0.161136630070714
+Srf	718	74	7	Plec,Coasy,Des,Gbe1,Pgrmc1,Gnb2l1,Aldh9a1	2	Plec,Des	3.48108108108108	0.161136630070714
+Tbx15	718	74	14	Pacsin3,Lmcd1,Slc25a5,Cobll1,Kera,Plec,Cacna2d1,Gyk,Fmod,Aimp1,Galm,Aldh9a1,Thbs4,Cfl2	1	Plec	0.669438669438669	1
+Tceb3	718	74	2	Capza2,Ywhag	0		0	1
+Trim16	718	74	5	Slc25a5,Cobll1,Gyk,Ezr,Galm	1	Ezr	2.17567567567568	0.422588751433128
+Wnt11	718	74	5	Pacsin3,Lmcd1,Nt5c,Fmod,Ppia	1	Nt5c	2.17567567567568	0.422588751433128
+Zbtb17	718	74	2	Pdcd6,Pgam1	0		0	1
+Zfp3	718	74	1	Pgrmc1	0		0	1
+Zfp652	718	74	2	Slc25a5,Ezr	1	Ezr	8.7027027027027	0.197612424663885
+Zfp661	718	74	2	Clic4,Ezr	2	Clic4,Ezr	100	0.0110106629578118
+Zfp770	718	74	2	Cacna2d1,Gpx1	0		0	1
+Atxn1l	718	74	2	Dera,Crip2	0		0	1
+Foxo3	718	74	4	Dsp,Dsc2,Dsg2,Idh2	1	Dsg2	2.9009009009009	0.355758745811962
+Gata4	718	74	9	Ehd4,Dsp,Dsc2,Dsg2,Tg,Dera,Dnpep,Crip2,Acaa2	1	Dsg2	1.08783783783784	1
+Hand2	718	74	11	Ehd4,Dsp,Dsc2,Dpp7,Dsg2,Tg,Hdlbp,Dera,Crip2,Acaa2,Actc1	2	Dsg2,Actc1	1.93393393393393	0.320879686292114
+Hey2	718	74	5	Ehd4,Dsp,Dsc2,Dsg2,Crip2	1	Dsg2	2.17567567567568	0.422588751433128
+Heyl	718	74	5	Icam2,Bcam,Slc9a3r2,Pdgfb,Igfbp6	0		0	1
+Ing2	718	74	3	Dsc2,Sdc1,Crip2	0		0	1
+Lrpprc	718	74	15	Acot13,Psmd12,Sdhb,Chchd3,Nit2,Hspa9,Cox5a,Atp5a1,Fh1,Got1,Hspd1,Got2,Atp5b,Mdh2,Hspe1	0		0	0.385529471898131
+Myocd	718	74	11	Ehd4,Dsp,Dsc2,Dpp7,Dsg2,Tg,Hadhb,Dera,Crip2,Acaa2,Actc1	2	Dsg2,Actc1	1.93393393393393	0.320879686292114
+Nkx2-5	718	74	5	Dsp,Dsc2,Dsg2,Tg,Actc1	2	Dsg2,Actc1	5.8018018018018	0.0884387233272993
+Phb	718	74	20	Acot13,Psmd12,Cox4i1,Sdhb,Nit2,Hspa9,Sod2,Atp5a1,Spr,Etfb,Prdx3,Fh1,Ndufa4,Got1,Hspd1,Got2,Atp5b,Mdh2,Tpi1,Hspe1	0		0	0.24856195055277
+Ppargc1a	718	74	6	Aebp1,Acot13,Sdhb,Suclg1,Atp5a1,Mdh1	0		0	1
+Preb	718	74	7	Ehd4,Acot7,Dsc2,Sdc1,Chid1,Dera,Crip2	0		0	1
+Prox1	718	74	80	Ehd4,Gltp,Lect2,Dsp,Dsc2,F12,Dsg2,F9,Serpina11,Serpina7,Serpina10,Cfi,Vtn,Apoh,C8g,Fgl1,Ambp,Hpx,Igfals,Apcs,Mbl2,Gpld1,C8b,1300017J02Rik,Apoa5,C8a,Hrg,Gc,Angptl3,Dera,C9,Itih1,Mup10,Lipc,Proc,Serpind1,Plg,Rps27a,Pzp,Cpb2,Glyat,Agt,Idh2,Crip2,Fgg,Apon,Dpys,F2,Hamp,Aldh8a1,Mug1,Itih3,Lcat,Apoc4,Apof,Fgb,Ftcd,Itih4,Rbp4,Ces1c,Azgp1,Rps14,Mup3,Akr1d1,Fga,Kng1,Pah,Serpinc1,Igfbp1,Itih2,Acaa2,Alb,Bhmt2,Serpina3k,Serpina1b,Serpina1c,Arg1,Actc1,Apoa2,Hrsp12	2	Dsg2,Actc1	0.223146223146223	0.0248172565273708
+Ptges2	718	74	17	Acot13,Atp5j2,Cox4i1,Nampt,Sdhb,Suclg1,Sod2,Atp5a1,Spr,Etfb,Prdx3,Ndufa4,Got1,Got2,Atp5b,Mdh2,Tpi1	0		0	0.401323145104133
+Rfxank	718	74	2	Dsc2,Dsg2	1	Dsg2	8.7027027027027	0.197612424663885
+Sod2	718	74	37	Acot13,F9,Apoh,Fgl1,Hpx,Apoa5,C8a,Hrg,Angptl3,C9,Itih1,Lipc,Serpind1,Plg,Cpb2,Sdhb,Glyat,Orm1,Fgg,Apon,Dpys,Orm2,Aldh8a1,Mug1,Apof,Ftcd,Hoga1,Azgp1,Mup3,Akr1d1,Haao,Kng1,Got2,Mdh1,Itih2,Bhmt2,Serpina3k	0		0	0.0414897689880885
+Taf1a	718	74	3	Dsc2,Dsg2,Dera	1	Dsg2	4.35135135135135	0.281078538603148
+Tbx20	718	74	8	Ehd4,Dsp,Dsc2,Dsg2,Tg,Dera,Crip2,Actc1	2	Dsg2,Actc1	2.9009009009009	0.200373073960496
+Tbx5	718	74	8	Sema3e,Icam2,Ltbp2,Slc9a3r2,Pdgfb,Dsc2,Tg,Actc1	1	Actc1	1.24324324324324	0.583887187168891
+Tfdp2	718	74	0		0		100	1
+Mycl1	718	74	3	Cacna2d1,Cntn1,Chchd3	0		0	1
+Foxi1	718	74	40	Mgam,Eps8l2,Hpn,Hgfac,Cpn1,Gyk,Afm,Xylb,Cdh1,Pdzk1,Gss,Slc27a2,C8a,Cryl1,Gc,Flrt1,Proc,Pigr,Glyat,Akr7a5,Cryz,Serpinf2,Aldh8a1,Acy3,Acsm1,Treh,Hgd,Hoga1,Pbld1,Bmp7,Akr1d1,Fga,Haao,Kng1,Pah,Igfbp1,Khk,Fbp1,Bhmt2,Aldob	1	Eps8l2	0.223146223146223	0.167538247958392
+Gcm1	718	74	36	Tgm1,Mgam,Hpn,Agmat,Hgfac,Afm,Xylb,Pdzk1,Slc27a2,C8a,Cryl1,Gc,Flrt1,Proc,Pigr,Glyat,Akr7a5,Aldh8a1,Acsm1,Shmt1,Treh,Hgd,Hoga1,Pbld1,Bmp7,Aldh7a1,Akr1d1,Haao,Kng1,Pah,Igfbp1,Khk,Dak,Fbp1,Bhmt2,Aldob	0		0	0.0405613591862777
+Glis3	718	74	3	Canx,Asah1,Ctbs	0		0	1
+Hmx2	718	74	42	Tgm1,Mgam,Hpn,Ndrg1,Gyk,Afm,Scrn2,Xylb,Cdh1,Pdzk1,Gss,Slc27a2,C8a,Gc,Flrt1,Proc,Pigr,Shmt2,Glyat,Akr7a5,Cryz,Mthfd1,Nit2,Serpinf2,Aldh8a1,Acy3,Acsm1,Treh,Hgd,Pbld1,Bmp7,Akr1d1,Fga,Haao,Kng1,Pah,Igfbp1,Khk,Abhd14b,Fbp1,Bhmt2,Aldob	0		0	0.0270562207726559
+Hnf1b	718	74	43	Cops8,Mgam,Eps8l2,Hpn,Ndrg1,Tcn2,Cpn1,Afm,Xylb,Cdh1,Pdzk1,Gss,Slc27a2,C8a,Cryl1,Gc,Flrt1,Proc,Pigr,Glyat,Cryz,Mthfd1,Serpinf2,Aldh8a1,Acy3,Acsm1,Treh,Hgd,Hoga1,Pbld1,Bmp7,Akr1d1,Fga,Haao,Kng1,Pah,Igfbp1,Pcbd1,Khk,Fbp1,Bhmt2,Aldob,Hrsp12	1	Eps8l2	0.207207207207207	0.111852532157568
+Hoxa11	718	74	11	1190002N15Rik,Nans,Map2k1,Itih5,Ndrg1,Golm1,Ggh,Fam162a,C1qtnf3,Des,Thbs4	1	Des	0.87027027027027	1
+Hoxb9	718	74	19	Nans,Cdh6,Itih5,Eps8l2,Cant1,Ifnar2,Golm1,Spp1,Fam162a,Afm,Xylb,Gss,C1qtnf3,Cox5a,Thbs4,Acsm1,Hoga1,Dak,Saa1	1	Eps8l2	0.483483483483483	0.710505035040356
+Hoxd11	718	74	14	Nans,Map2k1,Sri,Itih5,Fam3c,Cant1,Ifnar2,Golm1,Gss,Coro1b,C1qtnf3,Thbs4,Comp,Saa1	0		0	0.382218503736196
+Lhx1	718	74	34	Mgam,Hpn,Cpn1,Afm,Xylb,Cdh1,Pdzk1,Slc27a2,C8a,Gc,Flrt1,Proc,Pigr,Glyat,Cryz,Mthfd1,Aldh8a1,Acsm1,Krt8,Treh,Hgd,Pbld1,Bmp7,Akr1d1,Fga,Haao,Kng1,Pah,Igfbp1,Pcbd1,Khk,Fbp1,Bhmt2,Aldob	1	Krt8	0.263718263718264	0.240428397194242
+Pax8	718	74	39	Gna11,Mgam,Atxn10,Eps8l2,Ndrg1,Tcn2,Eif6,Gyk,Afm,Xylb,Cdh1,Pdzk1,Gss,Slc27a2,C8a,Gc,Flrt1,Proc,Pigr,Rdx,Glyat,Akr7a5,Cryz,Aldh8a1,Acy3,Acsm1,Treh,Hgd,Hoga1,Pbld1,Kng1,Igfbp1,Pcbd1,Dak,Aldoc,Vnn1,Fbp1,Bhmt2,Aldob	2	Eps8l2,Eif6	0.470416362308254	0.415576623819983
+Sall1	718	74	86	Gltp,Mgam,F12,Hpn,F9,Serpina11,Apoh,C8g,Fgl1,Hpx,Masp1,F5,Apcs,Cpn1,Afm,Xylb,Cdh1,Pdzk1,Mbl2,Gpld1,Gss,Slc27a2,1300017J02Rik,Apoa5,C8a,Hrg,Gc,Angptl3,C9,Itih1,Flrt1,Lipc,Proc,Serpind1,Pigr,Plg,Pzp,Cpb2,F10,Glyat,Cryz,Agt,Mthfd1,Fgg,Apon,Serpinf2,Dpys,F2,Aldh8a1,Mug1,Itih3,Acsm1,Lcat,Apoc4,Ddah1,Apof,Fgb,Ftcd,Krt8,Treh,Hgd,Ces1c,Pbld1,Bmp7,Azgp1,Mup3,Akr1d1,Fga,Haao,Kng1,Pah,Serpinc1,Igfbp1,Cth,Pcbd1,Khk,Dak,Itih2,Alb,Fbp1,Bhmt2,Serpina3k,Arg1,Aldob,Apoa2,Hrsp12	1	Krt8	0.102384737678855	0.0026484649512964
+Sim1	718	74	40	Mgam,Eps8l2,Hpn,Ndrg1,Cel,Hgfac,Cpn1,Afm,Xylb,Cdh1,Pdzk1,Slc27a2,C8a,Cryl1,Gc,Flrt1,Proc,Pigr,Glyat,Cryz,Mthfd1,Serpinf2,Aldh8a1,Acsm1,Shmt1,Treh,Hgd,Hoga1,Pbld1,Bmp7,Akr1d1,Haao,Kng1,Pah,Igfbp1,Pcbd1,Khk,Fbp1,Bhmt2,Aldob	1	Eps8l2	0.223146223146223	0.167538247958392
+Sp5	718	74	34	Gpx4,Anpep,Tgm1,Mgam,Hpn,Tcn2,Afm,Scrn2,Xylb,Cdh1,Pdzk1,Gss,Slc27a2,Cndp2,Flrt1,Proc,Pigr,Glyat,Cryz,Mthfd1,Aldh8a1,Acy3,Acsm1,Treh,Hgd,Pbld1,Akr1d1,Haao,Kng1,Cth,Vnn1,Fbp1,Bhmt2,Aldob	1	Cndp2	0.263718263718264	0.240428397194242
+Elf3	718	74	42	Gna11,Dsc2,Mgam,Eps8l2,Cant1,Dsg2,Lsr,Golm1,Hgfac,Afm,Xylb,Cdh1,Pdzk1,Slc27a2,C8a,Cryl1,Gc,Proc,Pigr,Rdx,Glyat,Akr7a5,Serpinf2,Pklr,Aldh8a1,Acsm1,Krt19,Krt8,Treh,Hgd,Krt18,Hoga1,Pbld1,Bmp7,Akr1d1,Haao,Igfbp1,Pcbd1,Khk,Fbp1,Bhmt2,Aldob	4	Eps8l2,Dsg2,Lsr,Krt8	0.916073968705548	1
+Foxa1	718	74	15	Dsc2,Mgam,Eps8l2,Ang,Dsg2,Hgfac,Sdc1,Cdh1,Flrt1,Pigr,Pklr,Krt19,Krt8,Krt18,Saa1	3	Eps8l2,Dsg2,Krt8	2.17567567567568	0.202368167117061
+Hes6	718	74	29	Tgm1,Mgam,Hpn,Hgfac,Scrn2,Xylb,Pdzk1,C8a,Atp1a1,Proc,Pigr,Glyat,Bpnt1,Nit2,Pklr,Aldh8a1,Acy3,Acsm1,Echs1,Treh,Hgd,Pbld1,Bmp7,Akr1d1,Pah,Khk,Aldoc,Bhmt2,Aldob	0		0	0.103292055211515
+Hnf4g	718	74	53	Gna11,Pcsk5,Arl3,Pgm1,Anpep,Dsc2,AU040320,Tgm1,Mgam,Atxn10,Eps8l2,Hpn,Dsg2,Afm,Xylb,Cdh1,Pdzk1,Gss,Slc27a2,C8a,Pmm2,Cndp2,Flrt1,Proc,Pigr,Rdx,Paics,Txndc17,Glyat,Bpnt1,Cryz,Mthfd1,Serpinf2,Pklr,Aldh8a1,Acy3,Acsm1,Krt19,Krt8,Treh,Hgd,Pbld1,Akr1d1,Fga,Haao,Kng1,Pah,Khk,Abhd14b,Fbp1,Bhmt2,Aldob,Hrsp12	4	Eps8l2,Dsg2,Cndp2,Krt8	0.71042471042471	0.642452586729839
+Klf4	718	74	29	Chmp2b,Hpn,Afm,Xylb,Pdzk1,Slc27a2,C8a,Cryl1,Proc,Nit1,Glyat,Akr7a5,Cryz,Mthfd1,Serpinf2,Aldh8a1,Acsm1,Shmt1,Krt19,Treh,Hgd,Hoga1,Pbld1,Bmp7,Aldh7a1,Khk,Dak,Bhmt2,Actg2	1	Actg2	0.310810810810811	0.347669646434418
+Muc1	718	74	41	Gprc5a,Sema3e,Slc9a3r2,Pdgfb,Msln,Mgam,Eps8l2,Hpn,Ndrg1,Serpina10,Hgfac,Hc,Cpn1,Afm,Xylb,Cdh1,Pdzk1,Gss,Slc27a2,Cryl1,Flrt1,Glyat,Cryz,Mthfd1,Aldh8a1,Acsm1,Tubb1,Ttr,Hgd,Hoga1,Pbld1,Kng1,Pah,Igfbp1,Pcbd1,Khk,Dak,Fbp1,Bhmt2,Aldob,Hrsp12	2	Eps8l2,Tubb1	0.446292446292446	0.418938734688203
+Nr1h4	718	74	53	Fam49b,Tgm1,Mgam,Eps8l2,Hpn,Ndrg1,Dsg2,Lsr,Hgfac,Afm,Xylb,Pcsk9,Cdh1,Pdzk1,Gss,Slc27a2,C8a,Cryl1,Flrt1,Pm20d1,Pck1,Proc,Pigr,Glyat,Bpnt1,Cryz,Mthfd1,Serpinf2,Pklr,Aldh8a1,Galm,Acy3,Acsm1,Pnpo,Krt8,Treh,Hgd,Hoga1,Pbld1,Akr1d1,Fga,Haao,Kng1,Pah,Igfbp1,Pcbd1,Khk,Aldh1l1,Abhd14b,Fbp1,Bhmt2,Saa1,Aldob	4	Eps8l2,Dsg2,Lsr,Krt8	0.71042471042471	0.642452586729839
+Nr1i2	718	74	32	Dsc2,Mgam,Eps8l2,Dsg2,Lsr,Hgfac,Afm,Pcsk9,Slc27a2,Pm20d1,Pck1,Pigr,Glyat,Akr7a5,Serpinf2,Pklr,Aldh8a1,Galm,Acsm1,Pnpo,Krt8,Treh,Hgd,Pbld1,Akr1d1,Haao,Khk,Aldh1l1,Bhmt2,Saa2,Saa1,Aldob	4	Eps8l2,Dsg2,Lsr,Krt8	1.24324324324324	0.565471859213823
+Tbx2	718	74	28	Sema3e,Bmp4,Icam2,Bcam,Ltbp2,Slc9a3r2,Pdgfb,Mgam,Hpn,Cpn1,Afm,Xylb,Cdh1,Pdzk1,Slc27a2,Flrt1,Serping1,Glyat,Krt8,Pbld1,Bmp7,Fga,Igfbp1,Pcbd1,Fbp1,Bhmt2,Actc1,Aldob	2	Krt8,Actc1	0.669438669438669	1
+Zeb1	718	74	10	Mgam,Xylb,Cdh1,Pdzk1,Cndp2,Glyat,Aldh8a1,Fbp1,Bhmt2,Hrsp12	1	Cndp2	0.966966966966967	1
+Zhx3	718	74	26	Hpn,Apoh,Fetub,Scrn2,C8a,Hrg,C9,Proc,Rps27a,Glyat,Akr7a5,Apon,Serpinf2,Dpys,Aldh8a1,Mug1,Acsm1,Treh,Hgd,Aldh7a1,Akr1d1,Haao,Kng1,Khk,Abhd14b,Bhmt2	0		0	0.0986029775019849
+Bcl6b	718	74	6	Bcam,Slc9a3r2,Pdgfb,Hspb1,Serping1,Crip2	1	Hspb1	1.74054054054054	0.482403452596823
+Epas1	718	74	3	Slc9a3r2,Lyz2,Serping1	0		0	1
+Foxf1	718	74	3	Gprc5a,Csrp1,Hc	0		0	1
+Foxf2	718	74	2	Gprc5a,Csrp1	0		0	1
+Foxj1	718	74	8	Sema3e,Icam2,Bcam,Ltbp2,Slc9a3r2,Hc,Krt79,Actc1	1	Actc1	1.24324324324324	0.583887187168891
+Hey1	718	74	3	Sema3e,Icam2,Slc9a3r2	0		0	1
+Meox1	718	74	2	Bcam,Slc9a3r2	0		0	1
+Mier2	718	74	0		0		100	1
+Mta3	718	74	0		0		100	1
+Nkx2-1	718	74	7	Serpinb9,Sema3e,Icam2,Slc9a3r2,Hc,Krt79,Tubb1	1	Tubb1	1.45045045045045	0.535947923017841
+Rarb	718	74	1	Slc9a3r2	0		0	1
+Smad6	718	74	4	Bmp4,Slc9a3r2,Tinagl1,Tgm2	0		0	1
+Sox17	718	74	12	Serpinb9,Sema3e,Icam2,Bcam,Slc9a3r2,Pdgfb,Ctla2a,Hspb1,Tinagl1,Igfbp6,Serping1,Crip2	2	Ctla2a,Hspb1	1.74054054054054	0.360318444125048
+Sox7	718	74	11	Serpinb9,Sema3e,Icam2,Bcam,Slc9a3r2,Pdgfb,Ctla2a,Hspb1,Igfbp6,Serping1,Crip2	2	Ctla2a,Hspb1	1.93393393393393	0.320879686292114
+Tcf21	718	74	3	Slc9a3r2,Tgm2,Serping1	0		0	1
+Alx4	718	74	56	Lect2,F12,F9,Serpina11,Apoh,C8g,Fgl1,Hpx,Fetub,Apcs,C8b,1300017J02Rik,Apoa5,C8a,Hrg,Angptl3,C9,Itih1,Mup10,Lipc,Serpind1,Plg,Pzp,Cpb2,F10,Glyat,Fgg,Apon,Serpinf2,Dpys,Orm2,F2,Hamp,Aldh8a1,Mug1,Itih3,Acsm1,Lcat,Apoc4,Apof,Fgb,Ftcd,Hgd,Ces1c,Hoga1,Azgp1,Mup3,Akr1d1,Fga,Haao,Kng1,Serpinc1,Alb,Bhmt2,Serpina3k,Apoa2	0		0	0.004180006991262
+Bahd1	718	74	10	Gamt,Mup10,Pzp,Nit2,Serpinf2,Aldh8a1,Nqo2,Lcat,Pbld1,Serpinc1	0		0	0.609995191546485
+Creb3l3	718	74	44	Tfg,Lect2,F12,F9,Agmat,Serpina11,Cfi,Gm6484,Apoh,Ambp,Apcs,Afm,Mbl2,1300017J02Rik,Apoa5,Apob,Hrg,C9,Itih1,Bbox1,Plg,Cpb2,F10,Apoa4,Apon,Serpinf2,F2,Mug1,Gpt,Apoc4,Fgb,Ftcd,Ces1c,Azgp1,Akr1b3,Serpinc1,Khk,Dak,Serpina1b,Serpina1c,Apoa1,Apoc3,Apoa2,Fabp1	0		0	0.0163243523844751
+Maf1	718	74	33	Lect2,F12,F9,Apoh,Fgl1,Masp1,Apcs,Afm,1300017J02Rik,Apoa5,C8a,Hrg,Angptl3,C9,Itih1,Lipc,Plg,Pzp,Glyat,Apon,Serpinf2,Orm2,F2,Mug1,Itih3,Apof,Ftcd,Hgd,Akr1d1,Kng1,Igfbp1,Bhmt2,Hrsp12	0		0	0.065534285317956
+Nr1i3	718	74	72	Lect2,F12,F9,Agmat,Serpina11,Serpina10,Cfi,Gm6484,Apoh,C8g,Fgl1,Ambp,Hpx,Fetub,F5,Apcs,Afm,Aldh16a1,Mbl2,C8b,1300017J02Rik,Apoa5,C8a,Apob,Hrg,Angptl3,C9,Itih1,Mup10,Lipc,Bbox1,Proc,Serpind1,Plg,Pzp,Cpb2,F10,Apoa4,Fgg,Apon,Serpinf2,Dpys,Orm2,F2,Hamp,Mug1,Itih3,Gpt,Lcat,Apoc4,Apof,Fgb,Ftcd,Hgd,Ces1c,Azgp1,Mup3,Akr1d1,Akr1b3,Fga,Kng1,Serpinc1,Khk,Dak,Alb,Serpina3k,Serpina1b,Serpina1c,Apoa1,Apoc3,Apoa2,Fabp1	0		0	0.00102630846308154
+Nr5a2	718	74	34	Lect2,F12,Agmat,Serpina10,Cfi,Fgl1,Ambp,Fetub,Apcs,Cpn1,Afm,Mbl2,1300017J02Rik,Apob,Hrg,Lipc,Plg,Pzp,Cpb2,Apoa4,Apon,Dpys,F2,Mug1,Apoc4,Apof,Fgb,Ces1c,Mup3,Serpinc1,Apoa1,Apoc3,Apoa2,Fabp1	0		0	0.0404095794758551
+Onecut1	718	74	87	Lect2,F12,F9,Agmat,Serpina11,Serpina7,Serpina10,Cfi,Vtn,Gm6484,Apoh,C8g,Fgl1,Ambp,Hpx,Masp1,Fetub,Igfals,F5,Apcs,Cpn1,Pkm,Afm,Mbl2,Gamt,C8b,1300017J02Rik,Apoa5,C8a,Apob,Hrg,Gc,Angptl3,Qsox1,C9,Itih1,Mup10,Lipc,Bbox1,Proc,Serpind1,Plg,Pzp,Cpb2,F10,Glyat,Fgg,Apon,Serpinf2,Dpys,Orm2,F2,Hamp,Aldh8a1,Mug1,Itih3,Lcat,Apoc4,Apof,Fgb,Ftcd,Itih4,Hgd,Ces1c,Hoga1,Pbld1,Azgp1,Aldh7a1,Mup3,Akr1d1,Fga,Haao,Kng1,Pah,Serpinc1,Igfbp1,Itih2,Alb,Bhmt2,Serpina3k,Serpina1b,Serpina1c,Apoa1,Apoc3,Apoa2,Hrsp12,Fabp1	1	Pkm	0.101194217473287	0.00268600333334425
+Onecut2	718	74	78	Lect2,F12,F9,Agmat,Serpina11,Serpina7,Serpina10,Cfi,Vtn,Gm6484,Apoh,C8g,Fgl1,Ambp,Hpx,Fetub,F5,Apcs,Cpn1,Afm,Mbl2,C8b,1300017J02Rik,Apoa5,C8a,Apob,Hrg,Gc,Angptl3,Qsox1,C9,Itih1,Mup10,Lipc,Bbox1,Proc,Serpind1,Plg,Pzp,Cpb2,F10,Apoa4,Fgg,Apon,Serpinf2,Dpys,Orm2,F2,Hamp,Mug1,Itih3,Gpt,Lcat,Apoc4,Apof,Fgb,Ftcd,Itih4,Ces1c,Azgp1,Mup3,Akr1d1,Akr1b3,Fga,Kng1,Serpinc1,Igfbp1,Khk,Dak,Itih2,Alb,Serpina3k,Serpina1b,Serpina1c,Apoa1,Apoc3,Apoa2,Fabp1	0		0	0.00065382369690805
+Sox4	718	74	1	Hibch	0		0	1
+Taf9b	718	74	16	Lect2,F12,Agmat,Serpina11,Apoh,Aldh16a1,1300017J02Rik,Apoa5,Apob,Hrg,C9,Apoa4,Apon,Dpys,Dak,Apoa1	0		0	0.392051598016263
+Tox3	718	74	34	Lect2,F12,F9,Hpx,Masp1,1300017J02Rik,C8a,Hrg,Angptl3,C9,Lipc,Serpind1,Plg,Pzp,F10,Glyat,Fgg,Apon,Serpinf2,Aldh8a1,Mug1,Itih3,Apoc4,Fgb,Ftcd,Hgd,Ces1c,Azgp1,Fga,Haao,Kng1,Serpinc1,Bhmt2,Serpina3k	0		0	0.0404095794758551
+Zbtb44	718	74	2	Gbe1,Hibch	0		0	1
+Atf4	718	74	1	Sdc1	0		0	1
+Bhlha15	718	74	6	Ufm1,Phgdh,Cel,Ddc,Hyou1,Pdia6	1	Phgdh	1.74054054054054	0.482403452596823
+Bmi1	718	74	0		0		100	1
+Carhsp1	718	74	2	Acot7,Sdc1	0		0	1
+Cry2	718	74	0		0		100	1
+Csrnp2	718	74	1	Cops8	0		0	1
+Dnmt3a	718	74	0		0		100	1
+Fev	718	74	0		0		100	1
+Kdm2b	718	74	1	Sdc1	0		0	1
+Lmx1b	718	74	0		0		100	1
+Neurog3	718	74	8	Gmppb,Ufm1,Lman1,Cel,Chid1,Ddc,Eef1g,Ttr	0		0	1
+Nkx2-2	718	74	4	Cel,Ddc,Lgals9,Ttr	0		0	1
+Nkx6-1	718	74	9	Ufm1,Lman1,Cel,Chid1,Ddc,Ufc1,Pdia6,Ttr,Ldha	0		0	0.609279586393359
+Pax6	718	74	2	Sdc1,Cat	0		0	1
+Pbx3	718	74	1	Basp1	0		0	1
+Pdx1	718	74	11	Gmppb,Ufm1,Lman1,Cel,Fkbp2,Sdc1,Chid1,Ddc,Ufc1,Pdia6,Ttr	0		0	0.61454257271501
+Phf20	718	74	0		0		100	1
+Prkdc	718	74	0		0		100	1
+Ptf1a	718	74	12	Ufm1,Phgdh,Cel,Chid1,Ddc,Hyou1,Krt76,Pdia6,Eef1g,Ttr,Hspa5,Prdx4	1	Phgdh	0.791154791154791	1
+Rbpjl	718	74	1	Nqo1	0		0	1
+Rnf10	718	74	0		0		100	1
+Smarca4	718	74	3	Pros1,Ctsh,Cat	0		0	1
+Smarcal1	718	74	0		0		100	1
+Sp4	718	74	0		0		100	1
+Taf12	718	74	0		0		100	1
+Tceanc	718	74	0		0		100	1
+Trp53bp1	718	74	0		0		100	1
+Xbp1	718	74	2	Hspa5,Atp5b	0		0	1
+Zfp120	718	74	2	Ech1,Hspa5	0		0	1
+Zfp329	718	74	0		0		100	1
+Zfp647	718	74	1	Arl3	0		0	1
+Zfp667	718	74	0		0		100	1
+Zfp74	718	74	1	Arl3	0		0	1
+Zfp775	718	74	0		0		100	1
+Zfp82	718	74	0		0		100	1
+Zfp90	718	74	1	Pck2	0		0	1
+Tcf20	718	74	0		0		100	1
+Atoh1	718	74	20	Gna11,Nans,Arl3,Pgm1,Dsc2,Mgam,Atxn10,Cant1,Dsg2,Golm1,Hgfac,Nt5c,Pmm2,Tsta3,Pigr,Rdx,Pklr,Krt19,Krt8,Saa1	3	Dsg2,Nt5c,Krt8	1.53577106518283	0.454824257048867
+Batf2	718	74	2	Atxn10,Il18bp	0		0	1
+Cc2d1a	718	74	3	Pfkp,Gna11,Mvp	1	Mvp	4.35135135135135	0.281078538603148
+Cdx1	718	74	21	Gna11,Nans,Arl3,Pgm1,Dsc2,Mgam,Atxn10,Eps8l2,Cant1,Dsg2,Golm1,Hgfac,Nt5c,Pmm2,Tsta3,Pigr,Rdx,Pklr,Krt19,Krt8,Saa1	4	Eps8l2,Dsg2,Nt5c,Krt8	2.04769475357711	0.265033005435859
+Cdx2	718	74	20	Gna11,Arl3,Pgm1,Dsc2,Mgam,Atxn10,Eps8l2,Cant1,Dsg2,Golm1,Hgfac,Pmm2,Tsta3,Pigr,Rdx,Bpnt1,Pklr,Krt19,Krt8,Saa1	3	Eps8l2,Dsg2,Krt8	1.53577106518283	0.454824257048867
+Foxa2	718	74	19	Pcsk5,Snx9,Eps8l2,Ang,Dsg2,Lsr,Hgfac,Pcsk9,Cdh1,Lta4h,Cndp2,Pigr,Pklr,Pnpo,Krt19,Krt8,Krt18,Abhd14b,Saa1	5	Eps8l2,Dsg2,Lsr,Cndp2,Krt8	3.10810810810811	0.0433896915219366
+Foxd2	718	74	15	Nans,Map2k1,Sri,Itih5,Fam3c,Cant1,Ifnar2,Golm1,Hgfac,Spp1,Pmm2,Tsta3,Thbs4,Saa2,Saa1	0		0	0.385529471898131
+Gata5	718	74	22	Gna11,Pcsk5,Snx9,Arl3,Pdcd6,Anpep,AU040320,Mgam,Eps8l2,Pepd,Tcn2,Lta4h,Dpp4,Cndp2,Pigr,Rdx,Paics,Pklr,Krt19,Krt8,Treh,Glul	3	Eps8l2,Cndp2,Krt8	1.37411095305832	0.491892157225468
+Gtf2i	718	74	2	Pgm1,Tsta3	0		0	1
+Hmx3	718	74	11	Smpd1,Pgm1,AU040320,Mgam,Atp1a1,Pmm2,Tsta3,Pigr,Rdx,Txndc17,Pklr	0		0	0.61454257271501
+Hoxa13	718	74	15	Nans,Map2k1,Sri,Itih5,Fam3c,Cant1,Ifnar2,Golm1,Hgfac,Coro1b,Pmm2,Thbs4,Comp,Saa2,Saa1	0		0	0.385529471898131
+Hoxb13	718	74	23	Ap1m1,Nans,Arl3,Pgm1,Map2k1,Sri,Dsc2,Itih5,Fam3c,Cant1,Dsg2,Ifnar2,Golm1,Hgfac,Ggh,Flnb,Pmm2,Tsta3,Pigr,Thbs4,Krt19,Saa2,Saa1	2	Dsg2,Flnb	0.828828828828829	1
+Isx	718	74	17	Gna11,Arl3,Pgm1,Dsc2,Mgam,Atxn10,Eps8l2,Dsg2,Golm1,Pmm2,Pigr,Rdx,Paics,Pklr,Krt19,Krt8,Aldob	3	Eps8l2,Dsg2,Krt8	1.86486486486486	0.408641338072181
+Mlx	718	74	5	Arl3,Cant1,Pmm2,Pigr,Bpnt1	0		0	1
+Npas2	718	74	11	Chmp2b,Gna11,Mgam,Atxn10,Eps8l2,Cant1,Mvp,Pigr,Rdx,Paics,Krt19	2	Eps8l2,Mvp	1.93393393393393	0.320879686292114
+Nr3c2	718	74	4	Ap1m1,Map2k1,Sri,Pigr	0		0	1
+Phox2b	718	74	15	Gna11,Nans,Dsc2,Mgam,Dsg2,Golm1,Gm2a,Spon2,Myh11,Pcsk9,Tsta3,Krt19,Krt8,Krt18,Actg2	3	Dsg2,Krt8,Actg2	2.17567567567568	0.202368167117061
+Ppard	718	74	6	Gna11,Arl3,Atxn10,Cant1,Mvp,Rdx	1	Mvp	1.74054054054054	0.482403452596823
+Rfx1	718	74	1	Pfkp	0		0	1
+Smad1	718	74	1	Mvp	1	Mvp	100	0.104311543810848
+Spdef	718	74	16	Gna11,Dsc2,Mgam,Atxn10,Eps8l2,Cant1,Dsg2,Golm1,Hgfac,Tsta3,Pigr,Rdx,Pklr,Krt19,Krt8,Saa1	3	Eps8l2,Dsg2,Krt8	2.00831600831601	0.230662858549685
+Hes2	718	74	5	AU040320,Pepd,Bpnt1,Treh,Mdh2	0		0	1
+Zbtb10	718	74	5	Snx9,Gpx4,Anpep,Tcn2,Cndp2	1	Cndp2	2.17567567567568	0.422588751433128
+Arntl	718	74	0		0		100	1
+Gm98	718	74	5	Nans,Map2k1,Ifnar2,C1qtnf3,Thbs4	0		0	1
+Hoxd12	718	74	9	Nans,Ppp2cb,Map2k1,Itih5,Fam3c,Ifnar2,Ggh,Pgrmc1,Thbs4	0		0	0.609279586393359
+Rcor1	718	74	3	Nans,Golm1,Thbs4	0		0	1
+Ssbp3	718	74	7	1190002N15Rik,Nans,Itih5,Fam3c,Cant1,Thbs4,Tubb2a	1	Tubb2a	1.45045045045045	0.535947923017841
+Tcf7l2	718	74	0		0		100	1

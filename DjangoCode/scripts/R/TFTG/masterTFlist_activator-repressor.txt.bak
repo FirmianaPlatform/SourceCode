@@ -1,0 +1,7 @@
+HC_activator	Nr5a2	Sod2	Nr1h4	Gzf1	Hnf4a	Prox1	Foxa2	Irf6	Ptges2	Lrpprc	Phb	Foxa3	Hlf	Hnf1a	Srebf1
+HC_repressor	Xrcc6	Nolc1	Zbtb20	Pa2g4	Hic2	Pias2	Taf5
+HSC_activator	Nfatc2	Taf2	Gtf2e2	Zhx2	Dnmt1	Dnajc2	Tbp	Zfp593	Sox5	Hnf4g	Mybbp1a	Ruvbl2	Trim27	Hdac2	Phf5a	Zbtb20	Ilf2	Tfdp1	Tcea1	Npm1	Nr1h4	Hdgf	Arnt	Zfp639	Pbx1	Ppp1r8	Tox3	Zhx3	Mlxip	Maf1
+KC_activator	Irf5	Sfpi1	Zfp41	Adar	Irf8	Ifi204	Trim30a	Taf6l	Irf7	Akna	Rbbp8	Ikzf1	Runx1	Zfp36	Irf1	Pcna	Nfatc1	Tfe3	Gtf2f1	Pou2f2	Elf1	Srrt	Top2a	Mafb	Rel	Tfdp1	Ezh2	Ssrp1	Zeb2	Rxra	Cebpb	Set	Irf2	Ttf2	Nlrc5	Junb	Hdgf	Rfc1	Fli1	Stat1	Apex1	Hdac3	Mitf	Lrrfip1	Taf9	Sarnp	Bclaf1	Mybbp1a	Camta2	Smarcc1	Hnrnpab	Tfip11	Gtf2f2	Rbmxl1	Suz12	Zfp592	Irf3	Trim28	Smarca5	Cebpa
+KC_repressor	Etv6	Rxrg	Mtf1	Zfp523	Tox3	Maf1	Zbtb44
+LSEC_activator	Bcl6b	Smad6	Tead1	Sox18	Erg	Epas1	Tcf7l1	Nr2f2	Hoxa5	Hoxb5	Ash2l	Zfp42	Yap1	Hic1	Nfib	Mef2a	Etv6	Nfia	Bbx	Nfix	Ets1	Zfp37	Elk3	Notch1	Rela	Tbx2
+LSEC_repressor	Tcf4	Ifi204	Mlxip	Zeb1	Zfpm1	Smad4	Taf9b	Bahd1	Nr5a2	Esrrg
