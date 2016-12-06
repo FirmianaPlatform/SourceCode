@@ -1,0 +1,59 @@
+String url = "http://61.50.134.132/logins/";
+String postParam = "email=" + usrname + "&" + "password=" + usrpwd;
+http://61.50.134.132/logins/?email=caoruif@126&password=111111
+
+//validate
+							if(usrname=="" || pwd==""){
+								alert("The username or password cannot be null!");
+								//return current page//
+							}
+							if(1==1){
+								alert("username = " + usrname + "---" + "pwd = " + pwd);
+								alert("向指定 URL 发送POST方法的请求");
+								url = "http://61.50.134.132/logins/";
+								data = "?email=" + usrname + "&" + "password=" + pwd;
+								/*
+								$ajax({
+									type: "POST",
+									url: "http://61.50.134.132/logins/"
+									data: {email:"caoruif@126.com", password:"111111"},
+									datatype: "html",//"xml", "html", "script", "json", "jsonp", "text".
+									beforeSend:function(){$("#msg").html("logining");},
+									//成功返回之后调用的函数             
+									success:function(data){
+										$("#msg").html(decodeURI(data)); 
+									},
+									//调用执行后调用的函数
+									complete: function(XMLHttpRequest, textStatus){
+										alert(XMLHttpRequest.responseText);
+										alert(textStatus);
+										//HideLoading();
+									},
+									//调用出错执行的函数
+									error: function(){
+										//请求出错处理
+										alert("error");
+									}         
+								*/
+									
+								});
+
+function post(URL, PARAMS) {      
+    var temp = document.createElement("form");      
+    temp.action = URL;      
+    temp.method = "post";      
+    temp.style.display = "none";      
+    for (var x in PARAMS) {      
+        var opt = document.createElement("textarea");      
+        opt.name = x;      
+        opt.value = PARAMS[x];      
+        // alert(opt.name)      
+        temp.appendChild(opt);      
+    }      
+    document.body.appendChild(temp);      
+    temp.submit();      
+    return temp;      
+}      
+     
+调用方法 如      
+post('pages/statisticsJsp/excel.action', {html :prnhtml,cm1:'sdsddsd',cm2:'haha'});

@@ -1,0 +1,1236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" type="image/ico" href="/static/images/favicon4.ico" />
+    <title>Firmiana | Home </title>
+    <link href="/static/homepageNxt/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- <link href="/static/homepageQnq/css/firmiana3.0.3.css" rel="stylesheet"> -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script type="text/javascript" src="/static/homepageNxt/js/jquery.min.js"></script>
+    <!---strat-slider---->
+    <link rel="stylesheet" type="text/css" href="/static/homepageNxt/css/slider.css" />
+    <script type="text/javascript" src="/static/homepageNxt/js/modernizr.custom.28468.js"></script>
+    <script type="text/javascript" src="/static/homepageNxt/js/jquery.cslider.js"></script>
+    <!---modal---->
+    <script type="text/javascript" src="/static/homepageNxt/js/jquery.leanModal.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/homepageNxt/css/login.css" />
+
+    <script src="/static/homepageNxt/js/gar.js" type="text/javascript"></script>
+
+    <!---strip-->
+    <script type="text/javascript" src="/static/homepageNxt/js/strip.pkgd.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/homepageNxt/css/strip.css"/>
+
+    <!---chart.js-->
+    <script src="/static/homepageNxt/js/chart/Chart.Core.js"></script>
+    <script src="/static/homepageNxt/js/chart/Chart.Doughnut.js"></script>
+
+    <!---tips-->
+    <link rel=" stylesheet" type="text/css" href="/static/homepageNxt/css/tinytools.tourtip.min.css">
+    <script src="/static/homepageNxt/js/tinytools.tourtip.min.js"></script>
+
+    <!---pdf reader-->
+    <script type="text/javascript" src="/static/homepageNxt/js/pdfobject.js"></script>
+
+    <script type="text/javascript">
+    $(function() {
+
+        $('#da-slider').cslider({
+            autoplay: true,
+            bgincrement: 450
+        });
+
+    });
+    </script>
+    <!---//strat-slider-->
+    <!--- scroll -->
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+        var defaults = {
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 1200,
+            easingType: 'linear'
+        };
+
+
+        $().UItoTop({
+            easingType: 'easeOutQuart'
+        });
+
+    });
+    </script>
+    <!-- //scroll -->
+    <!-- start portfolios -->
+    <!-- <link href="/static/homepageNxt/css/portfolio.css" rel="stylesheet" type="text/css" media="all" /> -->
+    <script type="text/javascript" src="/static/homepageNxt/js/fliplightbox.min.js"></script>
+    <script type="text/javascript">
+    $('body').flipLightBox()
+    </script>
+    <script type="text/javascript" src="/static/homepageNxt/js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="/static/homepageNxt/js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+
+        var filterList = {
+
+            init: function() {
+
+                // MixItUp plugin
+                // http://mixitup.io
+                $('#portfoliolist').mixitup({
+                    targetSelector: '.portfolio',
+                    filterSelector: '.filter',
+                    effects: ['fade'],
+                    easing: 'snap',
+                    // call the hover effect
+                    onMixEnd: filterList.hoverEffect()
+                });
+
+            },
+
+            hoverEffect: function() {
+
+                // Simple parallax effect
+                $('#portfoliolist .portfolio').hover(function() {
+                    $(this).find('.label').stop().animate({
+                        bottom: 0
+                    }, 200, 'easeOutQuad');
+                    $(this).find('img').stop().animate({
+                        top: -40
+                    }, 500, 'easeOutQuad');
+                }, function() {
+                    $(this).find('.label').stop().animate({
+                        bottom: -40
+                    }, 200, 'easeInQuad');
+                    $(this).find('img').stop().animate({
+                        top: 0
+                    }, 300, 'easeOutQuad');
+                });
+
+            }
+        };
+
+        // Run the show!
+        filterList.init();
+
+    });
+    </script>
+    <!-- popup -->
+    <link rel="stylesheet" type="text/css" href="/static/homepageNxt/css/magnific-popup1.css">
+    <link rel="stylesheet" type="text/css" href="/static/homepageNxt/css/magnific-popup.css">
+    <script src="/static/homepageNxt/js/jquery.magnific-popup.js" type="text/javascript"></script>
+    <script>
+    $(document).ready(function() {
+        $('.popup-with-form').magnificPopup({
+            type: 'inline',
+            preloader: false,
+            focus: '#name',
+     
+            // When elemened is focused, some mobile browsers in some cases zoom in
+            // It looks not nice, so we disable it:
+            callbacks: {
+                beforeOpen: function() {
+                    if($(window).width() < 700) {
+                        this.st.focus = false;
+                    } else {
+                        this.st.focus = '#name';
+                    }
+                }
+            }
+        });
+        $('.popup-with-zoom-anim').magnificPopup({
+            type: 'inline',
+            fixedContentPos: false,
+            fixedBgPos: true,
+            overflowY: 'auto',
+            closeBtnInside: true,
+            preloader: false,
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-zoom-in'
+        });
+    });
+    </script>
+    <script type="text/javascript" src="/static/homepageNxt/js/jquery.lightbox.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/homepageNxt/css/lightbox.css" media="screen" />
+    <script type="text/javascript">
+    $(function() {
+        $('#portfoliolist a').lightBox();
+    });
+    </script>
+    <!-- nav -->
+    <script type="text/javascript" src="/static/homepageNxt/js/jquery.smint.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('.subMenu').smint({
+            'scrollSpeed': 1000
+        });
+    });
+    </script>
+    <script>
+    window.addEventListener("load", function() {
+        setTimeout(function() {
+            window.scrollTo(0, 1);
+        }, 0);
+    });
+    </script>
+    <script type="text/javascript">
+    function openJobStatus() {
+        window.location.assign("/gardener")
+    }
+    </script>
+    
+</head>
+
+<body>
+    <!-- start slider -->
+    <div class="slider_bg s7">
+        <!-- start main -->
+         <!-- start-da-slider -->
+        <div id="da-slider" class="da-slider">
+            <div class="da-slide">
+                <!-- <h2 class="title"></h2> -->
+                <h3 class="title">FIRMIANA</h3>
+                <p id="description" class="description">One-stop proteomic analysis platform</p>
+            </div>
+            <div class="da-slide">
+                <!-- <h2 class="title"></h2> -->
+                <!-- <h3 class="title">FIRMIANA</h3> -->
+                <p class="description">Integrated Omics Analysis Cloud Platform</p>
+            </div>
+            <div class="da-slide">
+                <h2 class="title">Focus on your experiments</h2>
+                <!-- <h3 class="title">Focus on your experiments</h3> -->
+                <p class="title">We do the rest</p>
+            </div>
+        </div>
+        <!--End-da-slider-->
+    </div>
+    <a href="#services" class="button scroll"><img src="/static/homepageNxt/images/arrow.png"></a>
+    <!-- start header -->
+    <div class="header">
+        <div class="logo">
+            <a href="#s7" class="scroll"><img src="/static/homepageNxt/images/logo.png"></a>
+        </div>
+        <!-- start top-nav -->
+        <div class="h_right">
+            <div class="subMenu">
+                <div class="wrap">
+                    <div class="inner">
+                        <a href="#" id="sTop" class="subNavBtn">SERVICES</a>
+                        <a href="#" id="s1" class="subNavBtn">FEATURE</a>
+                        <a href="#" id="s4" class="subNavBtn">DATA</a>
+                        <a href="#" id="s2" class="subNavBtn">TEAM</a>
+                        <a href="#" id="s3" class="subNavBtn">NEWS</a>
+                        <a href="#" id="s5" class="subNavBtn">TUTORIAL</a>
+                        <a href="#" id="s6" class="subNavBtn">CONTACT</a>
+                        {% if not user.is_authenticated %}
+                        <p href="#loginmodal" class="subNavBtn end">LOGIN</p>
+                        {% else %}
+                        <p class="subNavBtn">Dr.{{username}}</p>
+                        <p class="subNavBtn end" onclick="window.location.href='/logout'">LOGOUT<p>
+                        {% endif %}
+                    </div>
+                    <!-- /.navbar-collapse -->
+                    <a id="s7" class="right-msg subNavBtn msg-icon" href="#"><span> </span></a>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+            <!-- start smart_nav * -->
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#services">Services</a></li>
+                    <li class="nav-item"><a href="#work" class="scroll">Feature</a></li>
+                    <li class="nav-item"><a href="#fun" class="scroll">Data</a></li>
+                    <li class="nav-item"><a href="#about" class="scroll">Team</a></li>
+                    <li class="nav-item"><a href="#blog" class="scroll">News</a></li>
+                    <li class="nav-item"><a href="#pricing" class="scroll">pricing</a></li>
+                    <li class="nav-item"><a href="#contact" class="scroll">Contact</a></li>
+                    {% if not user.is_authenticated %}
+                    <li class="nav-item"><a href="#loginmodal" class="scroll">LOGIN</a></li>
+                    {% else %}
+                    <li class="nav-item"><a class="scroll">Dr.{{username}}</a></li>
+                    {% endif %}
+                    <div class="clear"></div>
+                </ul>
+            </nav>
+            <script type="text/javascript" src="/static/homepageNxt/js/responsive.menu.js"></script>
+            <!-- end smart_nav * -->
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- End-header -->
+    <!-- services -->
+    <div class="services sTop" id="services">
+        <div class="wrap">
+            <h3>SERVICES</h3>
+            <p>What we can do.</p>
+            <div class="col_1_of_3 span_1_of_3">
+                {% if not user.is_authenticated %}
+                <img src="/static/homepageNxt/images/service1.png" alt="" href="#loginmodal">
+                <h4><a>LOG IN</a></h4>
+                <p>User must log in before accessing to Firmiana.</p>
+                {% else %}
+                <img src="/static/homepageNxt/images/service1.png" alt="" onclick="window.location.href='/gardener'">
+                <h4><a>Dr.{{username}}</a></h4>
+                <p>Welcome back.</p>
+                {% endif %}
+            </div>
+            <div class="col_1_of_3 span_1_of_3">
+                {% if not user.is_authenticated %}
+                <img src="/static/homepageNxt/images/service2.png" alt="" href="#loginmodal">
+                {% else %}
+                <img src="/static/homepageNxt/images/service2.png" alt="" onclick="openJobStatus()">
+                {% endif %}
+                <h4><a>DATA ANALYSIS</a></h4>
+                <p>Main interface of Firmiana.</p>
+                <!-- <p><a href="#">MORE</a></p> -->
+            </div>
+            <div class="col_1_of_3 span_1_of_3">
+                {% if not user.is_authenticated %}
+                <img src="/static/homepageNxt/images/service3.png" alt="" href="#loginmodal">
+                {% else %}
+                <img src="/static/homepageNxt/images/service3.png" alt="" onclick="openJobStatus()">
+                {% endif %}
+                <h4><a>DATA COMPARISON</a></h4>
+                <p>Compare results of experiments.</p>
+                <!-- <p><a href="#">MORE</a></p> -->
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    
+    <div id="loginmodal" style="display:none;">
+        <h1>User Login</h1>
+        <form id="loginform" name="loginform" method="post" action="index.html">
+            <label for="username">Email:</label>
+            <input type="text" name="email" id="email" class="txtfield" tabindex="1">
+            <label for="password">Password:</label>
+            <input type="password" name="pswd" id="pswd" class="txtfield" tabindex="2">
+            <div class="checkbox">
+                <label>
+                    <input id="remember" type="checkbox"> Remember me
+                </label>
+            </div>
+            </br>
+            <div class="center">
+                <input style="float:left;" type="submit" name="loginbtn" id="loginbtn" class="flatbtn-blu hidemodal login_btn" value="Log In" tabindex="3">
+                <label style="float:right;margin-top:25px;" onclick="window.location.href='/register/'">Register now</label>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#loginform').submit(function(e) {
+            return false;
+        });
+
+        $("[href='#loginmodal']").leanModal({
+            top: 110,
+            overlay: 0.45,
+            closeButton: ".hidemodal"
+        });
+    });
+    </script>
+    <div id="registermodal" style="display:none;">
+        <h1>Register</h1>
+        <form id="registerform" name="registerform" method="post" action="index.html">
+            <label for="username">Email:</label>
+            <input type="text" name="email" id="email" class="txtfield" tabindex="1">
+            <label for="password">Password:</label>
+            <input type="password" name="pswd" id="pswd" class="txtfield" tabindex="2">
+            <label for="passwordconfirm">Confirm your password:</label>
+            <input type="password" name="pswdcnfm" id="pswdcnfm" class="txtfield" tabindex="2">
+            <label for="company">Company:</label>
+            <select id="company" onchange="getvalue(this)">
+                <option>123</option>
+            </select>
+            </br>
+            <div class="center">
+                <input style="float:left;" type="submit" name="loginbtn" id="loginbtn" class="flatbtn-blu hidemodal login_btn" value="Register" tabindex="3">
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript">
+    function closeLogin(){
+            document.getElementById('loginmodal').style.display='none'
+    }
+    $(document).ready(function() {
+        $('#registerform').submit(function(e) {
+            return false;
+        });
+        $("[href='#registermodal']").leanModal({
+            top: 110,
+            overlay: 0.45,
+            closeButton: ".hidemodal"
+        });
+    });
+    </script>
+    <div class="team-members s1" id="work" style="background: #8263AA;">
+        <div class="wrap">
+            <div class="tm-head">
+                <h3>FEATURE</h3>
+                <p>What makes FIRMIANA looks different.</p>
+            </div>
+            <div class="tm-head-grids">
+                <div class="tm-head-grid">
+                    <img src="/static/homepageNxt/images/feature1.png" 
+                    href="/static/homepageNxt/images/feature1.png" 
+                    class="strip" 
+                    data-strip-caption="Metadata: Three essential components such as sample, reagent, and experiment, are required to input with comprehensive information. Metadata information is associated with proteome identification/quantification module, and data analysis module."
+                    data-strip-group="featureGroup" 
+                    data-strip-group-options="loop: false, maxWidth: 700"
+                    alt="" style="margin-bottom:1em" />
+                </div>
+                <div class="tm-head-grid">
+                    <img src="/static/homepageNxt/images/feature2.png" 
+                    href="/static/homepageNxt/images/feature2.png" 
+                    class="strip" 
+                    data-strip-caption="The users can access the visualized identification details of proteins and peptides, such as total ion chromatograph (TIC), MS1 precursor ions, retention time, MS2 spectrum, and so on."
+                    data-strip-group="featureGroup" 
+                    alt="" style="margin-bottom:1em" />
+                </div>
+                <div class="tm-head-grid">
+                    <img src="/static/homepageNxt/images/feature3.png" 
+                    href="/static/homepageNxt/images/feature3.png" 
+                    class="strip" 
+                    data-strip-caption="System support users to view distribution of datasets by density plot and box plot, because distribution of data has a great effect on results of data evaluation."
+                    data-strip-group="featureGroup"
+                    alt="" style="margin-bottom:1em" />
+                </div>
+            </div>
+        </div>
+        <div class="clear"> </div>
+        </br>
+        <div class="wrap">
+            <div class="tm-head-grids">
+                <div class="tm-head-grid">
+                    <img src="/static/homepageNxt/images/feature4.png" 
+                    href="/static/homepageNxt/images/feature4.png" 
+                    class="strip" 
+                    data-strip-caption="Dozens of bioinformatics tools, such as venn, significant test, volcano plot, hierarchical cluster, k means, and so on, were integrated for data analysis, and result in the gene/protein/peptide list of interest for the users."
+                    data-strip-group="featureGroup"
+                    alt="" style="margin-bottom:1em" />
+                </div>
+                <div class="tm-head-grid">
+                    <img src="/static/homepageNxt/images/feature5.png" 
+                    href="/static/homepageNxt/images/feature5.png" 
+                    class="strip" 
+                    data-strip-caption="For acquiring more advanced knowledge based on existing data, Firmiana supports users to carry out fundamental data mining by 3D-plot viewing global distribution of data and PPI under specific conditions."
+                    data-strip-group="featureGroup"
+                    alt="" style="margin-bottom:1em" />
+                </div>
+                <div class="tm-head-grid">
+                    <img src="/static/homepageNxt/images/feature6.png" 
+                    href="/static/homepageNxt/images/feature6.png" 
+                    class="strip" 
+                    data-strip-caption="GO, KEGG, PPI, and some other tools and resources were employed for further knowledge mining."
+                    data-strip-group="featureGroup"
+                    alt="" style="margin-bottom:1em" />
+                </div>
+                <div class="clear"> </div>
+            </div>
+        </div>
+    </div>
+    <!---- fun ---->
+    <div class="fun s4" id="fun">
+        <div class="wrap">
+            <div class="fun-head">
+                <h3>{{total_exp}}</h3>
+                <p>Experiments</p>
+            </div>
+            <div class="fun-head-grids">
+                <div class="fun-head-grid">
+                    <canvas id="Chart1" width="200" height="200"></canvas>
+                    <script type="text/javascript">
+                        var data = [
+                            {
+                                value: {{profiling_count}},
+                                color:"#F7464A",
+                                highlight: "#FF5A5E",
+                                label: "Profiling"
+                            },
+                            {
+                                value: {{tfre_count}},
+                                color: "#46BFBD",
+                                highlight: "#5AD3D1",
+                                label: "NA-IP"
+                            },
+                            {
+                                value: {{tio2_count}},
+                                color: "#FDB45C",
+                                highlight: "#FFC870",
+                                label: "Chemical-IP"
+                            },
+                            {
+                                value: {{standard_count}},
+                                color: "#949FB1",
+                                highlight: "#A8B3C5",
+                                label: "QC"
+                            },
+                            {
+                                value: {{total_exp}} - {{profiling_count}} - {{tfre_count}} - {{tio2_count}} - {{standard_count}},
+                                color: "#4D5360",
+                                highlight: "#616774",
+                                label: "Others"
+                            }
+                        ]
+                        var options = {
+                            animation: false,
+
+                        }
+                        var ctx = document.getElementById("Chart1").getContext("2d");
+                        var myDoughnutChart = new Chart(ctx).Doughnut(data,options);
+                        
+                    </script>
+                    <h4>Types</h4>
+                    <!-- <h5>Experiments</h5> -->
+                </div>
+                <div class="fun-head-grid">
+                    <canvas id="Chart2" width="200" height="200"></canvas>
+                    <script type="text/javascript">
+                        var data = [
+                            {
+                                value: {{human_count}},
+                                color:"#F7464A",
+                                highlight: "#FF5A5E",
+                                label: "Human"
+                            },
+                            {
+                                value: {{mouse_count}},
+                                color: "#46BFBD",
+                                highlight: "#5AD3D1",
+                                label: "Mouse"
+                            },
+                            {
+                                value: {{frog_count}},
+                                color: "#FDB45C",
+                                highlight: "#FFC870",
+                                label: "Frog"
+                            },
+                            {
+                                value: {{rat_count}},
+                                color: "#949FB1",
+                                highlight: "#A8B3C5",
+                                label: "Rat"
+                            },
+                            {
+                                value: {{total_exp}} - {{human_count}} - {{mouse_count}} - {{rat_count}},
+                                color: "#4D5360",
+                                highlight: "#616774",
+                                label: "Others"
+                            }
+                        ]
+                        var options = {
+                            animation: false,
+
+                        }
+                        var ctx = document.getElementById("Chart2").getContext("2d");
+                        var myDoughnutChart = new Chart(ctx).Doughnut(data,options);
+                    </script>
+                    <h4>Species</h4>
+                    <!-- <h5>Species</h5> -->
+                </div>
+                <div class="fun-head-grid">
+                    <!-- <img src="/static/homepageNxt/images/fact3.png" alt="" /> -->
+                    <canvas id="Chart3" width="200" height="200"></canvas>
+                    <script type="text/javascript">
+                        var data = [
+                            {
+                                value: {{qe_count}},
+                                color:"#F7464A",
+                                highlight: "#FF5A5E",
+                                label: "Q Exactive"
+                            },
+                            {
+                                value: {{fusion_count}},
+                                color: "#46BFBD",
+                                highlight: "#5AD3D1",
+                                label: "Fusion"
+                            },
+                            {
+                                value: {{velos_count}},
+                                color: "#FDB45C",
+                                highlight: "#FFC870",
+                                label: "LTQ Orbitrap Velos"
+                            },
+                            {
+                                value: {{ms56_count}},
+                                color: "#949FB1",
+                                highlight: "#A8B3C5",
+                                label: "5600 Q-TOF"
+                            }
+                        ]
+                        var options = {
+                            animation: false,
+
+                        }
+                        var ctx = document.getElementById("Chart3").getContext("2d");
+                        var myDoughnutChart = new Chart(ctx).Doughnut(data,options);
+                    </script>
+                    <h4>Instrument</h4>
+                    <!-- <h5>Working flow running</h5> -->
+                </div>
+                <div class="fun-head-grid">
+                    <!-- <img src="/static/homepageNxt/images/fact4.png" alt="" /> -->
+                    <canvas id="Chart4" width="200" height="200"></canvas>
+                    <script type="text/javascript">
+                        var data = [
+                            {
+                                value: {{year2014_count}},
+                                color:"#F7464A",
+                                highlight: "#FF5A5E",
+                                label: "2014"
+                            },
+                            {
+                                value: {{year2015_count}},
+                                color: "#46BFBD",
+                                highlight: "#5AD3D1",
+                                label: "2015"
+                            },
+                            {
+                                value: {{year2016_count}},
+                                color: "#FDB45C",
+                                highlight: "#FFC870",
+                                label: "2016"
+                            }
+                        ]
+                        var options = {
+                            animation: false,
+
+                        }
+                        var ctx = document.getElementById("Chart4").getContext("2d");
+                        var myDoughnutChart = new Chart(ctx).Doughnut(data,options);
+                    </script>
+                    <h4>Year</h4>
+                    <!-- <h5>Average searching time(min)</h5> -->
+                </div>
+                <div class="clear"> </div>
+            </div>
+        </div>
+    </div>
+    <!----//End-fun---->
+    <!-- start-team-members -->
+    <div class="team-members s2" id="about">
+        <div class="wrap">
+            <div class="tm-head">
+                <h3>MAIN COOPERATOR</h3>
+                <p></p>
+            </div>
+            <div class="tm-head-grids">
+                <div class="tm-head-grid">
+                    <img src="/static/homepageNxt/images/cooperator_ncpsb.png" onclick="window.open('http://www.phoenix-center.cn/');" alt="" />
+                    <h4>Phoenix Center</h4>
+                    <h5 style="margin-bottom:1em">National center for protein research</h5>
+                    <!-- <ul class="top-social-icons">
+                        <li>
+                            <a class="twitter simptip-position-bottom simptip-movable" data-tooltip="twitter" href="#"> </a>
+                        </li>
+                        <li>
+                            <a class="facebook simptip-position-bottom simptip-movable" data-tooltip="Facebook" href="#"> </a>
+                        </li>
+                        <li>
+                            <a class="pin simptip-position-bottom simptip-movable" data-tooltip="pintrest" href="#"> </a>
+                        </li>
+                        <div class="clear"> </div>
+                    </ul> -->
+                </div>
+                <div class="tm-head-grid">
+                    <img src="/static/homepageNxt/images/cooperator_bprc.png" onclick="window.open('http://www.bprc.ac.cn/');" alt="" />
+                    <h4>BPRC</h4>
+                    <h5 style="margin-bottom:1em">Organizer</h5>
+                    <!-- <ul class="top-social-icons">
+                        <li>
+                            <a class="twitter simptip-position-bottom simptip-movable" data-tooltip="twitter" href="#"> </a>
+                        </li>
+                        <li>
+                            <a class="facebook simptip-position-bottom simptip-movable" data-tooltip="Facebook" href="#"> </a>
+                        </li>
+                        <li>
+                            <a class="pin simptip-position-bottom simptip-movable" data-tooltip="pintrest" href="#"> </a>
+                        </li>
+                        <div class="clear"> </div>
+                    </ul> -->
+                </div>
+                <div class="tm-head-grid">
+                    <img src="/static/homepageNxt/images/cooperator_ecnu.png" onclick="window.open('http://www.ecnu.edu.cn/');" alt="" />
+                    <h4>East China Normal University</h4>
+                    <h5 style="margin-bottom:1em">Supporter</h5>
+                    <!-- <ul class="top-social-icons">
+                        <li>
+                            <a class="twitter simptip-position-bottom simptip-movable" data-tooltip="twitter" href="#"> </a>
+                        </li>
+                        <li>
+                            <a class="facebook simptip-position-bottom simptip-movable" data-tooltip="Facebook" href="#"> </a>
+                        </li>
+                        <li>
+                            <a class="pin simptip-position-bottom simptip-movable" data-tooltip="pintrest" href="#"> </a>
+                        </li>
+                        <div class="clear"> </div>
+                    </ul> -->
+                </div>
+                <div class="clear"> </div>
+            </div>
+        </div>
+        <div class="t-clients">
+            <div class="wrap">
+                <div class="nbs-flexisel-container">
+                    <div class="nbs-flexisel-inner">
+                        <ul class="flexiselDemo3 nbs-flexisel-ul" style="left: -253.6px; display: block;">
+                            <li onClick="window.open('http://www.fudan.edu.cn/');" class="nbs-flexisel-item" style="width: 253.6px;"><img src="/static/homepageNxt/images/logoFDU.png"></li>
+                            <li onClick="window.open('http://www.sysu.edu.cn/');" class="nbs-flexisel-item" style="width: 253.6px;"><img src="/static/homepageNxt/images/logoSYSU.png"></li>
+                            <li onClick="window.open('http://www.bmi.ac.cn/');" class="nbs-flexisel-item" style="width: 253.6px;"><img src="/static/homepageNxt/images/logoAMMS.png"></li>
+                            <li onClick="window.open('http://www.hnu.edu.cn/');" class="nbs-flexisel-item" style="width: 253.6px;"><img src="/static/homepageNxt/images/logoHNU.png"></li>
+                            <li onClick="window.open('http://www.bcm.edu/');" class="nbs-flexisel-item" style="width: 253.6px;"><img src="/static/homepageNxt/images/logoBCM.png"></li>
+                            <li onClick="window.open('http://www.cas.cn/');" class="nbs-flexisel-item" style="width: 253.6px;"><img src="/static/homepageNxt/images/logoCAS.png"></li>
+                            <li onClick="window.open('http://www.fudan.edu.cn/');" class="nbs-flexisel-item" style="width: 253.6px;"><img src="/static/homepageNxt/images/logoFDU.png"></li>
+                            <li onClick="window.open('http://www.sysu.edu.cn/');" class="nbs-flexisel-item" style="width: 253.6px;"><img src="/static/homepageNxt/images/logoSYSU.png"></li>
+                            <li onClick="window.open('http://www.bmi.ac.cn/');" class="nbs-flexisel-item" style="width: 253.6px;"><img src="/static/homepageNxt/images/logoAMMS.png"></li>
+                            <li onClick="window.open('http://www.hnu.edu.cn/');" class="nbs-flexisel-item" style="width: 253.6px;"><img src="/static/homepageNxt/images/logoHNU.png"></li>
+                            <li onClick="window.open('http://www.bcm.edu/');" class="nbs-flexisel-item" style="width: 253.6px;"><img src="/static/homepageNxt/images/logoBCM.png"></li>
+                            <li onClick="window.open('http://www.cas.cn/');" class="nbs-flexisel-item" style="width: 253.6px;"><img src="/static/homepageNxt/images/logoCAS.png"></li>
+                        </ul>
+                        <!-- <div class="nbs-flexisel-nav-left" style="top: 21.5px;"></div>
+                        <div class="nbs-flexisel-nav-right" style="top: 21.5px;"></div> -->
+                    </div>
+                </div>
+                <div class="clear"> </div>
+                <!---strat-image-cursuals---->
+                <script type="text/javascript" src="/static/homepageNxt/js/jquery.flexisel.js"></script>
+                <!---End-image-cursuals---->
+                <script type="text/javascript">
+                $(window).load(function() {
+                    $(".flexiselDemo3").flexisel({
+                        visibleItems: 5,
+                        animationSpeed: 1000,
+                        autoPlay: true,
+                        autoPlaySpeed: 3000,
+                        pauseOnHover: true,
+                        enableResponsiveBreakpoints: true,
+                        responsiveBreakpoints: {
+                            portrait: {
+                                changePoint: 480,
+                                visibleItems: 1
+                            },
+                            landscape: {
+                                changePoint: 640,
+                                visibleItems: 2
+                            },
+                            tablet: {
+                                changePoint: 768,
+                                visibleItems: 3
+                            }
+                        }
+                    });
+                });
+                </script>
+            </div>
+        </div>
+    </div>
+    <!-- End-team-members -->
+    <!-- start-team-members -->
+<!--     <div class="experience">
+        <div class="wrap">
+            <div class="ex-head">
+                <h3>OUR EXPERIENCE</h3>
+                <p>Proin iaculis purus consequat sem cure.</p>
+            </div>
+            <div class="prog">
+                <div class="text">
+                    <span>Web design</span>
+                </div>
+                <div class="text_p">
+                    <span>90%</span>
+                </div>
+                <div class="clear"></div>
+                <div class="progress-bar-container" data-percent="90%">
+                    <div class="progress-bar" style="width: 90%;">
+                    </div>
+                </div>
+            </div>
+            <div class="prog1">
+                <div class="text">
+                    <span>HTML/css</span>
+                </div>
+                <div class="text_p">
+                    <span>40%</span>
+                </div>
+                <div class="clear"></div>
+                <div class="progress-bar-container" data-percent="90%">
+                    <div class="progress-bar1" style="width: 40%;">
+                    </div>
+                </div>
+            </div>
+            <div class="prog2">
+                <div class="text">
+                    <span>illustration</span>
+                </div>
+                <div class="text_p">
+                    <span>60%</span>
+                </div>
+                <div class="clear"></div>
+                <div class="progress-bar-container" data-percent="90%">
+                    <div class="progress-bar2" style="width: 60%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!----//End-team-members---->
+    <!----start-blog---->
+    <div class="blog s3" id="blog">
+        <div class="wrap">
+            <div class="blog-head">
+                <h3>NEWS</h3>
+                <p>Recent changes.</p>
+            </div>
+            <div class="blog-grid">
+                <div class="blog-left">
+                    <div class="img-left">
+                        <img src="/static/homepageNxt/images/blog1.jpg" alt="" />
+                    </div>
+                    <div class="text-right">
+                        <h6>Nov 24, 2015</h6>
+                        <h3><a href="#">NEW FIRMIANA HOMEPAGE IS GOING ONLINE</a></h3>
+                        <img src="/static/homepageNxt/images/line.png" alt="" />
+                        <p>New homepage is finally online today.</p>
+                        <p><a>MORE</a></p>
+                    </div>
+                    <div class="clear"> </div>
+                </div>
+                <div class="blog-right">
+                    <div class="img-left">
+                        <img src="/static/homepageNxt/images/blog2.jpg" alt="" />
+                    </div>
+                    <div class="text-right">
+                        <h6>Nov 25, 2015</h6>
+                        <h3><a href="#">FIRMIANA BETA 1.01 RELEASED</a></h3>
+                        <img src="/static/homepageNxt/images/line.png" alt="" />
+                        <p>1.New register page.<br>2.Comparison panel bug fixed.<br></p>
+                        <p><a>MORE</a></p>
+                    </div>
+                    <div class="clear"> </div>
+                </div>
+                <div class="clear"> </div>
+            </div>
+            <div class="blog-grid">
+                <div class="blog-left">
+                    <div class="img-left">
+                        <img src="/static/homepageNxt/images/news3.jpg" alt="" />
+                    </div>
+                    <div class="text-right">
+                        <h6>Dec 14, 2015</h6>
+                        <h3><a href="#">FIRMIANA TUTORIAL AND DOCUMENTATION IS ONLINE</a></h3>
+                        <img src="/static/homepageNxt/images/line.png" alt="" />
+                        <p>Tutorial and documentation is now available for Firmiana beginner.</p>
+                        <p><a>MORE</a></p>
+                    </div>
+                    <div class="clear"> </div>
+                </div>
+                <div class="clear"> </div>
+            </div>
+            <!-- <div class="blog-grid">
+                <div class="blog-left">
+                    <div class="img-left">
+                        <img src="/static/homepageNxt/images/blog3.jpg" alt="" />
+                    </div>
+                    <div class="text-right">
+                        <h6>March 29, 2014</h6>
+                        <h3><a href="#">A NEW INVENTION FOR LOVERS WHO LOVE</a></h3>
+                        <img src="/static/homepageNxt/images/line.png" alt="" />
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum ....</p>
+                        <p><a href="#">MORE</a></p>
+                    </div>
+                    <div class="clear"> </div>
+                </div>
+                <div class="blog-right">
+                    <div class="img-left">
+                        <img src="/static/homepageNxt/images/blog4.jpg" alt="" />
+                    </div>
+                    <div class="text-right">
+                        <h6>March 29, 2014</h6>
+                        <h3><a href="#">A NEW INVENTION FOR LOVERS WHO LOVE</a></h3>
+                        <img src="/static/homepageNxt/images/line.png" alt="" />
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum ....</p>
+                        <p><a href="#">MORE</a></p>
+                    </div>
+                    <div class="clear"> </div>
+                </div>
+                <div class="clear"> </div>
+            </div> -->
+        </div>
+    </div>
+    <!----//End-blog---->
+    <!---- strat-studio---->
+    <!-- <div class="studio s4" id="studio">
+        <div class="wrap">
+            <div class="studio-head">
+                <h3>STUDIO</h3>
+                <p>Proin iaculis purus consequat sem cure.</p>
+            </div>
+        </div>
+    </div> -->
+    <!----//End-studio---->
+    <!---- strat-clent---->
+    <!-- <div class="clients">
+        <div class="wrap">
+            <div class="client-head">
+                <h3>OUR CLIENTS</h3>
+            </div>
+            strat-image-cursuals
+            <div class="t-clients">
+                <div class="wrap">
+                    <div class="nbs-flexisel-container">
+                        <div class="nbs-flexisel-inner">
+                            <ul class="flexiselDemo3 nbs-flexisel-ul" style="left: -253.6px; display: block;">
+                                <li onClick="location.href='#';" class="nbs-flexisel-item" style="width: 253.6px;"><img src="/static/homepageNxt/images/client1.png"></li>
+                                <li onClick="location.href='#';" class="nbs-flexisel-item" style="width: 253.6px;"><img src="/static/homepageNxt/images/client2.png"></li>
+                                <li onClick="location.href='#';" class="nbs-flexisel-item" style="width: 253.6px;"><img src="/static/homepageNxt/images/client3.png"></li>
+                                <li onClick="location.href='#';" class="nbs-flexisel-item" style="width: 253.6px;"><img src="/static/homepageNxt/images/client4.png"></li>
+                                <li onClick="location.href='#';" class="nbs-flexisel-item" style="width: 253.6px;"><img src="/static/homepageNxt/images/client5.png"></li>
+                                <li onClick="location.href='#';" class="nbs-flexisel-item" style="width: 253.6px;"><img src="/static/homepageNxt/images/client1.png"></li>
+                                <li onClick="location.href='#';" class="nbs-flexisel-item" style="width: 253.6px;"><img src="/static/homepageNxt/images/client2.png"></li>
+                                <li onClick="location.href='#';" class="nbs-flexisel-item" style="width: 253.6px;"><img src="/static/homepageNxt/images/client3.png"></li>
+                            </ul>
+                            <div class="nbs-flexisel-nav-left" style="top: 21.5px;"></div>
+                            <div class="nbs-flexisel-nav-right" style="top: 21.5px;"></div>
+                        </div>
+                    </div>
+                    <div class="clear"> </div>
+                    -strat-image-cursuals--
+                    <script type="text/javascript" src="/static/homepageNxt/js/jquery.flexisel.js"></script>
+                    -End-image-cursuals--
+                    <script type="text/javascript">
+                    $(window).load(function() {
+                        $(".flexiselDemo3").flexisel({
+                            visibleItems: 5,
+                            animationSpeed: 1000,
+                            autoPlay: true,
+                            autoPlaySpeed: 3000,
+                            pauseOnHover: true,
+                            enableResponsiveBreakpoints: true,
+                            responsiveBreakpoints: {
+                                portrait: {
+                                    changePoint: 480,
+                                    visibleItems: 1
+                                },
+                                landscape: {
+                                    changePoint: 640,
+                                    visibleItems: 2
+                                },
+                                tablet: {
+                                    changePoint: 768,
+                                    visibleItems: 3
+                                }
+                            }
+                        });
+                    });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!----//End-clients---->
+    <div class="pricing s5" id="pricing">
+        <div class="wrap">
+            <div class="pricing-head">
+                <h3>TUTORIAL</h3>
+                <p>Video and user manual.</p>
+            </div>
+            <div class="pricing-grids">
+                <div class="pricing-grid1">
+                    <br>
+                    <br>
+                    <div class="price-value">
+                        <a>Video</a>
+                    </div>
+                    <ul>
+                        <br>
+                        <img src="/static/homepageNxt/images/cooperator_bprc.png"
+                        href="https://vimeo.com/152884220" 
+                        class="strip" 
+                        data-strip-caption="A tutorial for firmiana beginner."
+                        data-strip-group-options="loop: false, maxWidth: 700"/>
+                        <br>
+                        <br>
+                        <li><a style="font-size:1.1em">A tutorial</a></li>
+                        <li><a style="font-size:1.1em">for Firmiana beginner</a></li>
+                        <li><a style="font-size:1.1em">You will find it</a></li>
+                        <li><a style="font-size:1.1em">easy to learn</a></li>
+                        <li><a style="font-size:1.1em">easy to start</a></li>
+                        <li><a style="font-size:1.1em">and easy to work with</a></li>
+                    </ul>
+                    <div class="cart1">
+                        <div class="span3">
+                            <a href="https://vimeo.com/152884220"
+                            class="strip" 
+                            data-strip-caption="A tutorial for firmiana beginner."
+                            data-strip-group-options="loop: false, maxWidth: 700">
+                                <j>GO</j>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing-grid2">
+                    <br>
+                    <br>
+                    <div class="price-value">
+                        <a>Manual</a>
+                    </div>
+                    <ul>
+                        <br>
+                        <img src="/static/homepageNxt/images/cooperator_bprc.png" onclick="show_documents()"/>
+                        <br>
+                        <br>
+                        <li><a style="font-size:1.1em">User manual</a></li>
+                        <li><a style="font-size:1.1em">for Firmiana learner</a></li>
+                        <!-- <li><a style="font-size:1.1em"></a></li>
+                        <li><a style="font-size:1.1em">easy to learn</a></li>
+                        <li><a style="font-size:1.1em">easy to start</a></li>
+                        <li><a style="font-size:1.1em">and easy to work with</a></li> -->
+                    </ul>
+                    <div class="cart1">
+                        <div class="span3">
+                            <a onclick="show_documents()">
+                                <k>GO</k>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing-grid3">
+                    <br>
+                    <br>
+                    <div class="price-value">
+                        <a href="#">Introduction</a>
+                    </div>
+                    <ul>
+                        <br>
+                        <img src="/static/homepageNxt/images/cooperator_bprc.png"/>
+                        <br>
+                        <br>
+                        <!-- <li><a style="font-size:1.1em">A tutorial for</a></li>
+                        <li><a style="font-size:1.1em">Firmiana beginner</a></li>
+                        <li><a style="font-size:1.1em">You will find it</a></li>
+                        <li><a style="font-size:1.1em">easy to learn</a></li>
+                        <li><a style="font-size:1.1em">easy to start</a></li>
+                        <li><a style="font-size:1.1em">and easy to work with</a></li> -->
+                    </ul>
+                    <div class="cart1">
+                        <div class="span3">
+                            <a class="popup-with-zoom-anim">
+                                <l>GO</l>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- pop-up-grid -->
+                <div id="small-dialog" class="mfp-hide">
+                    <div class="pop_up">
+                        <div class="payment-online-form-left">
+                            <form>
+                                <h4><span class="shipping"> </span>Shipping</h4>
+                                <ul>
+                                    <li>
+                                        <input class="text-box-dark" type="text" value="Frist Name" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Frist Name';}">
+                                    </li>
+                                    <li>
+                                        <input class="text-box-dark" type="text" value="Last Name" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Last Name';}">
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <input class="text-box-dark" type="text" value="Email" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Email';}">
+                                    </li>
+                                    <li>
+                                        <input class="text-box-dark" type="text" value="Company Name" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Company Name';}">
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <input class="text-box-dark" type="text" value="Phone" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Phone';}">
+                                    </li>
+                                    <li>
+                                        <input class="text-box-dark" type="text" value="Address" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Address';}">
+                                    </li>
+                                    <div class="clear"> </div>
+                                </ul>
+                                <div class="clear"> </div>
+                                <ul class="payment-type">
+                                    <h4><span class="payment"> </span> Payments</h4>
+                                    <li><span class="col_checkbox">
+																<input id="3" class="css-checkbox1" type="checkbox">
+																<label for="3" name="demo_lbl_1" class="css-label1"> </label>
+																<a class="visa" href="#"> </a>
+																</span>
+                                    </li>
+                                    <li>
+                                        <span class="col_checkbox">
+																	<input id="4" class="wcss-checkbox2" type="checkbox">
+																	<label for="4" name="demo_lbl_2" class="css-label2"> </label>
+																	<a class="paypal" href="#"> </a>
+																</span>
+                                    </li>
+                                    <div class="clear"> </div>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <input class="text-box-dark" type="text" value="Card Number" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Card Number';}">
+                                    </li>
+                                    <li>
+                                        <input class="text-box-dark" type="text" value="Name on card" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Name on card';}">
+                                    </li>
+                                    <div class="clear"> </div>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <input class="text-box-light hasDatepicker" type="text" id="datepicker" value="Expiration Date" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Expiration Date';}"><em class="pay-date"> </em></li>
+                                    <li>
+                                        <input class="text-box-dark" type="text" value="Security Code" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Security Code';}">
+                                    </li>
+                                    <div class="clear"> </div>
+                                </ul>
+                                <ul class="payment-sendbtns">
+                                    <li>
+                                        <input type="reset" value="Cancel">
+                                    </li>
+                                    <li>
+                                        <input type="submit" value="Process order">
+                                    </li>
+                                </ul>
+                                <div class="clear"> </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- pop-up-grid -->
+            </div>
+            <div class="clear"> </div>
+        </div>
+    </div>
+    <!-----logos---->
+    <div class="logos">
+        <div class="wrap">
+            <ul>
+                <li><img src="/static/homepageNxt/images/client6.png" alt="" /></li>
+                <li style="position: absolute; left: 40%"><img src="/static/homepageNxt/images/client7.png" alt="" /></li>
+                <li><img src="/static/homepageNxt/images/client8.png" alt="" /></li>
+            </ul>
+        </div>
+    </div>
+    <!-----cntact---->
+    <div class="contact s6" id="contact">
+        <div class="wrap">
+            <h3>CONTACT US</h3>
+            <p>Contact us if you have any problem.</p>
+            <div class="contact_form">
+                <form method="post" action="/contact-post/">
+                    <span><input type="text" name="name" value="NAME" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'NAME';}"><label><img src="/static/homepageNxt/images/con1.png" alt="" /></label></span>
+                    <span class="left"><input type="text" name="email" value="EMAIL" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'EMAIL';}"><label><img src="/static/homepageNxt/images/con2.png" alt="" /></label></span>
+                    <div class="clear"></div>
+                    <span><textarea name="content" placeholder="MESSAGE"></textarea><label1><img src="/static/homepageNxt/images/con3.png" alt="" /></label1></span>
+                    <input type="submit" class="" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="signup">
+        <div class="form">
+            <span><label><img src="/static/homepageNxt/images/msg.png" alt="" /></label><input type="text" value="Your E-MAIL Please?" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Your E-MAIL Please?';}"></span>
+            <span><input type="submit" value="Sign Up Now" id="submit" name="submit"></span>
+            <p>Promise we do not spam : )</p>
+            <div class="clear"> </div>
+        </div>
+    </div> -->
+    <!----start-bottom-footer---->
+    <div class="bottom-footer">
+        <div class="wrap">
+            <div class="bottom-footer-center">
+                <ul class="bottom-social-icons">
+                    <div class="bshare-custom icon-medium-plus">
+                        <a title="Share to Facebook" class="bshare-facebook" href="javascript:void(0);"></a>
+                        <a title="Share to Twitter" class="bshare-twitter" href="javascript:void(0);"></a>
+                        <a title="Share to Sina Weibo" class="bshare-sinaminiblog" onclick="shareplatform()"></a>
+                        <a title="Share to Weixin" class="bshare-weixin" href="javascript:void(0);"></a>
+                        <a title="Share to LinkedIn" class="bshare-linkedin" href="javascript:void(0);"></a>
+                    </div>
+                    <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=3&amp;lang=zh">
+                    </script>
+                    <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js">
+                    </script>
+                    <script type="text/javascript" language="javascript">
+                    function shareplatform() {
+                        var description = $("#description").html();
+                        //custom attr.
+                        var url = "http://www.firmiana.org";
+                        var str_title = "Firmiana";
+                        var str_info = description;
+                        var img = "/static/homepageNxt/images/logo_red.png";
+                        //clear content of bShare
+                        bShare.entries = [];
+                        //add bShare attr.
+                        bShare.addEntry({
+                            title: str_title,
+                            url: url,
+                            summary: str_info,
+                            // pic: img
+                        });
+
+                        //initialization
+                        bShare.isReady = false;
+                        bShare.completed = false;
+                        bShare.start();
+                    }
+                    </script>
+
+                    <div class="clear"> </div>
+                </ul>
+            </div>
+            <div class="bottom-footer-left">
+                <p><span>&#169; Copyright 2014     Firmiana</span></p>
+            </div>
+            <div class="clear"> </div>
+        </div>
+    </div>
+    <!----//End-bottom-footer---->
+    <!-- scroll_top_btn -->
+    <script type="text/javascript" src="/static/homepageNxt/js/move-top.js"></script>
+    <script type="text/javascript" src="/static/homepageNxt/js/easing.js"></script>
+    <script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $(".scroll").click(function(event) {
+            event.preventDefault();
+            $('html,body').animate({
+                scrollTop: $(this.hash).offset().top
+            }, 1200);
+        });
+    });
+    </script>
+    <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+    <script type="text/javascript">
+    // $(document).ready(function () {
+    //     $("#services").tourTip({
+    //         title: "Tour Title",
+    //         description: "This is a description for the newly born TourTip :)",
+    //         previous: true,
+    //         position: 'top'
+    //     });
+
+    //     $.tourTip.start(); 
+    // });
+    </script>
+
+    <script type="text/javascript">
+
+    function show_documents() {
+        var manualWindow = window.open("/static/docs/manual.pdf").embed()
+    }
+
+    </script>
+</body>
+
+</html>

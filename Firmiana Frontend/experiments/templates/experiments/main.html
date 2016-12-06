@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Welcome to Farmiana Experiment Manager {% endblock %}
+{% block head %}Welcome to Farmiana Eexperiment Manager {% endblock %}
+{% block content %}
+    {% if user.username %}
+        <p>Welcome {{ user.username }}!</p>
+    {% else %}
+        <p>Welcome anonymous user!
+            You need to <a href="/login/">login</a> before you can use this system</p>
+    {% endif %}
+
+{% endblock %}

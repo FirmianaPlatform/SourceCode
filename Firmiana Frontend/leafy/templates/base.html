@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD//XHTML 1.0 Transitional //EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Firmiana | {% block 	title%}{% endblock %}</title>
+<!--base css file -->
+
+<link rel="stylesheet" type="text/css" href="/static/ext4/resources/css/ext-all.css" />
+
+
+<!-- 
+<link rel="stylesheet" type="text/css" href="/static/css/default.css" />
+<link rel="stylesheet" type="text/css" href="/static/ext4/examples/shared/example.css" />
+<link rel="stylesheet" type="text/css" href="/static/css/gar.css">
+<link rel="stylesheet" type="text/css" href="/static/css/default.css" />
+<link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/static/css/jheatmap-1.0.0.css">
+<link rel="stylesheet" type="text/css" href="/static/cytoscape/style.css">
+-->
+<!--include extjs4 related files -->
+<!--script type="text/javascript" src="/static/javascript/config.js"></script-->
+ 
+<script type="text/javascript" src="/static/ext4/bootstrap.js"></script>
+
+
+
+
+
+{% block javascript %}{% endblock %}
+<!--Decide which navigate to display -->
+{% if user.is_authenticated %} {% if management %}
+<script type="text/javascript"
+	src="/static/javascript/base_login_nav.js"></script>
+{% else %}
+<script type="text/javascript"
+	src="/static/javascript/base_login_nav.js"></script>
+{% endif %} {% else %}
+<script type="text/javascript" src="/static/javascript/notlogin_nav.js"></script>
+{% endif %} {% block css %}{% endblock %}
+</head>
+<body >
+	<div id="outer">
+		<!--<div id="logo">Firmiana</div>-->
+
+		<!--<div id="inner">
+			<div id="header">
+				<img src="/static/images/logo.jpg" class="picB" alt="" />
+			</div>
+			<div id="splash"></div>
+			<div id="prot"></div>
+			<div id="title">
+			<h1><span>F</span>irmiana<sup>1.0</sup></h1>
+			<h2>for Proteomics</h2>
+			</div>
+		</div>
+		-->
+		<!-- <div id="nav">
+			<h1>{% block head %}{% endblock %}</h1>
+		</div> -->
+
+
+
+		<div id="content">{% block content %} {% endblock %}</div>
+		{% block tablecontent %} {% endblock %}
+		
+		
+		<!-- <div id="footer">
+
+			&copy;ECNU Firmiana. All rights reserved. Design by <a
+				href="mailto:proteome.firmiana@gmail.com">Firmiana Team</a>.
+
+		</div> -->
+	</div>
+	</div>
+</body>
+</html>

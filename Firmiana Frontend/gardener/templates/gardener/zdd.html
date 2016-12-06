@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Firmiana Viewer</title>
+		<!-- Ext includes -->
+		<link rel="shortcut icon" type="image/ico" href="/static/images/favicon4.ico" />
+	 {% if theme %}
+		<link rel="stylesheet" type="text/css" href="/static/extjs-4.2.2/resources/ext-theme-{{theme}}/ext-theme-{{theme}}-all.css" />
+     {% else %}
+		<link rel="stylesheet" type="text/css" href="/static/extjs-4.2.2/resources/css/ext-all.css" />
+     {% endif %}
+		<link rel="stylesheet" type="text/css" href="/static/css/gar.css" />
+		<!--script type="text/javascript" src="/static/extjs-4.2.2/ext.js"></script-->
+		<script type="text/javascript" src="/static/extjs-4.2.2/ext-all-debug.js"></script>
+		<!-- Manual js -->
+		<script type="text/javascript" src="/static/javascript/zdd_sencha/app.js"></script> 
+		
+		<script type="text/javascript" src="/static/canvasxpress/js/canvasXpress.min.js"></script>
+		
+	</head>
+	<body>
+		<div id='loading_pic'></div>
+	
+	</body>
+</html>
+
+

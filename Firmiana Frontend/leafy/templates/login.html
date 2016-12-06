@@ -1,0 +1,40 @@
+{% extends "base.html" %} 
+{% block title %}User Login {% endblock %}
+{%block content %} 
+{% if form.has_errors %}
+<p>Your username and password didn't match. please try again.</p>
+{% endif %}
+<div id="main_body">
+	<!-- Form Title Starts Here -->
+	<div class="form_title">
+		<img src="/static/images/form_title.gif"
+			alt="Sleek &amp; Modern Login Form - Design3Edge" />
+	</div>
+	<!-- Form Title Ends Here -->
+
+	<!-- Form Starts Here -->
+	<div class="form_box">
+		<form method="POST" action=".">{% csrf_token %} 
+			<p for="id_username" class="form_text">*UserName:</p>
+			<p class="form_input_BG">{{ form.username }}</p>
+			<!-- <p class="form_input_BG"><input type="text" name="name" id="name" value=""/></p>-->
+			<!-- Clear -->
+			<p class="clear">&nbsp;</p>
+			<p for="id_password" class="form_text">*Password :</p>
+			<p class="form_input_BG">{{ form.password }}</p>
+			<!--<p class="form_input_BG"><input type="password" name="pwd" id="pwd" value=""/></p>-->
+			<!-- Clear -->
+			<p class="clear">&nbsp;</p>
+			<!--  <input type="submit" value="login" />-->
+			<input title="login Now" style="margin-left: 96px;" type="image"
+				src="/static/images/login_btn.png" name="login" id="login" /> <input
+				type="hidden" name="next" value="/" />
+		</form>
+
+		</form>
+
+	</div>
+	<!-- Form Ends Here -->
+
+</div>
+{% endblock %}

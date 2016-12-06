@@ -5,8 +5,8 @@ def send_complete_mail(mail_to,sub,content):
     from email.mime.text import MIMEText  
     mail_host='smtp.gmail.com:587'
     mail_user="proteome.firmiana"
-    mail_pass="mail password"
-    mail_postfix="gamil.com"
+    mail_pass="email password"
+    mail_postfix="gmaiil.com"
     
     mail_from="Firmiana"+"<"+mail_user+"@"+mail_postfix+">"  
     msg = MIMEText(content,_subtype='plain',_charset='utf-8')  
