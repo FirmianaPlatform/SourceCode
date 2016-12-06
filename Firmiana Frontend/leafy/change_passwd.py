@@ -85,16 +85,3 @@ def safe_str_cmp(a, b):
 new_passwd = sys.argv[1]#raw_input('Input new passwd:\n')
 #print 'Your New passwd:',new_passwd
 print (hash_password(new_passwd))
-
-#print 'Check New passwd:',(check_password(new_passwd,hash_password(new_passwd)))
-#print 'Check hitler:',(check_password('hitler','PBKDF2$sha256$10000$zEcSLLUEAtwrJBVW$YNfFoAUT9hpS0LylLyoyuk+gLfMrMq8Y'))
-
-#print(check_password('hitler','PBKDF2$sha256$10000$Rogz0nZghoIaevi4$Bt5hTxH+C44x33iu+uwhTGyhinff7qTE'))
-#print(check_password('hitler','PBKDF2$sha256$10000$U2Yfx2nh6b1gu3zR$fwzJpsp1oZtjSNzflZm9JKUeZy7xMWjq'))
-#print(check_password('hitler','PBKDF2$sha256$10000$efROmYJPkHADtbsO$HjHjdyNrruHjbHwwNWzyW52VtLwN6Ata'))
-#print(check_password('111111','pbkdf2$sha256$10000$5khBUAtdOXPz$R2EED+bA7/vJIhZ73zWFpLQokTnImUbB3d8W9FsbTJw='))
-'''
-testqnq1@test.test=====PBKDF2$sha256$10000$kjngnomRoRSR2i4S$JUsvc505TwiwHqKWlGiAAtGr6fUATgF0
-crickding@163.com======PBKDF2$sha256$10000$I4RPsz/DnB9rWIe1$hmmCExoX3QzljYZmDmEJBHJ89HA8NsfK
-                       pbkdf2_sha256$10000$3mur5zDQfU1q$KF6qZ+AXv6O4Yl2MpOBFCFNayB1mow0DaLIjgEAouzE=
-'''
