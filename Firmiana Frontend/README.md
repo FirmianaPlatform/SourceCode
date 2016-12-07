@@ -13,4 +13,4 @@ In the directory of 'Firmiana', 'javascript' directory contains all scripts that
   - settings.py: Settings/configuration for Django projec of Firmiana.
   - urls.py: The URL declarations for Django project of Firmiana.
   - views.py: Functional respone modules used for proccessing external requests, including registeration, login and so on.
-  - wsgi.py: An entry-point for WSGI-compatible web servers to serve Firmiana
+  - wsgi.py: An entry-point for WSGI-compatible web servers to serve Firmiana
