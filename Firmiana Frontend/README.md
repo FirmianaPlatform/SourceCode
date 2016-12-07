@@ -5,7 +5,7 @@ Based on Django web framework, a Django project called "leafy" was created, whic
 In the directory of 'Firmiana', 'javascript' directory contains all scripts that are used for implementing frontend interface of Firmiana based on Extjs framework.
 
 * leafy: a Django project that initializes development of Firmiana. The directoty contains main functional scripts as follow:
-  - admin.py: Registering existed models.
+  - admin.py: Registering existed models in leafy.models.
   - authority_trans.py: Setting of authority.
   - forms.py: Form operations of logging in Firmiana.
   - models.py: An auto-generated Django model module used for access control.
@@ -17,11 +17,11 @@ In the directory of 'Firmiana', 'javascript' directory contains all scripts that
   
 
 * experiments: an application that responses the request of experimental metadata of Firmiana. The directoty contains main functional scripts as follow:
- - admin.py
- - experiments_filters.py
- - manageChildAccount.py
- - models.py
- - password_trans.py
- - urls.py
- - views.py
+  - admin.py: Registering existed models in experiments.models.
+  - experiments_filters.py: Custom functions script used for filtering out experiments complying with specific filters.
+  - manageChildAccount.py
+  - models.py
+  - password_trans.py
+  - urls.py
+  - views.py
  
