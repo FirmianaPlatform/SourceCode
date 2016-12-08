@@ -6,11 +6,11 @@ from sqlalchemy.sql import select
 ''' For reading DB, like metadata and something about django '''
 
 engine_name = 'postgresql'
-host = '192.168.99.201'
-port = '6032'
-database = 'galaxy'
-dbuser = 'phoenix'
-password = 'firmianaadmin'
+host = 'username'
+port = 'port'
+database = 'database name'
+dbuser = 'database user'
+password = 'database password'
 conn_str = "%s://%s:%s@%s:%s/%s" % (engine_name, dbuser, password, host, port , database)
 engine = create_engine(conn_str)
 conn = engine.connect()
