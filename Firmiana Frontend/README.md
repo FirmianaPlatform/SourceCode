@@ -44,20 +44,19 @@ In the directory of 'Firmiana', 'javascript' directory contains all scripts that
   - views.py: Functional respone modules used for proccessing external requests from data repository operations.
   
 * javascript: a directory that storing scipts that constructing frontend of Firmiana. The directoty contains main directories and functional scripts as follow:
-  - boxselect/
+  - boxselect/: boxselect for ExtJS 4.1, a combo box improved for multiple value querying, selection and management.
   - dataProcess/
   - dataViewer/
-  - display/
-  - gardener/
-  - register/
-  - repository/
-  - swfobject/
-  - GoogleAnalytics.js
-  - base_login_nav.js
-  - config.js
-  - contact.js
-  - goto_top.js
-  - invaitation.js
+  - display/: A javascripts collections for showing mass spectrum.
+  - gardener/: A javascripts collections for showing interface of main page in Firmiana.
+  - register/: A javascripts collections for showing interface of registration in Firmiana.
+  - repository/: A javascripts collections for showing interface of data repository in Firmiana.
+  - swfobject/: A directory that stores swf plugin and the corresponding execution scripts.
+  - GoogleAnalytics.js: External JS file from Google Analytics.
+  - base_login_nav.js: A JS file that shows base login navigation.
+  - contact.js: A JS file showing contact form.
+  - goto_top.js: A JS file showing
+  - invaitation.js
   - login_nav.js
   - login_nav_experiments.js
   - register.js
