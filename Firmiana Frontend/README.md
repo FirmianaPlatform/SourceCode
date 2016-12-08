@@ -15,7 +15,7 @@ In the directory of 'Firmiana', 'javascript' directory contains all scripts that
   - views.py: Functional respone modules used for proccessing external requests, including registeration, login and so on.
   - wsgi.py: An entry-point for WSGI-compatible web servers to serve Firmiana.
   
-* experiments: an application that responses the request of experimental metadata of Firmiana. The directoty contains main functional scripts as follow:
+* experiments: an application that responses the request from experimental metadata of Firmiana. The directoty contains main functional scripts as follow:
   - admin.py: Registering existed models in experiments.models.
   - experiments_filters.py: Custom functions script used for filtering out experiments complying with specific filters.
   - manageChildAccount.py: Custom functions script used for managing sub-accounts.
@@ -24,7 +24,7 @@ In the directory of 'Firmiana', 'javascript' directory contains all scripts that
   - urls.py: The URL declarations for Django application called experiments.
   - views.py: Functional respone modules used for proccessing external requests that managing experimental metadata.
  
-* gardener: an application that responses the request of experimental results of Firmiana. The directoty contains main directories and functional scripts as follow:
+* gardener: an application that responses the request from experimental results of Firmiana. The directoty contains main directories and functional scripts as follow:
   - scripts/R: A R scripts collection used for providing common bioinformatics analysis tools. 
   - cal_area.py: A functional script for protein quantification.
   - firmianaLib.py: Custom functions script used for filtering out experiments complying with specific filters.
@@ -36,5 +36,34 @@ In the directory of 'Firmiana', 'javascript' directory contains all scripts that
   - sqlFunc.py: Custom functional script used for connecting database of Firmiana.
   - urls.py: The URL declarations for Django application called gardener.
   - views.py: Functional respone modules used for proccessing external requests that achieve experimental results.
+  
+* repository: an application that responses the request from data repository of Firmiana. The directoty contains main directories and functional scripts as follow:
+  - models.py: A custom Django model module used for ralating to data repository.
+  - repositoryProcess.py: Custom functional scripts used for executing operations of managing data repository.
+  - urls.py: The URL declarations for Django application called repository.
+  - views.py: Functional respone modules used for proccessing external requests from data repository operations.
+  
+* javascript: a directory that storing scipts that constructing frontend of Firmiana. The directoty contains main directories and functional scripts as follow:
+  - boxselect/
+  - dataProcess/
+  - dataViewer/
+  - display/
+  - gardener/
+  - register/
+  - repository/
+  - swfobject/
+  - GoogleAnalytics.js
+  - base_login_nav.js
+  - config.js
+  - contact.js
+  - goto_top.js
+  - invaitation.js
+  - login_nav.js
+  - login_nav_experiments.js
+  - register.js
+  - show.js
+  
+  
+
  
 
