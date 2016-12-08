@@ -45,8 +45,6 @@ In the directory of 'Firmiana', 'javascript' directory contains all scripts that
   
 * javascript: a directory that storing scipts that constructing frontend of Firmiana. The directoty contains main directories and functional scripts as follow:
   - boxselect/: boxselect for ExtJS 4.1, a combo box improved for multiple value querying, selection and management.
-  - dataProcess/
-  - dataViewer/
   - display/: A javascripts collections for showing mass spectrum.
   - gardener/: A javascripts collections for showing interface of main page in Firmiana.
   - register/: A javascripts collections for showing interface of registration in Firmiana.
@@ -55,12 +53,9 @@ In the directory of 'Firmiana', 'javascript' directory contains all scripts that
   - GoogleAnalytics.js: External JS file from Google Analytics.
   - base_login_nav.js: A JS file that shows base login navigation.
   - contact.js: A JS file showing contact form.
-  - goto_top.js: A JS file showing
-  - invaitation.js
-  - login_nav.js
-  - login_nav_experiments.js
-  - register.js
-  - show.js
+  - invaitation.js：A JS file showing registration invaitation interface.
+  - login_nav.js: A JS file that shows login navigation.
+
   
   
 
