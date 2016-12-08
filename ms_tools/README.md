@@ -1,14 +1,45 @@
-# ms tools of Firmiana
+SourceCode / ms tools in Galaxy
 
-This fold contains tools of processing mass spectrometry data.
+ms tools directory contains tools of processing mass spectrometry data in Galaxy.
 
-Data source : import data to galaxy
+- Data source : import data to galaxy
+  - aliyun_delete.py: delete files in aliyun OSS
+  - aliyun_download.py: Download files from aliyun OSS
+  - cycle_check_file_cloud.py: 
+  - cycle_check_file_local.py:
+  - data_source.py: 
+  - datasetMirror.py:
+  - findError.py:
+  - rename.py: import files to galaxy and start workflow
+  - truncateExp.py: truncate the results of specific experiment
+- file convert: convert files to open format
+  - mascot2XML.py: convert mascot result to xml format
+  - mzXML2Search.py:convert mzXML format to mgf format
+  - mzXML_parser.py: mzXML format parser
+  - noscan_wiff2mzXML.py: convert abi wiff files to mzXML
+  - raw2mzXML.py: convert Thermo raw files to mzXML
+  - wiff2mzXML.py: convert abi wiff fils and scan files to mzXML
+- identification: tools of database search, quality control and quantifications.
+  - QC_mascotdat_parser.py
+  - cal_area.py: module of label free quantification
+  - data_source.py
+  - decoy.pl
+  - get_search_param.py: get parameters of experiment
+  - interProphet.py: integrate interProphet into Galaxy
+  - mascot.py: search files using 
+  - mascotdat_parser.py
+  - mayu.py
+  - msparser.py
+  - peptideProphet.py
+  - prepareProtdb.py
+  - proteinProphet.xml
+  - xtandem.py
+- models
+  - firmiana_sendmail.py: Send emails when workflows is already done
+  - gardener_control.py: Custom functional script used for connecting database of Firmiana.
+  - msparser.py:External mascot parser library from mascot.
 
-file convert: convert files to open format
-
-identification: tools of database search, quality control and quantifications.
-
-===
+---
 
 Firmiana will scan the cloud folder or the ftp folder that hosts the MS files for analysis until MS file loading is finished. 
 
