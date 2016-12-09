@@ -43,8 +43,9 @@ from experiments.views import isActive_ChildUser, isChildAccount, isGuest, isPar
 
 
 
-''' test function'''
+
 def printHelloWorld(userId):
+    '''A test function'''
     if isGuest(userId):
         return 'Hello, world! Guest account.'
     elif isActive_ChildUser(userId):
@@ -54,9 +55,8 @@ def printHelloWorld(userId):
     else:
         return 'Hello, world!'
     
-
-''' validate whether a project belongs to a user'''
 def projectBelongsToUser(userId, pxdNo):
+    '''Validate whether a project belongs to a user'''
     allProjects = ProjectOverview.objects.all().filter(user_id = userId).filter(validated=True)
     allProjectsName = []
     for project in allProjects:
@@ -68,13 +68,10 @@ def projectBelongsToUser(userId, pxdNo):
         
 
 
-''' add metadata of specific project '''
-'''
-parent permission
-'''
+
 def addMetadataForAProject(parametersDict):
-    '''
-    Insert a new record into ProjectDetail
+    '''Add metadata for a new project under parent permission.
+    Insert a new record into ProjectDetail table.
     '''
     try:
         projects = ProjectOverview.objects.all()
@@ -157,13 +154,9 @@ def addMetadataForAProject(parametersDict):
     return aNewProjectId
     
 
-''' add a new project'''
-'''
-parent permission
-'''
 def addANewProject(aNewProjectId, parametersDict):
-    '''
-    Insert a new record into ProjectOverview
+    '''Create a new project under parent permission.
+    Insert a new record into ProjectOverview.
     '''
     pxdNo = ProjectDetail.objects.all().get(id=aNewProjectId).pxdNo
     status = parametersDict['status']
@@ -181,9 +174,8 @@ def addANewProject(aNewProjectId, parametersDict):
     return pxdNo
 
 
-
-''' show all projects under current user '''
 def showAllProjects(userId):
+    '''Show all visiable projects under current user.'''
     parentFlag = isParentAccount(userId)
     childFlag = isActive_ChildUser(userId)
     guestFlag = isGuest(userId)
@@ -232,10 +224,8 @@ def showAllProjects(userId):
         allProjects_detail.append(tmpDict)
     return allProjects_detail
 
-
-
-
 def isPublicatedProject(pxdNo):
+    '''Validate whether a project is publicated.'''
     aProject = ProjectOverview.objects.all().filter(pxdNo=pxdNo)[0]
     status = aProject.status.status
     if status=="Publicated":
@@ -244,6 +234,7 @@ def isPublicatedProject(pxdNo):
         return False
     
 def ownerIsGuest(pxdNo):
+    '''Validate whether a project belongs to guest account.'''
     aProject = PublicatedProject.objects.all().get(pxdNo=pxdNo)
     if aProject.newOwner == "Guest":
         return True
@@ -251,6 +242,7 @@ def ownerIsGuest(pxdNo):
         return False
 
 def changeProjectStatus(pxdNo, status):
+    '''Change the status of a project'''
     changeFlag = False
     if not isPublicatedProject(pxdNo):
         aProject = ProjectOverview.objects.all().filter(pxdNo=pxdNo)[0]
@@ -271,6 +263,7 @@ def changeProjectStatus(pxdNo, status):
 
 
 def showMetadataByPxdNo(pxdNo):
+    '''Show metadata of a projcet according to parameter "pxdNo" (Project Number)'''
     try:
         aProjectMetadata = ProjectDetail.objects.all().get(pxdNo = pxdNo)
         parametersDict = {}
@@ -304,6 +297,7 @@ def showMetadataByPxdNo(pxdNo):
 
 
 def updateMetadataForAProject(parametersDict):
+    '''Update metadata of a project.'''
     updateFlag = False
     pxdNo = parametersDict['pxdNo']
     aProject = ProjectOverview.objects.all().get(pxdNo = pxdNo)
@@ -366,11 +360,9 @@ def updateMetadataForAProject(parametersDict):
 
 
 
-'''
-parent permission
-'''
+
 def showAllChildAccountInfo_inRepository(parentId): #return jsonResult
-    '''
+    '''Parent account privilege.
     Parent account gets own child account via parent id.
     '''
     parent = User.objects.all().get(id=parentId)
@@ -420,11 +412,8 @@ def showAllChildAccountInfo_inRepository(parentId): #return jsonResult
     jsonResult = json.dumps(temp, cls=DjangoJSONEncoder)
     return jsonResult
 
-'''
- Child user and shared project
-'''
 def addChildUserSharedProject(userId, childName, sharedProject):
-    '''
+    '''Parent account privilege.
     Parent account share specific experiments to child account.
     '''
     #shareProject = "FNO007407,FNO007408,FNO007409"
@@ -457,13 +446,8 @@ def addChildUserSharedProject(userId, childName, sharedProject):
         addSharedProjectFlag = False
     return addSharedProjectFlag
 
-
-
-
-''' update metadata of specific project '''
-'''parent perimission'''
 def updateChildAccountSharedProject(childName, sharedProject):
-    '''
+    '''Parent account privilege.
     Parent account updates experiments list for sharing to child account.
     '''
     updateSharedProjectFlag = False
@@ -487,6 +471,9 @@ def updateChildAccountSharedProject(childName, sharedProject):
 
 
 def deleteAProject(userId, pxdNo):
+    '''Parent account privilege.
+    Parent account delete a project.
+    '''
     deleteFlag = False
     
     projectBelongsToUserFlag = projectBelongsToUser(userId, pxdNo)
