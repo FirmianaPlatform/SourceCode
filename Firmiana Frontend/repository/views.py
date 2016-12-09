@@ -7,9 +7,11 @@ import getpass
 
 # @login_required(login_url=settings.LOGIN_PAGE)
 def repository(request):
+    '''Jump to repository homepage.'''
     return render_to_response('repository/repository.html')
 
 def printHelloWorld_test(request):
+    '''A test function.'''
     userId = request.user.id
     data = {}
     data['msg'] = printHelloWorld(userId)
@@ -18,6 +20,7 @@ def printHelloWorld_test(request):
 
 
 def promptJson(success, msg):
+    '''Return values in JSON format'''
     data = {}
     data['success'] = success
     data['msg'] = msg
@@ -25,6 +28,7 @@ def promptJson(success, msg):
     return HttpResponse(result)
 
 def isValidatedAccount(request):
+    '''Validate whether a account accessing to Firmiana is a validated account.'''
     userId = request.user.id
     parentFlag = isParentAccount(userId)
     activeChildFlag = isActive_ChildUser(userId)
@@ -35,6 +39,9 @@ def isValidatedAccount(request):
         return False
 
 def requestIsOwnerAndNotPublicated(pxdNo, request):
+    '''Validate whether a project that the current account wants to access belongs to the current account
+    or is in publicated status.
+    '''
     aProject = ProjectOverview.objects.all().filter(pxdNo=pxdNo)
     if aProject:
         aProject = aProject[0]
@@ -50,8 +57,8 @@ def requestIsOwnerAndNotPublicated(pxdNo, request):
     else:
         return False
  
-    
 def parentAccess(userId, pxdNo):
+    '''Validate whether a parent account wants to access to a prject not in publicated status.'''
     parentFlag = (not isGuest(userId)) and isParentAccount(userId)
     if parentFlag:
         aProject = ProjectOverview.objects.all().filter(pxdNo=pxdNo)
@@ -73,6 +80,7 @@ def parentAccess(userId, pxdNo):
         return False
 
 def childAccess(userId, pxdNo):
+    '''Validate whether a sub-account wants to access to a prject not in publicated status.'''
     childFlag = isChildAccount(userId)
     if childFlag:
         visiableProject = ChildUserAndSharedProject.objects.all().filter(child_id=userId)
@@ -89,6 +97,7 @@ def childAccess(userId, pxdNo):
         return False
 
 def guestAccess(userId, pxdNo):
+    '''Validate whether a guest account wants to access to a prject not in publicated status.'''
     if isGuest(userId) and isPublicatedProject(pxdNo):
         return True
     else:
@@ -96,6 +105,8 @@ def guestAccess(userId, pxdNo):
 
 
 def addAProjectRecord(request):
+    '''Parent account privilege.
+    Create a new project.'''
     if not isValidatedAccount(request):
         success = 0 
         msg = "You are not a validated account."
@@ -175,6 +186,9 @@ def addAProjectRecord(request):
 
 
 def showAllProjectsByUserId(request):
+    '''Parent account privilege.
+    Show all projects under the current account.'''
+
     if not isValidatedAccount(request):
         success = 0 
         msg = "You are not a validated account."
@@ -195,6 +209,7 @@ def showAllProjectsByUserId(request):
     
 
 def getProjectStatus(request):
+    '''Get status of a project.'''
     if not isValidatedAccount(request):
         success = 0 
         msg = "You are not a validated account."
@@ -221,6 +236,8 @@ def getProjectStatus(request):
         return promptJson(success, msg)
 
 def changeProjectStatus_views(request):
+    '''Parent account privilege.
+    Change status of a project.'''
     if not isValidatedAccount(request):
         success = 0 
         msg = "You are not a validated account."
@@ -244,6 +261,7 @@ def changeProjectStatus_views(request):
         return promptJson(success, msg)
         
 def showMetadataByPxdNo_views(request):
+    '''Show metadata of a project.'''
     if not isValidatedAccount(request):
         success = 0 
         msg = "You are not a validated account."
@@ -271,6 +289,7 @@ def showMetadataByPxdNo_views(request):
         return promptJson(success, msg)
 
 def updateMetadataForAProject_views(request):
+    '''Update metadata of a project.'''
     if not isValidatedAccount(request):
         success = 0 
         msg = "You are not a validated account."
@@ -324,6 +343,9 @@ def updateMetadataForAProject_views(request):
         return promptJson(success, msg)
 
 def showAllChildAccountInfo_inRepository_views(request):
+    '''Parent account privilege.
+    Show all sub-account information.
+    '''
     if not isValidatedAccount(request):
         success = 0 
         msg = "You are not a validated account."
@@ -340,6 +362,9 @@ def showAllChildAccountInfo_inRepository_views(request):
         return promptJson(success, msg)
 
 def addChildUserSharedProject_views(request):
+    '''Parent account privilege.
+    Share projects to sub-account.
+    '''
     if not isValidatedAccount(request):
         success = 0 
         msg = "You are not a validated account."
@@ -364,6 +389,9 @@ def addChildUserSharedProject_views(request):
         return promptJson(success, msg)
         
 def updateChildAccountSharedProject_views(request):
+    '''Parent account privilege.
+    Update shared projects with sub-account.
+    '''
     if not isValidatedAccount(request):
         success = 0 
         msg = "You are not a validated account."
@@ -387,10 +415,10 @@ def updateChildAccountSharedProject_views(request):
         msg = "You have no permission."
         return promptJson(success, msg)
 
-
-
-
 def deleteAProjectRecord(request):
+    '''Parent account privilege.
+    Delete a Project
+    '''
     userId = request.user.id
     parentAccountFlag = isParentAccount(userId)
     if parentAccountFlag:
@@ -413,8 +441,8 @@ def deleteAProjectRecord(request):
 
 
 def record_display(request, model_name):
+    '''Show information of a specific model according to model name'''
     
-    ##############################################
     data = {}
     model = eval(model_name)
     if model_name == "Miape_ExpType":
