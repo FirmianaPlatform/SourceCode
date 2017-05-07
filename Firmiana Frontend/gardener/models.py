@@ -199,7 +199,7 @@ class Gene(models.Model):
     ibaq = models.FloatField(db_index=True, null=True, blank=True)
 
     def __unicode__(self):
-        return self.gene_id
+        return str(self.gene_id)
 
 
 class Repeat_Gene(models.Model):
@@ -227,7 +227,7 @@ class Repeat_Gene(models.Model):
         db_index=True, max_length=200, null=True, blank=True)
 
     def __unicode__(self):
-        return self.gene_id
+        return str(self.gene_id)
 
 
 class Exp_Gene(models.Model):
@@ -257,7 +257,7 @@ class Exp_Gene(models.Model):
         db_index=True, max_length=200, null=True, blank=True)
 
     def __unicode__(self):
-        return self.gene_id
+        return str(self.gene_id)
 
 
 class MS1(models.Model):
