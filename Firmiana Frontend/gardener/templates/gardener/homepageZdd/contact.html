@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>DreamTemplate</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+// <![CDATA[
+jQuery(document).ready(function(){
+	$('#contactform').submit(function(){				  
+		var action = $(this).attr('action');
+		$.post(action, { 
+			name: $('#name').val(),
+			email: $('#email').val(),
+			company: $('#company').val(),
+			subject: $('#subject').val(),
+			message: $('#message').val()
+		},
+			function(data){
+				$('#contactform #submit').attr('disabled','');
+				$('.response').remove();
+				$('#contactform').before('<p class="response">'+data+'</p>');
+				$('.response').slideDown();
+				if(data=='Message sent!') $('#contactform').slideUp();
+			}
+		); 
+		return false;
+	});
+});
+// ]]>
+</script>
+<!-- Shared on MafiaShare.net  --><!-- Shared on MafiaShare.net  --></head>
+<body>
+<div class="main">
+  <div class="blok_header">
+    <div class="header">
+      <div class="rss"><a href="#"><img src="images/rss_3.gif" alt="rss" width="16" height="16" border="0" /></a> <a href="#"><img src="images/rss_2.gif" alt="rss" width="16" height="16" border="0" /></a> <a href="#"><img src="images/rss_1.gif" alt="rss" width="16" height="16" border="0" /></a> Follow us on social network </div>
+      <div class="search">
+        <form id="form1" name="form1" method="post" action="">
+          <label><span>
+            <input name="q" type="text" class="keywords" id="textfield" maxlength="50" value="Search..." />
+            </span>
+            <input name="b" type="image" src="images/search.gif" class="button" />
+          </label>
+        </form>
+      </div>
+      <div class="text">Click here to live Support  Tell Free <a href="#">1-111-123-456-789</a></div>
+      <div class="clr"></div>
+      <div class="logo"><a href="index.html"><img src="images/logo.gif" width="211" height="115" border="0" alt="logo" class="one" /></a></div>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html"><span>Home Page </span></a></li>
+          <li><a href="services.html"><span>Services</span></a></li>
+          <li><a href="services.html"><span>Portfolio</span></a></li>
+          <li><a href="about.html"><span> About Us </span></a></li>
+          <li><a href="contact.html" class="active"><span> Contact Us</span></a></li>
+        </ul>
+      </div>
+      <div class="clr"></div>
+      <div class="header_blog">
+        <div class="header_blog_resize"> <a href="#"><img src="images/click.gif" alt="click" width="218" height="63" border="0" /></a>
+          <div class="recent">
+            <h2>Contact Us</h2>
+          </div>
+          <div class="clr"></div>
+        </div>
+        <div class="clr"></div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="clr"></div>
+  <div class="body_resize">
+    <div class="body">
+      <div class="body_bg">
+        <h2>Our Contact</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque diam ligula, egestas eget rhoncus vel, hendrerit in sem. Vivamus laoreet erat sit amet ante ullamcorper vestibulum. Duis porta, nisl sed cursus volutpat, est nulla placerat mauris, id viverra leo ante sed leo. Vivamus fermentum dignissim sem, quis pellentesque dolor posuere vel. In vitae lorem ligula, a congue nibh. Nulla vitae blandit libero. Sed nisi metus, dictum id placerat sed, adipiscingut</p>
+        <p>Lorem ipsum dolor sit amet, cons ectet uer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut sed diam nonummy nibh euismod tinc is a siamet, consec tetuer adipiscing elit, sed diam nonumy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+        <div class="clr"></div>
+      </div>
+      <div class="left">
+        <h2>Send us a mail</h2>
+        <p>We bring value innovation and growth to your business<br />
+          Nullam aliquam porttitor risus vel porta. Quisque porttitor posuere diam. Aenean vel dapibus leo. Quisque non neque dolor, vel imperdiet massa. Quisque a enim ac nisl tincidunt pharetra id ut nulla.</p>
+        <form action="contact.php" method="post" id="contactform">
+          <ol>
+            <li>
+              <label for="name">First Name</label>
+              <input id="name" name="name" class="text" />
+            </li>
+            <li>
+              <label for="email">Your email</label>
+              <input id="email" name="email" class="text" />
+            </li>
+            <li>
+              <label for="company">Company</label>
+              <input id="company" name="company" class="text" />
+            </li>
+            <li>
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" class="text" />
+            </li>
+            <li>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" cols="50"></textarea>
+            </li>
+            <li class="buttons">
+              <input type="image" name="imageField" id="imageField" src="images/send.gif" class="send" />
+              <div class="clr"></div>
+            </li>
+          </ol>
+        </form>
+      </div>
+      <div class="right">
+        <h2>Contact Information</h2>
+        <p><strong>Tel</strong>:          +44 (0) 1234 6765<br />
+          <strong>Fax</strong>:         +44 (0) 1234 6765<br />
+          <strong>Email</strong>:      mail@mail.com<br />
+          <strong>Skype</strong>:     888 888 888 888</p>
+        <h2>Some Text Here</h2>
+        <p>Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus. Nunc tellus ante, mattis eget, gravida vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu, vulputate vel, nisl.</p>
+        <div class="clr"></div>
+      </div>
+      <div class="clr"></div>
+    </div>
+    <div class="clr"></div>
+  </div>
+</div>
+<div class="footer">
+  <div class="footer_resize"> <a href="/"><img src="images/footer_logo.gif" alt="logo_footer" width="145" height="59" border="0" /></a>
+    <p class="right">© Copyright websitename . All Rights Reserved. More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+    <div class="clr"></div>
+  </div>
+  <div class="clr"></div>
+</div>
+</body>
+</html>

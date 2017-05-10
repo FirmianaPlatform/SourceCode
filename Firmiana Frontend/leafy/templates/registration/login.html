@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}User Login {% endblock %}
+{% block javascript %}
+    {% if error %}
+    <script type="text/javascript" src="/static/javascript/error.js"></script>
+    {% endif %}
+    <script type="text/javascript" src="/static/javascript/login.js"></script>
+{% endblock %}
+{% block content %}
+    {% if error %}
+        <p id="error">{{ error }}</p>
+    {% endif %}
+    <div id="login"></div>
+{% endblock %}

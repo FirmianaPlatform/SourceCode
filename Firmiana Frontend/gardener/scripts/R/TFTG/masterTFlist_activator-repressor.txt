@@ -1,0 +1,2 @@
+HC_activator	Nr5a2	Sod2	Nr1h4	Gzf1	Hnf4a	Prox1	Foxa2	Irf6	Ptges2	Lrpprc	Phb	Foxa3	Hlf	Hnf1a	Srebf1
+HC_repressor	Xrcc6	Nolc1	Zbtb20	Pa2g4	Hic2	Pias2	Taf5

@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+	terrafirma1.0 by nodethirtythree design
+	http://www.nodethirtythree.com
+-->
+<html>
+<head>
+<title>Firmiana MS Data Management and Display</title>
+
+<!--include extjs4 related files -->
+<script type="text/javascript" src="/static/extjs/bootstrap.js"></script>
+
+<script type="text/javascript" src="/static/javascript/qiunq/login_nav.js"></script>
+<!--base css file -->
+{% if not user %}
+<link rel="stylesheet" type="text/css" href="/static/extjs/resources/css/ext-all-gray.css" />
+{% endif %}
+<link rel="stylesheet" type="text/css" href="/static/css/default.css" />
+<link rel="stylesheet" type="text/css" href="/static/css/style.css" /> 
+</head>
+<body class="mybody" onmousedown="mouse_location(event)">
+
+	<div id="outer">
+		<div id="inner">
+			<!--
+				<div id="header">
+					<h1><span>F</span>irmina<sup>1.0</sup></h1>
+					<h2>by nodethirtythree</h2>
+				</div>
+			-->
+			<div id="logo">
+				<a href="/" ><img src="/static/images/logo.jpg" class="piclogo" alt="Firmiana" /></a>
+			</div>
+			<div id="splash"></div>
+			<div id="prot"></div>
+			<div id="title">
+				<h1><span>F</span>irmiana<sup>1.0</sup></h1>
+				<h2>for Proteomics</h2>
+			</div>
+			{% if not user %}
+				<div id="home_nav" ></div>
+			{% else %}
+				<div id="home_nav2">
+					<h3>Dear {{user|title}}, Welcome to Firmiana! <a href="/gardener"> Click here to view Gardener</a></h3>
+				</div>
+			{% endif %}
+			<br><br>
+			<div id="primarycontent">
+		
+				<!-- primary content start -->
+
+				<div class="post">
+					<div class="header">
+						
+						<h3>Firmiana<sup>1.0</sup> by ECNU Bioinformatic Lab</h3>
+						
+					</div>
+					<div class="content">
+						<a href="/gardener/help" >
+							<img src="/static/images/pic1.jpg" class="picA floatleft" alt="" title="Firmiana Manual"/>
+						</a>
+						<p>
+							<a href="/gardener" title="Firmiana" ><strong>Firmiana</strong></a> is an important part of Galaxy/Firmiana
+							platform which is a "one-stop" data analysis platform for
+							proteome data, composed of a series of analysis tools for MS(mass
+							spectra) data from experimental design to statistical analysis
+							and further bioinformatics mining technique, such as peptide
+							identification, peptide quantification, protein quantification,
+							mainly including two divs: Experiment Management and Analysis
+							Results Display.
+						</p>
+					</div>
+				</div>
+
+				<div class="post">
+					<div class="header">
+						<h3>
+							<strong>Experiment Management</strong>
+						</h3>
+					</div>
+					<div class="content">
+						<p>
+							The Experiment Management div contains two aspects: <br />
+							(1) The	display of experiment, sample, reagent information; <br /> 
+							(2) The addition and edition of experiment, sample, reagent
+							information.
+						</p>
+					</div>
+				</div>
+				
+				<div class="post">
+					<div class="header">
+						<h3>
+							<strong>Analysis Results Display</strong>
+						</h3>
+					</div>
+					<div class="content">
+						<p>
+							The Analysis Results Display div contains two aspects: <br /> 
+							(1) The display of analysis results for files from individual
+							experiment; <br /> 
+							(2) The display of analysis results for
+							comparison study from multiple experiments.
+						</p>
+					</div>
+				</div>
+				
+				{% include "/gardener/base_help.html"%}
+				
+			</div> <!-- primary content end -->
+
+		</div>
+
+		<div id="footer">
+
+			&copy;ECNU Firmiana. All rights reserved. Design by <a href="mailto:proteome.firmiana@foxmail.com">Firmiana Team</a>.
+
+		</div>
+
+	</div><!-- inner end -->
+
+	</div><!-- outer end -->
+	<script type="text/javascript">
+				function mouse_location(event)
+				{
+					x = event.clientX
+					y = event.clientY
+					//alert("X: " + x + ", Y" + y)
+				}
+				document.body.onkeydown = window.onkeydown = function(e)
+				{
+					var keyCode;
+					if (!e) e = window.event;
+					if (document.all)
+					{
+						keyCode = e.keyCode;
+					} 
+					else 
+					{
+						keyCode = e.which;
+					}
+					if (keyCode == 13 || keyCode == 108)
+					{
+						//window.location.href = "http://www.baidu.com";
+						if(y < 160)
+						{
+							submitter()
+						}
+					}
+				}
+				</script> 
+</body>
+
+
+</html>

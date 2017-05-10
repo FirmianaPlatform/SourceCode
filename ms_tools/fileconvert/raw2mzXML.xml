@@ -1,0 +1,229 @@
+<tool id="ms_convert_raw2mzXML" name="Raw to mzXML">
+	<description>Converts a RAW formatted file to MZXML format</description>
+	<stdio>
+		<exit_code range="1:" err_level="fatal" />
+	</stdio>
+	<!--for wine on localhost(.22)-->	
+	<command interpreter="python">
+	#import random, re
+	#set $job_track = $random.randint(1000000000,9999999999)
+	#set $label = $input.display_name
+	raw2mzXML.py
+	    -i '$input' 
+	    -b '$binary_coding_precision' 
+	    -x '$write_index' 
+	    -z '$zlib'
+	    -g '$gzip'
+	    -a '$label'
+	    -u $__user_id__
+	    #if $job_track!="0"
+	    	-j $job_track
+	    #end if 
+	    #if $parameters.selectFilter=="peakPicking"
+	    	-f 'peakPicking' 
+	   	 	-v '$parameters.prefer_vendor' 
+	    	-l '$parameters.low_level' 
+	    	--hlevel '$parameters.high_level' 
+	    #else
+	    	#if $parameters.selectFilter=="ETDFilter"
+	   			-f 'ETDFilter'
+				-r $parameters.removePrecursor
+				-c $parameters.removeChargeReduced
+				-n $parameters.removeNeutralLoss
+				-k $parameters.blanketRemoval
+			#end if
+		#end if
+		--store_to_db $store_to_db
+		--outformat $outformat 
+	    -o $output
+		##--dbop_type $dbop_type
+	</command>
+	<inputs>
+		<!--conditional name="inputfiles">
+				<param name="source_select" type="select" label="Input file source">
+					<option value="rawfile">Experiment Rawfile</option>
+					<option value="experimentID">Experiment ID</option>
+				</param>
+				<when value="rawfile">
+					<param format="raw" name="input" type="data" label="MS run raw file"/>
+				</when>
+				<when value="experimentID">
+					<param name="input1" type="integer" value="" label="Experiment ID 1" help="This ID is from the Experiment ID in Experiment Display list of Firmiana Experiment Management Section"/>/>
+				</when>
+			</conditional-->
+		<param name="store_to_db" type="select" label="Store data to Firmiana?" >
+			<option value="yes">yes</option>
+			<option value="no" selected="true">no</option>
+		</param>
+		<param format="raw" name="input" type="data" label="MS run raw file"/>
+		<!--repeat name="input_files" title="Additional Input Files">
+			<param format="raw" name="additional_input" type="data" label="Additional Input File" help=""/>
+		</repeat-->
+		
+		<!--param name="fractionNo" type="integer" value="" optional="true" label="Fraction No"/>
+		<param name="replicateNo" type="integer" value="" optional="true" label="Replicate No"/>
+		<param name="phValue" type="float" value="" label="PH Value"/>
+		<param name="volume_ml" type="float" value="" label="Volume(ml)"/-->
+
+		<param name="outformat" type="select" label="Output file format" > 
+			<option value="mzXML" selected="true">mzXML</option>
+			<option value="mzML">mzML</option>
+		</param>
+		<!--
+			<param name="output_format" type="select" label="Selects the output format for the conversion">
+			<option value="mzXML" selected="true">mzXML</option>
+			<option value="mzML">mzML</option>
+			<option value="mz5">mz5</option>
+			<option value="mgf">mgf</option>
+			<option value="text">text</option>
+			<option value="ms1">ms1</option>
+			<option value="cms1">cms1</option>
+			<option value="ms2">ms2</option>
+			<option value="cms2">cms2</option>
+			</param>
+			-->
+		<param name="binary_coding_precision" type="select" label="Sets output precision for writing binary m/z and intensity information.">
+			<option value="32" >32-bit</option>
+			<option value="64" selected="true">64-bit</option>
+			<!--in the corresponding python file should add mz32,64 and inten32,64            why?-->
+		</param>        
+		<param name="write_index" type="select" label="Include an index in mzXML and mzML output files">
+			<option value="" selected="true">write index</option>
+			<option value="noindex">no index</option>
+		</param>        
+		<param name="zlib" type="select" label="use zlib compression for bianry data">
+			<option value="z" >yes</option>
+			<option value="" selected="true">no</option>
+		</param>        
+		<param name="gzip" type="select" label="gzip entire output file (adds .gz to filename)">
+			<option value="g">yes</option>
+			<option value="" selected="true">no</option>
+		</param>        
+		<conditional name="parameters">
+			<param name="selectFilter" type="select" label="Use these controls to add to the conversion filter list">
+				<option value="" selected="true"></option>
+				<option value="peakPicking">Peak Picking</option>
+				<option value="ETDFilter">ETD Peak Filter</option>
+			</param>
+			<when value="peakPicking">
+				<param name="prefer_vendor" type="boolean" truevalue="true" falsevalue="false" checked="True" label="uncheck this box if you prefer proteowizard's peak picking algorithm to that provieded by the vendor (normally the vendor code works better).not all input formats have vendor peakpicking,butit's ok to leave this checked"/>
+				<param name="low_level" type="integer" value="1" label="low level"/>
+				<param name="high_level" type="integer" value="1" label="high level"/>
+			</when>
+			<when value="ETDFilter">
+				<param name="removePrecursor" type="boolean" truevalue="true" falsevalue="false" checked="True" label="Check this to remove unreacted precursor peaks from ETD spectra"/>
+				<param name="removeChargeReduced" type="boolean" truevalue="true" falsevalue="false" checked="True" label="Check this to remove charge-reduced precursor peaks from ETD spectra"/>
+				<param name="removeNeutralLoss" type="boolean" truevalue="true" falsevalue="false" checked="True" label="Check this to remove prominet neutral losses of the +1 charge-reduced precursor from ETD spectra"/>
+				<param name="blanketRemoval" type="boolean" truevalue="true" falsevalue="false" checked="True" label="Check this for an alternative way of neutral loss filtering using a charge-scaled 60Da exclusion window below the charge-reduced precursors"/>
+			</when>
+		</conditional>
+		<!--param name="dbop_type" type="select"  format="text"  label="Change the information of the result for this analysis in the database">
+			<option value="insert" selected="true">insert</option>		
+			<option value="update">update</option>
+			<option value="delete">delete</option>
+		</param-->
+        
+	</inputs>
+	<outputs>
+		<data format="mzxml" name="output" label="${tool.name} on ${on_string}(${input.display_name})"/>
+		<change_format>
+			<when input="outformat" value="mzML" format="mzml"/>
+		</change_format>
+	</outputs>
+
+	<tests>
+		<test>
+			<param name="input" value="6A001.RAW"/>
+			<output name="out_file1" file="6A001.mzxml"/>
+		</test>
+	</tests>
+
+	<help>
+	
+.. class:: infomark
+	
+**What it does**
+
+This tool converts a **RAW** formatted file to **MZXML** format
+
+This tool mainly converts .RAW file to mzML or mzXML file.
+
+-----
+
+.. class:: infomark
+
+**Example**
+
+# convert data.RAW to data.mzML
+
+msconvert data.RAW
+
+# convert data.RAW to data.mzXML
+
+msconvert data.RAW --mzXML
+
+# put output file in my_output_dir
+
+msconvert data.RAW -o my_output_dir
+
+# extract scan indices 5...10 and 20...25
+
+msconvert data.RAW --filter "index [5,10] [20,25]"
+
+# extract MS1 scans only
+
+msconvert data.RAW --filter "msLevel 1"
+
+# extract MS2 and MS3 scans only
+
+msconvert data.RAW --filter "msLevel 2-3"
+
+# extract MSn scans for n>1
+
+msconvert data.RAW --filter "msLevel 2-"
+
+# apply ETD precursor mass filter
+
+msconvert data.RAW --filter ETDFilter
+
+# keep only HCD spectra from a decision tree data file
+
+msconvert data.RAW --filter "activation HCD"
+
+# keep the top 42 peaks or samples (depending on whether spectra are centroid
+# or profile):
+
+msconvert data.RAW --filter "threshold count 42 most-intense"
+
+# multiple filters: select scan numbers and recalculate precursors
+
+msconvert data.RAW --filter "scanNumber [500,1000]" --filter "precursorRecalculation"
+
+# multiple filters: apply peak picking and then keep the bottom 100 peaks:
+
+msconvert data.RAW --filter "peakPicking true 1-" --filter "threshold count 100 least-intense"
+
+# multiple filters: apply peak picking and then keep all peaks that are at
+# least 50% of the intensity of the base peak:
+
+msconvert data.RAW --filter "peakPicking true 1-" --filter "threshold
+bpi-relative .5 most-intense"
+
+# use a configuration file
+
+msconvert data.RAW -c config.txt
+
+# example configuration file
+
+mzXML=true
+
+zlib=true
+
+filter="index [3,7]"
+
+filter="precursorRecalculation"
+
+
+	</help>
+
+</tool>

@@ -1,0 +1,5 @@
+Hey, we want to verify that you indeed try to reset your FIRMIANA password.  Clicking this address will start to reset your FIRMIANA password.  If you wish to continue, please follow the link below:
+
+{{ link }}
+
+If you didn't request password reset, you can ignore this email.

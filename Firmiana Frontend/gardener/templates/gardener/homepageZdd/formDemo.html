@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Firmiana</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!-- css -->
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.leanModal.style.css" /><!-- jquery.leanModal -->
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- Shared on MafiaShare.net  --><!-- Shared on MafiaShare.net  --></head>
+<body>
+
+	<!--Login_MessegeBox-->
+	<div>
+		<form id="submitForm">
+			<input type ="text" name ="email" id="email">
+			<input type ="password" name ="password" id ="password">
+			<input type ="submit" value ="submit" onclick ="valid();"> 
+			<script type="text/javascript">
+				function valid(){
+					var name = document.getElementById("email").value;
+					var pass = document.getElementById("password").value;
+					if(name==""){
+						alert("username cannot be null!");
+						//return false;
+					}
+					else if(pass==""){
+						alert("password cannot be null!");
+						//return false;
+					}
+					else{
+						alert("ajax");
+						alert(name);
+						alert('http://61.50.134.132/logins/?email=' + name + "&password=" + pass);
+						// true;
+						var aj = $.ajax({
+							url: 'http://61.50.134.132/logins',
+							data: {
+								email: name,//"caoruif@126.com",
+								password: pass//"111111"
+							},
+							type: 'post',
+							dataType:'json',    
+							success:function(response) {
+								alert("success");
+								
+							},
+							error: function(){
+								alert("error");
+								//window.location.href="http://www.baidu.com"
+								
+							}
+							
+						});
+						
+					}
+				}
+			</script>
+		</form>
+		
+	</div>
+	
+	<!--script-->
+	
+	
+
+
+
+</body>
+</html>
+
+  

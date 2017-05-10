@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <title>Spectrum Viewer</title>
+    
+    <!--[if IE]><script language="javascript" type="text/javascript" src="../js/excanvas.min.js"></script><![endif]-->
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script-->
+    <script src="http://libs.baidu.com/jqueryui/1.8.22/jquery-ui.min.js "></script>
+    <!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js"></script-->
+    <script type="text/javascript" src="/static/lorikeet/js/jquery.flot.js"></script>
+    <script type="text/javascript" src="/static/lorikeet/js/jquery.flot.selection.js"></script>
+    
+    <script type="text/javascript" src="/static/lorikeet/js/specview.js"></script>
+    <script type="text/javascript" src="/static/lorikeet/js/peptide.js"></script>
+    <script type="text/javascript" src="/static/lorikeet/js/aminoacid.js"></script>
+    <script type="text/javascript" src="/static/lorikeet/js/ion.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="/static/lorikeet/css/lorikeet.css"/>
+    
+</head>
+
+<body>
+
+<div class="msviewer_wait" align="center"><img src="/static/images/loading/loading6.gif" alt="Please wait..."/></div>
+<!-- PLACE HOLDER DIV FOR THE SPECTRUM -->
+<div id="lorikeet_placeholder"></div>
+<script type="text/javascript">
+
+$(document).ready(function () {
+
+	/* render the spectrum with the given options */
+	$("#lorikeet_placeholder").specview({"sequence":sequence,
+								"scanNum":scanNum,
+								"charge":charge,
+								"precursorMz":precursorMz,
+								"fileName":fileName,
+								"staticMods":staticMods, 
+								"variableMods":variableMods,
+								"ms1peaks": ms1peaks,
+								"ms1scanLabel":ms1scanLabel,
+								"precursorPeaks": precursorPeaks,
+								"zoomMs1": zoomMs1,
+								"precursorPeakClickFn": precursorPeakClicked,
+								"peaks": ms2peaks
+								});	
+
+});
+$(".msviewer_wait").html('');
+
+function precursorPeakClicked(precursorMz) {
+	alert("precorsor peak clicked: "+precursorMz);
+}
+
+var variableMods = [];
+var charge = {{ charge }};
+var scanNum = {{ scanNum }};
+var sequence = "{{ sequence }}";
+var fileName = "{{ filename }}";
+var precursorMz = {{ precursorMz }};
+var staticMods = {{ staticMods}};
+var zoomMs1 = "true";
+var ms1scanLabel = "{{ ms1scanLabel }}";
+
+var precursorPeaks = {{ precursorPeaks }};
+var ms2peaks = {{ ms2peaks }};
+var ms1peaks = {{ ms1peaks }};
+
+</script>
+
+</body>
+</html>

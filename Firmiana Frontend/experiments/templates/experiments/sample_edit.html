@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Sample information{% endblock %}
+{% block javascript %}
+    <!-- BoxSelect Source -->
+    <link rel="stylesheet" type="text/css" href="/static/javascript/boxselect/BoxSelect.css">
+    <script type="text/javascript" src="/static/javascript/boxselect/BoxSelect.js"></script>
+    <!-- Project Sample form source -->
+    <script type="text/javascript" src="/static/javascript/experiments/sample_edit.js"></script>
+{% endblock %}
+{% block content %}
+<div id="form"></div>
+<div class="hidden" id="no">{{ no }}</div>
+<div class="hidden" id="cell_tissue_value">{{ cell_tissue }}</div>
+{% endblock %}

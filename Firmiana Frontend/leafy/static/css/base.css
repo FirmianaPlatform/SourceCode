@@ -1,0 +1,22 @@
+body{
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 32px;
+}
+
+#logo{
+    background-color: silver;
+    font-size: 28px;
+    text-align: center;
+}
+
+#nav {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}

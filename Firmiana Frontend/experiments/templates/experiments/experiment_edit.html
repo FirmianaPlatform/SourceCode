@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Experiment information{% endblock %}
+{% block javascript %}
+    <script type="text/javascript" src="/static/javascript/experiments/experiment_edit.js"></script>
+{% endblock %}
+{% block content %}
+<div id="form"></div>
+<div class="hidden" id="no">{{ no }}</div>
+<div class="hidden" id="samplenum">{{ samplenum }}</div>
+<div class="hidden" id="reagentnum">{{ reagentnum }}</div>
+{% endblock %}

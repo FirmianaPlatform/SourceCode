@@ -1,0 +1,633 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Home-Firmiana</title>
+    <link rel="shortcut icon" type="image/ico" href="/static/images/favicon4.ico" />
+    <!--link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet"-->
+    <link href="/static/homepageQnq/css/firmiana3.0.3.css" rel="stylesheet">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <!-- Google small tools files -->
+    <script src="/static/homepageQnq/js/gooey.min.js"></script>
+    <!-- Custom Theme files -->
+    <link href="/static/homepageQnq/css/style.css" rel='stylesheet' type='text/css' />
+    <!-- Custom Theme files -->
+    <!-- Google small tools files -->
+    <link rel="stylesheet" href="/static/homepageQnq/css/gooey.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script-->
+    <script src="/static/homepageQnq/js/easyResponsiveTabs.js" type="text/javascript"></script>
+    <script src="/static/homepageQnq/js/gar.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#horizontalTab').easyResponsiveTabs({
+            type: 'default', //Types: default, vertical, accordion           
+            width: 'auto', //auto or any width like 600px
+            fit: true // 100% fit in a container
+        });
+    });
+    </script>
+    <script type="text/javascript">
+    $(function() {
+
+    });
+    </script>
+    <script type="text/javascript">
+    function goTopEx() {
+        var obj = document.getElementById("goTopBtn");
+
+        function getScrollTop() {
+            return document.documentElement.scrollTop + document.body.scrollTop;
+        }
+
+        function setScrollTop(value) {
+            if (document.documentElement.scrollTop) {
+                document.documentElement.scrollTop = value;
+            } else {
+                document.body.scrollTop = value;
+            }
+        }
+        window.onscroll = function() {
+            getScrollTop() > 0 ? obj.style.display = "" : obj.style.display = "none";
+        }
+        obj.onclick = function() {
+            var goTop = setInterval(scrollMove, 10);
+
+            function scrollMove() {
+                setScrollTop(getScrollTop() / 1.1);
+                if (getScrollTop() < 1) clearInterval(goTop);
+            }
+        }
+    }
+    </script>
+    <style>
+    #goTopBtn {
+        POSITION: fixed;
+        TEXT-ALIGN: center;
+        LINE-HEIGHT: 30px;
+        WIDTH: 30px;
+        BOTTOM: 60px;
+        HEIGHT: 33px;
+        FONT-SIZE: 12px;
+        CURSOR: pointer;
+        RIGHT: 60px;
+        _position: absolute;
+        _right: auto
+    }
+    </style>
+</head>
+<div style="display: none" id="goTopBtn"><img border=0 src="/static/homepageQnq/images/backtotop.png"></div>
+<script type=text/javascript>
+goTopEx();
+</script>
+<script type="text/javascript">
+function login() {
+    $("#loginModal").modal();
+}
+</script>
+</head>
+
+<body>
+    <script>
+    $(function($) {
+        $("#gooey-round").gooeymenu({
+            bgColor: "#6dc5dd",
+            contentColor: "white",
+            style: "circle",
+            horizontal: {
+                menuItemPosition: "spaced"
+            },
+            vertical: {
+                menuItemPosition: "spaced",
+                direction: "up"
+            },
+            circle: {
+                radius: 85
+            },
+            margin: "small",
+            size: 80,
+            bounce: true,
+            bounceLength: "small",
+            transitionStep: 100,
+            hover: "yellow"
+        });
+    });
+    </script>
+    <!----- start-header---->
+    <div class="wrapper">
+        <!----start-header---->
+        <div class="header">
+            <div class="container header_top">
+                <div class="logo">
+                    <a href="/"><img src="/static/homepageQnq/images/logo_orange.png" alt=""></a>
+                </div>
+                <div class="menu">
+                    <a class="toggleMenu" href="#"><img src="/static/homepageQnq/images/nav_icon.png" alt="" /> </a>
+                    <ul class="nav" id="nav">
+                        <li class="current"><a href="/">Home</a></li>
+                        {% if not user.is_authenticated %}
+                        <li><a target="_blank" href="javascript:void(0)" onclick="login()">Gardener</a></li>
+                        {% else %}
+                        <li><a target="_blank" href="/gardener">Gardener</a></li>
+                        {% endif %}
+                        <li><a target="_blank" href="/responders">SCRIPT-MAP</a></li>
+                        <!--li><a href="#">Services</a></li>
+                      <li><a href="#">Contact</a></li-->
+                        <div class="clearfix"></div>
+                    </ul>
+                    <script type="text/javascript" src="/static/homepageQnq/js/responsive-nav.js"></script>
+                </div>
+                <div class="clearfix"> </div>
+                <!----//End-top-nav---->
+            </div>
+        </div>
+        <!----- //End-header---->
+        <div class="container slide-banner">
+            <div id="myCarousel" class="carousel slide">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active slide-padding">
+                        <div class="row">
+                            <div class='col-md-4 banner_left slide-1'>
+                                <!--span></span-->
+                            </div>
+                            <div class='col-md-6 banner_right'>
+                                <h1>Tool Control Panel </h1>
+                                <h2>integreted with statistical tools</h2>
+                                <p>composed of a series of analysis tools for Mass Spectra data from experimental design to statistical analysis and further bioinformatics mining technique.</p>
+                                <a class="banner_btn" href="">More Info</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item slide-padding">
+                        <div class="row">
+                            <div class='col-md-4 banner_left slide-2'>
+                                <!--span></span-->
+                            </div>
+                            <div class='col-md-6 banner_right'>
+                                <h1>Detailed Metadata </h1>
+                                <h2>collected from Wet-Labs.</h2>
+                                <p>manual-input by experimenters</p>
+                                <a class="banner_btn" href="">More Info</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item slide-padding">
+                        <div class="row">
+                            <div class='col-md-4 banner_left slide-3'>
+                                <!--span></span-->
+                            </div>
+                            <div class='col-md-6 banner_right'>
+                                <h1>Powerful Comparison</h1>
+                                <h2>compare data from multi-experiments </h2>
+                                <p>necessary step before any further analysis.</p>
+                                <a class="banner_btn" href="">More Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                    <</a>
+                        <a class="carousel-control right" href="#myCarousel" data-slide="next">></a>
+            </div>
+            <!--div class="row">
+                <div class='col-md-4 banner_left'>
+                    <span></span>
+                </div>
+                <div class='col-md-6 banner_right'>
+                    <h1>This is Firmiana </h1>
+                    <h2>One-stop analysis platform</h2>
+                    <p>composed of a series of analysis tools for Mass Spectra data from experimental design to statistical analysis and further bioinformatics mining technique</p>
+                    <a class="banner_btn" href="">More Info</a>
+                </div>
+         </div-->
+        </div>
+        <div class="main">
+            <div class='container content_top'>
+                <div class='row'>
+                    <div class="col-md-4 flag_grid">
+                        <i class="home"></i>
+                        <div id="login_form" class="flag_desc">
+                            {% if not user.is_authenticated %}
+                            <h3><a href="#">User Login</a> <button style="float:right" id="" data-loading-text="Checking..." class="btn btn-default login_btn">Login</button></h3>
+                            <form role="form">
+                                <div class="form-group">
+                                    <!--label for="name">User Email</label-->
+                                    <input type="text" class="form-control" id="email" placeholder="Your email">
+                                </div>
+                                <div class="form-group">
+                                    <!--label for="pswd">Password</label-->
+                                    <input type="password" class="form-control" id="pswd" placeholder="Password">
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input id="remember" type="checkbox"> Remember me
+                                    </label>
+                                </div>
+                            </form>
+                            {% else %}
+                            <h3><a href="#"> Dr.{{username}}</a> </h3>
+                            <p>Last login : {{last_login}}</p>
+                            <p>Your IP : {{ip}}</p>
+                            <a href="/logout/" class="link">Logout</a> {% endif %}
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="col-md-4 flag_grid">
+                        <i class="flag"></i>
+                        <div class="flag_desc">
+                            <h3><a href="#">Running Task</a></h3>
+                            <p>Firmiana runs workflows everyday, finishing time of tasks depends on the state of server payload.</p>
+                            <a href="#" class="link">Jobs Running Now : 8</a>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="database"></i>
+                        <div class="flag_desc">
+                            <h3><a href="#">Experiment Collection</a></h3>
+                            <p>We've stored about 1800 experiments, and this number is increasing rapidly.</p>
+                            <a href="#" class="link">Experiments : {{total_exp}}</a>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                </div>
+            </div>
+            <!--div class='container content_middle'>
+        <div class="row">
+            <div id="graphic" class="col-md-8">
+                
+                <div id="main"  style="height:500px" >Project partners</div>
+                 <script src="http://echarts.baidu.com/build/dist/echarts-all.js"></script>
+                 <script src="/static/homepageQnq/js/chart1.js" type="text/javascript"></script>
+            </div>
+        </div>
+        </div-->
+            <div class='container content_middle'>
+                <div class="row">
+                    <div class="col-md-7 middle_left">
+                        <div id="main" style="height:350px">Project partners</div>
+                        <!--ul class="test_box middle_grid">
+                        <li class="test_img"><img src="/static/homepageQnq/images/shitieliu.jpg" class="img-responsive" alt=""> </li>
+                        <li class="test_desc">
+                            <h4><a href="#">Dr.Tieliu Shi</a></h4>
+                            <p>Dr.Tieliu Shi</p> 
+                            <br><a class="content_btn" href="">More</a>
+                        </li>   
+                        <div class="clearfix">  </div>                  
+                    </ul>
+                    <ul class="test_box">
+                        <li class="test_img"><img src="/static/homepageQnq/images/dingchen.jpg" class="img-responsive" alt=""> </li>
+                        <li class="test_desc">
+                            <h4><a href="#">Dr.Chen Ding</a></h4>
+                            <p>Dr.Chen Ding</p>
+                            <br><a class="content_btn" href="">More</a>
+                        </li>   
+                        <div class="clearfix">  </div>                  
+                    </ul-->
+                    </div>
+                    <div class="col-md-5">
+                        <div class="sap_tabs">
+                            <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+                                <ul class="resp-tabs-list">
+                                    <li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>BPRC</span></li>
+                                    <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Phoenix</span></li>
+                                    <li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>ECNU</span></li>
+                                    <div class="clear"></div>
+                                </ul>
+                                <div class="resp-tabs-container">
+                                    <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
+                                        <div class="facts">
+                                            <div class="tab_box">
+                                                <h4><a href="#">Research direction</a></h4>
+                                                <ul style="color:white;">
+                                                    <li>composition and function network of human liver proteome</li>
+                                                    <li>major diseases related proteomics</li>
+                                                    <li>system biology research based on proteomics</li>
+                                                    <li>new techniques and methods of proteomics</li>
+                                                </ul>
+                                            </div>
+                                            <ul class="tab_list">
+                                                <li><a target="_blank" href="http://www.bprc.ac.cn/">BPRC Hompage</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
+                                    <div class="facts">
+                                        <div class="tab_box">
+                                            <h4><a href="#">PHOENIX project</a></h4>
+                                            <p>Phoenix Project is a large infrastructure deployed at national level, designed to hold large-scale protein research and development, seize the forefront of life science research</p>
+                                        </div>
+                                        <ul class="tab_list">
+                                            <li><a target="_blank" href="http://www.bprc.ac.cn/proteome_sky/1212/12.12.02.tebietuijian.html">Phoenix introduction</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
+                                    <div class="facts">
+                                        <div class="tab_box">
+                                            <h4><a href="#">Research direction</a></h4>
+                                            <ul style="color:white;">
+                                                <li>protein-protein interactions</li>
+                                                <li>gene regulatory networks</li>
+                                                <li>discover new genetic diseases and new molecular markers</li>
+                                                <li>drug interactions</li>
+                                                <li>analysis of high-throughput data</li>
+                                            </ul>
+                                        </div>
+                                        <ul class="tab_list">
+                                            <li><a target="_blank" href="http://www.biomed.ecnu.edu.cn/CN/LabContent.aspx?id=7">ECNU Bioinformatics</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- comment_top end -->
+            <div class="container section_aligncenter">
+                <h3><img src="/static/homepageQnq/images/news.png" width="40px" height="40px"/> News</h3>
+            </div>
+            <div class="container content_bottom1">
+                <div class="row">
+                    <div class='col-md-6 comment_top'>
+                        <div class="project_grid">
+                            <ul class="project_box">
+                                <li class="mini-post-meta">
+                                    <time datetime=""><span class="day">07</span><span class="month">July</span></time>
+                                </li>
+                                <li class="desc">
+                                    <h5><a href="#">July 07</a></h5>
+                                    <span class="comment">18 Comments</span>
+                                    <p>Bugs fixed, for more information, check our development logs&nbsp;&nbsp;
+                                        <a href="#"><img src="/static/homepageQnq/images/comment_arrow.png" alt="" /></a>
+                                    </p>
+                                </li>
+                                <div class="clearfix"> </div>
+                            </ul>
+                            <ul class="project_box">
+                                <li class="mini-post-meta">
+                                    <time datetime=""><span class="day">06</span><span class="month">July</span></time>
+                                </li>
+                                <li class="desc">
+                                    <h5><a href="#">July 06</a></h5>
+                                    <span class="comment">15 Comments</span>
+                                    <p>
+                                        <p>Bugs fixed, for more information, check our development logs&nbsp;&nbsp;
+                                            <a href="#"><img src="/static/homepageQnq/images/comment_arrow.png" alt="" /></a>
+                                        </p>
+                                </li>
+                                <div class="clearfix"> </div>
+                            </ul>
+                            <ul class="project_box">
+                                <li class="mini-post-meta">
+                                    <time datetime=""><span class="day">05</span><span class="month">July</span></time>
+                                </li>
+                                <li class="desc">
+                                    <h5><a href="#">July 05</a></h5>
+                                    <span class="comment">10 Comments</span>
+                                    <p>Bugs fixed, for more information, check our development logs&nbsp;&nbsp;
+                                        <a href="#"><img src="/static/homepageQnq/images/comment_arrow.png" alt="" /></a>
+                                    </p>
+                                </li>
+                                <div class="clearfix"> </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- comment_top end -->
+                    <div class='col-md-6'>
+                        <div class="project_grid">
+                            <ul class="project_box">
+                                <li class="mini-post-meta">
+                                    <time datetime=""><span class="day">20</span><span class="month">June</span></time>
+                                </li>
+                                <li class="desc">
+                                    <h5><a href="#">June 20</a></h5>
+                                    <span class="comment">0 Comments</span>
+                                    <p>Bugs fixed, for more information, check our development logs&nbsp;&nbsp;
+                                        <a href="#"><img src="/static/homepageQnq/images/comment_arrow.png" alt="" /></a>
+                                    </p>
+                                </li>
+                                <div class="clearfix"> </div>
+                            </ul>
+                            <ul class="project_box">
+                                <li class="mini-post-meta">
+                                    <time datetime=""><span class="day">11</span><span class="month">May</span></time>
+                                </li>
+                                <li class="desc">
+                                    <h5><a href="#">May 11</a></h5>
+                                    <span class="comment">0 Comments</span>
+                                    <p>Bugs fixed, for more information, check our development logs&nbsp;&nbsp;
+                                        <a href="#"><img src="/static/homepageQnq/images/comment_arrow.png" alt="" /></a>
+                                    </p>
+                                </li>
+                                <div class="clearfix"> </div>
+                            </ul>
+                            <ul class="project_box">
+                                <li class="mini-post-meta">
+                                    <time datetime=""><span class="day">01</span><span class="month">April</span></time>
+                                </li>
+                                <li class="desc">
+                                    <h5><a href="#">April 01</a></h5>
+                                    <span class="comment">0 Comments</span>
+                                    <p>Bugs fixed, for more information, check our development logs&nbsp;&nbsp;
+                                        <a href="#"><img src="/static/homepageQnq/images/comment_arrow.png" alt="" /></a>
+                                    </p>
+                                </li>
+                                <div class="clearfix"> </div>
+                            </ul>
+                        </div>
+                        <!--ul class="comment_section top_grid">
+                    <li class="comment_desc"><p>"Diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci"</p>
+                        <br><span class="m_2"><a href="#">-Dr.Jun Qin</a></span>
+                    </li>
+                    <li><i class="comment"></i></li>
+                    <div class="clearfix"></div>
+                  </ul>
+                  
+                  <ul class="comment_section">
+                    <li class="comment_desc"><p>"Augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod"</p>
+                        <br><span class="m_2"><a href="#">-Dr.Chen Ding</a></span>
+                    </li>
+                    <li><i class="comment"></i></li>
+                    <div class="clearfix"></div>
+                  </ul-->
+                    </div>
+                </div>
+                <!-- row end -->
+            </div>
+            <!-- content_bottom end -->
+            <div class="container section_aligncenter">
+                <h3><img src="/static/homepageQnq/images/earth.png" width="40px" height="40px"/> Real-time visitors location </h3>
+            </div>
+            <div class="container content_bottom2">
+                <div>
+                    <!--script type="text/javascript" src="http://jg.revolvermaps.com/2/0.js?i=6esfq1hv31z&amp;d=2&amp;p=0&amp;b=0&amp;w=243&amp;g=2&amp;f=arial&amp;fs=12&amp;r=0&amp;c0=362b05&amp;c1=ff0000&amp;c2=000000&amp;ic0=0&amp;ic1=0" async="async"></script-->
+                    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/0.js?i=6esfq1hv31z&amp;d=2&amp;p=0&amp;b=4&amp;w=293&amp;g=2&amp;f=arial&amp;fs=12&amp;r=0&amp;c0=362b05&amp;c1=ff0000&amp;c2=000000&amp;ic0=0&amp;ic1=0" async="async"></script>
+                </div>
+                <div class="globalVisitor">
+                    <!--script type="text/javascript" src="//rg.revolvermaps.com/0/0/7.js?i=6esfq1hv31z&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;sx=0" async="async"></script-->
+                    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/7.js?i=6esfq1hv31z&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;sx=0" async="async"></script>
+                </div>
+            </div>
+            <!-- content_bottom end -->
+            <div style="width: 200px; position: fixed; right: 100px; top: 100px;">
+                <nav id="gooey-round" class="navimenu" style="-webkit-filter: url('#goo-shadow2'); filter: url(#goo-shadow2);">
+                    <input type="checkbox" class="menu-open" name="menu-open3" id="menu-open3">
+                    <label class="open-button" for="menu-open3" style="width: 80px; height: 80px; line-height: 80px; background-color: rgb(104, 208, 153);">
+                        Quick Start
+                    </label>
+                    <a href="#" class="gooey-menu-item" style="width: 80px; height: 80px; color: white; line-height: 80px; transition-timing-function: ease-out; transform: translate3d(0px, 0px, 0px); transition-duration: 100ms; background-color: rgb(104, 208, 153);"> <i class="fa fa-train">Job status</i> </a>
+                    <a href="#" class="gooey-menu-item" style="width: 80px; height: 80px; color: white; line-height: 80px; transition-timing-function: ease-out; transform: translate3d(0px, 0px, 0px); transition-duration: 200ms; background-color: rgb(104, 208, 153);"> <i class="fa fa-bicycle"></i> </a>
+                    <a href="#" class="gooey-menu-item" style="width: 80px; height: 80px; color: white; line-height: 80px; transition-timing-function: ease-out; transform: translate3d(0px, 0px, 0px); transition-duration: 300ms; background-color: rgb(104, 208, 153);"> <i class="fa fa-rocket"></i> </a>
+                    <a href="#" class="gooey-menu-item" style="width: 80px; height: 80px; color: white; line-height: 80px; transition-timing-function: ease-out; transform: translate3d(0px, 0px, 0px); transition-duration: 400ms; background-color: rgb(104, 208, 153);"> <i class="fa fa-automobile"></i> </a>
+                    <a href="#" class="gooey-menu-item" style="width: 80px; height: 80px; color: white; line-height: 80px; transition-timing-function: ease-out; transform: translate3d(0px, 0px, 0px); transition-duration: 500ms; background-color: rgb(104, 208, 153);"> <i class="fa fa-plane"></i> </a>
+                    <svg id="gooeySVG2" class="gooeySVG">
+                        <defs id="defs2">
+                            <filter id="goo-shadow2" overflow="hidden">
+                                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo"></feColorMatrix>
+                                <feGaussianBlur in="goo" stdDeviation="2" result="shadow"></feGaussianBlur>
+                                <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0" result="shadow"></feColorMatrix>
+                                <feOffset in="shadow" dx="1" dy="1" result="shadow"></feOffset>
+                                <feComposite in2="shadow" in="goo" result="goo"></feComposite>
+                                <feComposite in2="goo" in="SourceGraphic" result="mix"></feComposite>
+                            </filter>
+                            <filter id="goo2">
+                                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+                                <feComposite in2="goo" in="SourceGraphic" result="mix"></feComposite>
+                            </filter>
+                        </defs>
+                    </svg>
+                </nav>
+            </div>
+        </div>
+        <!-- main end -->
+        <div class="container footer">
+            <div class="footer_top">
+                <div class="row">
+                    <div class="col-md-4 footer_grid">
+                        <h3 class="m_4">LEADERS</h3>
+                        <ul class="list">
+                            <li><a target="_blank" href="http://www.bprc.ac.cn/"> BPRC</a></li>
+                            <li><a target="_blank" href="http://www.bmi.ac.cn/"> BMI</a></li>
+                            <li><a target="_blank" href="https://www.bcm.edu/"> BCM</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 footer_grid">
+                        <h3 class="m_4">DEVELOPMENT</h3>
+                        <ul class="list">
+                            <li><a target="_blank" href="http://www.biomed.ecnu.edu.cn/CN/LabContent.aspx?id=7"> ECNU BioInformatics</a></li>
+                            <li><a target="_blank" href="http://www.cs.ecnu.edu.cn/"> ECNU CS</a></li>
+                            <li><a target="_blank" href="http://docs.sencha.com/extjs/4.2.1/"> Sencha</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 footer_grid">
+                        <h3 class="m_4">RESOURCES</h3>
+                        <ul class="list">
+                            <li><a target="_blank" href="#"> FTP Sites</a></li>
+                            <li><a target="_blank" href="#"> API Manual</a></li>
+                            <li><a target="_blank" href="#"> Tutorials</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="copy">
+                    <p>Copyright &copy; 2015.Firmiana All rights reserved.</p>
+                </div>
+                <ul class="social">
+                    <li>
+                        <a href=""> <i class="fb"> </i> </a>
+                    </li>
+                    <li>
+                        <a href=""> <i class="tw"> </i> </a>
+                    </li>
+                </ul>
+                <div class="clearfix"> </div>
+            </div>
+            <!-- footer_bottom end -->
+        </div>
+        <!-- footer end -->
+    </div>
+</body>
+
+</html>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                   Login Successfully
+                </h4>
+            </div>
+            <div class="modal-body">
+                Turn to <a title="Analysis Interface" href="/gardener">Gardener</a> right now ?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" id="goGardener">
+                    Right now
+                </button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Later
+                </button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal -->
+</div>
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="loginModalLabel">
+                   Please login first.
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group">
+                        <!--label for="name">User Email</label-->
+                        <input type="text" class="form-control" id="email2" placeholder="Your email">
+                    </div>
+                    <div class="form-group">
+                        <!--label for="pswd">Password</label-->
+                        <input type="password" class="form-control" id="pswd2" placeholder="Password">
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input id="remember2" type="checkbox"> Remember me
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success login_btn2" id="">
+                    Login
+                </button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Later
+                </button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal -->
+</div>
+<script src="http://echarts.baidu.com/build/dist/echarts-all.js"></script>
+<script src="/static/homepageQnq/js/chart1.js" type="text/javascript"></script>

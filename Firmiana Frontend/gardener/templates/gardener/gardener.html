@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gardener-Firmiana</title>
+<!-- Ext includes -->
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.0.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/static/css/loader.css">
+	
+<link rel="shortcut icon" type="image/ico"
+	href="/static/images/favicon4.ico" />
+{% if theme %}
+<link rel="stylesheet" type="text/css"
+	href="/static/ext4/resources/ext-theme-{{theme}}/ext-theme-{{theme}}-all.css" />
+{% else %}
+<link rel="stylesheet" type="text/css"
+	href="/static/ext4/resources/css/ext-all.css" />
+{% endif %}
+<link rel="stylesheet" type="text/css" href="/static/css/gar.css" />
+
+<link rel="stylesheet" type="text/css"
+	href="/static/ext4/examples/shared/example.css" />
+
+<link rel="stylesheet" type="text/css"
+	href="/static/css/jheatmap-1.0.0.css" />
+
+<link rel="stylesheet" type="text/css"
+	href="/static/cytoscape/style.css" />
+	
+<script type="text/javascript">         
+    // waiting for loading
+    $(window).load(function(){
+        $('body').addClass('loaded');
+        $('#loader-wrapper .load_title').remove();
+    }); 
+</script>
+
+
+
+</head>
+<body>
+	<div id="loader-wrapper">
+	    <div id="loader"></div>
+	    <div class="loader-section section-left"></div>
+	    <div class="loader-section section-right"></div>
+	    <div class="load_title">Loading...<br><span>Firmiana Data Center</span></div>
+	</div>
+	<!-- div style="display: none">
+			<script type="text/javascript" src="http://jg.revolvermaps.com/2/3.js?i=6esfq1hv31z&amp;b=0&amp;s=40&amp;m=2&amp;cl=ffffff&amp;co=010020&amp;cd=aa0000&amp;v0=60&amp;v1=60&amp;r=1" async="async"></script>
+		</div-->
+	<!--  script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script-->
+	
+	<!--script type="text/javascript" src="/static/ext4/ext.js"></script-->
+	<script type="text/javascript" src="/static/ext4/ext-all-debug.js"></script>
+	<!-- Manual js -->
+	<script type="text/javascript" src="/static/javascript/gardener/app.js"></script>
+
+	<!--  script type="text/javascript" src="/static/javascript/GoogleAnalytics.js"></script-->
+
+	<script type="text/javascript"
+		src="/static/canvasxpress/js/canvasXpress.min.js"></script>
+
+	<script type="text/javascript"
+		src="/static/ext4/examples/shared/examples.js"></script>
+
+	<script src="/static/jheatmap/js/jheatmap-1.0.0.js"
+		type="text/javascript"></script>
+
+	<!-- script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.0.min.js"></script-->
+
+	<script type="text/javascript"
+		src="/static/cytoscape/build/cytoscape.js"></script>
+	
+	<!--  script for reactome -->
+	<script type="text/javascript" language="javascript"
+		src="http://www.reactome.org/DiagramJs/diagram/diagram.nocache.js"></script>
+</body>
+</html>
+

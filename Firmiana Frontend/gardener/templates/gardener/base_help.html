@@ -1,0 +1,105 @@
+<div class="post">
+	<!--div class="header">
+			<h3>How to use :</h3>
+		</div-->
+	<div class="content" id="step1">
+		<h4>Step 1 : Input Metadata</h4>
+		<div style="float:left;">
+			<img src="/static/images/help_page/temp_menu.jpg" height="150" width="170" id="feature-img1" class="jpg" alt="menu.jpg"/>
+		</div>
+		<p style="text-indent: 2em">(1)	Login at 
+			<a href="http://61.50.134.132/">http://61.50.134.132/gardener</a>
+		</p>
+		<br/><br/>
+		<p style="text-indent: 2em">(2)	Click [Experiment Management] at the top of homepage. Add reagent, sample and experiment in turn.</p>
+		<br/><br/><br/>
+	
+<object classid="clsid27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="800" height="600">
+<param name="movie" value="/static/media/vcastr.swf?vcastr_xml_url=/static/media/vcastr.xml">
+<param name="quality" value="high">
+<embed src="/static/media/vcastr.swf?vcastr_xml_url=/static/media/vcastr.xml" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="800" height="600"></embed>
+</object>
+	</div>
+					
+	<div class="content" id="step2">
+		<h4>Step 2 : Upload dataset</h4>
+		<p style="text-indent: 2em">(1)	Rule for file name :</p>
+		<div style="text-indent: 4em">
+			<p>Example 1: YOUR_FILE_NAME_F01_R01.raw</p>
+			<p>Example 2: YOUR_FILE_NAME_F02_R01.raw</p>
+			<p>Beginning "YOUR_FILE_NAME" is the origin file name or any name you like, "_F01" and "_R01" in tail mean "fraction number" and "repeat number".</p>
+		</div>
+		<p style="text-indent: 2em">(2)	Upload path :</p>
+		<div style="text-indent: 4em">
+			<p>Experimenters of BPRC can upload data to the NAS path used before.</p>
+			<p>In folder named "For Galaxy", there are existed folders, like "/Velos/80047/" </p>
+			<p></p>
+			<p></p>
+			<p></p>
+		</div>
+		<p style="text-indent: 2em">(3) Folder Architecture :</p>
+		<div style="padding:0 200px;">
+			<img src="/static/images/help_page/folder_example.jpg" height="380" width="480" id="feature-img2" class="jpg" alt="folder_example.jpg"/>
+		</div>
+	</div>
+					
+	<div class="content" id="step3">
+		<h4>Step 3 : Waiting for the execution of workflow</h4>
+		<p style="text-indent: 2em">Firmiana will match proper workflow for added experiments and execute it in order.</p>
+	</div>
+					
+	<div class="content" id="step4">
+		<h4>Step 4 : Tracking workflow progress</h4>
+		<p style="text-indent: 2em">Viewing 
+			<a href="http://61.50.134.132/gardener">61.50.134.132/</a> for status of added experiments.
+		</p>
+			
+		<div style="padding-left:120px" id="table1">
+			<table class="mytable">
+				<tr class="alter">
+					<th>Progress</th>
+					<th>Explanation</th>
+				</tr>
+				<tr>
+					<th>0</th>
+					<td>Metadata added</td>
+				</tr>
+				<tr class="alter">
+					<th>1</th>
+					<td>Workflow started</td>
+				</tr>
+				<tr>
+					<th>2</th>
+					<td>Complete conversion of raw to mzXML and writing ms data into database</td>
+				</tr>
+				<tr class="alter">
+					<th>3</th>
+					<td>Complete conversion of mzXML to mgf</td>
+				</tr>
+				<tr>
+					<th>4</th>
+					<td>Complete Mascot search</td>
+				</tr>
+				<tr class="alter">
+					<th>5</th>
+					<td>Complete parsing Mascot result, obtaining peptide, protein and gene data</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<br/>
+		<div class="content" id="step5">
+			<h4>Step 5 : Error processing</h4>
+			<div style="text-indent: 2em">
+				<p>If the progress of your experiment being standing still for over one day, </p>
+				<p>please click the color bar at column "Progress" to check if there is any error in workflow, </p>
+				<p>then contact administrator Jinwen Feng or Naiqi Qiu.</p>
+				<p>Jinwen Feng : 
+					<a href="mailto:fengjinwen1990@gmail.com">fengjinwen1990@gmail.com</a>
+				</p>
+				<p>Naiqi Qiu : 
+					<a href="mailto:hzqnq@163.com">hzqnq@163.com</a>
+				</p>
+			</div>
+		</div>
+</div>	

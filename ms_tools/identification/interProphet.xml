@@ -1,0 +1,61 @@
+<tool id="ms_qualification_interProphet" name="InterProphet" version="1.0.0">
+  <description>Combines Peptide Prophet results from multiple search engines</description>
+  <stdio>
+		<exit_code range="1:" err_level="fatal" />
+	</stdio>
+  <command interpreter="python">
+  	interProphet.py --output $output 
+  	-d "$output.files_path"
+  	--dbop_type $dbop_type
+  	##--output-index ${output_index} --output-xsl ${output_xsl} --output-shtml ${output_shtml} 
+  	--nonss=$use_nss --nonrs=$use_nrs --nonse=$use_nse --nonsi=$use_nsi --nonsm=$use_nsm
+	## Inputs.
+	--input '${first_input}'
+	 #for $input_file in $input_files:
+     	'${input_file.additional_input}'
+     #end for 	
+  </command>
+
+  <inputs>
+	<param name="first_input" type="data" format="peptideprophet_pepxml" label="PeptideProphet Results" help="These files will typically be outputs from search tools that have subsequently been run through peptide prophet"/> 	
+		
+	<repeat name="input_files" title="Additional PepXML Input Files">
+		<param format="peptideprophet_pepxml" name="additional_input" type="data" label="PepXML produced by PeptideProphet" help=""/>
+	</repeat>
+	
+	<param name="use_nss" checked="false" type="boolean" label="Don't Include NSS in Model" help="Don't Include NSS (Number of Sibling Searches) in Statistical Model" />
+	<param name="use_nrs" checked="false" type="boolean" label="Don't Include NRS in Model" help="Don't Include NRS (Number of Replicate Spectra) in Statistical Model"/>
+	<param name="use_nse" checked="false" type="boolean" label="Don't Include NSE in Model" help="Don't Include NSE (Number of Sibling Experiments) in Statistical Model"/>
+	<param name="use_nsi" checked="false" type="boolean" label="Don't Include NSI in Model" help="Don't Include NSI (Number of Sibling Ions) in Statistical Model"/>
+	<param name="use_nsm" checked="false" type="boolean" label="Don't Include NSM in Model" help="Don't Include NSM (Number of Sibling Modifications) in Statistical Model"/>
+	<param name="dbop_type" type="select"  format="text"  label="Change the information of the result for this analysis in the database">
+			<option value="insert" selected="true">insert</option>		
+			<option value="update">update</option>
+			<option value="delete">delete</option>
+		</param>	
+  </inputs>
+  <outputs>
+    <data format="interprophet_pepxml" name="output"  label="interprophet.${first_input.display_name}.interact.iproph.pep.xml"/>
+  	<!--<data format="txt" name="output_index" label="interprophet.${input_file.display_name}.pep.xml.index" hidden="true"/>
+  	<data format="xml" name="output_xsl" label="interprophet.${input_file.display_name}.pep.xsl" hidden="true"/>
+    <data format="txt" name="output_shtml" label="interprophet.${input_file.display_name}.pep.shtml" hidden="true"/>-->
+  </outputs>
+
+ <help>
+ 	.. class:: infomark
+
+**What it does**
+
+InterProphet takes a set of pepXML files (possibly generated using different search engines) and calculates updated identification probabilities for each peptide.  The updated probabilities are based on a statistical model that combines evidence from identifications across all of the input files, spectra, modified states and charge states. 
+
+----
+
+**Citation**
+
+If you use this tool please read and cite the paper describing iProphet
+
+Shteynberg D, et al. “iProphet: Improved statistical validation of peptide identifications in shotgun proteomics.” *Molecular and Cellular Proteomics* 10, M111.007690 (2011).
+
+  </help>
+
+</tool>

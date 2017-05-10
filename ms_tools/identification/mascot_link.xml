@@ -1,0 +1,13 @@
+<tool id="ms_identification_mascotlink" name="Mascot" tool_type="data_source">
+    <description>link</description>
+    <command interpreter="python">data_source.py $output $__app__.config.output_size_limit</command>
+    <inputs action="http://61.50.134.137/mascot/" check_values="false" method="get">
+        <display>go to mascot server $GALAXY_URL</display>
+        <param name="GALAXY_URL" type="baseurl" value="/tool_runner" />
+    </inputs>
+    <uihints minwidth="800"/>
+    <outputs>
+        <data name="output" format="tabular" label=""/>
+    </outputs>
+    <options sanitize="False" refresh="True"/>
+</tool>

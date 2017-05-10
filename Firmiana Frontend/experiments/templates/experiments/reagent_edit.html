@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Reagent information{% endblock %}
+{% block javascript %}
+    <!-- BoxSelect Source -->
+    <link rel="stylesheet" type="text/css" href="/static/javascript/boxselect/BoxSelect.css">
+    <script type="text/javascript" src="/static/javascript/boxselect/BoxSelect.js"></script>
+    <!-- Project Reagent form source -->
+    <script type="text/javascript" src="/static/javascript/experiments/reagent_edit.js"></script>
+{% endblock %}
+{% block content %}
+<div id="form"></div>
+<div id="button"></div>
+<div class="hidden"  id="no">{{ no }}</div>
+<div class="hidden" id="type">{{ type }}</div>
+{% endblock %}

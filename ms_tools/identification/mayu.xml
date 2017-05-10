@@ -1,0 +1,93 @@
+<tool id="ms_identification_mayu" name="Mayu"  version="1.0.0">
+	<description>Protein identification False Discovery Rates</description>
+	<stdio>
+		<exit_code range="1:" err_level="fatal" />
+	</stdio>
+	<command interpreter="python">
+		mayu.py  --informat $fileformat.informat
+		##-o '$output' -d "$output.files_path"
+		  -d "$html_file.files_path" -o "$html_file"
+		#if $fileformat.informat=="pepxml"
+			-i $fileformat.input_pep
+		#else
+			-i $fileformat.input_csv
+		#end if 
+		--dbkey $dbkey --decoy_pre $decoy_pre
+		--mFDR_step $mFDR_step 
+		--nr_missCle $nr_missCle 
+		--minLen $minLen
+		##--nr_step $nr_step
+		--maxMFDR $maxMFDR
+		--idset $idset
+		--filter $filter
+		##--filebase $filebase
+		--pmFDR $mFDR_step --verbose $verbose		
+		--runR $runR	
+		--dbop_type $dbop_type
+	</command>
+
+	<inputs>		
+		<conditional name="fileformat">
+			<param name="informat" type="select" label="Select the format of input files">
+				<option value="pepxml" selected="true">pepxml</option>
+				<option value="csv">csv</option>
+			</param>
+			<when value="pepxml">
+				<param format="interprophet_pepxml,peptideprophet_pepxml" name="input_pep" type="data" label="PepXML search result file (.xml)"/>
+			</when>
+			<when value="csv">
+				<param format="csv" name="input_csv" type="data" label=" Mayu or Mascot csv search result file (.csv)"/>
+			</when>
+		</conditional>	
+		<param name="dbkey" type="select" format="text" label="Target decoy search database in fasta format">
+			<options from_data_table="pepxml_db" />
+		</param>
+		<param name="decoy_pre" type="text"  value="rev_" label="Decoy id prefix (decoy ids in the faste database have to start with this prefix, e.g. rev_)"/>
+		<param name="mFDR_step" type="integer"  value="11" label="The resolution of error analysis (mFDR steps)"/>
+		<param name="nr_missCle" type="integer"  value="0" label="Number of missed cleavages used for database search"	help="Use the same number of missed cleavages for tryptic peptides as for the database search"/>
+		<param name="minLen" type="integer"  value="0" label="Minimal peptide length for analysis" help="Remove peptides that are shorter then this length"/>
+		<param name="maxMFDR" type="float"  value="0.01" label="Upper limit of error analysis(Maximal mFDR for Mayu analysis)" help="Start analysis from zero mFDR and go with -H steps to -G."/>
+		<param name="idset" type="select" label="ID set selection"  help="This describes the way in which identifications are selected from the input data, e.g. according to input file or orthogonality sorted runs additionally  to an mFDR cutoff.">
+			<option value="0" selected="true">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>          
+		</param>
+		<param name="filter" type="text"  value="default" label="Select a filtered list of PSM to be printed out"/>
+		<param name="pmFDR" type="boolean"  checked="false" label="Print out the mFDR table files" help="For each input file which relates the discriminant score  (e.g. PeptideProphet probability) to an FDR estimated with the target decoy strategy" />
+		<param name="verbose" type="boolean"  checked="false" label="Print out more" />
+		<param name="runR" type="boolean"  checked="false" label="Generate plots from the table output." />
+		<param name="dbop_type" type="select"  format="text"  label="Change the information of the result for this analysis in the database">
+			<option value="insert" selected="true">insert</option>		
+			<option value="update">update</option>
+			<option value="delete">delete</option>
+		</param>
+	</inputs>
+
+	<outputs>
+		<!--data format="csv"  name="output"  label="Mayu.main.csv" /-->
+		<data format="html" name="html_file"  label="Mayu_${fileformat.input_pep if $fileformat.informat=='pepxml' else $fileformat.input_csv}.html" />
+	</outputs>
+	
+	<help>
+		.. class:: infomark
+		
+**What it does**
+
+Mayu is a software package for the analysis of (large) mass spectrometry-based shotgun proteomics data sets. 
+Mayu determines protein identification false discovery rates (protFDR), peptide identification false discovery rates (pepFDR) and peptide-spectrum match false discovery rates (mFDR) using a novel robust and fast strategy.
+Mayu is not a search engine and works with any ( if this discriminant score is compatible with target decoy searching) peptide-spectrum match discriminant score derived from a database search.
+This software is licensed under the CC-GNU GPL version 2.0 or later. This software and associated documentation is provided "as is" and there is no warranty for this software.
+Mayu is written in Perl. It was creatd by Lukas Reiter at the Swiss Federal Institute of Technology Zurich.
+
+----
+
+**Citation**
+
+If you use this tool please read and cite the following paper:
+Reiter L, Claassen M, Schrimpf S, Jovanovic M, Schmidt A, et al. (2009) Protein identification false discovery rates for very large proteomics data sets generated by tandem mass spectrometry. Mol Cell Proteomics 8: 2405. 
+	
+	</help>	
+</tool>

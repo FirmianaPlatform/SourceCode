@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    
+		<title>For Galaxy</title>
+		
+		<link rel="stylesheet" type="text/css" href="/static/css/ForGalaxy/style.css" />
+		
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    
+		<script src="http://libs.baidu.com/jqueryui/1.8.22/jquery-ui.min.js "></script>
+		<script type="text/javascript" src="/static/javascript/ForGalaxy/call.js"></script>
+ 
+	</head>
+
+	<body>
+		<div class="outer">
+			<div class="inner">
+				<div class="top">
+					<h2>Galaxy API Invocation</h2>
+				</div>
+			
+				<div class="left_tool_list">
+					<!--div class="menu">
+							<span link="001.php" class="ajaxlink">Page One</span> | 
+							<span link="002.php" class="ajaxlink">Page Two</span> | 
+							<span link="003.php" class="ajaxlink">Page Three</span> 
+						</div-->
+					<div>
+						<table>
+							<tr>
+								<td>User:</td>
+								<td>
+									<!--input type="text" id="key"/-->
+								hzqnq@163.com
+								</td>
+							</tr>
+							<tr>
+								<td>History Name:</td>
+								<td>
+									<input type="text" id="hid" value="New output history"/>
+								</td>
+							</tr>
+							<tr>
+								<td>Tool ID:</td>
+								<td>
+									<input type="text" id="tid" value="mascotdat_parser"/>
+								</td>
+							</tr>
+							<tr>
+								<td>Workflow Name:</td>
+								<td>
+									<input type="text" id="wid" value="General Workflow"/>
+								</td>
+							</tr>
+						</table>
+					</div>
+					
+					
+					<div>
+						<table>
+							<tr>
+								<td>Todo:</td>
+								<td>
+									<button id="btn_history" type="button">Show history</button>
+								</td>
+								<td>
+									<button id="btn_tool" type="button">Run Tool</button>
+								</td>
+								<td>
+									<button id="btn_workflow" type="button">Run Workflow</button>
+								</td>
+							</tr>
+							
+						</table>
+					</div>
+					
+					
+				</div>
+				
+				
+				<div id="result" class="right_param_list"> Result from Galaxy </div>
+
+				
+			</div>
+		</div>
+	</body>
+	
+</html>

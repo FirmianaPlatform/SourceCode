@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+	terrafirma1.0 by nodethirtythree design
+	http://www.nodethirtythree.com
+-->
+<html>
+<head>
+<title>Firmiana MS Data Management and Display | {% block title %}{% endblock %}</title>
+<!--base css file -->
+<link rel="stylesheet" type="text/css" href="/static/css/default.css" />
+<link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+<!--include extjs4 related files -->
+<script type="text/javascript" src="/static/extjs/bootstrap.js"></script>
+<link rel="stylesheet" type="text/css"
+	href="/static/extjs/resources/css/ext-all.css" />
+{% block javascript %}{% endblock %}
+<!--Decide which navigate to display -->
+{% if user.is_authenticated %}
+<script type="text/javascript" src="/static/javascript/login_nav.js"></script>
+{% else %}
+<script type="text/javascript" src="/static/javascript/notlogin_nav.js"></script>
+{% endif %} {% block css %}{% endblock %}
+</head>
+<body>
+
+	<div id="outer">
+		<div id="inner">
+			<!--
+		<div id="header">
+			<h1><span>F</span>irmina<sup>1.0</sup></h1>
+			<h2>by nodethirtythree</h2>
+		</div>
+		-->
+			<div id="logo">
+				<img src="/static/images/logo.jpg" class="piclogo" alt="" />
+			</div>
+			<div id="splash"></div>
+			<div id="prot"></div>
+			<div id="title">
+			<h1><span>F</span>irmiana<sup>1.0</sup></h1>
+			<h2>for Proteomics</h2>
+			</div>
+			<div id="home_nav">
+				<h1>{% block head %}{% endblock %}</h1>
+			</div>
+
+			<div id="primarycontent">
+
+				<!-- primary content start -->
+				{% if user.username %}
+				<h4>Welcome {{ user.username }}!</h4>
+				{% else %}
+				<h4>
+					Welcome anonymous user! You need to <a href="/login/">login</a>
+					before you can use this system
+				</h4>
+				{% endif %} <br />
+
+				<div class="post">
+					<div class="header">
+						<h3>
+							Firmiana<sup>1.0</sup> by ECNU Bioinformatic Lab
+						</h3>
+					</div>
+					<div class="content">
+						<img src="/static/images/pic1.jpg" class="picA floatleft" alt="" />
+						<p>
+							<strong>Firmiana</strong> is an import part of Galaxy/Firmiana
+							platform which is a "one-stop" data analysis platform for
+							proteome data, composed of a series of analysis tools for MS(mass
+							spectra) data from experimental design to statistical analysis
+							and further bioinformatics mining technique, such as peptide
+							identification, peptide quantification, protein quantification,
+							mainly including two sections: Experiment Management and Analysis
+							Results Display.
+						</p>
+					</div>
+				</div>
+
+				<div class="post">
+					<div class="header">
+						<h3>
+							<strong>Experiment Management</strong>
+						</h3>
+					</div>
+					<div class="content">
+						<p>
+							The Experiment Management section contains two aspects: <br />
+							(1) The	display of experiment, sample, reagent information; <br /> 
+							(2) The addition and edition of experiment, sample, reagent
+							information.
+						</p>
+					</div>
+				</div>
+				<div class="post">
+					<div class="header">
+						<h3>
+							<strong>Analysis Results Display</strong>
+						</h3>
+					</div>
+					<div class="content">
+						<p>
+							The Analysis Results Display section contains two aspects: <br /> 
+							(1) The display of analysis results for files from individual
+							experiment; <br /> 
+							(2) The display of analysis results for
+							comparison study from multiple experiments.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- primary content end -->
+
+		</div>
+
+
+		<div id="footer">
+
+			&copy;ECNU Firmiana. All rights reserved. Design by <a href="mailto:proteome.firmiana@foxmail.com">Firmiana Team</a>.
+
+		</div>
+
+	</div>
+
+	</div>
+
+</body>
+</html>

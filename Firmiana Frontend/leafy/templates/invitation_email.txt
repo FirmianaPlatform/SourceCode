@@ -1,0 +1,4 @@
+Hi, {{ name }}:
+    We invited you to join Firmiana System.
+    Please click the following link to accept the invitation.
+    {{ link }}

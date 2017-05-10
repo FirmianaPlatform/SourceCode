@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Firmiana</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<!--base css file -->
+		<link rel="shortcut icon" type="image/ico" href="/static/images/faviconBAK.ico" />
+		<link rel="stylesheet" type="text/css" href="/static/css/login/help.css" />
+		<link rel="stylesheet" type="text/css" href="/static/css/login/style_login.css" />
+		<!-- Django template -->
+{% if not user.is_authenticated %}
+		<script type="text/javascript" src="/static/ext4/bootstrap.js"></script>
+		<script type="text/javascript" src="/static/javascript/gardener/login_nav.js"></script>
+{% endif %}	
+		<link rel="stylesheet" type="text/css" href="/static/ext4/resources/ext-theme-gray/ext-theme-gray-all.css" /> 
+		<!--link rel="stylesheet" type="text/css" href="/static/extjs/resources/css/ext-all-gray.css" /-->
+
+		<script type="text/javascript" src="/static/javascript/GoogleAnalytics.js"></script>
+
+	</head>
+<body>
+
+<div class="mainbody">
+	<div class="header">
+		<div class="header_resize">
+			<div class="logo">
+				<img src="/static/images/login/logo_firmiana.png" alt="img" width="80" height="70" />
+				<h1> <a href="#"><span>Platform.</span>Firmiana<br /><!--small> for Proteomics</small--></a></h1>
+			</div>
+			<div class="clr"></div>
+			<div class="header_text_bg">
+				<div class="menu">
+					<ul>
+						<li><a href="#" class="active" > Home </a></li>
+						<li><a href="/gardener"> Gardener </a></li>
+						<li><a href="/responders"> Responder </a></li>
+						<!--li><a href="contact.html"> Contact Us </a></li-->
+					</ul>
+				</div>
+				<!--div class="search">
+					<form id="form1" name="form1" method="post" action="">
+						<span> <input name="q" type="text" class="keywords" id="textfield" maxlength="50" value="Search..." /> </span>
+						<input name="b" type="image" src="/static/images/login/search.gif" class="button" />
+					</form>
+				</div-->
+				<div class="clr"></div>
+				<!--img src="/static/images/logo_firmiana.png" alt="img" width="260" height="210" /-->
+				<div class="header_text_bg_resize">
+					<h2>Introduction</h2>
+					<p>Firmiana is a "one-stop" data analysis platform for proteome data, composed of a series of analysis tools for Mass Spectra data from experimental design to statistical analysis and further bioinformatics mining technique, such as peptide identification, peptide quantification, protein quantification.</p>
+					<div class="clr"></div>
+				</div>
+			</div>
+			<div class="clr"></div>
+		</div> <!-- header_resize -->
+		<div class="clr"> </div> 	
+	</div> <!-- header -->
+	
+	<div class="middlebody">
+		<div class="middleDIV">
+		<!--div class="body_resize">
+			<div id="home_nav2">
+				<h3 style="text-align:center">Welcome to Firmiana, <a href="/gardener"> click here to view Gardener </a> when you are ready. </h3>
+			</div>
+		</div-->
+		{% if user.is_authenticated %}
+		
+		<div class="body_resize">
+			<div class="left">
+				<h2><span>Welcome back, Dr.</span>{{username}} </h2>
+				<!--p><a href="/upload/firmianaUpload.jnlp"># Upload your files. #</a></p-->
+				<p>Your last login time : {{last_login}}</p>
+				<p>Your IP : {{ip}}</p>
+				<p><a href="/logout/">- Logout -</a></p>
+		{% else %}
+		<div class="body_resize">
+			<div id="home_nav" ></div>
+		</div>
+		<div class="body_resize">
+			<div class="left">
+				<h2><span>Welcome to </span> Firmiana<span> !</span></h2>
+				<p>To use our platform, log in and follow the steps below.</p> 
+		{% endif %}
+				<h2><span>Getting</span> Started<br /></h2>
+				{% include "/gardener/login_help.html"%}
+			</div>
+			<div class="right">
+				<h2>Visitors</h2>
+				<ul class="sponsors">
+					<!--li class="sponsors"><a target="_blank" href="http://www.bprc.ac.cn/" title="BPRC">CNHPP</a><br />CNHPP launched at Beijing</li-->
+					
+				</ul>
+				<div>
+					<script type="text/javascript" src="http://jg.revolvermaps.com/2/0.js?i=6esfq1hv31z&amp;d=2&amp;p=0&amp;b=0&amp;w=243&amp;g=2&amp;f=arial&amp;fs=12&amp;r=0&amp;c0=362b05&amp;c1=ff0000&amp;c2=000000&amp;ic0=0&amp;ic1=0" async="async"></script>
+				</div>
+				<div>
+					<script type="text/javascript" src="//rg.revolvermaps.com/0/0/7.js?i=6esfq1hv31z&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;sx=0" async="async"></script>
+					<!--script type="text/javascript" src="http://jg.revolvermaps.com/2/1.js?i=6esfq1hv31z&amp;s=240&amp;m=7&amp;v=true&amp;r=false&amp;b=ffffff&amp;n=true&amp;c=ff0000" async="async"></script-->
+				</div>
+				
+				<h2> Links</h2>
+				<ul>
+					<li><a target="_blank" href="/gardener/help">Help Manual</a></li>
+					<li> <a target="_blank" href="/blog">Firmiana Blog</a></li>
+				</ul>
+				
+				<h2>News</h2>
+				<ul class="sponsors">
+					<li class="sponsors"><a target="_blank" href="http://www.bprc.ac.cn/" title="BPRC">CNHPP</a><br />CNHPP launched at Beijing</li>
+				</ul>
+				
+				<h2>Sponsors</h2>
+				<!--ul class="sponsors">
+					<li class="sponsors"><a target="_blank" href="http://www.bprc.ac.cn/" title="BPRC">BPRC</a><br />Provide raw data and biology support</li>
+					<li class="sponsors"><a target="_blank" href="http://www.ecnu.edu.cn" title="ECNU">ECNU</a><br />Develop Team</li>
+					<li class="sponsors"><a target="_blank" href="http://www.ncbi.nlm.nih.gov" title="NCBI">NCBI</a><br />Authority Database</li>
+					<li class="sponsors"><a target="_blank" href="http://www.matrixscience.com/" title="Mascot">Mascot</a><br />Powerful search engine</li>
+					<li class="sponsors"><a target="_blank" href="http://www.thermofisher.com/en/home.html" title="Thermo Fisher">Thermo Fisher</a><br />The best MS instrument on earth</li>
+					<li class="sponsors"><a target="_blank" href="https://www.bcm.edu/" title="BCM">BCM</a><br />The best lab</li>
+				</ul-->
+				
+				<!--div>
+					
+					<embed src="http://player.youku.com/player.php/sid/XNzI0NDk4NzI4/v.swf" allowFullScreen="true" quality="high" width="250" height="200" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+				</div-->
+				<p>&nbsp;</p>
+				<div class="clr"></div>
+			</div>
+			<div class="clr"></div>
+		</div>
+		</div><!-- middleDIV end-->
+	</div>
+	
+	<div class="FBG">
+		<div class="middleDIV">
+		<div class="FBG_resize">
+			<div class="blok_left">
+				<h2>Future Plan</h2>
+				<img src="/static/images/login/fbg_1.jpg" alt="img" width="68" height="68" />
+				<p>We have the backbone of the system up and running, it is time to make a strong foundation and a full system.</p>
+				<p>1. IT backbones - our galaxy infrastructure</p>
+				<p>2. MS related analysis including protein ID and quantifications</p>
+				<p>3. data display based on 2</p>
+				<p>4. biology based bioinformatics - we have none for this. We need to design and do this.</p>
+				<p><a href="/gardener/help"> Learn more...</a></p>
+			</div>
+			<div class="blok_right">
+				<h2>Graph <span>Gallery</span></h2>
+				<img src="/static/images/login/fbg_2.jpg" alt="img" width="68" height="68" /><img src="/static/images/login/fbg_3.jpg" alt="img" width="68" height="68" /><img src="/static/images/login/fbg_4.jpg" alt="img" width="68" height="68" />
+				<img src="/static/images/login/fbg_5.jpg" alt="img" width="68" height="68" /><img src="/static/images/login/fbg_6.jpg" alt="img" width="68" height="68" /><img src="/static/images/login/fbg_7.jpg" alt="img" width="68" height="68" />
+				<div class="clr"></div>
+				<h2>Thanks to:</h2>
+				<p>Everyone. </p>
+			</div>
+			<div class="clr"></div>
+		</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="middleDIV">
+		<div class="footer_resize">
+			<p style="text-align:center" >&copy;ECNU Firmiana. All rights reserved. Design by <a href="mailto:proteome.firmiana@foxmail.com">Firmiana Team</a>.</p>
+		</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
