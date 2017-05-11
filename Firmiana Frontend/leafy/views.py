@@ -158,32 +158,7 @@ def logins(request):
             if request.META.has_key('REMOTE_ADDR'):
                 ip = request.META['REMOTE_ADDR']
             elif request.META.has_key('HTTP_X_FORWARDED_FOR'):
-                ip = request.META['HTTP_X_FORWARDED_FOR']
-            if username == 'Reviewer':
-                mailto_list=['xiaotian_ni@icloud.com'] 
-                mail_host="smtp.mxhichina.com"  
-                mail_user="contact@firmiana.org"    
-                mail_pass="Bprc_123"   
-                mail_result = ''
-                   
-                def send_mail(to_list,sub,content):  
-                    me= "<"+mail_user+">"
-                    msg = MIMEText(content,_subtype='plain',_charset='gb2312')  
-                    msg['Subject'] = sub  
-                    msg['From'] = me  
-                    msg['To'] = ";".join(to_list)  
-                    try:  
-                        server = smtplib.SMTP()  
-                        server.connect(mail_host)  
-                        server.login(mail_user,mail_pass)  
-                        server.sendmail(me, to_list, msg.as_string())  
-                        server.close()  
-                        return True  
-                    except Exception, e:  
-                        print str(e)  
-                        return False  
-                send_mail(mailto_list, 'Online - ' + username, time.strftime('%Y-%m-%d %X',time.localtime(time.time())) + ' ' + ip)
-                
+                ip = request.META['HTTP_X_FORWARDED_FOR'] 
             user=User.objects.get(username=username)
             user.backend = 'django.contrib.auth.backends.ModelBackend'
             
