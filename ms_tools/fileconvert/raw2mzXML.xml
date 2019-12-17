@@ -125,10 +125,11 @@
         
 	</inputs>
 	<outputs>
-		<data format="mzxml" name="output" label="${tool.name} on ${on_string}(${input.display_name})"/>
+		<data format="mzxml" name="output" label="${tool.name} on ${on_string}(${input.display_name})">
 		<change_format>
 			<when input="outformat" value="mzML" format="mzml"/>
 		</change_format>
+		</data>
 	</outputs>
 
 	<tests>
